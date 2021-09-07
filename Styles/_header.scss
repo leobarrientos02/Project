@@ -1,0 +1,14 @@
+header {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    font-size: 4rem;
+  }
+  span {
+    color: rgb(47, 255, 82);
+  }
+}
