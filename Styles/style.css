@@ -9,6 +9,9 @@
 
 html {
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  -webkit-animation: opening 2.5s ease-in-out;
+          animation: opening 2.5s ease-in-out;
 }
 
 body {
@@ -35,33 +38,203 @@ body {
   border: transparent;
 }
 
+/* ANIMATIONS*/
+@-webkit-keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 header {
   width: 100%;
-  height: 10rem;
+  height: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 0.5rem;
 }
 
 header h2 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 header h2 a {
   text-decoration: none;
-  color: #202020;
+  color: black;
 }
 
 header span {
-  color: #2fff52;
+  color: #2295b8;
+}
+
+header a:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #2295b8;
+}
+
+header a:hover span {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: black;
+}
+
+header .header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+}
+
+header .header ul li {
+  font-size: 1.2rem;
+  padding: 3rem;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+header .header ul a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+header .header ul a:hover {
+  color: #227cb8;
+}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  /* On hover, add a black background color with a little bit see-through */
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slideshow-container .mySlides {
+  display: none;
+}
+
+.slideshow-container .prev,
+.slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slideshow-container .prev:hover,
+.slideshow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.3s;
+  animation-name: fade;
+  animation-duration: 1.3s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10rem;
+  margin-top: 2rem;
+  /*TEXT*/
+  color: white;
+  background: #2295b8;
+  font-size: 0.8rem;
 }
 
 .form-container {
@@ -102,7 +275,7 @@ header span {
 }
 
 .form-container form p {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bolder;
   text-decoration: underline;
 }
@@ -117,6 +290,20 @@ header span {
   border: 4px solid black;
   border-radius: 10px;
   color: black;
+}
+
+.form-container form button:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 12rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  background: transparent;
+  border: 4px solid #2295b8;
+  border-radius: 10px;
+  color: #2295b8;
 }
 
 .username,
@@ -203,24 +390,5 @@ header span {
   color: black;
   text-decoration: none;
   margin-bottom: 1rem;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 10rem;
-  margin-top: 2rem;
-  /*TEXT*/
-  color: white;
-  background: #22b7b8;
-  background: -webkit-gradient(linear, left bottom, left top, from(#22b7b8), color-stop(90%, #99fd2d));
-  background: linear-gradient(0deg, #22b7b8 0%, #99fd2d 90%);
 }
 /*# sourceMappingURL=style.css.map */

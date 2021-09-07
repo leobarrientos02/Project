@@ -6,10 +6,6 @@ footer {
   margin-top: 2rem;
   /*TEXT*/
   color: white;
-  background: rgb(34, 183, 184);
-  background: linear-gradient(
-    0deg,
-    rgba(34, 183, 184, 1) 0%,
-    rgba(153, 253, 45, 1) 90%
-  );
+  background: $color1;
+  font-size: 0.8rem;
 }

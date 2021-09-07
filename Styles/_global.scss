@@ -1,3 +1,5 @@
+$color1: rgb(34, 149, 184);
+$color2: rgb(34, 124, 184);
 *,
 *::before,
 *::after {
@@ -7,6 +9,8 @@
 }
 html {
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  animation: opening 2.5s ease-in-out;
 }
 body {
   overflow-x: hidden;
@@ -26,4 +30,13 @@ body {
   background: rgba(155, 155, 155, 0.5);
   border-radius: 20px;
   border: transparent;
+}
+/* ANIMATIONS*/
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

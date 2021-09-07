@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Project Description Here">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <!-- Font Awesome icons (free version)-->
+         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lobster&display=swap" rel="stylesheet"> 
+    <title>EZWork</title>
+    <link rel="icon" href="../icons/team.svg">
+    <link rel="stylesheet" href="./Styles/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="title">
+                <h2><a href="./home.html">E<span>Z</span>Work</a></h2>
+            </div>
+            <div class="header">
+                <ul>
+                    <li> <a href="./Pages/about.html">About</a></li>
+                    <li> <a href="./Pages/services.html">Services</a></li>
+                    <li> <a href="./LoginPages/login.html">Login</a></li>
+                    <li> <a href="./LoginPages/createAccount.html">Join</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./Image/coding.jpg" alt="coding">
+            </div>
+            <div class="mySlides fade">
+                <img src="./Image/carpenter.jpg" alt="carpenter">
+            </div>
+            <div class="mySlides fade">
+                <img src="./Image/drawing.jpg" alt="drawing">
+            </div>
+            <div class="mySlides fade">
+                <img src="./Image/accounting.jpg" alt="math">
+            </div>
+            <div class="mySlides fade">
+                <img src="./Image/essay.jpg" alt="homework">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fa fa-arrow-circle-right fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        <div class="jobs">
+            <div class="coding">
+                <h2>Coding</h2>
+            </div>
+            <div class="accounting">
+                <h2>Accounting</h2>
+            </div>
+            <div class="designing">
+                <h2>Designing</h2>
+            </div>
+            <div class="repairing">
+                <h2>Repairing</h2>
+            </div>
+            <div class="school-work">
+                <h2>Tutoring</h2>
+            </div>
+            <div class="others">
+                <h3>You can posts a job listing for almost everything!!</h3>
+            </div>
+        </div>
+        <div class="connected">
+            <h2>We have over 25,000 Freelancers from all around the world, ready to work for you.</h2>
+        </div>
+        <div class="statements">
+            <h2>Statements</h2>
+        </div>
+        <footer>
+           <h2>
+               &copy Copyright.
+                <script>document.write(new Date().getFullYear())</script>
+                All Rights Reserved.
+            </h2>
+        </footer>
+    </main>
+    <script src="./js/slides.js"></script>
+</body>
+</html>
