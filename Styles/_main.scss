@@ -111,3 +111,61 @@ $color3: rgb(148, 182, 245);
   }
 }
 /* ENDING OF THE INTROS */
+
+/* JOBS SECTION */
+.jobs {
+  width: 100%;
+  height: fit-content;
+  background: $color2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  .coding {
+    padding: 1rem;
+    margin: 1rem;
+    background: lightgreen;
+  }
+  .accounting {
+    padding: 1rem;
+    margin: 1rem;
+    background: lightgreen;
+  }
+  .designing {
+    padding: 1rem;
+    margin: 1rem;
+    background: lightgreen;
+  }
+  .repairing {
+    padding: 1rem;
+    margin: 1rem;
+    background: lightgreen;
+  }
+  .school-work {
+    padding: 1rem;
+    margin: 1rem;
+    background: lightgreen;
+  }
+  .more {
+    padding: 1rem;
+    margin: 1rem;
+    background: lightgreen;
+  }
+  .others {
+    padding: 1rem;
+    margin: 1rem;
+    background: lightgreen;
+  }
+}
+
+/* REVIEW SECTION*/
+.review-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
