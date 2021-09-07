@@ -42,22 +42,30 @@ $color3: rgb(148, 182, 245);
       font-size: 2.8rem;
     }
     button {
+      a {
+        text-decoration: none;
+        color: #181818;
+      }
       cursor: pointer;
       width: 30%;
       height: 40px;
       font-size: 1.4rem;
       background: white;
-      color: #181818;
       border: #181818 3px solid;
+      border-radius: 5px;
     }
     button:hover {
+      a {
+        text-decoration: none;
+        color: $color2;
+      }
       cursor: pointer;
       width: 30%;
       height: 40px;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       background: white;
-      color: $color2;
       border: $color2 3px solid;
+      border-radius: 5px;
     }
   }
   .description {
@@ -65,8 +73,10 @@ $color3: rgb(148, 182, 245);
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
     img {
-      margin-bottom: 1rem;
+      margin-bottom: 1.4rem;
       margin-right: 3px;
       width: 3rem;
       height: 3rem;
