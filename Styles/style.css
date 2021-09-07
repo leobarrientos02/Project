@@ -177,7 +177,7 @@ header .header ul a:hover {
 .freelance-intro .user-intro-title,
 .freelance-intro .freelance-intro-title {
   width: 60%;
-  height: 26rem;
+  height: 25rem;
   background: #94b6f5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,8 +202,8 @@ header .header ul a:hover {
 .user-intro .freelance-intro-title h3,
 .freelance-intro .user-intro-title h3,
 .freelance-intro .freelance-intro-title h3 {
-  padding: 2rem 6rem 2rem 3rem;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
+  padding: 2rem;
 }
 
 .user-intro .user-intro-title button,
@@ -211,12 +211,13 @@ header .header ul a:hover {
 .freelance-intro .user-intro-title button,
 .freelance-intro .freelance-intro-title button {
   cursor: pointer;
-  width: 30%;
+  min-width: 30%;
   height: 40px;
   font-size: 1.4rem;
   background: white;
   border: #181818 3px solid;
   border-radius: 5px;
+  margin-top: 1rem;
 }
 
 .user-intro .user-intro-title button a,
@@ -232,12 +233,13 @@ header .header ul a:hover {
 .freelance-intro .user-intro-title button:hover,
 .freelance-intro .freelance-intro-title button:hover {
   cursor: pointer;
-  width: 30%;
+  min-width: 30%;
   height: 40px;
   font-size: 1.4rem;
   background: white;
   border: #1d50af 3px solid;
   border-radius: 5px;
+  margin-top: 1rem;
 }
 
 .user-intro .user-intro-title button:hover a,
@@ -265,6 +267,7 @@ header .header ul a:hover {
           align-items: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  text-align: center;
 }
 
 .user-intro .description img,

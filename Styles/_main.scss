@@ -27,7 +27,7 @@ $color3: rgb(148, 182, 245);
   .user-intro-title,
   .freelance-intro-title {
     width: 60%;
-    height: 26rem;
+    height: 25rem;
     background: $color3;
     display: flex;
     flex-direction: column;
@@ -38,8 +38,8 @@ $color3: rgb(148, 182, 245);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
       rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     h3 {
-      padding: 2rem 6rem 2rem 3rem;
-      font-size: 2.8rem;
+      font-size: 2.4rem;
+      padding: 2rem;
     }
     button {
       a {
@@ -47,12 +47,13 @@ $color3: rgb(148, 182, 245);
         color: #181818;
       }
       cursor: pointer;
-      width: 30%;
+      min-width: 30%;
       height: 40px;
       font-size: 1.4rem;
       background: white;
       border: #181818 3px solid;
       border-radius: 5px;
+      margin-top: 1rem;
     }
     button:hover {
       a {
@@ -60,12 +61,13 @@ $color3: rgb(148, 182, 245);
         color: $color2;
       }
       cursor: pointer;
-      width: 30%;
+      min-width: 30%;
       height: 40px;
       font-size: 1.4rem;
       background: white;
       border: $color2 3px solid;
       border-radius: 5px;
+      margin-top: 1rem;
     }
   }
   .description {
@@ -75,6 +77,7 @@ $color3: rgb(148, 182, 245);
     align-items: center;
     padding-left: 2rem;
     padding-right: 2rem;
+    text-align: center;
     img {
       margin-bottom: 1.4rem;
       margin-right: 3px;
