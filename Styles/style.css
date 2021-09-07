@@ -80,13 +80,13 @@ header h2 a {
 }
 
 header span {
-  color: #2295b8;
+  color: #1d50af;
 }
 
 header a:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  color: #2295b8;
+  color: #1d50af;
 }
 
 header a:hover span {
@@ -125,22 +125,24 @@ header .header ul a {
 }
 
 header .header ul a:hover {
-  color: #227cb8;
+  color: #1d50af;
 }
 
-.user-intro {
+.user-intro,
+.freelance-intro {
   width: 100%;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #1d50af;
   padding: 1rem 0rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-.user-intro .user-intro-image {
+.user-intro .user-intro-image,
+.user-intro .freelance-intro-image,
+.freelance-intro .user-intro-image,
+.freelance-intro .freelance-intro-image {
   width: 40%;
   height: 26rem;
   display: -webkit-box;
@@ -149,27 +151,41 @@ header .header ul a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: white 2px solid;
   margin: 0rem 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.user-intro .user-intro-image img {
+.user-intro .user-intro-image img,
+.user-intro .freelance-intro-image img,
+.freelance-intro .user-intro-image img,
+.freelance-intro .freelance-intro-image img {
   width: 100%;
-  height: 26rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   -o-object-fit: cover;
      object-fit: cover;
+  border: #1d50af 4px solid;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-.user-intro .user-intro-title {
+.user-intro .user-intro-title,
+.user-intro .freelance-intro-title,
+.freelance-intro .user-intro-title,
+.freelance-intro .freelance-intro-title {
   width: 60%;
   height: 26rem;
-  background: chartreuse;
+  background: #94b6f5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -177,6 +193,95 @@ header .header ul a:hover {
       -ms-flex-align: center;
           align-items: center;
   margin: 0rem 1rem;
+  padding: 1rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.user-intro .user-intro-title h3,
+.user-intro .freelance-intro-title h3,
+.freelance-intro .user-intro-title h3,
+.freelance-intro .freelance-intro-title h3 {
+  padding: 2rem 6rem 2rem 3rem;
+  font-size: 2.8rem;
+}
+
+.user-intro .user-intro-title button,
+.user-intro .freelance-intro-title button,
+.freelance-intro .user-intro-title button,
+.freelance-intro .freelance-intro-title button {
+  cursor: pointer;
+  width: 30%;
+  height: 40px;
+  font-size: 1.4rem;
+  background: white;
+  color: #181818;
+  border: #181818 3px solid;
+}
+
+.user-intro .user-intro-title button:hover,
+.user-intro .freelance-intro-title button:hover,
+.freelance-intro .user-intro-title button:hover,
+.freelance-intro .freelance-intro-title button:hover {
+  cursor: pointer;
+  width: 30%;
+  height: 40px;
+  font-size: 1.2rem;
+  background: white;
+  color: #1d50af;
+  border: #1d50af 3px solid;
+}
+
+.user-intro .description,
+.freelance-intro .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-intro .description img,
+.freelance-intro .description img {
+  margin-bottom: 1rem;
+  margin-right: 3px;
+  width: 3rem;
+  height: 3rem;
+}
+
+.user-intro .description p,
+.freelance-intro .description p {
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.user-intro .user-intro-title {
+  border: lightgray 3px solid;
+}
+
+.freelance-intro {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.freelance-intro .freelance-intro-image img {
+  border: #94b6f5 4px solid;
+}
+
+.freelance-intro .freelance-intro-title {
+  background: lightgray;
+  border: black 3px solid;
 }
 
 footer {
@@ -193,7 +298,7 @@ footer {
   margin-top: 2rem;
   /*TEXT*/
   color: white;
-  background: #2295b8;
+  background: #1d50af;
   font-size: 0.8rem;
 }
 

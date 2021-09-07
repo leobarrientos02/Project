@@ -1,3 +1,6 @@
+$color1: rgb(34, 149, 184);
+$color2: rgb(29, 80, 175);
+$color3: rgb(148, 182, 245);
 footer {
   display: flex;
   justify-content: center;
@@ -6,6 +9,6 @@ footer {
   margin-top: 2rem;
   /*TEXT*/
   color: white;
-  background: $color1;
+  background: $color2;
   font-size: 0.8rem;
 }
