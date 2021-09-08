@@ -277,14 +277,14 @@ header .nav ul a:hover {
 .user-intro .description img,
 .freelance-intro .description img {
   margin-bottom: 1.4rem;
-  margin-right: 3px;
+  margin-right: 4px;
   width: 3rem;
   height: 3rem;
 }
 
 .user-intro .description p,
 .freelance-intro .description p {
-  margin-right: 1.5rem;
+  margin-right: 0.8rem;
   font-size: 1rem;
   font-weight: bolder;
 }
