@@ -3,8 +3,9 @@
 @import "main";
 @import "footer";
 @import "login";
-$color1: rgb(34, 149, 184);
-$color2: rgb(29, 80, 175);
+/*GLOBAL COLORS */
+$color1: rgb(34, 129, 184);
+$color2: #001f3f;
 $color3: rgb(148, 182, 245);
 
 @media screen and (max-width: 768px) {

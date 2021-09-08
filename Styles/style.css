@@ -782,6 +782,7 @@ footer {
   margin-bottom: 1rem;
 }
 
+/*GLOBAL COLORS */
 @media screen and (max-width: 768px) {
   header {
     width: 100%;
@@ -867,7 +868,7 @@ footer {
     margin-top: 2rem;
     /*TEXT*/
     color: white;
-    background: #1d50af;
+    background: #001f3f;
     font-size: 0.6rem;
   }
   .user-intro {
@@ -993,14 +994,14 @@ footer {
     height: 50px;
     font-size: 0.8rem;
     background: white;
-    border: #2295b8 4px solid;
+    border: #2281b8 4px solid;
     border-radius: 5px;
   }
   .user-intro button:hover a {
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
     text-decoration: none;
-    color: #2295b8;
+    color: #2281b8;
   }
   .image-gallery {
     width: 100%;
@@ -1114,7 +1115,7 @@ footer {
     padding: 1rem;
   }
   .freelance-intro .freelance-intro-title span {
-    color: #2295b8;
+    color: #2281b8;
   }
   .freelance-intro .freelance-intro-image {
     display: none;
@@ -1149,7 +1150,7 @@ footer {
     font-weight: bolder;
   }
   .description span {
-    color: #2295b8;
+    color: #2281b8;
   }
   .description .no-contract,
   .description .small-fees,
@@ -1183,7 +1184,7 @@ footer {
     height: 50px;
     font-size: 1rem;
     background: white;
-    border: #2295b8 4px solid;
+    border: #2281b8 4px solid;
     border-radius: 5px;
     margin: 2rem;
   }
@@ -1191,7 +1192,7 @@ footer {
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
     text-decoration: none;
-    color: #2295b8;
+    color: #2281b8;
   }
 }
 /*# sourceMappingURL=style.css.map */
