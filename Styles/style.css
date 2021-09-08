@@ -135,48 +135,26 @@ header .nav ul a:hover {
 /* STARTING INTROS */
 .user-intro {
   width: 100%;
-  height: 85vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 1.2rem;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.user-intro .user-intro-image {
-  width: 50%;
-  height: 25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0rem 1rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.user-intro .user-intro-image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: #2281b8 4px solid;
-  border-radius: 10px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
 }
 
 .user-intro .user-intro-title {
-  width: 65%;
-  height: 25rem;
-  background: lightgrey;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,69 +162,121 @@ header .nav ul a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0rem 0.5rem;
-  padding: 1rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  border: #181818 solid 4px;
-  border-radius: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 .user-intro .user-intro-title h3 {
-  text-align: center;
-  font-size: 2.4rem;
-  padding: 2rem;
+  padding-right: 4px;
+  font-size: 4rem;
 }
 
 .user-intro .user-intro-title span {
-  color: #2281b8;
+  color: #94b6f5;
 }
 
-.user-intro .user-intro-title button {
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
+.user-intro .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 2rem;
+}
+
+.user-intro .description .money,
+.user-intro .description .experience,
+.user-intro .description .money-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem;
+}
+
+.user-intro .description .money img,
+.user-intro .description .experience img,
+.user-intro .description .money-back img {
+  width: 4rem;
+  height: 4rem;
+  padding-right: 1rem;
+}
+
+.user-intro .description .money p,
+.user-intro .description .experience p,
+.user-intro .description .money-back p {
+  font-size: 2rem;
+}
+
+.user-intro .description .money span,
+.user-intro .description .experience span,
+.user-intro .description .money-back span {
+  color: #94b6f5;
+}
+
+.user-intro button {
+  padding: 0.5rem;
   cursor: pointer;
   min-width: 30%;
-  height: 40px;
+  height: 50px;
   font-size: 1.4rem;
   background: white;
-  border: #181818 3px solid;
+  border: #181818 4px solid;
   border-radius: 5px;
-  margin-top: 1rem;
 }
 
-.user-intro .user-intro-title button a {
+.user-intro button a {
   text-decoration: none;
   color: #181818;
 }
 
-.user-intro .user-intro-title button:hover {
+.user-intro button:hover {
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
+  padding: 0.5rem;
   cursor: pointer;
   min-width: 30%;
-  height: 40px;
+  height: 50px;
   font-size: 1.4rem;
   background: white;
-  border: #2281b8 3px solid;
+  border: #2281b8 4px solid;
   border-radius: 5px;
-  margin-top: 1rem;
 }
 
-.user-intro .user-intro-title button:hover a {
+.user-intro button:hover a {
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
   text-decoration: none;
   color: #2281b8;
 }
 
-.user-intro .description {
+.image-gallery {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,23 +290,53 @@ header .nav ul a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.image-gallery .image {
+  position: relative;
+  width: 26.21rem;
+  height: 19rem;
+}
+
+.image-gallery .image img {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image-gallery .image img:hover {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-filter: none;
+          filter: none;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image-gallery .image-text {
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: white 5px solid;
+  padding: 1rem;
 }
 
-.user-intro .description img {
-  margin-bottom: 1.4rem;
-  margin-right: 4px;
-  width: 3rem;
-  height: 3rem;
-}
-
-.user-intro .description p {
-  margin-right: 0.8rem;
-  font-size: 1.3rem;
-  font-weight: bolder;
-  color: #2281b8;
+.image-gallery .image-text p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
 }
 
 .freelance-intro {
@@ -822,43 +882,9 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 3rem;
   }
   .user-intro .user-intro-title {
-    width: 95%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .user-intro .user-intro-title h3 {
-    text-align: center;
-    font-size: 1.6rem;
-  }
-  .user-intro .user-intro-title button {
-    font-size: 1rem;
-  }
-  .user-intro .user-intro-title button:hover {
-    font-size: 1rem;
-  }
-  .user-intro .user-intro-title .description {
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -874,32 +900,24 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
+    text-align: center;
   }
-  .user-intro .user-intro-title .description p {
-    font-size: 1rem;
-    padding: 0;
-    margin: 0;
+  .user-intro .user-intro-title h3 {
+    padding-right: 4px;
+    font-size: 2rem;
   }
-  .user-intro .user-intro-title .description img {
-    margin: 0;
-    padding: 0;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-bottom: 5px;
-    margin-top: 5px;
+  .user-intro .user-intro-title span {
+    color: #94b6f5;
   }
-  .user-intro .user-intro-image {
-    width: 80%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+  .user-intro .description {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -908,13 +926,131 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 1rem;
-  }
-  .user-intro .user-intro-image img {
     width: 100%;
-    height: 17rem;
+  }
+  .user-intro .description .money,
+  .user-intro .description .experience,
+  .user-intro .description .money-back {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .user-intro .description .money img,
+  .user-intro .description .experience img,
+  .user-intro .description .money-back img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .user-intro .description .money p,
+  .user-intro .description .experience p,
+  .user-intro .description .money-back p {
+    font-size: 1.5rem;
+  }
+  .user-intro .description .money span,
+  .user-intro .description .experience span,
+  .user-intro .description .money-back span {
+    color: #94b6f5;
+  }
+  .user-intro button {
+    padding: 0.5rem;
+    cursor: pointer;
+    min-width: 30%;
+    height: 50px;
+    font-size: 0.8rem;
+    background: white;
+    border: #181818 4px solid;
+    border-radius: 5px;
+  }
+  .user-intro button a {
+    text-decoration: none;
+    color: #181818;
+  }
+  .user-intro button:hover {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    padding: 0.5rem;
+    cursor: pointer;
+    min-width: 30%;
+    height: 50px;
+    font-size: 0.8rem;
+    background: white;
+    border: #2295b8 4px solid;
+    border-radius: 5px;
+  }
+  .user-intro button:hover a {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    text-decoration: none;
+    color: #2295b8;
+  }
+  .image-gallery {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .image-gallery .image {
+    position: relative;
+    width: 11rem;
+    height: 11rem;
+  }
+  .image-gallery .image img {
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    width: 100%;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .image-gallery .image img:hover {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-filter: none;
+            filter: none;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .image-gallery .image-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border: white 5px solid;
+    padding: 1rem;
+  }
+  .image-gallery .image-text p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
   }
   .freelance-intro {
     width: 100%;

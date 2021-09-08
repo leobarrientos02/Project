@@ -67,60 +67,120 @@ $color3: rgb(148, 182, 245);
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
     .user-intro-title {
-      width: 95%;
-      height: fit-content;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+      width: 100%;
+      text-align: center;
       h3 {
-        text-align: center;
-        font-size: 1.6rem;
+        padding-right: 4px;
+        font-size: 2rem;
       }
-      button {
-        font-size: 1rem;
+      span {
+        color: $color3;
       }
-      button:hover {
-        font-size: 1rem;
-      }
-      .description {
-        width: 100%;
-        height: fit-content;
+    }
+    .description {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .money,
+      .experience,
+      .money-back {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
-        p {
-          font-size: 1rem;
-          padding: 0;
-          margin: 0;
-        }
+        justify-content: center;
+        text-align: center;
         img {
-          margin: 0;
-          padding: 0;
-          width: 2.5rem;
-          height: 2.5rem;
-          margin-bottom: 5px;
-          margin-top: 5px;
+          width: 4rem;
+          height: 4rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+        span {
+          color: $color3;
         }
       }
     }
-    .user-intro-image {
-      width: 80%;
-      height: fit-content;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem;
+    button {
+      padding: 0.5rem;
+      a {
+        text-decoration: none;
+        color: #181818;
+      }
+      cursor: pointer;
+      min-width: 30%;
+      height: 50px;
+      font-size: 0.8rem;
+      background: white;
+      border: #181818 4px solid;
+      border-radius: 5px;
+    }
+    button:hover {
+      transition: all 0.7s ease;
+      padding: 0.5rem;
+      a {
+        transition: all 0.7s ease;
+        text-decoration: none;
+        color: $color1;
+      }
+      cursor: pointer;
+      min-width: 30%;
+      height: 50px;
+      font-size: 0.8rem;
+      background: white;
+      border: $color1 4px solid;
+      border-radius: 5px;
+    }
+  }
+  .image-gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .image {
+      position: relative;
+      width: 11rem;
+      height: 11rem;
       img {
+        filter: blur(2px);
         width: 100%;
-        height: 17rem;
+        height: 100%;
         object-fit: cover;
+      }
+      img:hover {
+        transition: all 1s ease;
+        filter: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .image-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: white 5px solid;
+      padding: 1rem;
+      p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: white;
       }
     }
   }
