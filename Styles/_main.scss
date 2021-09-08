@@ -294,20 +294,53 @@ $color3: rgb(148, 182, 245);
 .review-section {
   width: 100%;
   height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: $color2;
-  padding: 2.2rem 0rem;
-  .review-title {
+  background: $color3;
+  padding: 2rem;
+  border-bottom: white 2px solid;
+  h2 {
     width: 100%;
-    height: fit-content;
     text-align: center;
-    background: white;
-    padding: 1.5rem;
-    h2 {
-      font-size: 3.8rem;
-      color: $color3;
+    text-decoration: underline;
+    color: white;
+    font-size: 4rem;
+  }
+  .review {
+    margin: 2rem;
+    width: 70%;
+    height: fit-content;
+    padding: 0.5rem;
+    background: transparent;
+    border-radius: 10px;
+    border: white 3px solid;
+    .comment {
+      margin: 0.5rem;
+      p {
+        font-size: 1.3rem;
+        color: white;
+      }
+    }
+    .review-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .profile-pic {
+        img {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+          object-fit: cover;
+          margin: 0.5rem;
+          border: 3px white solid;
+        }
+      }
+      .profile-info {
+        p {
+          color: white;
+          font-size: 1.2rem;
+        }
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }

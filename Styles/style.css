@@ -600,32 +600,76 @@ header .nav ul a:hover {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #001f3f;
-  padding: 2.2rem 0rem;
+  background: #94b6f5;
+  padding: 2rem;
+  border-bottom: white 2px solid;
 }
 
-.review-section .review-title {
+.review-section h2 {
   width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  color: white;
+  font-size: 4rem;
+}
+
+.review-section .review {
+  margin: 2rem;
+  width: 70%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  text-align: center;
-  background: white;
-  padding: 1.5rem;
+  padding: 0.5rem;
+  background: transparent;
+  border-radius: 10px;
+  border: white 3px solid;
 }
 
-.review-section .review-title h2 {
-  font-size: 3.8rem;
-  color: #94b6f5;
+.review-section .review .comment {
+  margin: 0.5rem;
+}
+
+.review-section .review .comment p {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.review-section .review .review-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review-section .review .review-info .profile-pic img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0.5rem;
+  border: 3px white solid;
+}
+
+.review-section .review .review-info .profile-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.review-section .review .review-info .profile-info p {
+  color: white;
+  font-size: 1.2rem;
 }
 
 footer {
@@ -639,7 +683,6 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   height: 10rem;
-  margin-top: 2rem;
   /*TEXT*/
   color: white;
   background: #001f3f;
@@ -992,9 +1035,19 @@ footer {
   .about-section .answer p {
     font-size: 0.8rem;
   }
-  .review-section .review-title h2 {
-    font-size: 2rem;
-    color: #94b6f5;
+  /* REVIEW SECTION*/
+  .review-section h2 {
+    font-size: 2em;
+  }
+  .review-section .review .comment p {
+    font-size: 0.8rem;
+  }
+  .review-section .review .review-info .profile-pic img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .review-section .review .review-info .profile-info p {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
