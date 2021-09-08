@@ -95,7 +95,7 @@ header a:hover span {
   color: black;
 }
 
-header .header ul {
+header .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,7 +109,7 @@ header .header ul {
   list-style: none;
 }
 
-header .header ul li {
+header .nav ul li {
   font-size: 1.2rem;
   padding: 3rem;
   width: 100%;
@@ -118,13 +118,13 @@ header .header ul li {
   height: fit-content;
 }
 
-header .header ul a {
+header .nav ul a {
   text-decoration: none;
   color: black;
   font-weight: bolder;
 }
 
-header .header ul a:hover {
+header .nav ul a:hover {
   color: #1d50af;
 }
 
@@ -212,6 +212,8 @@ header .header ul a:hover {
 .user-intro .freelance-intro-title button,
 .freelance-intro .user-intro-title button,
 .freelance-intro .freelance-intro-title button {
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
   cursor: pointer;
   min-width: 30%;
   height: 40px;
@@ -572,5 +574,213 @@ footer {
   color: #1d50af;
   text-decoration: none;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .title {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem;
+  }
+  header .nav {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  header .nav ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #1d50af;
+  }
+  header .nav ul li {
+    width: 100%;
+    padding: 20px;
+  }
+  header .nav ul li a {
+    color: white;
+    font-size: 0.9rem;
+  }
+  header .nav ul li a:hover {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    color: white;
+    font-size: 1.3rem;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 5rem;
+    margin-top: 2rem;
+    /*TEXT*/
+    color: white;
+    background: #1d50af;
+    font-size: 0.6rem;
+  }
+  .user-intro,
+  .freelance-intro {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .user-intro .user-intro-title,
+  .user-intro .freelance-intro-title,
+  .freelance-intro .user-intro-title,
+  .freelance-intro .freelance-intro-title {
+    width: 90%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .user-intro .user-intro-title h3,
+  .user-intro .freelance-intro-title h3,
+  .freelance-intro .user-intro-title h3,
+  .freelance-intro .freelance-intro-title h3 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .user-intro .user-intro-title button,
+  .user-intro .freelance-intro-title button,
+  .freelance-intro .user-intro-title button,
+  .freelance-intro .freelance-intro-title button {
+    font-size: 1rem;
+  }
+  .user-intro .user-intro-title button:hover,
+  .user-intro .freelance-intro-title button:hover,
+  .freelance-intro .user-intro-title button:hover,
+  .freelance-intro .freelance-intro-title button:hover {
+    font-size: 1rem;
+  }
+  .user-intro .user-intro-title .description,
+  .user-intro .freelance-intro-title .description,
+  .freelance-intro .user-intro-title .description,
+  .freelance-intro .freelance-intro-title .description {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .user-intro .user-intro-image,
+  .user-intro .freelance-intro-image,
+  .freelance-intro .user-intro-image,
+  .freelance-intro .freelance-intro-image {
+    width: 80%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
