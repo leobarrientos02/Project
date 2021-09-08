@@ -296,6 +296,10 @@ $color3: rgb(148, 182, 245);
   height: fit-content;
   background: $color3;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   border-bottom: white 2px solid;
   h2 {
     width: 100%;
@@ -309,7 +313,7 @@ $color3: rgb(148, 182, 245);
     width: 70%;
     height: fit-content;
     padding: 0.5rem;
-    background: transparent;
+    background: rgba($color: #001f3f, $alpha: 0.5);
     border-radius: 10px;
     border: white 3px solid;
     .comment {
