@@ -65,6 +65,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #001f3f;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 0.5rem;
@@ -76,23 +77,23 @@ header h2 {
 
 header h2 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 header span {
-  color: #1d50af;
+  color: #94b6f5;
 }
 
 header a:hover {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  color: #1d50af;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  color: #94b6f5;
 }
 
 header a:hover span {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  color: black;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  color: white;
 }
 
 header .nav ul {
@@ -110,7 +111,7 @@ header .nav ul {
 }
 
 header .nav ul li {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 3rem;
   width: 100%;
   height: -webkit-fit-content;
@@ -120,33 +121,35 @@ header .nav ul li {
 
 header .nav ul a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bolder;
 }
 
 header .nav ul a:hover {
-  color: #1d50af;
+  -webkit-transition: all 1.3s ease-in-out;
+  transition: all 1.3s ease-in-out;
+  font-size: 1.55rem;
 }
 
 /*GLOBAL COLORS */
 /* STARTING INTROS */
-.user-intro,
-.freelance-intro {
+.user-intro {
   width: 100%;
+  height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem 0rem;
+  padding-top: 1.2rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.user-intro .user-intro-image,
-.user-intro .freelance-intro-image,
-.freelance-intro .user-intro-image,
-.freelance-intro .freelance-intro-image {
-  width: 40%;
-  height: 26rem;
+.user-intro .user-intro-image {
+  width: 50%;
+  height: 25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,28 +162,21 @@ header .nav ul a:hover {
           justify-content: center;
 }
 
-.user-intro .user-intro-image img,
-.user-intro .freelance-intro-image img,
-.freelance-intro .user-intro-image img,
-.freelance-intro .freelance-intro-image img {
+.user-intro .user-intro-image img {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border: #1d50af 4px solid;
+  border: #2281b8 4px solid;
+  border-radius: 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-.user-intro .user-intro-title,
-.user-intro .freelance-intro-title,
-.freelance-intro .user-intro-title,
-.freelance-intro .freelance-intro-title {
-  width: 60%;
+.user-intro .user-intro-title {
+  width: 65%;
   height: 25rem;
-  background: #94b6f5;
+  background: lightgrey;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,24 +190,25 @@ header .nav ul a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0rem 1rem;
+  margin: 0rem 0.5rem;
   padding: 1rem;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border: #181818 solid 4px;
+  border-radius: 10px;
 }
 
-.user-intro .user-intro-title h3,
-.user-intro .freelance-intro-title h3,
-.freelance-intro .user-intro-title h3,
-.freelance-intro .freelance-intro-title h3 {
+.user-intro .user-intro-title h3 {
+  text-align: center;
   font-size: 2.4rem;
   padding: 2rem;
 }
 
-.user-intro .user-intro-title button,
-.user-intro .freelance-intro-title button,
-.freelance-intro .user-intro-title button,
-.freelance-intro .freelance-intro-title button {
+.user-intro .user-intro-title span {
+  color: #2281b8;
+}
+
+.user-intro .user-intro-title button {
   padding-left: 0.4rem;
   padding-right: 0.4rem;
   cursor: pointer;
@@ -224,38 +221,32 @@ header .nav ul a:hover {
   margin-top: 1rem;
 }
 
-.user-intro .user-intro-title button a,
-.user-intro .freelance-intro-title button a,
-.freelance-intro .user-intro-title button a,
-.freelance-intro .freelance-intro-title button a {
+.user-intro .user-intro-title button a {
   text-decoration: none;
   color: #181818;
 }
 
-.user-intro .user-intro-title button:hover,
-.user-intro .freelance-intro-title button:hover,
-.freelance-intro .user-intro-title button:hover,
-.freelance-intro .freelance-intro-title button:hover {
+.user-intro .user-intro-title button:hover {
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
   cursor: pointer;
   min-width: 30%;
   height: 40px;
   font-size: 1.4rem;
   background: white;
-  border: #1d50af 3px solid;
+  border: #2281b8 3px solid;
   border-radius: 5px;
   margin-top: 1rem;
 }
 
-.user-intro .user-intro-title button:hover a,
-.user-intro .freelance-intro-title button:hover a,
-.freelance-intro .user-intro-title button:hover a,
-.freelance-intro .freelance-intro-title button:hover a {
+.user-intro .user-intro-title button:hover a {
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
   text-decoration: none;
-  color: #1d50af;
+  color: #2281b8;
 }
 
-.user-intro .description,
-.freelance-intro .description {
+.user-intro .description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,39 +265,186 @@ header .nav ul a:hover {
   text-align: center;
 }
 
-.user-intro .description img,
-.freelance-intro .description img {
+.user-intro .description img {
   margin-bottom: 1.4rem;
   margin-right: 4px;
   width: 3rem;
   height: 3rem;
 }
 
-.user-intro .description p,
-.freelance-intro .description p {
+.user-intro .description p {
   margin-right: 0.8rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: bolder;
-}
-
-.user-intro .user-intro-title {
-  border: lightgray 3px solid;
+  color: #2281b8;
 }
 
 .freelance-intro {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-}
-
-.freelance-intro .freelance-intro-image img {
-  border: #94b6f5 4px solid;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1rem;
 }
 
 .freelance-intro .freelance-intro-title {
-  background: lightgray;
-  border: black 3px solid;
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.freelance-intro .freelance-intro-title h3 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.freelance-intro .freelance-intro-title span {
+  color: #2281b8;
+}
+
+.freelance-intro .freelance-intro-image {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.freelance-intro .freelance-intro-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 30rem;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+.freelance-intro .freelance-intro-image .image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: white 3px solid;
+  padding: 1rem;
+}
+
+.freelance-intro .freelance-intro-image .image-text h4 {
+  font-size: 4rem;
+  color: white;
+}
+
+.freelance-intro .description {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.freelance-intro .description img {
+  width: 5rem;
+  height: 5em;
+}
+
+.freelance-intro .description p {
+  font-size: 1.7rem;
+  font-weight: bolder;
+}
+
+.freelance-intro .description span {
+  color: #2281b8;
+}
+
+.freelance-intro .description .no-contract,
+.freelance-intro .description .small-fees,
+.freelance-intro .description .network,
+.freelance-intro .description .save-money {
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.freelance-intro button {
+  padding: 0.5rem;
+  cursor: pointer;
+  min-width: 30%;
+  height: 50px;
+  font-size: 1.4rem;
+  background: white;
+  border: #181818 4px solid;
+  border-radius: 5px;
+  margin: 2rem;
+}
+
+.freelance-intro button a {
+  text-decoration: none;
+  color: #181818;
+}
+
+.freelance-intro button:hover {
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  padding: 0.5rem;
+  cursor: pointer;
+  min-width: 30%;
+  height: 50px;
+  font-size: 1.4rem;
+  background: white;
+  border: #2281b8 4px solid;
+  border-radius: 5px;
+  margin: 2rem;
+}
+
+.freelance-intro button:hover a {
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  text-decoration: none;
+  color: #2281b8;
 }
 
 /* ENDING OF THE INTROS */
@@ -316,7 +454,7 @@ header .nav ul a:hover {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background: #1d50af;
+  background: #001f3f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,7 +547,7 @@ footer {
   margin-top: 2rem;
   /*TEXT*/
   color: white;
-  background: #1d50af;
+  background: #001f3f;
   font-size: 0.8rem;
 }
 
@@ -616,7 +754,6 @@ footer {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    background-color: #1d50af;
   }
   header .nav ul {
     display: -webkit-box;
@@ -632,7 +769,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #1d50af;
+    background: #94b6f5;
   }
   header .nav ul li {
     width: 100%;
@@ -646,7 +783,7 @@ footer {
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   footer {
     display: -webkit-box;
@@ -665,8 +802,7 @@ footer {
     background: #1d50af;
     font-size: 0.6rem;
   }
-  .user-intro,
-  .freelance-intro {
+  .user-intro {
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -687,10 +823,7 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  .user-intro .user-intro-title,
-  .user-intro .freelance-intro-title,
-  .freelance-intro .user-intro-title,
-  .freelance-intro .freelance-intro-title {
+  .user-intro .user-intro-title {
     width: 95%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -711,29 +844,17 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  .user-intro .user-intro-title h3,
-  .user-intro .freelance-intro-title h3,
-  .freelance-intro .user-intro-title h3,
-  .freelance-intro .freelance-intro-title h3 {
+  .user-intro .user-intro-title h3 {
     text-align: center;
     font-size: 1.6rem;
   }
-  .user-intro .user-intro-title button,
-  .user-intro .freelance-intro-title button,
-  .freelance-intro .user-intro-title button,
-  .freelance-intro .freelance-intro-title button {
+  .user-intro .user-intro-title button {
     font-size: 1rem;
   }
-  .user-intro .user-intro-title button:hover,
-  .user-intro .freelance-intro-title button:hover,
-  .freelance-intro .user-intro-title button:hover,
-  .freelance-intro .freelance-intro-title button:hover {
+  .user-intro .user-intro-title button:hover {
     font-size: 1rem;
   }
-  .user-intro .user-intro-title .description,
-  .user-intro .freelance-intro-title .description,
-  .freelance-intro .user-intro-title .description,
-  .freelance-intro .freelance-intro-title .description {
+  .user-intro .user-intro-title .description {
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -754,18 +875,12 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  .user-intro .user-intro-title .description p,
-  .user-intro .freelance-intro-title .description p,
-  .freelance-intro .user-intro-title .description p,
-  .freelance-intro .freelance-intro-title .description p {
+  .user-intro .user-intro-title .description p {
     font-size: 1rem;
     padding: 0;
     margin: 0;
   }
-  .user-intro .user-intro-title .description img,
-  .user-intro .freelance-intro-title .description img,
-  .freelance-intro .user-intro-title .description img,
-  .freelance-intro .freelance-intro-title .description img {
+  .user-intro .user-intro-title .description img {
     margin: 0;
     padding: 0;
     width: 2.5rem;
@@ -773,10 +888,7 @@ footer {
     margin-bottom: 5px;
     margin-top: 5px;
   }
-  .user-intro .user-intro-image,
-  .user-intro .freelance-intro-image,
-  .freelance-intro .user-intro-image,
-  .freelance-intro .freelance-intro-image {
+  .user-intro .user-intro-image {
     width: 80%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -798,14 +910,139 @@ footer {
             align-items: center;
     padding: 1rem;
   }
-  .user-intro .user-intro-image img,
-  .user-intro .freelance-intro-image img,
-  .freelance-intro .user-intro-image img,
-  .freelance-intro .freelance-intro-image img {
+  .user-intro .user-intro-image img {
     width: 100%;
     height: 17rem;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .freelance-intro {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1rem;
+  }
+  .freelance-intro .freelance-intro-title {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .freelance-intro .freelance-intro-title h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .freelance-intro .freelance-intro-title span {
+    color: #2295b8;
+  }
+  .freelance-intro .freelance-intro-image {
+    display: none;
+  }
+  .description {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .description img {
+    width: 2rem;
+    height: 2em;
+  }
+  .description p {
+    font-size: 0.6rem;
+    font-weight: bolder;
+  }
+  .description span {
+    color: #2295b8;
+  }
+  .description .no-contract,
+  .description .small-fees,
+  .description .network,
+  .description .save-money {
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+  }
+  button {
+    padding: 0.5rem;
+    cursor: pointer;
+    min-width: 30%;
+    height: 50px;
+    font-size: 1rem;
+    background: white;
+    border: #181818 4px solid;
+    border-radius: 5px;
+    margin: 2rem;
+  }
+  button a {
+    text-decoration: none;
+    color: #181818;
+  }
+  button:hover {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    padding: 0.5rem;
+    cursor: pointer;
+    min-width: 30%;
+    height: 50px;
+    font-size: 1rem;
+    background: white;
+    border: #2295b8 4px solid;
+    border-radius: 5px;
+    margin: 2rem;
+  }
+  button:hover a {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    text-decoration: none;
+    color: #2295b8;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -26,13 +26,12 @@ $color3: rgb(148, 182, 245);
     .nav {
       width: 100%;
       height: fit-content;
-      background-color: $color2;
       ul {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        background: $color2;
+        background: $color3;
         li {
           width: 100%;
           padding: 20px;
@@ -43,7 +42,7 @@ $color3: rgb(148, 182, 245);
           a:hover {
             transition: all 1s ease-in-out;
             color: white;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
           }
         }
       }
@@ -60,8 +59,7 @@ $color3: rgb(148, 182, 245);
     background: $color2;
     font-size: 0.6rem;
   }
-  .user-intro,
-  .freelance-intro {
+  .user-intro {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -69,8 +67,7 @@ $color3: rgb(148, 182, 245);
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    .user-intro-title,
-    .freelance-intro-title {
+    .user-intro-title {
       width: 95%;
       height: fit-content;
       display: flex;
@@ -111,8 +108,7 @@ $color3: rgb(148, 182, 245);
         }
       }
     }
-    .user-intro-image,
-    .freelance-intro-image {
+    .user-intro-image {
       width: 80%;
       height: fit-content;
       display: flex;
@@ -127,5 +123,95 @@ $color3: rgb(148, 182, 245);
         object-fit: cover;
       }
     }
+  }
+  .freelance-intro {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    .freelance-intro-title {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      h3 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+      }
+      span {
+        color: $color1;
+      }
+    }
+    .freelance-intro-image {
+      display: none;
+    }
+  }
+  .description {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 2rem;
+      height: 2em;
+    }
+    p {
+      font-size: 0.6rem;
+      font-weight: bolder;
+    }
+    span {
+      color: $color1;
+    }
+    .no-contract,
+    .small-fees,
+    .network,
+    .save-money {
+      text-align: center;
+      padding: 1rem;
+      margin: 2rem;
+    }
+  }
+  button {
+    padding: 0.5rem;
+    a {
+      text-decoration: none;
+      color: #181818;
+    }
+    cursor: pointer;
+    min-width: 30%;
+    height: 50px;
+    font-size: 1rem;
+    background: white;
+    border: #181818 4px solid;
+    border-radius: 5px;
+    margin: 2rem;
+  }
+  button:hover {
+    transition: all 0.7s ease;
+    padding: 0.5rem;
+    a {
+      transition: all 0.7s ease;
+      text-decoration: none;
+      color: $color1;
+    }
+    cursor: pointer;
+    min-width: 30%;
+    height: 50px;
+    font-size: 1rem;
+    background: white;
+    border: $color1 4px solid;
+    border-radius: 5px;
+    margin: 2rem;
   }
 }
