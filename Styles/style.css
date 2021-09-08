@@ -516,8 +516,8 @@ header .nav ul a:hover {
 }
 
 /* ENDING OF THE INTROS */
-/* JOBS SECTION */
-.jobs {
+/* Service Section */
+.service-section {
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -526,10 +526,43 @@ header .nav ul a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+
+.service-section .service {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+}
+
+/* About SECTION */
+.about-section {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -541,46 +574,24 @@ header .nav ul a:hover {
   padding: 2rem;
 }
 
-.jobs .coding {
-  padding: 1rem;
-  margin: 1rem;
-  background: lightgreen;
+.about-section .about {
+  width: 90%;
 }
 
-.jobs .accounting {
-  padding: 1rem;
-  margin: 1rem;
-  background: lightgreen;
+.about-section h4 {
+  font-size: 3.1rem;
 }
 
-.jobs .designing {
-  padding: 1rem;
-  margin: 1rem;
-  background: lightgreen;
+.about-section span {
+  color: #94b6f5;
 }
 
-.jobs .repairing {
-  padding: 1rem;
-  margin: 1rem;
-  background: lightgreen;
+.about-section .answer {
+  padding: 1rem 0rem;
 }
 
-.jobs .school-work {
-  padding: 1rem;
-  margin: 1rem;
-  background: lightgreen;
-}
-
-.jobs .more {
-  padding: 1rem;
-  margin: 1rem;
-  background: lightgreen;
-}
-
-.jobs .others {
-  padding: 1rem;
-  margin: 1rem;
-  background: lightgreen;
+.about-section .answer p {
+  font-size: 1.3rem;
 }
 
 /* REVIEW SECTION*/
@@ -598,7 +609,23 @@ header .nav ul a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem;
+  background: #001f3f;
+  padding: 2.2rem 0rem;
+}
+
+.review-section .review-title {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  background: white;
+  padding: 1.5rem;
+}
+
+.review-section .review-title h2 {
+  font-size: 3.8rem;
+  color: #94b6f5;
 }
 
 footer {
@@ -789,33 +816,9 @@ footer {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   header .title {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding: 1rem;
   }
   header .nav {
@@ -824,51 +827,20 @@ footer {
     height: -moz-fit-content;
     height: fit-content;
   }
-  header .nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: #94b6f5;
-  }
   header .nav ul li {
     width: 100%;
     padding: 20px;
   }
   header .nav ul li a {
-    color: white;
     font-size: 1rem;
   }
   header .nav ul li a:hover {
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-    color: white;
     font-size: 1.1rem;
   }
   footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     height: 5rem;
     margin-top: 2rem;
     /*TEXT*/
-    color: white;
-    background: #001f3f;
     font-size: 0.6rem;
   }
   .user-intro {
@@ -876,84 +848,17 @@ footer {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-top: 3rem;
   }
   .user-intro .user-intro-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
-    text-align: center;
   }
   .user-intro .user-intro-title h3 {
     padding-right: 4px;
     font-size: 2rem;
   }
-  .user-intro .user-intro-title span {
-    color: #94b6f5;
-  }
   .user-intro .description {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
-  }
-  .user-intro .description .money,
-  .user-intro .description .experience,
-  .user-intro .description .money-back {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
   }
   .user-intro .description .money img,
   .user-intro .description .experience img,
@@ -966,60 +871,22 @@ footer {
   .user-intro .description .money-back p {
     font-size: 1.5rem;
   }
-  .user-intro .description .money span,
-  .user-intro .description .experience span,
-  .user-intro .description .money-back span {
-    color: #94b6f5;
-  }
   .user-intro button {
     padding: 0.5rem;
-    cursor: pointer;
     min-width: 30%;
     height: 50px;
     font-size: 0.8rem;
-    background: white;
-    border: #181818 4px solid;
-    border-radius: 5px;
-  }
-  .user-intro button a {
-    text-decoration: none;
-    color: #181818;
   }
   .user-intro button:hover {
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
     padding: 0.5rem;
-    cursor: pointer;
     min-width: 30%;
     height: 50px;
     font-size: 0.8rem;
-    background: white;
-    border: #2281b8 4px solid;
-    border-radius: 5px;
-  }
-  .user-intro button:hover a {
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
-    text-decoration: none;
-    color: #2281b8;
   }
   .image-gallery {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
@@ -1029,12 +896,8 @@ footer {
     height: 11rem;
   }
   .image-gallery .image img {
-    -webkit-filter: blur(2px);
-            filter: blur(2px);
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .image-gallery .image img:hover {
     -webkit-transition: all 1s ease;
@@ -1058,88 +921,51 @@ footer {
   }
   .image-gallery .image-text p {
     font-size: 0.8rem;
-    font-weight: bold;
-    color: white;
   }
   .freelance-intro {
-    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding-top: 1rem;
   }
   .freelance-intro .freelance-intro-title {
-    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .freelance-intro .freelance-intro-title h2 {
     font-size: 1rem;
-    border: 3px solid #94b6f5;
-    padding: 1rem;
   }
   .freelance-intro .freelance-intro-title h3 {
-    text-align: center;
     font-size: 2rem;
-    padding: 1rem;
-  }
-  .freelance-intro .freelance-intro-title span {
-    color: #2281b8;
   }
   .freelance-intro .freelance-intro-image {
-    display: none;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .freelance-intro .freelance-intro-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    width: 100%;
+    height: 30rem;
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+  .freelance-intro .freelance-intro-image .image-text {
+    padding: 1rem;
+  }
+  .freelance-intro .freelance-intro-image .image-text h4 {
+    text-align: center;
+    font-size: 3rem;
   }
   .description {
-    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .description img {
     width: 2rem;
@@ -1147,52 +973,28 @@ footer {
   }
   .description p {
     font-size: 0.6rem;
-    font-weight: bolder;
-  }
-  .description span {
-    color: #2281b8;
-  }
-  .description .no-contract,
-  .description .small-fees,
-  .description .network,
-  .description .save-money {
-    text-align: center;
-    padding: 1rem;
-    margin: 2rem;
   }
   button {
     padding: 0.5rem;
-    cursor: pointer;
     min-width: 30%;
     height: 50px;
     font-size: 1rem;
-    background: white;
-    border: #181818 4px solid;
-    border-radius: 5px;
-    margin: 2rem;
-  }
-  button a {
-    text-decoration: none;
-    color: #181818;
   }
   button:hover {
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
-    padding: 0.5rem;
     cursor: pointer;
     min-width: 30%;
     height: 50px;
     font-size: 1rem;
-    background: white;
-    border: #2281b8 4px solid;
-    border-radius: 5px;
-    margin: 2rem;
   }
-  button:hover a {
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
-    text-decoration: none;
-    color: #2281b8;
+  .about-section h4 {
+    font-size: 1.8rem;
+  }
+  .about-section .answer p {
+    font-size: 0.8rem;
+  }
+  .review-section .review-title h2 {
+    font-size: 2rem;
+    color: #94b6f5;
   }
 }
 /*# sourceMappingURL=style.css.map */

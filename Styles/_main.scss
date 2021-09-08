@@ -246,52 +246,47 @@ $color3: rgb(148, 182, 245);
   }
 }
 /* ENDING OF THE INTROS */
-
-/* JOBS SECTION */
-.jobs {
+/* Service Section */
+.service-section {
   width: 100%;
   height: fit-content;
   background: $color2;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+  .service {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+  }
+}
+/* About SECTION */
+.about-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  .coding {
-    padding: 1rem;
-    margin: 1rem;
-    background: lightgreen;
+  .about {
+    width: 90%;
   }
-  .accounting {
-    padding: 1rem;
-    margin: 1rem;
-    background: lightgreen;
+  h4 {
+    font-size: 3.1rem;
   }
-  .designing {
-    padding: 1rem;
-    margin: 1rem;
-    background: lightgreen;
+  span {
+    color: $color3;
   }
-  .repairing {
-    padding: 1rem;
-    margin: 1rem;
-    background: lightgreen;
-  }
-  .school-work {
-    padding: 1rem;
-    margin: 1rem;
-    background: lightgreen;
-  }
-  .more {
-    padding: 1rem;
-    margin: 1rem;
-    background: lightgreen;
-  }
-  .others {
-    padding: 1rem;
-    margin: 1rem;
-    background: lightgreen;
+  .answer {
+    padding: 1rem 0rem;
+    p {
+      font-size: 1.3rem;
+    }
   }
 }
 
@@ -302,5 +297,17 @@ $color3: rgb(148, 182, 245);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  background: $color2;
+  padding: 2.2rem 0rem;
+  .review-title {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    background: white;
+    padding: 1.5rem;
+    h2 {
+      font-size: 3.8rem;
+      color: $color3;
+    }
+  }
 }
