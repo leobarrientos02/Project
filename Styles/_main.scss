@@ -250,17 +250,40 @@ $color3: rgb(148, 182, 245);
 .service-section {
   width: 100%;
   height: fit-content;
-  background: $color2;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  background: $color3;
   padding: 2rem;
-  .service {
-    width: 90%;
+  .container {
+    width: 100%;
     height: fit-content;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .website,
+  .mobile-app {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 3rem;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background: white;
+    padding: 1rem 2rem;
+    h2 {
+      font-size: 3.4rem;
+    }
   }
 }
 /* About SECTION */

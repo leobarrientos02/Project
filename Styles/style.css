@@ -522,21 +522,6 @@ header .nav ul a:hover {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background: #001f3f;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2rem;
-}
-
-.service-section .service {
-  width: 90%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -544,10 +529,77 @@ header .nav ul a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #94b6f5;
+  padding: 2rem;
+}
+
+.service-section .container {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service-section .website,
+.service-section .mobile-app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+  padding: 3rem;
+}
+
+.service-section .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background: white;
+  padding: 1rem 2rem;
+}
+
+.service-section .title h2 {
+  font-size: 3.4rem;
 }
 
 /* About SECTION */
@@ -869,13 +921,27 @@ footer {
 @media screen and (max-width: 768px) {
   header {
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
   header .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
+    background: #94b6f5;
     padding: 1rem;
+  }
+  header .title span {
+    color: #001f3f;
   }
   header .nav {
     width: 100%;
@@ -1060,6 +1126,28 @@ footer {
   }
   .review-section .review .review-info .profile-info p {
     font-size: 0.8rem;
+  }
+  .service-section h2 {
+    font-size: 2.5rem;
+  }
+  .service-section .website h2 {
+    font-size: 1.5rem;
+  }
+  .service-section .mobile-app h2 {
+    font-size: 1.5rem;
+  }
+  .service-section .mobile-app .image {
+    width: 25rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 0;
+  }
+  .service-section .mobile-app .image .image-text {
+    font-size: 0.8rem;
+  }
+  .service-section .mobile-app .image img {
+    border-radius: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
