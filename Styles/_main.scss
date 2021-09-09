@@ -13,6 +13,7 @@ $color3: rgb(148, 182, 245);
   align-items: center;
   margin-top: 3rem;
   .user-intro-title {
+    opacity: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -142,6 +143,7 @@ $color3: rgb(148, 182, 245);
   align-items: center;
   padding-top: 1rem;
   .freelance-intro-title {
+    opacity: 0;
     width: 100%;
     height: fit-content;
     display: flex;
