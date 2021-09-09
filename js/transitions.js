@@ -5,17 +5,15 @@ function animation() {
   // Init controller
   controller = new ScrollMagic.Controller();
   //Select some things
-  const userTitle = document.querySelector(".user-intro-title");
-  const description = document.querySelectorAll(".description");
+  const sliders = document.querySelectorAll(".slide");
   //Timeline to chain togather multiple animation
   const slideT1 = gsap.timeline({
-    defauls: {
+    defaults: {
       duration: 1,
       ease: "power2.inOut",
     },
   });
-  slideT1.fromTo(userTitle, 5, { opacity: "0" }, { opacity: "1" });
-  slideT1.To(description, 1, { x: "0%" });
+  slideT1.fromTo(sliders, 1.5, { x: "0%" }, { x: "100%" });
   //Create scene
   slideSCene = new ScrollMagic.Scence({
     triggerElement,

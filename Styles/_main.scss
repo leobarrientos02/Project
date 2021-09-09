@@ -5,15 +5,20 @@ $color3: rgb(148, 182, 245);
 /* STARTING INTROS */
 .user-intro {
   width: 100%;
-  height: 80vh;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  padding: 3rem;
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $color2;
+  }
   .user-intro-title {
-    opacity: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
