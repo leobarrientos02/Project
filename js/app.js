@@ -17,3 +17,4 @@ icon.addEventListener("click", () => {
   }
 });
 // Show password function ends */
+const auth = "Ps9lQtHCDzcpbhj37P5PFDroF7kaJx";
