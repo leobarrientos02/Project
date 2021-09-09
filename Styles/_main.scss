@@ -40,7 +40,9 @@ $color3: rgb(148, 182, 245);
     .experience,
     .money-back {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
       align-items: center;
       margin: 2rem;
       img {
@@ -50,9 +52,10 @@ $color3: rgb(148, 182, 245);
       }
       p {
         font-size: 2rem;
+        font-weight: bolder;
       }
       span {
-        color: $color3;
+        color: $color1;
       }
     }
   }
