@@ -630,6 +630,7 @@ header .nav ul a:hover {
 
 .service-section .website .image-container .text h3,
 .service-section .mobile-app .image-container .text h3 {
+  text-decoration: none;
   color: white;
   font-size: 1.5rem;
 }
