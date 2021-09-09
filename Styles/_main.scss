@@ -55,7 +55,7 @@ $color3: rgb(148, 182, 245);
         font-weight: bolder;
       }
       span {
-        color: $color1;
+        color: $color3;
       }
     }
   }
@@ -149,9 +149,10 @@ $color3: rgb(148, 182, 245);
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
     h2 {
       font-size: 2rem;
-      border: 5px solid $color3;
+      border: 5px solid $color1;
       padding: 1rem;
     }
     h3 {
