@@ -549,6 +549,8 @@ header .nav ul a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -580,6 +582,58 @@ header .nav ul a:hover {
   padding: 3rem;
 }
 
+.service-section .website h3,
+.service-section .mobile-app h3 {
+  text-decoration: underline;
+  font-size: 3rem;
+}
+
+.service-section .website .image-container,
+.service-section .mobile-app .image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1rem;
+  border-radius: 15px;
+  padding: 1rem;
+  background: rgba(0, 31, 63, 0.7);
+}
+
+.service-section .website .image-container .image,
+.service-section .mobile-app .image-container .image {
+  width: 10rem;
+}
+
+.service-section .website .image-container .image img,
+.service-section .mobile-app .image-container .image img {
+  border-radius: 15px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.service-section .website .image-container .text,
+.service-section .mobile-app .image-container .text {
+  width: 50%;
+  text-align: center;
+}
+
+.service-section .website .image-container .text h3,
+.service-section .mobile-app .image-container .text h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+
 .service-section .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,7 +649,7 @@ header .nav ul a:hover {
       -ms-flex-align: center;
           align-items: center;
   background: white;
-  padding: 1rem 2rem;
+  padding: 0.5rem;
 }
 
 .service-section .title h2 {
@@ -1127,27 +1181,21 @@ footer {
   .review-section .review .review-info .profile-info p {
     font-size: 0.8rem;
   }
-  .service-section h2 {
-    font-size: 2.5rem;
+  /* Service Section */
+  .service-section .website h3,
+  .service-section .mobile-app h3 {
+    font-size: 3rem;
   }
-  .service-section .website h2 {
-    font-size: 1.5rem;
+  .service-section .website .image-container .image,
+  .service-section .mobile-app .image-container .image {
+    width: 6rem;
   }
-  .service-section .mobile-app h2 {
-    font-size: 1.5rem;
+  .service-section .website .image-container .text h3,
+  .service-section .mobile-app .image-container .text h3 {
+    font-size: 0.7rem;
   }
-  .service-section .mobile-app .image {
-    width: 25rem;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    border-radius: 0;
-  }
-  .service-section .mobile-app .image .image-text {
-    font-size: 0.8rem;
-  }
-  .service-section .mobile-app .image img {
-    border-radius: 5px;
+  .service-section .title h2 {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

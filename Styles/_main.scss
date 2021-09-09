@@ -261,6 +261,7 @@ $color3: rgb(148, 182, 245);
     width: 100%;
     height: fit-content;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -273,6 +274,36 @@ $color3: rgb(148, 182, 245);
     align-items: center;
     margin: 1rem;
     padding: 3rem;
+    h3 {
+      text-decoration: underline;
+      font-size: 3rem;
+    }
+    .image-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      margin: 1rem;
+      border-radius: 15px;
+      padding: 1rem;
+      background: rgba($color: #001f3f, $alpha: 0.7);
+      .image {
+        width: 10rem;
+        img {
+          border-radius: 15px;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .text {
+        width: 50%;
+        text-align: center;
+        h3 {
+          color: white;
+          font-size: 1.5rem;
+        }
+      }
+    }
   }
   .title {
     display: flex;
@@ -280,7 +311,7 @@ $color3: rgb(148, 182, 245);
     justify-content: center;
     align-items: center;
     background: white;
-    padding: 1rem 2rem;
+    padding: 0.5rem;
     h2 {
       font-size: 3.4rem;
     }

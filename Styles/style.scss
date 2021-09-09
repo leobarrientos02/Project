@@ -209,29 +209,27 @@ $color3: rgb(148, 182, 245);
       }
     }
   }
+  /* Service Section */
   .service-section {
-    h2 {
-      font-size: 2.5rem;
-    }
-    .website {
-      h2 {
-        font-size: 1.5rem;
-      }
-    }
+    .website,
     .mobile-app {
-      h2 {
-        font-size: 1.5rem;
+      h3 {
+        font-size: 3rem;
       }
-      .image {
-        width: 25rem;
-        height: fit-content;
-        border-radius: 0;
-        .image-text {
-          font-size: 0.8rem;
+      .image-container {
+        .image {
+          width: 6rem;
         }
-        img {
-          border-radius: 5px;
+        .text {
+          h3 {
+            font-size: 0.7rem;
+          }
         }
+      }
+    }
+    .title {
+      h2 {
+        font-size: 2rem;
       }
     }
   }
