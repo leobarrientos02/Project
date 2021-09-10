@@ -1078,8 +1078,6 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1095,46 +1093,13 @@ h2 {
 }
 
 .login-container .login-form .login-title {
+  margin: 1rem;
   text-align: center;
 }
 
 .login-container .login-form .login-title h4 {
   font-size: 3rem;
   text-decoration: underline;
-}
-
-.login-container .login-form .profile-pic {
-  border: 4px #001f3f solid;
-  border-radius: 50%;
-  width: 8rem;
-  height: 8rem;
-  margin: 1rem;
-}
-
-.login-container .login-form .profile-pic img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.login-container .login-form .profile-pic:hover {
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  border: 4px #94b6f5 solid;
-  border-radius: 50%;
-  width: 8rem;
-  height: 8rem;
-  margin: 1rem;
-}
-
-.login-container .login-form .profile-pic:hover img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .login-container .login-form .email {
@@ -1206,13 +1171,10 @@ h2 {
 }
 
 .login-container .login-form .button {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1222,8 +1184,8 @@ h2 {
 }
 
 .login-container .login-form .button button {
-  width: 15rem;
-  height: 3rem;
+  width: 100%;
+  padding: 0.5rem;
   cursor: pointer;
   background: #94b6f5;
   border: none;
@@ -1234,10 +1196,9 @@ h2 {
 .login-container .login-form .button button:hover {
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
-  width: 15rem;
-  height: 3rem;
+  width: 100%;
+  padding: 0.5rem;
   cursor: pointer;
-  border: white solid 3px;
   color: white;
   font-size: 1.5rem;
 }
@@ -1273,6 +1234,86 @@ h2 {
   font-size: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  header .nav {
+    width: 100%;
+  }
+  .login-container {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .login-container .login-form {
+    width: 70%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .login-container .login-form .login-title {
+    margin: 1rem;
+    text-align: center;
+  }
+  .login-container .login-form .login-title h4 {
+    font-size: 3rem;
+    text-decoration: underline;
+  }
+  .login-container .login-form .email {
+    width: 100%;
+  }
+  .login-container .login-form .email label {
+    font-size: 1rem;
+  }
+  .login-container .login-form .email input {
+    margin: 0.5rem;
+    width: 90%;
+  }
+  .login-container .login-form .password {
+    width: 100%;
+  }
+  .login-container .login-form .password label {
+    font-size: 1rem;
+  }
+  .login-container .login-form .password input {
+    width: 90%;
+  }
+  .login-container .login-form .show-password {
+    margin: 0.3rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .login-container .login-form .show-password input {
+    width: 1.5rem;
+  }
+  .login-container .login-form .button button {
+    font-size: 1rem;
+  }
+  .login-container .login-form .button button:hover {
+    font-size: 1rem;
+  }
+  .login-container .login-form .links {
+    width: 100%;
+  }
+  .login-container .login-form .links a {
+    font-size: 0.6rem;
+  }
+  .login-container .login-form .links a:hover {
+    font-size: 0.6rem;
+  }
+}
+
 /*GLOBAL COLORS */
 @media screen and (max-width: 768px) {
   header {
@@ -1296,10 +1337,22 @@ h2 {
     background: #94b6f5;
     padding: 1rem;
   }
+  header .title h2 a:hover {
+    color: #001f3f;
+  }
   header .title span {
     color: #001f3f;
   }
   header .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
