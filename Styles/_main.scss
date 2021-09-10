@@ -59,14 +59,18 @@ $color3: rgb(148, 182, 245);
       }
     }
   }
+  a {
+    text-decoration: none;
+    color: #181818;
+  }
   button {
-    padding: 0.5rem;
-    a {
-      text-decoration: none;
-      color: #181818;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 1rem;
     cursor: pointer;
-    min-width: 30%;
+    min-width: 50%;
     height: 50px;
     font-size: 1.4rem;
     background: white;
@@ -74,8 +78,11 @@ $color3: rgb(148, 182, 245);
     border-radius: 5px;
   }
   button:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.7s ease;
-    padding: 0.5rem;
+    padding: 1rem;
     a {
       transition: all 0.7s ease;
       text-decoration: none;
