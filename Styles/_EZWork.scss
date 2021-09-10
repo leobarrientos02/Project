@@ -129,33 +129,14 @@ $color3: rgb(148, 182, 245);
       display: flex;
       width: 100%;
       justify-content: space-evenly;
-      .category1,
-      .category2,
-      .category3,
-      .category4,
-      .category5,
-      .category6 {
-        cursor: pointer;
-        padding: 1rem;
-        color: white;
-        font-size: 1.2rem;
-        font-weight: bold;
-        background-color: $color2;
-      }
-      .category7,
-      .category8,
-      .category9,
-      .category10,
-      .category11,
-      .category12 {
-        cursor: pointer;
-        padding: 1rem;
-        color: white;
-        font-size: 1.2rem;
-        font-weight: bold;
-        background-color: $color2;
-        display: none;
-      }
+    }
+    .category {
+      cursor: pointer;
+      padding: 1rem;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background-color: $color2;
     }
     .arrow-back,
     .arrow-forward {
@@ -168,8 +149,4 @@ $color3: rgb(148, 182, 245);
       }
     }
   }
-}
-.animate {
-  opacity: 0;
-  transition: all 1.5s ease-in;
 }

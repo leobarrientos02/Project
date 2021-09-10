@@ -69,7 +69,6 @@ header {
   background: #001f3f;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 0.5rem;
 }
 
 header h2 {
@@ -1006,33 +1005,13 @@ header .nav ul a:hover {
           justify-content: space-evenly;
 }
 
-.ezwork-container .categories-section .categories .category1,
-.ezwork-container .categories-section .categories .category2,
-.ezwork-container .categories-section .categories .category3,
-.ezwork-container .categories-section .categories .category4,
-.ezwork-container .categories-section .categories .category5,
-.ezwork-container .categories-section .categories .category6 {
+.ezwork-container .categories-section .category {
   cursor: pointer;
   padding: 1rem;
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
   background-color: #001f3f;
-}
-
-.ezwork-container .categories-section .categories .category7,
-.ezwork-container .categories-section .categories .category8,
-.ezwork-container .categories-section .categories .category9,
-.ezwork-container .categories-section .categories .category10,
-.ezwork-container .categories-section .categories .category11,
-.ezwork-container .categories-section .categories .category12 {
-  cursor: pointer;
-  padding: 1rem;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  background-color: #001f3f;
-  display: none;
 }
 
 .ezwork-container .categories-section .arrow-back,
@@ -1046,12 +1025,6 @@ header .nav ul a:hover {
   color: #001f3f;
   font-weight: bold;
   font-size: 2rem;
-}
-
-.animate {
-  opacity: 0;
-  -webkit-transition: all 1.5s ease-in;
-  transition: all 1.5s ease-in;
 }
 
 footer {
@@ -1071,25 +1044,101 @@ footer {
   font-size: 0.8rem;
 }
 
-/*GLOBAL COLORS */
-.form-container {
+h2 {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 3rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
 }
 
-.form-container form {
+.login-container .login-form {
+  width: 40%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  border: 4px #001f3f solid;
+}
+
+.login-container .login-form .login-title {
+  text-align: center;
+}
+
+.login-container .login-form .login-title h4 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.login-container .login-form .profile-pic {
+  border: 4px #001f3f solid;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  margin: 1rem;
+}
+
+.login-container .login-form .profile-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.login-container .login-form .profile-pic:hover {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border: 4px #94b6f5 solid;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  margin: 1rem;
+}
+
+.login-container .login-form .profile-pic:hover img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.login-container .login-form .email {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1100,49 +1149,43 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
-  padding: 1rem 5rem 2rem 5rem;
-  border-radius: 1rem;
 }
 
-.form-container form p {
-  font-size: 3rem;
-  font-weight: bolder;
-  text-decoration: underline;
+.login-container .login-form .email label {
+  font-size: 1.4rem;
 }
 
-.form-container form button {
-  width: 12rem;
-  padding: 0.5rem;
+.login-container .login-form .email input {
   margin: 0.5rem;
-  font-size: 1.3rem;
-  cursor: pointer;
-  background: transparent;
-  border: 4px solid black;
-  border-radius: 10px;
-  color: black;
+  width: 60%;
 }
 
-.form-container form button:hover {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  width: 12rem;
-  padding: 0.5rem;
+.login-container .login-form .password {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container .login-form .password label {
   margin: 0.5rem;
-  font-size: 1.3rem;
-  cursor: pointer;
-  background: transparent;
-  border: 4px solid #1d50af;
-  border-radius: 10px;
-  color: #1d50af;
+  font-size: 1.4rem;
 }
 
-.username,
-.password {
+.login-container .login-form .password input {
+  width: 60%;
+}
+
+.login-container .login-form .show-password {
+  margin: 0.3rem;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1156,82 +1199,78 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.5rem;
 }
 
-.username label,
-.password label {
-  font-size: 1.5rem;
+.login-container .login-form .show-password input {
+  width: 1.5rem;
 }
 
-.username input,
-.password input {
-  width: 10rem;
-  height: 30px;
-  margin: 1rem 0rem 1rem 1rem;
-  background: #f1efef;
-}
-
-.username .user-icon,
-.username .password-icon,
-.password .user-icon,
-.password .password-icon {
+.login-container .login-form .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 30px;
-  width: 30px;
-  border: black 1px solid;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-.username .password-icon,
-.password .password-icon {
-  cursor: pointer;
-}
-
-.username .password-icon:hover,
-.password .password-icon:hover {
-  background: lightgray;
-}
-
-.help {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 1rem;
 }
 
-.help a {
+.login-container .login-form .button button {
+  width: 15rem;
+  height: 3rem;
+  cursor: pointer;
+  background: #94b6f5;
+  border: none;
   color: black;
-  text-decoration: none;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
-.help a:hover {
-  color: #1d50af;
+.login-container .login-form .button button:hover {
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  width: 15rem;
+  height: 3rem;
+  cursor: pointer;
+  border: white solid 3px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.login-container .login-form .links {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container .login-form .links a {
+  cursor: pointer;
   text-decoration: none;
-  margin-bottom: 1rem;
+  color: black;
+  font-size: 1rem;
+}
+
+.login-container .login-form .links a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #94b6f5;
+  font-size: 1rem;
 }
 
 /*GLOBAL COLORS */
