@@ -926,6 +926,11 @@ header .nav ul a:hover {
   color: white;
 }
 
+.ezwork-container h3 {
+  width: 100%;
+  text-align: center;
+}
+
 .ezwork-container .search-section {
   padding: 2rem;
   display: -webkit-box;
@@ -970,6 +975,83 @@ header .nav ul a:hover {
   background: white;
   color: #001f3f;
   font-size: 1.2rem;
+}
+
+.ezwork-container .categories-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  padding: 1rem 0.3rem;
+  background-color: rgba(0, 31, 63, 0.1);
+}
+
+.ezwork-container .categories-section .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.ezwork-container .categories-section .categories .category1,
+.ezwork-container .categories-section .categories .category2,
+.ezwork-container .categories-section .categories .category3,
+.ezwork-container .categories-section .categories .category4,
+.ezwork-container .categories-section .categories .category5,
+.ezwork-container .categories-section .categories .category6 {
+  cursor: pointer;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #001f3f;
+}
+
+.ezwork-container .categories-section .categories .category7,
+.ezwork-container .categories-section .categories .category8,
+.ezwork-container .categories-section .categories .category9,
+.ezwork-container .categories-section .categories .category10,
+.ezwork-container .categories-section .categories .category11,
+.ezwork-container .categories-section .categories .category12 {
+  cursor: pointer;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #001f3f;
+  display: none;
+}
+
+.ezwork-container .categories-section .arrow-back,
+.ezwork-container .categories-section .arrow-forward {
+  cursor: pointer;
+}
+
+.ezwork-container .categories-section .arrow-back p,
+.ezwork-container .categories-section .arrow-forward p {
+  margin: 5px;
+  color: #001f3f;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.animate {
+  opacity: 0;
+  -webkit-transition: all 1.5s ease-in;
+  transition: all 1.5s ease-in;
 }
 
 footer {

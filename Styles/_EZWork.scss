@@ -79,6 +79,10 @@ $color3: rgb(148, 182, 245);
       }
     }
   } /*Ends header css*/
+  h3 {
+    width: 100%;
+    text-align: center;
+  }
   .search-section {
     padding: 2rem;
     display: flex;
@@ -113,4 +117,59 @@ $color3: rgb(148, 182, 245);
       font-size: 1.2rem;
     }
   }
+  .categories-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1rem 0.3rem;
+    background-color: rgba($color: $color2, $alpha: 0.1);
+    .categories {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      .category1,
+      .category2,
+      .category3,
+      .category4,
+      .category5,
+      .category6 {
+        cursor: pointer;
+        padding: 1rem;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        background-color: $color2;
+      }
+      .category7,
+      .category8,
+      .category9,
+      .category10,
+      .category11,
+      .category12 {
+        cursor: pointer;
+        padding: 1rem;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        background-color: $color2;
+        display: none;
+      }
+    }
+    .arrow-back,
+    .arrow-forward {
+      cursor: pointer;
+      p {
+        margin: 5px;
+        color: $color2;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+.animate {
+  opacity: 0;
+  transition: all 1.5s ease-in;
 }
