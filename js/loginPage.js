@@ -14,5 +14,3 @@ function showPassword() {
     show.innerText = "Show Password";
   }
 }
-
-//Login Header function
