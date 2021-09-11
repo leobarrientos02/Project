@@ -1395,6 +1395,7 @@ header .nav ul a:hover {
 }
 
 .ezwork-container .jobs-container .job img {
+  border-radius: 3px;
   width: 10rem;
   height: 10rem;
 }
@@ -1536,6 +1537,28 @@ header .nav ul a:hover {
     margin: 0.2rem;
     font-size: 1rem;
     padding: 0.3rem;
+  }
+  .ezwork-container .jobs-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1rem;
+  }
+  .ezwork-container .jobs-container .job {
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    background: crimson;
+  }
+  .ezwork-container .jobs-container .job img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 3px;
   }
 }
 
