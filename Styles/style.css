@@ -1278,9 +1278,12 @@ header .nav ul a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1292,8 +1295,9 @@ header .nav ul a:hover {
 .ezwork-container .categories-section .categories {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
   text-align: center;
 }
 
@@ -1301,6 +1305,8 @@ header .nav ul a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 31, 63, 0.7);
+          box-shadow: 0 20px 50px rgba(0, 31, 63, 0.7);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1391,13 +1397,15 @@ header .nav ul a:hover {
   border-radius: 10px;
   padding: 1rem;
   margin: 2rem;
-  background: crimson;
+  background: whitesmoke;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 31, 63, 0.7);
+          box-shadow: 0 20px 50px rgba(0, 31, 63, 0.7);
 }
 
 .ezwork-container .jobs-container .job img {
   border-radius: 3px;
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1527,10 +1535,13 @@ header .nav ul a:hover {
     padding: 0.5rem;
   }
   .ezwork-container .categories-section .categories {
+    -webkit-box-shadow: none;
+            box-shadow: none;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
     text-align: center;
   }
   .ezwork-container .categories-section .category {
@@ -1550,10 +1561,8 @@ header .nav ul a:hover {
     padding: 1rem;
   }
   .ezwork-container .jobs-container .job {
-    border-radius: 10px;
     padding: 1rem;
     margin: 1rem;
-    background: crimson;
   }
   .ezwork-container .jobs-container .job img {
     width: 5rem;
