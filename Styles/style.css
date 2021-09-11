@@ -1375,6 +1375,30 @@ header .nav ul a:hover {
   font-size: 2rem;
 }
 
+.ezwork-container .jobs-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem 3rem;
+}
+
+.ezwork-container .jobs-container .job {
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 2rem;
+  background: crimson;
+}
+
+.ezwork-container .jobs-container .job img {
+  width: 10rem;
+  height: 10rem;
+}
+
 @media screen and (max-width: 768px) {
   .ezwork-container {
     width: 100%;
