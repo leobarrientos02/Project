@@ -133,9 +133,6 @@ $color3: rgb(148, 182, 245);
     }
   }
   .categories-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: fit-content;
     padding: 1rem;
@@ -144,7 +141,6 @@ $color3: rgb(148, 182, 245);
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-gap: 1rem;
-      text-align: center;
     }
     .category {
       display: flex;
