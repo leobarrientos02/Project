@@ -823,8 +823,8 @@ header .nav ul a:hover {
 /*EzWork Page*/
 /*GLOBAL COLORS */
 .ezwork-container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1010,6 +1010,9 @@ header .nav ul a:hover {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 1rem 0.3rem;
   background-color: rgba(0, 31, 63, 0.1);
 }
@@ -1044,6 +1047,278 @@ header .nav ul a:hover {
   color: #001f3f;
   font-weight: bold;
   font-size: 2rem;
+}
+
+.ezwork-container .shareJob {
+  width: 100%;
+  background: rgba(34, 129, 184, 0.9);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ezwork-container .shareJob h2 {
+  font-size: 3.5rem;
+  color: white;
+  text-decoration: underline;
+}
+
+.ezwork-container .shareJob p {
+  font-size: 1.3rem;
+}
+
+.ezwork-container .shareJob button {
+  background: #001f3f;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: 20%;
+  border-radius: 15px;
+  border: none;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.ezwork-container .shareJob button:hover {
+  color: #94b6f5;
+}
+
+.ezwork-container .post {
+  padding: 3rem;
+  margin: 3rem;
+  background: white;
+}
+
+.ezwork-container .post h2 {
+  color: black;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    background-color: lightskyblue;
+  }
+  .ezwork-container {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /*Ends header css*/
+  }
+  .ezwork-container .ezwork-header {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0.5rem;
+    background-color: rgba(0, 31, 63, 0.9);
+    /* header profile section */
+  }
+  .ezwork-container .ezwork-header .logo {
+    width: 100%;
+  }
+  .ezwork-container .ezwork-header .logo h2 {
+    font-size: 2rem;
+  }
+  .ezwork-container .ezwork-header .profile-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ezwork-container .ezwork-header .profile-container .profile-image {
+    width: 3rem;
+    height: 3rem;
+  }
+  .ezwork-container .ezwork-header .profile-container .profile-image img {
+    width: 100%;
+    height: 100%;
+  }
+  .ezwork-container .ezwork-header .profile-container .user-type h3 {
+    font-size: 1rem;
+  }
+  .ezwork-container h3 {
+    width: 100%;
+  }
+  .ezwork-container .search-section {
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ezwork-container .search-section input {
+    width: 60%;
+    padding: 1rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+  .ezwork-container .search-section button {
+    max-width: 30%;
+    height: 3rem;
+    font-size: 1rem;
+  }
+  .ezwork-container .search-section button:hover {
+    -webkit-transition: all 1.2s ease-in-out;
+    transition: all 1.2s ease-in-out;
+    max-width: 30%;
+    height: 3rem;
+    background: white;
+    color: #001f3f;
+    font-size: 1rem;
+  }
+  .ezwork-container .categories-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1rem 0.3rem;
+    background-color: rgba(0, 31, 63, 0.1);
+  }
+  .ezwork-container .categories-section .categories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .ezwork-container .categories-section .category {
+    cursor: pointer;
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #001f3f;
+  }
+  .ezwork-container .categories-section .arrow-back,
+  .ezwork-container .categories-section .arrow-forward {
+    cursor: pointer;
+  }
+  .ezwork-container .categories-section .arrow-back p,
+  .ezwork-container .categories-section .arrow-forward p {
+    margin: 5px;
+    color: #001f3f;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .ezwork-container .upload-job {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background: chartreuse;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ezwork-container .upload-job h3 {
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+  .ezwork-container .upload-job .job-description1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ezwork-container .upload-job .job-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 footer {
