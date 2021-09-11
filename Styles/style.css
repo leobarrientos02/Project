@@ -1347,10 +1347,6 @@ header .nav ul a:hover {
   text-decoration: underline;
 }
 
-.ezwork-container .shareJob p {
-  font-size: 1.3rem;
-}
-
 .ezwork-container .shareJob button {
   background: #001f3f;
   height: -webkit-fit-content;
@@ -1548,6 +1544,30 @@ header .nav ul a:hover {
     margin: 0.2rem;
     font-size: 1rem;
     padding: 0.3rem;
+  }
+  .ezwork-container .shareJob {
+    width: 100%;
+    margin: 1.5rem 0rem;
+    background: rgba(0, 31, 63, 0.6);
+    padding: 2rem;
+  }
+  .ezwork-container .shareJob h2 {
+    font-size: 3rem;
+  }
+  .ezwork-container .shareJob button {
+    background: #001f3f;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-width: 20%;
+    border-radius: 15px;
+    border: none;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 1.3rem;
+  }
+  .ezwork-container .shareJob button:hover {
+    color: #94b6f5;
   }
   .ezwork-container .jobs-container {
     display: -ms-grid;

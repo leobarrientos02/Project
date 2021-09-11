@@ -173,9 +173,6 @@ $color3: rgb(148, 182, 245);
       color: white;
       text-decoration: underline;
     }
-    p {
-      font-size: 1.3rem;
-    }
     button {
       background: $color2;
       height: fit-content;
@@ -321,6 +318,28 @@ $color3: rgb(148, 182, 245);
         margin: 0.2rem;
         font-size: 1rem;
         padding: 0.3rem;
+      }
+    }
+    .shareJob {
+      width: 100%;
+      margin: 1.5rem 0rem;
+      background: rgba($color: $color2, $alpha: 0.6);
+      padding: 2rem;
+      h2 {
+        font-size: 3rem;
+      }
+      button {
+        background: $color2;
+        height: fit-content;
+        min-width: 20%;
+        border-radius: 15px;
+        border: none;
+        padding: 0.5rem;
+        margin: 1rem;
+        font-size: 1.3rem;
+        &:hover {
+          color: $color3;
+        }
       }
     }
     .jobs-container {
