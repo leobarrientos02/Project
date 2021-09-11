@@ -1212,6 +1212,10 @@ header .nav ul a:hover {
   color: white;
 }
 
+.ezwork-container .ezwork-header .profile-container .user-type h3 a:hover {
+  color: #94b6f5;
+}
+
 .ezwork-container h3 {
   width: 100%;
   text-align: center;
@@ -1267,21 +1271,11 @@ header .nav ul a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 1rem 0.3rem;
+  padding: 1rem;
   background-color: rgba(0, 31, 63, 0.1);
 }
 
@@ -1289,32 +1283,28 @@ header .nav ul a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .ezwork-container .categories-section .category {
   cursor: pointer;
-  padding: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
   color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1rem;
   background-color: #001f3f;
-}
-
-.ezwork-container .categories-section .arrow-back,
-.ezwork-container .categories-section .arrow-forward {
-  cursor: pointer;
-}
-
-.ezwork-container .categories-section .arrow-back p,
-.ezwork-container .categories-section .arrow-forward p {
-  margin: 5px;
-  color: #001f3f;
-  font-weight: bold;
-  font-size: 2rem;
+  border-radius: 5px;
 }
 
 .ezwork-container .shareJob {
