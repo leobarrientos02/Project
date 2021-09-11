@@ -1308,8 +1308,12 @@ header .nav ul a:hover {
   margin: 0.5rem;
   color: white;
   font-size: 1rem;
-  background-color: #001f3f;
+  background-color: rgba(0, 31, 63, 0.8);
   border-radius: 5px;
+}
+
+.ezwork-container .categories-section .category:hover {
+  background-color: #001f3f;
 }
 
 .ezwork-container .shareJob {

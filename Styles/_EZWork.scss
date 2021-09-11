@@ -152,8 +152,11 @@ $color3: rgb(148, 182, 245);
       margin: 0.5rem;
       color: white;
       font-size: 1rem;
-      background-color: $color2;
+      background-color: rgba($color2, 0.8);
       border-radius: 5px;
+      &:hover {
+        background-color: $color2;
+      }
     }
   }
   .shareJob {

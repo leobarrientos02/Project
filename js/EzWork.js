@@ -19,7 +19,7 @@ const Categories = [
   "Writer",
   "Tutor",
   "Chef",
-  "Hair Stylist",
+  "See More",
 ];
 
 const container1 = document.querySelector(".categories-section");
