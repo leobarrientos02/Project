@@ -1509,6 +1509,7 @@ header .nav ul a:hover {
   .ezwork-container .categories-section .category {
     margin: 0.2rem;
     font-size: 1rem;
+    padding: 0.3rem;
   }
 }
 
