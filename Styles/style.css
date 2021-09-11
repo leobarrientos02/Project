@@ -820,6 +820,268 @@ header .nav ul a:hover {
   font-size: 1.2rem;
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  header .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    background: #94b6f5;
+    padding: 1rem;
+  }
+  header .title h2 a:hover {
+    color: #001f3f;
+  }
+  header .title span {
+    color: #001f3f;
+  }
+  header .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  header .nav ul li {
+    width: 100%;
+    padding: 20px;
+  }
+  header .nav ul li a {
+    font-size: 1rem;
+  }
+  header .nav ul li a:hover {
+    font-size: 1.1rem;
+  }
+  footer {
+    height: 5rem;
+    /*TEXT*/
+    font-size: 0.6rem;
+  }
+  .user-intro {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 3rem;
+  }
+  .user-intro .user-intro-title {
+    width: 100%;
+  }
+  .user-intro .user-intro-title h3 {
+    padding-right: 4px;
+    font-size: 2rem;
+  }
+  .user-intro .description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .user-intro .description .money,
+  .user-intro .description .experience,
+  .user-intro .description .money-back {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .user-intro .description .money img,
+  .user-intro .description .experience img,
+  .user-intro .description .money-back img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .user-intro .description .money p,
+  .user-intro .description .experience p,
+  .user-intro .description .money-back p {
+    font-size: 1.5rem;
+  }
+  .user-intro button {
+    padding: 0.5rem;
+    min-width: 30%;
+    height: 50px;
+    font-size: 0.8rem;
+  }
+  .user-intro button:hover {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    padding: 0.5rem;
+    min-width: 30%;
+    height: 50px;
+    font-size: 0.8rem;
+  }
+  .image-gallery {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .image-gallery .image {
+    position: relative;
+    width: 11rem;
+    height: 11rem;
+  }
+  .image-gallery .image img {
+    width: 100%;
+    height: 100%;
+  }
+  .image-gallery .image img:hover {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-filter: none;
+            filter: none;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .image-gallery .image-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border: white 5px solid;
+    padding: 1rem;
+  }
+  .image-gallery .image-text p {
+    font-size: 0.8rem;
+  }
+  .freelance-intro {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: 1rem;
+  }
+  .freelance-intro .freelance-intro-title {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .freelance-intro .freelance-intro-title h2 {
+    font-size: 1rem;
+    margin: 1.5rem;
+  }
+  .freelance-intro .freelance-intro-title h3 {
+    font-size: 2rem;
+  }
+  .freelance-intro .freelance-intro-image {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .freelance-intro .freelance-intro-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    width: 100%;
+    height: 30rem;
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+  .freelance-intro .freelance-intro-image .image-text {
+    padding: 1rem;
+  }
+  .freelance-intro .freelance-intro-image .image-text h4 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .description {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .description img {
+    width: 2rem;
+    height: 2em;
+  }
+  .description p {
+    font-size: 0.6rem;
+  }
+  button {
+    padding: 0.5rem;
+    min-width: 30%;
+    height: 50px;
+    font-size: 1rem;
+  }
+  button:hover {
+    cursor: pointer;
+    min-width: 30%;
+    height: 50px;
+    font-size: 1rem;
+  }
+  .about-section h4 {
+    font-size: 1.8rem;
+  }
+  .about-section .answer p {
+    font-size: 0.8rem;
+  }
+  /* REVIEW SECTION*/
+  .review-section h2 {
+    font-size: 2em;
+  }
+  .review-section .review .comment p {
+    font-size: 0.8rem;
+  }
+  .review-section .review .review-info .profile-pic img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .review-section .review .review-info .profile-info p {
+    font-size: 0.8rem;
+  }
+  /* Service Section */
+  .service-section .website h3,
+  .service-section .mobile-app h3 {
+    font-size: 3rem;
+  }
+  .service-section .website .image-container .image,
+  .service-section .mobile-app .image-container .image {
+    width: 8rem;
+  }
+  .service-section .website .image-container .text h3,
+  .service-section .mobile-app .image-container .text h3 {
+    font-size: 0.7rem;
+  }
+  .service-section .title h2 {
+    font-size: 3.5rem;
+  }
+}
+
 /*EzWork Page*/
 /*GLOBAL COLORS */
 .ezwork-container {
@@ -938,7 +1200,13 @@ header .nav ul a:hover {
 }
 
 .ezwork-container .ezwork-header .profile-container .user-type h3 {
-  pointer-events: none;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: white;
+}
+
+.ezwork-container .ezwork-header .profile-container .user-type h3 a {
+  text-decoration: none;
   font-size: 1.2rem;
   font-weight: lighter;
   color: white;
@@ -1605,267 +1873,273 @@ h2 {
   }
 }
 
-/*GLOBAL COLORS */
+h2 {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.join-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.join-container .join-form {
+  width: 40%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  border: 4px #001f3f solid;
+}
+
+.join-container .join-form .join-title {
+  margin: 1rem;
+  text-align: center;
+}
+
+.join-container .join-form .join-title h4 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.join-container .join-form .email {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.join-container .join-form .email label {
+  font-size: 1.4rem;
+}
+
+.join-container .join-form .email input {
+  margin: 0.5rem;
+  width: 60%;
+}
+
+.join-container .join-form .password {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.join-container .join-form .password label {
+  margin: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.join-container .join-form .password input {
+  width: 60%;
+}
+
+.join-container .join-form .show-password {
+  margin: 0.3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.join-container .join-form .show-password input {
+  width: 1.5rem;
+}
+
+.join-container .join-form .button {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 1rem;
+}
+
+.join-container .join-form .button button {
+  width: 100%;
+  padding: 0.5rem;
+  cursor: pointer;
+  background: #94b6f5;
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.join-container .join-form .button button:hover {
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  width: 100%;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.join-container .join-form .links {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.join-container .join-form .links a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.join-container .join-form .links a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #94b6f5;
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 768px) {
-  header {
+  header .nav {
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  }
+  .join-container {
+    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
-  header .title {
+  .join-container .join-form {
+    width: 70%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .join-container .join-form .join-title {
+    margin: 1rem;
+    text-align: center;
+  }
+  .join-container .join-form .join-title h4 {
+    font-size: 3rem;
+    text-decoration: underline;
+  }
+  .join-container .join-form .email {
+    width: 100%;
+  }
+  .join-container .join-form .email label {
+    font-size: 1rem;
+  }
+  .join-container .join-form .email input {
+    margin: 0.5rem;
+    width: 90%;
+  }
+  .join-container .join-form .password {
+    width: 100%;
+  }
+  .join-container .join-form .password label {
+    font-size: 1rem;
+  }
+  .join-container .join-form .password input {
+    width: 90%;
+  }
+  .join-container .join-form .show-password {
+    margin: 0.3rem;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
-    background: #94b6f5;
-    padding: 1rem;
-  }
-  header .title h2 a:hover {
-    color: #001f3f;
-  }
-  header .title span {
-    color: #001f3f;
-  }
-  header .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
-  header .nav ul li {
-    width: 100%;
-    padding: 20px;
+  .join-container .join-form .show-password input {
+    width: 1.5rem;
   }
-  header .nav ul li a {
+  .join-container .join-form .button button {
     font-size: 1rem;
   }
-  header .nav ul li a:hover {
-    font-size: 1.1rem;
+  .join-container .join-form .button button:hover {
+    font-size: 1rem;
   }
-  footer {
-    height: 5rem;
-    /*TEXT*/
+  .join-container .join-form .links {
+    width: 100%;
+  }
+  .join-container .join-form .links a {
     font-size: 0.6rem;
   }
-  .user-intro {
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    margin-top: 3rem;
-  }
-  .user-intro .user-intro-title {
-    width: 100%;
-  }
-  .user-intro .user-intro-title h3 {
-    padding-right: 4px;
-    font-size: 2rem;
-  }
-  .user-intro .description {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    width: 100%;
-    margin: 2rem;
-  }
-  .user-intro .description .money,
-  .user-intro .description .experience,
-  .user-intro .description .money-back {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-  .user-intro .description .money img,
-  .user-intro .description .experience img,
-  .user-intro .description .money-back img {
-    width: 4rem;
-    height: 4rem;
-  }
-  .user-intro .description .money p,
-  .user-intro .description .experience p,
-  .user-intro .description .money-back p {
-    font-size: 1.5rem;
-  }
-  .user-intro button {
-    padding: 0.5rem;
-    min-width: 30%;
-    height: 50px;
-    font-size: 0.8rem;
-  }
-  .user-intro button:hover {
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
-    padding: 0.5rem;
-    min-width: 30%;
-    height: 50px;
-    font-size: 0.8rem;
-  }
-  .image-gallery {
-    width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-  .image-gallery .image {
-    position: relative;
-    width: 11rem;
-    height: 11rem;
-  }
-  .image-gallery .image img {
-    width: 100%;
-    height: 100%;
-  }
-  .image-gallery .image img:hover {
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
-    -webkit-filter: none;
-            filter: none;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .image-gallery .image-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    border: white 5px solid;
-    padding: 1rem;
-  }
-  .image-gallery .image-text p {
-    font-size: 0.8rem;
-  }
-  .freelance-intro {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    padding-top: 1rem;
-  }
-  .freelance-intro .freelance-intro-title {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .freelance-intro .freelance-intro-title h2 {
-    font-size: 1rem;
-    margin: 1.5rem;
-  }
-  .freelance-intro .freelance-intro-title h3 {
-    font-size: 2rem;
-  }
-  .freelance-intro .freelance-intro-image {
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 100%;
-  }
-  .freelance-intro .freelance-intro-image img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
-    width: 100%;
-    height: 30rem;
-    -webkit-filter: blur(4px);
-            filter: blur(4px);
-  }
-  .freelance-intro .freelance-intro-image .image-text {
-    padding: 1rem;
-  }
-  .freelance-intro .freelance-intro-image .image-text h4 {
-    text-align: center;
-    font-size: 3rem;
-  }
-  .description {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .description img {
-    width: 2rem;
-    height: 2em;
-  }
-  .description p {
+  .join-container .join-form .links a:hover {
     font-size: 0.6rem;
-  }
-  button {
-    padding: 0.5rem;
-    min-width: 30%;
-    height: 50px;
-    font-size: 1rem;
-  }
-  button:hover {
-    cursor: pointer;
-    min-width: 30%;
-    height: 50px;
-    font-size: 1rem;
-  }
-  .about-section h4 {
-    font-size: 1.8rem;
-  }
-  .about-section .answer p {
-    font-size: 0.8rem;
-  }
-  /* REVIEW SECTION*/
-  .review-section h2 {
-    font-size: 2em;
-  }
-  .review-section .review .comment p {
-    font-size: 0.8rem;
-  }
-  .review-section .review .review-info .profile-pic img {
-    width: 3rem;
-    height: 3rem;
-  }
-  .review-section .review .review-info .profile-info p {
-    font-size: 0.8rem;
-  }
-  /* Service Section */
-  .service-section .website h3,
-  .service-section .mobile-app h3 {
-    font-size: 3rem;
-  }
-  .service-section .website .image-container .image,
-  .service-section .mobile-app .image-container .image {
-    width: 8rem;
-  }
-  .service-section .website .image-container .text h3,
-  .service-section .mobile-app .image-container .text h3 {
-    font-size: 0.7rem;
-  }
-  .service-section .title h2 {
-    font-size: 3.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
