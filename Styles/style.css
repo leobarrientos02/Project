@@ -1464,16 +1464,17 @@ header .nav ul a:hover {
     padding: 1rem;
     height: 3rem;
     color: #001f3f;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 0;
     font-size: 1rem;
+  }
+  .ezwork-container .search-section input[type="search"] {
+    -webkit-appearance: none;
   }
   .ezwork-container .search-section button {
     min-width: 10%;
     cursor: pointer;
     height: 3rem;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 0;
     background: #001f3f;
     color: white;
     font-size: 1.2rem;
@@ -1485,6 +1486,7 @@ header .nav ul a:hover {
     border: #001f3f 2px solid;
     cursor: pointer;
     height: 3rem;
+    border-radius: 0;
     background: white;
     color: #001f3f;
     font-size: 1.2rem;

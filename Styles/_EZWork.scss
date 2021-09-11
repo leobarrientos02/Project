@@ -256,16 +256,17 @@ $color3: rgb(148, 182, 245);
         padding: 1rem;
         height: 3rem;
         color: $color2;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
+        border-radius: 0;
         font-size: 1rem;
+      }
+      input[type="search"] {
+        -webkit-appearance: none;
       }
       button {
         min-width: 10%;
         cursor: pointer;
         height: 3rem;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-radius: 0;
         background: $color2;
         color: white;
         font-size: 1.2rem;
@@ -276,6 +277,7 @@ $color3: rgb(148, 182, 245);
         border: $color2 2px solid;
         cursor: pointer;
         height: 3rem;
+        border-radius: 0;
         background: white;
         color: $color2;
         font-size: 1.2rem;
