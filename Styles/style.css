@@ -1104,6 +1104,7 @@ header .nav ul a:hover {
   width: 100%;
   text-align: center;
   font-size: 2rem;
+  color: #2d2e2d;
 }
 
 .ezwork-container .search-section {
@@ -1198,7 +1199,7 @@ header .nav ul a:hover {
 .ezwork-container .freelancers-section h3 {
   width: 100%;
   text-align: center;
-  color: white;
+  color: #2d2e2d;
   font-size: 3.4rem;
 }
 
@@ -1243,16 +1244,36 @@ header .nav ul a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin: 0.5rem;
 }
 
 .ezwork-container .freelancers-section .profiles .profile .image img {
+  margin-bottom: 0.5rem;
   border: 2px solid lightgrey;
   border-radius: 50%;
   width: 6rem;
   height: 6rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.ezwork-container .freelancers-section .profiles .profile .freelance-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ezwork-container .freelancers-section .profiles .profile .freelance-description p {
+  font-size: 1.3rem;
 }
 
 .ezwork-container .freelancers-section .profiles .profile .button {
@@ -1281,6 +1302,7 @@ header .nav ul a:hover {
 }
 
 .ezwork-container .freelancers-section .profiles .profile .button button:hover {
+  border: none;
   background-color: #3b4a75;
 }
 
@@ -1338,11 +1360,6 @@ header .nav ul a:hover {
 .ezwork-container .post h2 {
   color: black;
   font-size: 2rem;
-}
-
-.ezwork-container #jobs-container-h3 {
-  color: white;
-  font-size: 2.5rem;
 }
 
 .ezwork-container .jobs-container {
@@ -1477,6 +1494,7 @@ header .nav ul a:hover {
   }
   .ezwork-container .shareJob {
     width: 100%;
+    text-align: center;
     margin: 1.5rem 0rem;
     background: rgba(0, 31, 63, 0.6);
     padding: 2rem;
@@ -1501,26 +1519,23 @@ header .nav ul a:hover {
   }
   .ezwork-container .freelancers-section {
     width: 100%;
-    margin: 1rem 0rem;
   }
   .ezwork-container .freelancers-section h3 {
     width: 100%;
     text-align: center;
-    color: white;
-    font-size: 3.4rem;
+    color: #2d2e2d;
+    font-size: 1.6rem;
   }
   .ezwork-container .freelancers-section .profiles {
     padding: 2rem 0rem;
     width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3px;
   }
   .ezwork-container .freelancers-section .profiles .profile {
-    -webkit-box-shadow: 0 20px 50px rgba(0, 31, 63, 0.7);
-            box-shadow: 0 20px 50px rgba(0, 31, 63, 0.7);
-    border-radius: 10px;
     margin: 1rem;
     background-color: white;
     display: -webkit-box;
@@ -1535,28 +1550,30 @@ header .nav ul a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 1rem;
   }
-  .ezwork-container .freelancers-section .profiles .profile .image {
+  .ezwork-container .freelancers-section .profiles .profile .image img {
+    width: 4.2rem;
+    height: 4.2rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .ezwork-container .freelancers-section .profiles .profile .freelance-description {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
-    margin: 0.5rem;
   }
-  .ezwork-container .freelancers-section .profiles .profile .image img {
-    border: 2px solid lightgrey;
-    border-radius: 50%;
-    width: 6rem;
-    height: 6rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+  .ezwork-container .freelancers-section .profiles .profile .freelance-description p {
+    font-size: 1rem;
   }
   .ezwork-container .freelancers-section .profiles .profile .button {
     width: 100%;
@@ -1572,14 +1589,15 @@ header .nav ul a:hover {
   }
   .ezwork-container .freelancers-section .profiles .profile .button button {
     cursor: pointer;
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 2px;
-    width: 10rem;
+    width: 4rem;
+    height: 2rem;
     border: none;
     border-radius: 5px;
     background-color: #556080;
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .ezwork-container .freelancers-section .profiles .profile .button button:hover {
     background-color: #3b4a75;
@@ -1598,6 +1616,12 @@ header .nav ul a:hover {
   .ezwork-container .jobs-container .job {
     padding: 1rem;
     margin: 1rem;
+  }
+  .ezwork-container .jobs-container .job h3 {
+    font-size: 1.5rem;
+  }
+  .ezwork-container .jobs-container .job p {
+    font-size: 1rem;
   }
   .ezwork-container .jobs-container .job .image {
     width: 100%;

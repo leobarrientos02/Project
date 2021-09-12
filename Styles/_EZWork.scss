@@ -13,6 +13,7 @@ $color3: rgb(148, 182, 245);
     width: 100%;
     text-align: center;
     font-size: 2rem;
+    color: #2d2e2d;
   }
   .search-section {
     padding: 2rem;
@@ -78,7 +79,7 @@ $color3: rgb(148, 182, 245);
     h3 {
       width: 100%;
       text-align: center;
-      color: white;
+      color: #2d2e2d;
       font-size: 3.4rem;
     }
     .profiles {
@@ -101,13 +102,22 @@ $color3: rgb(148, 182, 245);
           align-items: center;
           justify-content: center;
           width: 100%;
-          margin: 0.5rem;
           img {
+            margin-bottom: 0.5rem;
             border: 2px solid lightgrey;
             border-radius: 50%;
             width: 6rem;
             height: 6rem;
             object-fit: cover;
+          }
+        }
+        .freelance-description {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          p {
+            font-size: 1.3rem;
           }
         }
         .button {
@@ -126,6 +136,7 @@ $color3: rgb(148, 182, 245);
             color: white;
             font-size: 1rem;
             &:hover {
+              border: none;
               background-color: #3b4a75;
             }
           }
@@ -171,10 +182,6 @@ $color3: rgb(148, 182, 245);
       color: black;
       font-size: 2rem;
     }
-  }
-  #jobs-container-h3 {
-    color: white;
-    font-size: 2.5rem;
   }
   .jobs-container {
     display: grid;
@@ -272,6 +279,7 @@ $color3: rgb(148, 182, 245);
     }
     .shareJob {
       width: 100%;
+      text-align: center;
       margin: 1.5rem 0rem;
       background: rgba($color: $color2, $alpha: 0.6);
       padding: 2rem;
@@ -294,40 +302,39 @@ $color3: rgb(148, 182, 245);
     }
     .freelancers-section {
       width: 100%;
-      margin: 1rem 0rem;
       h3 {
         width: 100%;
         text-align: center;
-        color: white;
-        font-size: 3.4rem;
+        color: #2d2e2d;
+        font-size: 1.6rem;
       }
       .profiles {
         padding: 2rem 0rem;
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3px;
         .profile {
-          box-shadow: 0 20px 50px rgba($color2, 0.7);
-          border-radius: 10px;
           margin: 1rem;
           background-color: white;
           display: flex;
           justify-content: center;
           align-self: center;
           flex-direction: column;
-          padding: 1rem;
           .image {
+            img {
+              width: 4.2rem;
+              height: 4.2rem;
+              object-fit: cover;
+            }
+          }
+          .freelance-description {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 100%;
-            margin: 0.5rem;
-            img {
-              border: 2px solid lightgrey;
-              border-radius: 50%;
-              width: 6rem;
-              height: 6rem;
-              object-fit: cover;
+            p {
+              font-size: 1rem;
             }
           }
           .button {
@@ -337,14 +344,15 @@ $color3: rgb(148, 182, 245);
             justify-content: center;
             button {
               cursor: pointer;
-              margin: 1rem;
+              margin: 0.5rem;
               padding: 2px;
-              width: 10rem;
+              width: 4rem;
+              height: 2rem;
               border: none;
               border-radius: 5px;
               background-color: #556080;
               color: white;
-              font-size: 1rem;
+              font-size: 0.8rem;
               &:hover {
                 background-color: #3b4a75;
               }
@@ -362,6 +370,12 @@ $color3: rgb(148, 182, 245);
       .job {
         padding: 1rem;
         margin: 1rem;
+        h3 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1rem;
+        }
         .image {
           width: 100%;
           display: flex;
