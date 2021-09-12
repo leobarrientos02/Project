@@ -5,7 +5,7 @@ const show = document.getElementById("show");
 checkbox.addEventListener("click", showPassword);
 
 function showPassword() {
-  var x = document.getElementById("myInput");
+  var x = document.getElementById("password");
   if (x.type === "password") {
     x.type = "text";
     show.innerText = "Hide Password";

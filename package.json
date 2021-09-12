@@ -1,0 +1,26 @@
+{
+  "name": "ProjectX",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leobarrientos02/Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leobarrientos02/Project/issues"
+  },
+  "homepage": "https://github.com/leobarrientos02/Project#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
