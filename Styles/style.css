@@ -1096,128 +1096,14 @@ header .nav ul a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: lightskyblue;
+  background-color: #a4b1da;
   /*Ends header css*/
-}
-
-.ezwork-container .ezwork-header {
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 0.5rem;
-  background-color: rgba(0, 31, 63, 0.9);
-  /* header profile section */
-}
-
-.ezwork-container .ezwork-header .logo {
-  width: 100%;
-  margin-left: 1rem;
-}
-
-.ezwork-container .ezwork-header .logo h2 {
-  font-family: "Archivo Black", sans-serif;
-  font-size: 2.3rem;
-}
-
-.ezwork-container .ezwork-header .logo h2 a {
-  text-decoration: none;
-  color: white;
-}
-
-.ezwork-container .ezwork-header .logo span {
-  color: #94b6f5;
-}
-
-.ezwork-container .ezwork-header .logo a:hover {
-  -webkit-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
-  color: #94b6f5;
-}
-
-.ezwork-container .ezwork-header .logo a:hover span {
-  -webkit-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
-  color: white;
-}
-
-.ezwork-container .ezwork-header .profile-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0rem 2rem;
-}
-
-.ezwork-container .ezwork-header .profile-container .profile-image {
-  cursor: pointer;
-  width: 3rem;
-  height: 3rem;
-  border: white 3px solid;
-  border-radius: 50%;
-  position: relative;
-  display: inline-block;
-}
-
-.ezwork-container .ezwork-header .profile-container .profile-image img {
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.ezwork-container .ezwork-header .profile-container .profile-image:hover {
-  -webkit-transition: all 1.3s ease;
-  transition: all 1.3s ease;
-  border: #2281b8 3px solid;
-}
-
-.ezwork-container .ezwork-header .profile-container .user-type {
-  margin-right: 1rem;
-}
-
-.ezwork-container .ezwork-header .profile-container .user-type h3 {
-  font-size: 1.2rem;
-  font-weight: lighter;
-  color: white;
-}
-
-.ezwork-container .ezwork-header .profile-container .user-type h3 a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: lighter;
-  color: white;
-}
-
-.ezwork-container .ezwork-header .profile-container .user-type h3 a:hover {
-  color: #94b6f5;
 }
 
 .ezwork-container h3 {
   width: 100%;
   text-align: center;
+  font-size: 2rem;
 }
 
 .ezwork-container .search-section {
@@ -1304,9 +1190,103 @@ header .nav ul a:hover {
   background-color: #001f3f;
 }
 
+.ezwork-container .freelancers-section {
+  width: 100%;
+  margin: 1rem 0rem;
+}
+
+.ezwork-container .freelancers-section h3 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 3.4rem;
+}
+
+.ezwork-container .freelancers-section .profiles {
+  padding: 2rem 0rem;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.ezwork-container .freelancers-section .profiles .profile {
+  -webkit-box-shadow: 0 20px 50px rgba(0, 31, 63, 0.7);
+          box-shadow: 0 20px 50px rgba(0, 31, 63, 0.7);
+  border-radius: 10px;
+  margin: 1rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.ezwork-container .freelancers-section .profiles .profile .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0.5rem;
+}
+
+.ezwork-container .freelancers-section .profiles .profile .image img {
+  border: 2px solid lightgrey;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ezwork-container .freelancers-section .profiles .profile .button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ezwork-container .freelancers-section .profiles .profile .button button {
+  cursor: pointer;
+  margin: 1rem;
+  padding: 2px;
+  width: 10rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #556080;
+  color: white;
+  font-size: 1rem;
+}
+
+.ezwork-container .freelancers-section .profiles .profile .button button:hover {
+  background-color: #3b4a75;
+}
+
 .ezwork-container .shareJob {
   width: 100%;
-  background: rgba(34, 129, 184, 0.9);
+  margin: 1rem 0rem;
   padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1317,6 +1297,7 @@ header .nav ul a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: rgba(0, 31, 63, 0.6);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1339,13 +1320,13 @@ header .nav ul a:hover {
   border: none;
   padding: 1rem;
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: white;
   cursor: pointer;
 }
 
 .ezwork-container .shareJob button:hover {
-  color: #94b6f5;
+  color: #a4b1da;
 }
 
 .ezwork-container .post {
@@ -1357,6 +1338,11 @@ header .nav ul a:hover {
 .ezwork-container .post h2 {
   color: black;
   font-size: 2rem;
+}
+
+.ezwork-container #jobs-container-h3 {
+  color: white;
+  font-size: 2.5rem;
 }
 
 .ezwork-container .jobs-container {
@@ -1418,65 +1404,11 @@ header .nav ul a:hover {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-color: #71a3ee;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     /*Ends header css*/
-  }
-  .ezwork-container .ezwork-header {
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 0.5rem;
-    background-color: rgba(0, 31, 63, 0.9);
-    /* header profile section */
-  }
-  .ezwork-container .ezwork-header .logo {
-    width: 100%;
-  }
-  .ezwork-container .ezwork-header .logo h2 {
-    font-size: 2rem;
-  }
-  .ezwork-container .ezwork-header .profile-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .ezwork-container .ezwork-header .profile-container .profile-image {
-    width: 3rem;
-    height: 3rem;
-  }
-  .ezwork-container .ezwork-header .profile-container .profile-image img {
-    width: 100%;
-    height: 100%;
-  }
-  .ezwork-container .ezwork-header .profile-container .user-type h3 {
-    font-size: 1rem;
   }
   .ezwork-container h3 {
     width: 100%;
@@ -1566,6 +1498,91 @@ header .nav ul a:hover {
   }
   .ezwork-container .shareJob button:hover {
     color: #94b6f5;
+  }
+  .ezwork-container .freelancers-section {
+    width: 100%;
+    margin: 1rem 0rem;
+  }
+  .ezwork-container .freelancers-section h3 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 3.4rem;
+  }
+  .ezwork-container .freelancers-section .profiles {
+    padding: 2rem 0rem;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .ezwork-container .freelancers-section .profiles .profile {
+    -webkit-box-shadow: 0 20px 50px rgba(0, 31, 63, 0.7);
+            box-shadow: 0 20px 50px rgba(0, 31, 63, 0.7);
+    border-radius: 10px;
+    margin: 1rem;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
+  .ezwork-container .freelancers-section .profiles .profile .image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: 0.5rem;
+  }
+  .ezwork-container .freelancers-section .profiles .profile .image img {
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .ezwork-container .freelancers-section .profiles .profile .button {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ezwork-container .freelancers-section .profiles .profile .button button {
+    cursor: pointer;
+    margin: 1rem;
+    padding: 2px;
+    width: 10rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #556080;
+    color: white;
+    font-size: 1rem;
+  }
+  .ezwork-container .freelancers-section .profiles .profile .button button:hover {
+    background-color: #3b4a75;
   }
   .ezwork-container .jobs-container {
     display: -ms-grid;
