@@ -911,7 +911,7 @@ header {
 
 .header-container .logo span {
   font-size: 2rem;
-  color: #072c50;
+  color: #0a345e;
 }
 
 .header-container .links {
@@ -978,7 +978,7 @@ header {
 }
 
 .header-container .login .sign-up-btn:hover {
-  background-color: #072c50;
+  background-color: #0a345e;
   color: white;
 }
 
@@ -1145,7 +1145,7 @@ header {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: white;
-  color: #072c50;
+  color: #0a345e;
 }
 
 .skills {
@@ -1235,7 +1235,9 @@ header {
 
 .popular-skills-review {
   width: 100%;
-  height: 90vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1250,8 +1252,34 @@ header {
 .popular-skills-review .popular-skills-container {
   width: 95%;
   height: 95%;
+  padding: 3rem 2rem;
   border-radius: 25px;
-  border: 5px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.popular-skills-review .popular-skills-container .sort h3 {
+  cursor: pointer;
+  font-size: 2.3rem;
+  color: #afafaf;
+}
+
+.popular-skills-review .popular-skills-container .sort h3:hover {
+  color: #0a345e;
+}
+
+.popular-skills-review .popular-skills-container .sort .current {
+  color: #054e97;
 }
 
 .footer {
@@ -1266,7 +1294,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #072c50;
+  background: #0a345e;
 }
 
 .footer .footer-container {
@@ -1363,7 +1391,7 @@ header {
 
 .footer .footer-container .social-links a i {
   border-radius: 50%;
-  background: #072c50;
+  background: #0a345e;
   padding: 0.5rem;
 }
 
@@ -1397,6 +1425,31 @@ header {
   cursor: pointer;
   color: whitesmoke;
   padding: 0rem 2rem;
+}
+
+.hide a {
+  display: none;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0rem 2rem;
+}
+
+.show a {
+  font-size: 1.4rem;
+  color: #797979;
+  margin: 0.5rem 0rem;
+}
+
+.show a:hover {
+  color: #0a345e;
 }
 
 /*EzWork Page*/

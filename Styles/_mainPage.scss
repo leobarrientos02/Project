@@ -1,4 +1,4 @@
-$color1: #072c50;
+$color1: #0a345e;
 $lightColor: #054e97;
 $darktext: rgb(121, 121, 121);
 /*Header Section */
@@ -250,15 +250,32 @@ header {
 }
 .popular-skills-review {
   width: 100%;
-  height: 90vh;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   .popular-skills-container {
     width: 95%;
     height: 95%;
+    padding: 3rem 2rem;
     border-radius: 25px;
-    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    .sort {
+      h3 {
+        cursor: pointer;
+        font-size: 2.3rem;
+        color: rgb(175, 175, 175);
+        &:hover {
+          color: $color1;
+        }
+      }
+      .current {
+        color: $lightColor;
+      }
+    }
   }
 }
 .footer {
@@ -344,6 +361,24 @@ header {
         color: whitesmoke;
         padding: 0rem 2rem;
       }
+    }
+  }
+}
+.hide {
+  a {
+    display: none;
+  }
+}
+.show {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 2rem;
+  a {
+    font-size: 1.4rem;
+    color: $darktext;
+    margin: 0.5rem 0rem;
+    &:hover {
+      color: $color1;
     }
   }
 }
