@@ -1096,7 +1096,7 @@ header {
 
 .clients {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1112,7 +1112,7 @@ header {
   width: 95%;
   height: 95%;
   border-radius: 25px;
-  background-image: url("../Image/pexels-ono-kosuki-5974388.jpg");
+  background-image: url("../Image/COVID_19_and_the_growing_demand_for_freelance_workers.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1121,27 +1121,74 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: white;
   font-weight: bold;
 }
 
-.clients .content .card {
+.clients .content #for-client {
+  width: 100%;
+  text-align: start;
+  font-size: 1.5rem;
+  margin: 1rem 0rem 1rem 2rem;
+}
+
+.clients .content #description-for-client {
+  width: 40%;
+  text-align: start;
+  font-size: 1.35rem;
+  margin: 1rem 0rem 0rem 2rem;
+}
+
+.clients .content h2 {
+  font-family: "Kaisei Tokumin", serif;
+  width: 40%;
+  margin: 2rem 0rem 1rem 2rem;
+  text-align: start;
+  font-size: 3rem;
+}
+
+.clients .content .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients .content .card-container .card {
   margin: 1rem;
+  width: 30%;
   border-radius: 25px;
-  padding: 3rem;
+  padding: 1.5rem;
   background: #054e97;
   cursor: pointer;
 }
 
-.clients .content .card:hover {
+.clients .content .card-container .card h4 {
+  font-size: 1.75rem;
+  margin: 0rem 3rem 2rem 0rem;
+}
+
+.clients .content .card-container .card p {
+  font-size: 1.25rem;
+}
+
+.clients .content .card-container .card:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: white;
@@ -1261,11 +1308,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+}
+
+.popular-skills-review .popular-skills-container .sort {
+  width: 40%;
 }
 
 .popular-skills-review .popular-skills-container .sort h3 {
@@ -1439,7 +1485,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0rem 2rem;
+  margin: 0rem 1rem;
 }
 
 .show a {

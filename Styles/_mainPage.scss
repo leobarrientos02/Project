@@ -162,7 +162,7 @@ header {
 }
 .clients {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,27 +170,60 @@ header {
     width: 95%;
     height: 95%;
     border-radius: 25px;
-    background-image: url("../Image/pexels-ono-kosuki-5974388.jpg");
+    background-image: url("../Image/COVID_19_and_the_growing_demand_for_freelance_workers.jpg");
     background-size: cover;
     background-position: center;
   }
   .content {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
     color: white;
     font-weight: bold;
-    .card {
-      margin: 1rem;
-      border-radius: 25px;
-      padding: 3rem;
-      background: $lightColor;
-      cursor: pointer;
-      &:hover {
-        transition: all 0.3s ease;
-        background: white;
-        color: $color1;
+    #for-client {
+      width: 100%;
+      text-align: start;
+      font-size: 1.5rem;
+      margin: 1rem 0rem 1rem 2rem;
+    }
+    #description-for-client {
+      width: 40%;
+      text-align: start;
+      font-size: 1.35rem;
+      margin: 1rem 0rem 0rem 2rem;
+    }
+    h2 {
+      font-family: "Kaisei Tokumin", serif;
+      width: 40%;
+      margin: 2rem 0rem 1rem 2rem;
+      text-align: start;
+      font-size: 3rem;
+    }
+    .card-container {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .card {
+        h4 {
+          font-size: 1.75rem;
+          margin: 0rem 3rem 2rem 0rem;
+        }
+        p {
+          font-size: 1.25rem;
+        }
+        margin: 1rem;
+        width: 30%;
+        border-radius: 25px;
+        padding: 1.5rem;
+        background: $lightColor;
+        cursor: pointer;
+        &:hover {
+          transition: all 0.3s ease;
+          background: white;
+          color: $color1;
+        }
       }
     }
   }
@@ -261,9 +294,8 @@ header {
     border-radius: 25px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
     .sort {
+      width: 40%;
       h3 {
         cursor: pointer;
         font-size: 2.3rem;
@@ -372,7 +404,7 @@ header {
 .show {
   display: flex;
   flex-direction: column;
-  margin: 0rem 2rem;
+  margin: 0rem 1rem;
   a {
     font-size: 1.4rem;
     color: $darktext;

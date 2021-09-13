@@ -72,24 +72,32 @@ const TrendingSkills2 = [
 ];
 const topSkillBtn = document.getElementById("topSkill");
 const trendingSkillBtn = document.getElementById("trendingSkills");
-const topSkillUsBtn = document.getElementById("topSkillsUs");
+const UsTopSkillBtn = document.getElementById("topSkillsUs");
 const projectsBtn = document.getElementById("projects");
 
 const topListDiv1 = document.querySelector(".skills-list-1");
 const topListDiv2 = document.querySelector(".skills-list-2");
 const trendingListDiv1 = document.querySelector(".TrendingSkills-list-1");
 const trendingListDiv2 = document.querySelector(".TrendingSkills-list-2");
+const UsTopListDiv1 = document.querySelector(".UsTop-list-1");
+const UsTopListDiv2 = document.querySelector(".UsTop-list-2");
+const projectsListDiv1 = document.querySelector(".projects-list-1");
+const projectsListDiv2 = document.querySelector(".projects-list-2");
 
 // Top Skills
 topSkillBtn.addEventListener("click", () => {
   //Changes button
   topSkillBtn.classList.add("current");
   trendingSkillBtn.classList.remove("current");
-  topSkillUsBtn.classList.remove("current");
+  UsTopSkillBtn.classList.remove("current");
   projectsBtn.classList.remove("current");
 
   trendingListDiv1.classList.add("hide");
   trendingListDiv2.classList.add("hide");
+  UsTopListDiv1.classList.add("hide");
+  UsTopListDiv2.classList.add("hide");
+  projectsListDiv1.classList.add("hide");
+  projectsListDiv2.classList.add("hide");
 
   //TOggle classes
   topListDiv1.classList.remove("hide");
@@ -102,9 +110,13 @@ topSkillBtn.addEventListener("click", () => {
 trendingSkillBtn.addEventListener("click", async () => {
   trendingSkillBtn.classList.add("current");
   topSkillBtn.classList.remove("current");
-  topSkillUsBtn.classList.remove("current");
+  UsTopSkillBtn.classList.remove("current");
   projectsBtn.classList.remove("current");
 
+  UsTopListDiv1.classList.add("hide");
+  UsTopListDiv2.classList.add("hide");
+  projectsListDiv1.classList.add("hide");
+  projectsListDiv2.classList.add("hide");
   topListDiv1.classList.add("hide");
   topListDiv2.classList.add("hide");
 
@@ -115,18 +127,43 @@ trendingSkillBtn.addEventListener("click", async () => {
 });
 
 //Top Skills US Button
-topSkillUsBtn.addEventListener("click", () => {
-  topSkillUsBtn.classList.add("current");
+UsTopSkillBtn.addEventListener("click", () => {
+  topSkillBtn.classList.add("current");
   topSkillBtn.classList.remove("current");
   trendingSkillBtn.classList.remove("current");
   projectsBtn.classList.remove("current");
+
+  trendingListDiv1.classList.add("hide");
+  trendingListDiv2.classList.add("hide");
+  projectsListDiv1.classList.add("hide");
+  projectsListDiv2.classList.add("hide");
+  topListDiv1.classList.add("hide");
+  topListDiv2.classList.add("hide");
+
+  UsTopListDiv1.classList.remove("hide");
+  UsTopListDiv2.classList.remove("hide");
+  UsTopListDiv1.classList.add("show");
+  UsTopListDiv2.classList.add("show");
 });
 
+//Projects
 projectsBtn.addEventListener("click", () => {
   projectsBtn.classList.add("current");
   topSkillBtn.classList.remove("current");
-  topSkillUsBtn.classList.remove("current");
+  UsTopSkillBtn.classList.remove("current");
   trendingSkillBtn.classList.remove("current");
+
+  trendingListDiv1.classList.add("hide");
+  trendingListDiv2.classList.add("hide");
+  UsTopListDiv1.classList.add("hide");
+  UsTopListDiv2.classList.add("hide");
+  topListDiv1.classList.add("hide");
+  topListDiv2.classList.add("hide");
+
+  projectsListDiv1.classList.remove("hide");
+  projectsListDiv2.classList.remove("hide");
+  projectsListDiv1.classList.add("show");
+  projectsListDiv2.classList.add("show");
 });
 
 //Header arrows
