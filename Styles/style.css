@@ -1217,9 +1217,9 @@ header {
   border: 5px solid black;
 }
 
-.talent-container {
+.talent-section {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1231,11 +1231,118 @@ header {
           align-items: center;
 }
 
-.talent-container .talent-container {
+.talent-section p {
+  font-family: "Kaisei Tokumin", serif;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.talent-section .talent-container {
   width: 95%;
   height: 95%;
-  background: #054e97;
+  background: #49af7c;
   border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.talent-section .talent-container .image-card {
+  width: 50%;
+}
+
+.talent-section .talent-container .image-card img {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  width: 100%;
+  height: 100%;
+  -o-object-position: bottom;
+     object-position: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.talent-section .talent-container .text-card {
+  width: 50%;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 2rem;
+}
+
+.talent-section .talent-container .text-card #card-title-name {
+  font-size: 1.5rem;
+}
+
+.talent-section .talent-container .text-card #card-text {
+  width: 70%;
+}
+
+.talent-section .talent-container .text-card h2 {
+  font-size: 4rem;
+  color: white;
+  font-family: "Kaisei Tokumin", serif;
+  width: 60%;
+  margin: 1.2rem 0rem;
+}
+
+.talent-section .talent-container .text-card .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  margin-top: 4.5rem;
+  border-top: 0.75px solid lightgray;
+}
+
+.talent-section .talent-container .text-card .card-container .card {
+  width: 30%;
+  margin: 0.5rem 1rem 2rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.talent-section .talent-container button {
+  cursor: pointer;
+  width: 45%;
+  border-radius: 25px;
+  border: none;
+  background: white;
+  color: #49af7c;
+  font-size: 1.25rem;
+  padding: 0.3rem;
+}
+
+.talent-section .talent-container button:hover {
+  background: #e2e1e1;
 }
 
 .reviews {
@@ -1378,6 +1485,10 @@ header {
 .ezwork-about .ezwork-about-container .text-section .card-container .card .star-container p {
   margin: 0.5rem 1rem 0.5rem 0rem;
   font-size: 1.4rem;
+}
+
+.ezwork-about .ezwork-about-container .text-section .card-container .card .star-container #empty {
+  color: #a5a5a5;
 }
 
 .ezwork-about .ezwork-about-container .text-section .card-container .card .star-container i {
