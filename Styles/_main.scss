@@ -4,98 +4,17 @@ $color2: #001f3f;
 $color3: rgb(148, 182, 245);
 /* STARTING INTROS */
 .user-intro {
-  width: 100%;
-  height: fit-content;
+  img {
+    width: 4rem;
+    height: 4rem;
+  }
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  padding: 3rem;
-  .user-intro-title {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-    h3 {
-      padding-right: 4px;
-      font-size: 4rem;
-    }
-    span {
-      color: $color3;
-    }
-  }
-  .description {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 2rem;
-    .money,
-    .experience,
-    .money-back {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      margin: 2rem;
-      img {
-        width: 4rem;
-        height: 4rem;
-        padding-right: 1rem;
-      }
-      p {
-        font-size: 2rem;
-        font-weight: bolder;
-      }
-      span {
-        color: $color3;
-      }
-    }
-  }
-  a {
-    text-decoration: none;
-    color: #181818;
-  }
-  button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 1rem;
-    cursor: pointer;
-    min-width: 50%;
-    height: 50px;
-    font-size: 1.4rem;
-    background: white;
-    border: #181818 4px solid;
-    border-radius: 5px;
-  }
-  button:hover {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.7s ease;
-    padding: 1rem;
-    a {
-      transition: all 0.7s ease;
-      text-decoration: none;
-      color: $color1;
-    }
-    cursor: pointer;
-    min-width: 30%;
-    height: 50px;
-    font-size: 1.4rem;
-    background: white;
-    border: $color1 4px solid;
-    border-radius: 5px;
-  }
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 30px;
+  border: #001f3f 5px solid;
+  margin: 2rem;
 }
 .image-gallery {
   width: 100%;

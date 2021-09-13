@@ -57,249 +57,30 @@ body {
 }
 
 /*Home Page: main.html*/
-header {
-  width: 100%;
-  height: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #001f3f;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-header h2 {
-  font-family: "Archivo Black", sans-serif;
-  font-size: 3rem;
-}
-
-header h2 a {
-  text-decoration: none;
-  color: white;
-}
-
-header span {
-  color: #94b6f5;
-}
-
-header a:hover {
-  -webkit-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
-  color: #94b6f5;
-}
-
-header a:hover span {
-  -webkit-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
-  color: white;
-}
-
-header .nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  list-style: none;
-}
-
-header .nav ul li {
-  font-size: 1.5rem;
-  padding: 3rem;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-header .nav ul a {
-  text-decoration: none;
-  color: white;
-  font-weight: bolder;
-}
-
-header .nav ul a:hover {
-  -webkit-transition: all 1.3s ease-in-out;
-  transition: all 1.3s ease-in-out;
-  font-size: 1.55rem;
-}
-
 /*GLOBAL COLORS */
 /* STARTING INTROS */
 .user-intro {
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3rem;
-}
-
-.user-intro .user-intro-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  text-align: center;
-}
-
-.user-intro .user-intro-title h3 {
-  padding-right: 4px;
-  font-size: 4rem;
-}
-
-.user-intro .user-intro-title span {
-  color: #94b6f5;
-}
-
-.user-intro .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+  border-radius: 30px;
+  border: #001f3f 5px solid;
   margin: 2rem;
 }
 
-.user-intro .description .money,
-.user-intro .description .experience,
-.user-intro .description .money-back {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 2rem;
-}
-
-.user-intro .description .money img,
-.user-intro .description .experience img,
-.user-intro .description .money-back img {
+.user-intro img {
   width: 4rem;
   height: 4rem;
-  padding-right: 1rem;
-}
-
-.user-intro .description .money p,
-.user-intro .description .experience p,
-.user-intro .description .money-back p {
-  font-size: 2rem;
-  font-weight: bolder;
-}
-
-.user-intro .description .money span,
-.user-intro .description .experience span,
-.user-intro .description .money-back span {
-  color: #94b6f5;
-}
-
-.user-intro a {
-  text-decoration: none;
-  color: #181818;
-}
-
-.user-intro button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-decoration: none;
-  padding: 1rem;
-  cursor: pointer;
-  min-width: 50%;
-  height: 50px;
-  font-size: 1.4rem;
-  background: white;
-  border: #181818 4px solid;
-  border-radius: 5px;
-}
-
-.user-intro button:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  padding: 1rem;
-  cursor: pointer;
-  min-width: 30%;
-  height: 50px;
-  font-size: 1.4rem;
-  background: white;
-  border: #2281b8 4px solid;
-  border-radius: 5px;
-}
-
-.user-intro button:hover a {
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  text-decoration: none;
-  color: #2281b8;
 }
 
 .image-gallery {
@@ -1080,6 +861,244 @@ header .nav ul a:hover {
   .service-section .title h2 {
     font-size: 3.5rem;
   }
+}
+
+/*Header Section */
+header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+
+.header-container {
+  margin: 0rem 1.5rem;
+  border-bottom: 1.5px lightgrey solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container .logo {
+  margin: 0rem 2rem;
+  cursor: pointer;
+  grid: logo;
+  margin: 1rem;
+}
+
+.header-container .logo h3 {
+  font-family: "Archivo Black", sans-serif;
+  color: #797979;
+  font-size: 2rem;
+}
+
+.header-container .logo span {
+  font-size: 2rem;
+  color: #072c50;
+}
+
+.header-container .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-container .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.header-container .links ul li {
+  margin: 0rem 15px;
+  color: #797979;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header-container .links ul li:hover {
+  color: #054e97;
+}
+
+.header-container .links ul li i {
+  margin-left: 5px;
+}
+
+.header-container .login button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #797979;
+  border: none;
+  background: none;
+  margin: 0rem 0.5rem;
+}
+
+.header-container .login button:hover {
+  color: #054e97;
+}
+
+.header-container .login .sign-up-btn {
+  padding: 0.4rem 1.3rem;
+  border-radius: 25px;
+  background: #054e97;
+  color: white;
+}
+
+.header-container .login .sign-up-btn:hover {
+  background-color: #072c50;
+  color: white;
+}
+
+.categories {
+  padding: 1rem;
+}
+
+.categories ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.categories ul a {
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+}
+
+.categories ul a li {
+  color: #797979;
+  font-size: 1.1rem;
+}
+
+.categories ul a li:hover {
+  color: #054e97;
+}
+
+/* Header Section Ends */
+.intro-container {
+  margin-top: 5.5rem;
+  width: 100%;
+  height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro-container .intro-title {
+  width: 50%;
+}
+
+.intro-container .intro-title h2 {
+  color: #054e97;
+  font-size: 3.8rem;
+}
+
+.intro-container .intro-title h3 {
+  width: 70%;
+  color: #797979;
+  font-size: 1.65rem;
+  font-weight: lighter;
+}
+
+.intro-container .intro-image {
+  margin: 1rem;
+}
+
+.intro-container .intro-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 27rem;
+  height: 27rem;
+  border-radius: 50%;
+}
+
+.intro-container button {
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  background: #054e97;
+  padding: 0.4rem 1.3rem;
+  margin: 1rem 0.5rem;
+  border-radius: 25px;
+}
+
+.intro-container button:hover {
+  background: #072c50;
+}
+
+.intro-container .find-work-btn {
+  padding: 0.4rem 1.3rem;
+  border: 2px solid #054e97;
+  border-radius: 25px;
+  background: transparent;
+  color: #054e97;
+}
+
+.intro-container .find-work-btn:hover {
+  background-color: rgba(5, 78, 151, 0.1);
+}
+
+.cleints-container {
+  width: 100%;
+  background: wheat;
+  height: 95vh;
+}
+
+.cleints-container img {
+  width: 10rem;
+  height: 10rems;
 }
 
 /*EzWork Page*/
