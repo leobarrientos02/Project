@@ -1096,9 +1096,7 @@ header {
 
 .clients {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 110vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1114,7 +1112,7 @@ header {
   width: 95%;
   height: 95%;
   border-radius: 25px;
-  background-image: url("../Image/COVID_19_and_the_growing_demand_for_freelance_workers.jpg");
+  background-image: url("../Image/pexels-ono-kosuki-5647660.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1141,7 +1139,7 @@ header {
 }
 
 .clients .content #description-for-client {
-  width: 40%;
+  width: 30%;
   text-align: start;
   font-size: 1.35rem;
   margin: 1rem 0rem 0rem 2rem;
@@ -1152,7 +1150,7 @@ header {
   width: 40%;
   margin: 2rem 0rem 1rem 2rem;
   text-align: start;
-  font-size: 3.21rem;
+  font-size: 4rem;
 }
 
 .clients .content .card-container {
@@ -1170,6 +1168,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 2rem 0rem 0rem 0rem;
 }
 
 .clients .content .card-container .card {
@@ -1262,7 +1261,7 @@ header {
 
 .ezwork-about {
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1275,14 +1274,130 @@ header {
 }
 
 .ezwork-about .ezwork-about-container {
-  background: #054e97;
   width: 95%;
   height: 95%;
-  border-radius: 25px;
-  border: 5px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.popular-skills-review {
+.ezwork-about .ezwork-about-container .text-section {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  width: 50%;
+  background: #054e97;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 2rem;
+}
+
+.ezwork-about .ezwork-about-container .text-section .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 80%;
+  margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.ezwork-about .ezwork-about-container .text-section .title h2 {
+  font-family: "Kaisei Tokumin", serif;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.ezwork-about .ezwork-about-container .text-section p {
+  font-family: "Kaisei Tokumin", serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.ezwork-about .ezwork-about-container .text-section .card-container {
+  margin-top: 6.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.ezwork-about .ezwork-about-container .text-section .card-container .card {
+  width: 50%;
+  margin: 0rem 1.5em 1rem 0rem;
+  border-top: 0.75px solid lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.ezwork-about .ezwork-about-container .text-section .card-container .card p {
+  margin: 0.5rem 0rem;
+  font-size: 1.2rem;
+}
+
+.ezwork-about .ezwork-about-container .text-section .card-container .card .star-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ezwork-about .ezwork-about-container .text-section .card-container .card .star-container p {
+  margin: 0.5rem 1rem 0.5rem 0rem;
+  font-size: 1.4rem;
+}
+
+.ezwork-about .ezwork-about-container .text-section .card-container .card .star-container i {
+  color: white;
+}
+
+.ezwork-about .ezwork-about-container .image-section {
+  width: 50%;
+}
+
+.ezwork-about .ezwork-about-container .image-section img {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.skills-directory {
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1298,7 +1413,7 @@ header {
           align-items: center;
 }
 
-.popular-skills-review .popular-skills-container {
+.skills-directory .popular-skills-container {
   width: 95%;
   height: 95%;
   padding: 3rem 2rem;
@@ -1312,21 +1427,21 @@ header {
           flex-direction: row;
 }
 
-.popular-skills-review .popular-skills-container .sort {
+.skills-directory .popular-skills-container .sort {
   width: 37%;
 }
 
-.popular-skills-review .popular-skills-container .sort h3 {
+.skills-directory .popular-skills-container .sort h3 {
   cursor: pointer;
   font-size: 2.3rem;
   color: #afafaf;
 }
 
-.popular-skills-review .popular-skills-container .sort h3:hover {
+.skills-directory .popular-skills-container .sort h3:hover {
   color: #0a345e;
 }
 
-.popular-skills-review .popular-skills-container .sort .current {
+.skills-directory .popular-skills-container .sort .current {
   color: #054e97;
 }
 
