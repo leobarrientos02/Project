@@ -1273,6 +1273,118 @@ header {
   width: 95%;
   height: 95%;
   border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.78rem;
+  margin: 0rem 3rem;
+}
+
+.footer .footer-container .directory-tree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .footer-container .directory-tree h6 {
+  font-size: 0.83rem;
+  color: whitesmoke;
+}
+
+.footer .footer-container .directory-tree .directory-tree-user,
+.footer .footer-container .directory-tree .directory-tree-talent,
+.footer .footer-container .directory-tree .directory-tree-resource,
+.footer .footer-container .directory-tree .directory-tree-ezwork {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0rem 10rem 0rem 0rem;
+}
+
+.footer .footer-container .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.8px solid lightgrey;
+  border-top: 0.8px solid lightgrey;
+  padding: 1rem 0rem;
+}
+
+.footer .footer-container .social-links p {
+  color: white;
+  margin: 0rem 1rem 0rem 0rem;
+}
+
+.footer .footer-container .social-links a {
+  border-radius: 50%;
+  margin: 0.5rem;
+  color: lightgray;
+  border: lightgray 0.9px solid;
+}
+
+.footer .footer-container .social-links a i {
+  border-radius: 50%;
+  background: #072c50;
+  padding: 0.5rem;
+}
+
+.footer .footer-container .social-links a i:hover {
+  background: #054e97;
+}
+
+.footer .footer-container .copyright-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: whitesmoke;
+}
+
+.footer .footer-container .copyright-section p {
+  margin: 0rem 0rem 0rem 2rem;
+}
+
+.footer .footer-container .copyright-section a {
+  cursor: pointer;
+  color: whitesmoke;
+  padding: 0rem 2rem;
 }
 
 /*EzWork Page*/
