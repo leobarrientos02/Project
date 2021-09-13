@@ -2,6 +2,9 @@ $color1: #072c50;
 $lightColor: #054e97;
 $darktext: rgb(121, 121, 121);
 /*Header Section */
+a {
+  text-decoration: none;
+}
 header {
   position: fixed;
   top: 0;
@@ -165,7 +168,6 @@ header {
   align-items: center;
   .clients-container {
     width: 95%;
-    position: relative;
     height: 95%;
     border-radius: 25px;
     background-image: url("../Image/pexels-ono-kosuki-5974388.jpg");
@@ -179,7 +181,6 @@ header {
     flex-wrap: wrap;
     color: white;
     font-weight: bold;
-    position: absolute;
     .card {
       margin: 1rem;
       border-radius: 25px;

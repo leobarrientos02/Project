@@ -864,6 +864,10 @@ body {
 }
 
 /*Header Section */
+a {
+  text-decoration: none;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -1106,7 +1110,6 @@ header {
 
 .clients .clients-container {
   width: 95%;
-  position: relative;
   height: 95%;
   border-radius: 25px;
   background-image: url("../Image/pexels-ono-kosuki-5974388.jpg");
@@ -1128,7 +1131,6 @@ header {
       flex-wrap: wrap;
   color: white;
   font-weight: bold;
-  position: absolute;
 }
 
 .clients .content .card {
