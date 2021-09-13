@@ -157,12 +157,119 @@ header {
     }
   }
 }
-.cleints-container {
+.clients {
   width: 100%;
-  background: wheat;
-  height: 95vh;
-  img {
-    width: 10rem;
-    height: 10rems;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .clients-container {
+    width: 95%;
+    position: relative;
+    height: 95%;
+    border-radius: 25px;
+    background-image: url("../Image/pexels-ono-kosuki-5974388.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    .card {
+      margin: 1rem;
+      border-radius: 25px;
+      padding: 3rem;
+      background: $lightColor;
+      cursor: pointer;
+      &:hover {
+        transition: all 0.3s ease;
+        background: white;
+        color: $color1;
+      }
+    }
+  }
+}
+.skills {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .skills-container {
+    width: 95%;
+    height: 95%;
+    border-radius: 25px;
+    border: 5px solid black;
+  }
+}
+.talent-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .talent-container {
+    width: 95%;
+    height: 95%;
+    background: $lightColor;
+    border-radius: 25px;
+  }
+}
+.reviews {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .reviews-container {
+    width: 95%;
+    height: 95%;
+    border-radius: 25px;
+    border: 5px solid black;
+  }
+}
+.ezwork-about {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .ezwork-about-container {
+    background: $lightColor;
+    width: 95%;
+    height: 95%;
+    border-radius: 25px;
+    border: 5px solid black;
+  }
+}
+.popular-skills-review {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .popular-skills-container {
+    width: 95%;
+    height: 95%;
+    border-radius: 25px;
+    border: 5px solid black;
+  }
+}
+.footer {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color1;
+  .footer-container {
+    width: 95%;
+    height: 95%;
+    border-radius: 25px;
   }
 }

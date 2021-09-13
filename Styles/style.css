@@ -1090,15 +1090,187 @@ header {
   background-color: rgba(5, 78, 151, 0.1);
 }
 
-.cleints-container {
+.clients {
   width: 100%;
-  background: wheat;
-  height: 95vh;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.cleints-container img {
-  width: 10rem;
-  height: 10rems;
+.clients .clients-container {
+  width: 95%;
+  position: relative;
+  height: 95%;
+  border-radius: 25px;
+  background-image: url("../Image/pexels-ono-kosuki-5974388.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.clients .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+}
+
+.clients .content .card {
+  margin: 1rem;
+  border-radius: 25px;
+  padding: 3rem;
+  background: #054e97;
+  cursor: pointer;
+}
+
+.clients .content .card:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: white;
+  color: #072c50;
+}
+
+.skills {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .skills-container {
+  width: 95%;
+  height: 95%;
+  border-radius: 25px;
+  border: 5px solid black;
+}
+
+.talent-container {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.talent-container .talent-container {
+  width: 95%;
+  height: 95%;
+  background: #054e97;
+  border-radius: 25px;
+}
+
+.reviews {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews .reviews-container {
+  width: 95%;
+  height: 95%;
+  border-radius: 25px;
+  border: 5px solid black;
+}
+
+.ezwork-about {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ezwork-about .ezwork-about-container {
+  background: #054e97;
+  width: 95%;
+  height: 95%;
+  border-radius: 25px;
+  border: 5px solid black;
+}
+
+.popular-skills-review {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popular-skills-review .popular-skills-container {
+  width: 95%;
+  height: 95%;
+  border-radius: 25px;
+  border: 5px solid black;
+}
+
+.footer {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #072c50;
+}
+
+.footer .footer-container {
+  width: 95%;
+  height: 95%;
+  border-radius: 25px;
 }
 
 /*EzWork Page*/
