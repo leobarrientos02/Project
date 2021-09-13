@@ -128,7 +128,7 @@ trendingSkillBtn.addEventListener("click", async () => {
 
 //Top Skills US Button
 UsTopSkillBtn.addEventListener("click", () => {
-  topSkillBtn.classList.add("current");
+  UsTopSkillBtn.classList.add("current");
   topSkillBtn.classList.remove("current");
   trendingSkillBtn.classList.remove("current");
   projectsBtn.classList.remove("current");

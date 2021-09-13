@@ -8,10 +8,10 @@
 }
 
 html {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
-  -webkit-animation: opening 2.5s ease-in-out;
-          animation: opening 2.5s ease-in-out;
+  -webkit-animation: opening 2s ease-in-out;
+          animation: opening 2s ease-in-out;
 }
 
 body {
@@ -1096,7 +1096,9 @@ header {
 
 .clients {
   width: 100%;
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1150,7 +1152,7 @@ header {
   width: 40%;
   margin: 2rem 0rem 1rem 2rem;
   text-align: start;
-  font-size: 3rem;
+  font-size: 3.21rem;
 }
 
 .clients .content .card-container {
@@ -1311,7 +1313,7 @@ header {
 }
 
 .popular-skills-review .popular-skills-container .sort {
-  width: 40%;
+  width: 37%;
 }
 
 .popular-skills-review .popular-skills-container .sort h3 {
@@ -1330,7 +1332,9 @@ header {
 
 .footer {
   width: 100%;
-  height: 82vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1473,6 +1477,7 @@ header {
   padding: 0rem 2rem;
 }
 
+/* Hide and show is used for javascritp */
 .hide a {
   display: none;
 }
@@ -1491,7 +1496,7 @@ header {
 .show a {
   font-size: 1.4rem;
   color: #797979;
-  margin: 0.5rem 0rem;
+  margin: 0.45rem 0rem;
 }
 
 .show a:hover {
