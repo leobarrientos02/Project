@@ -148,7 +148,11 @@ const see_all_skills = document.getElementById("see_all_skills");
 
 //Image
 const image1 = document.getElementById("image1");
+const image2 = document.getElementById("image2");
 const image3 = document.getElementById("image3");
+const image4 = document.getElementById("image4");
+const image5 = document.getElementById("image5");
+const image6 = document.getElementById("image6");
 
 // Button1
 developement_IT.addEventListener("click", () => {
