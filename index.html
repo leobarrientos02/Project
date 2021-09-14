@@ -1,254 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A platform for skilled workers or talented people to freelance, find projects to work on, extra ways to earn income.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lobster&display=swap" rel="stylesheet"> 
-    <title>EZWork | Find Jobs or Freelancers</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="A platform for skilled workers or talented people to freelance, find projects to work on, extra ways to earn income.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/e9089fea9d.js" crossorigin="anonymous"></script>
+        <title>EZWork | Find Jobs or Freelancers</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet"> 
-    <link rel="icon" href="../icons/team.svg">
-    <link rel="stylesheet" href="./Styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet"> 
+        <link rel="icon" href="./icons/team.svg">
+        <link rel="stylesheet" href="./Styles/style.css">
+    </head>
 </head>
 <body>
-    <main>
-        <header>
-            <div class="title">
-                <h2><a href="./index.html">E<span>Z</span>Work</a></h2>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="./index.html"><h3><span>E</span>z<span>Work</span></h3></a>
             </div>
-            <div class="nav">
+            <div class="links">
                 <ul>
-                    <li> <a href="#about">About</a></li>
-                    <li> <a href="./EZWork/index.html">Explore</a></li>
-                    <li> <a href="./Login/index.html">Login</a></li>
-                    <li> <a href="./Register/index.html">Join</a></li>
+                    <li id="clients">For Clients <i class="fa fa-sort-down"></i></li>
+                    <li id="worker">For Talent<i class="fa fa-sort-down"></i></li>
+                    <li id="why">Why EzWork <i class="fa fa-sort-down"></i></li>
+                    <li>About</li>
                 </ul>
             </div>
-        </header>
-        <div class="user-intro">
-            <div class="user-intro-title">
-                <h3>Find the best <span>Freelancers</span> at low <span>prices</span></h3>
+            <div class="login">
+                <button class="login-btn">Log In</button>
+                <button class="sign-up-btn">Sign Up</button>
             </div>
-                <div class="description">
-                    <div class="slide"></div>
-                    <div class="money">
-                        <img src="./icons/save_money.svg" alt="save-money">
-                        <p>Low <span>Prices</span></p>
-                    </div>
-                    <div class="experience">
-                        <img src="./icons/experience.svg" alt="experience">
-                        <p>Well <span>Experience</span></p>
-                    </div>
-                    <div class="money-back">
-                        <img src="./icons/money-back.svg" alt="money-back">
-                        <p>Money Back <span>Guanrantee</span></p>
-                    </div>
+        </div>
+        <div id="categories" class="categories">
+            <ul>
+                <a href=""> <li>Developement & IT</li></a>
+                <a href=""><li>Design & Creative</li></a>
+                <a href=""><li>Sales & Marketing</li></a>
+                <a href=""><li>Writing & Translation</li></a>
+                <a href=""><li>Finance & Accounting</li></a>
+                <a href=""><li>Admin & Customer Support</li></a>
+            </ul>
+        </div>
+        <!--Arrow Directory Tree nav pull down-->
+        <div class="client-pulldown"></div>
+        <div class="freelance-pulldown"></div>
+        <div class="ezwork-pulldown pulldown"></div>
+    </header>
+    <!--Intro Begin-->
+    <div class="intro-container">
+        <div class="intro-title">
+            <h2>Find work in the work marketpalce</h2>
+            <h3>Find the best talent. Build your portfolio. Build your career to the next level.</h3>
+            <button>Find Talent</button>
+            <button class="find-work-btn">Find Work</button>
+        </div>
+        <div class="intro-image">
+            <img src="./Image/introCartoon.jpg" alt="Cheerful guy earning money for his idea">
+        </div>
+    </div>
+      <!--Intro End-->
+    <div class="clients">
+      <div class="clients-container">
+        <div class="content">
+            <p id="for-client">For Clients</p>
+            <h2>Hire the best talent your way</h2>
+            <p id="description-for-client">Connect with the largest network of freelancers from around the world and get things done.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h4>Post a job and hire professionals</h4>
+                    <p>
+                        Post a job
+                        <i class="fas fa-arrow-right"></i>
+                    </p>
                 </div>
+                <div class="card">
+                    <h4>Browse and select through our talent</h4>
+                    <p>
+                        View our Talent
+                        <i class="fas fa-arrow-right"></i>
+                    </p>
+                </div>
+                <div class="card">
+                    <h4>View our talent's projects.</h4>
+                    <p>
+                        View Projects
+                        <i class="fas fa-arrow-right"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="skills">
+        <div class="skills-container">
+            <div class="skills-tree">
+                <h3>Hire Talent for any skill</h3>
+                <a class="current" href="#/">Developement & IT</a>
+                <a href="#/">Design & Creative</a>
+                <a href="#/">Sales & Marketing</a>
+                <a href="#/">Writing & Translation</a>
+                <a href="#/">Admin & Customer Support</a>
+                <a href="#/">Finance & Accounting</a>
+                <a href="#/">See all skills</a>
+            </div>
+            <div class="skills-result">
+                <div class="image-container">
+                    <img src="../Image/drawing.jpg" alt="">
+                </div>
+                <div class="results-container">
+                    
+                </div>
+            </div>
 
-                <a href="./EZWork/index.html"><button>Explore</button></a>
         </div>
-        <div class="image-gallery">
-            <div class="image">
-                <img src="./Image/accounting.jpg" alt="accouting">
-                <div class="image-text">
-                    <p>Accounting</p>
-                </div>
+    </div>
+    <div class="talent-section">
+        <div class="talent-container">
+            <div class="image-card">
+                <img src="./Image/talent-card-image.jpg" alt="freelance-jose">
             </div>
-            <div class="image">
-                <img src="./Image/carpenter.jpg" alt="carpenter">
-                <div class="image-text">
-                    <p>Carpenting</p>
+            <div class="text-card">
+                <p id="card-title-name">For Talent</p>
+                <h2>Find Great Work</h2>
+                <p id="card-text">Connect with clients you want to work with and build your portfolio.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <p>Find oppurtunites to boosts your freelance career</p>
+                    </div>
+                    <div class="card">
+                        <p>Earn money from anywhere</p>
+                    </div>
+                    <div class="card">
+                        <p>Choose when, where, and how you work</p>
+                    </div>
                 </div>
-            </div>
-            <div class="image">
-                <img src="./Image/coding.jpg" alt="code">
-                <div class="image-text">
-                    <p>Web Development</p>
-                </div>
-            </div>
-            <div class="image">
-                <img src="./Image/drawing.jpg" alt="draw">
-                <div class="image-text">
-                    <p>Drawing</p>
-                </div>
-            </div>
-            <div class="image">
-                <img src="./Image/essay.jpg" alt="writing">
-                <div class="image-text">
-                    <p>Writing</p>
-                </div>
-            </div>
-            <div class="image">
-                <img src="./Image/design.jpg" alt="design">
-                <div class="image-text">
-                    <p>Designing</p>
-                </div>
+                <button>Find Projects</button>
             </div>
         </div>
-        <div class="freelance-intro">
-            <div class="freelance-intro-title">
-                <h2>Are you a Freenlancer?</h2>
-                <h3><span>Connect</span> with our <span>thousands</span> of users from around the world</h3>
-                <div class="description">
-                    <div class="save-money">
-                        <img src="./icons/money.svg" alt="money">
-                        <p>Your <span>Money</span></p>
+    </div>
+    <div class="reviews">
+        <div class="reviews-container">
+            <div class="card card1">
+                <h2>Customer Reviews</h2>
+            </div>
+            <div class="card card2">
+                <div class="review">
+                    <div class="comment">
+                        <p>"This is one of my favorite websites to use when looking for quick freelancing jobs.
+                            I am able to develop websites for people all around the world, get paid, and keep most of my profit".
+                        </p>
                     </div>
-                    <div class="network">
-                        <img src="./icons/connection.svg" alt="network-connection">
-                        <p>Stay <span>Connected</span></p>
-                    </div>
-                    <div class="small-fees">
-                        <img src="./icons/fees.svg" alt="small-fees">
-                        <p>Small <span>fees</span></p>
-                    </div>
-                    <div class="no-contract">
-                        <img src="./icons/icons8-agreement-delete-100.png" alt="no-contract">
-                        <p>No <span>contract</span></p>
+                    <div class="review-info">
+                        <div class="profile-pic">
+                            <img src="../Users/leo.JPG" alt="profile-pic">
+                        </div>
+                        <div class="profile-info">
+                            <p>Leonel Barrientos</p>
+                            <p>Web Developer</p>
+                        </div>
                     </div>
                 </div>
-                <a href="./Register/index.html"><button>Register</button></a>
             </div>
-            <div class="freelance-intro-image">
-                <img src="./Image/freelance.jpg" alt="freelance">
-                <div class="image-text">
-                    <h4>Work from Home</h4>
-                </div>
-            </div>
-        </div>
-        <div class="service-section" id="service">   
-                <div class="title"><h2>Services</h2></div>
-                <div class="container">
-                    <div class="website">
-                        <h3>Website</h3>
-                        <div class="image-container">
-                            <div class="image">
-                                <img src="./Image/unavailable-image-1.jpg" alt="">
-                            </div>
-                            <div class="text"><h3>text</h3></div>
+            <div class="card card3">
+                <div id="green-review" class="review">
+                    <div class="comment">
+                        <p>"Wow, i joined EZWork to earn some extra cash doing what i love, writing. This site allows me to connect
+                            with people around the world, needing a professional author to revise or write something for them".
+                        </p>
+                    </div>
+                    <div class="review-info">
+                        <div class="profile-pic">
+                            <img src="../Users/john.jpg" alt="profile">
                         </div>
-                        <div class="image-container">
-                            <div class="image">
-                                <img src="./Image/unavailable-image-1.jpg" alt="">
-                            </div>
-                            <div class="text"><h3>text</h3></div>
-                        </div>
-                        <div class="image-container">
-                            <div class="image">
-                                <img src="./Image/unavailable-image-1.jpg" alt="">
-                            </div>
-                            <div class="text"><h3>text</h3></div>
+                        <div class="profile-info">
+                            <p>John Doe</p>
+                            <p>Author</p>
                         </div>
                     </div>
-                    <div class="mobile-app">
-                        <h3>Mobile</h3>
-                        <p>(Work in progress)</p>
-                        <div class="image-container">
-                            <div class="image">
-                                <img src="./Image/UserInterface/Picture1.png" alt="UI">
-                            </div>
-                            <div class="text">
-                                <h3>Customer User Interface</h3>
-                            </div>
+                </div>
+            </div>
+            <div class="card card4">
+                <div class="review">
+                    <div class="comment">
+                        <p>"Many people don't know that i enjoy helping other people create music. I use this site to connect
+                            with my fans, artists, and others to do anything from writing lyrics to making a beat".
+                        </p>
+                    </div>
+                    <div class="review-info">
+                        <div class="profile-pic">
+                            <img src="../Users/beyonce.jpg" alt="profile">
                         </div>
-                        <div class="image-container">
-                            <div class="image">
-                                <img src="./Image/UserInterface/Picture2.png" alt="UI">
-                            </div>
-                            <div class="text">
-                                <h3>Freelance User Interface</h3>
-                            </div>
-                        </div>
-                        <div class="image-container">
-                            <div class="image">
-                                <img src="./Image/UserInterface/Picture3.png" alt="UI">
-                            </div>
-                            <div class="text">
-                                <h3>Settings User Interface</h3>
-                            </div>
+                        <div class="profile-info">
+                            <p>Beyonce</p>
+                            <p>Artist</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="about-section" id="about">
-            <div class="about">
-                <h4>What is E<span>Z</span>Work?</h4>
-                <div class="answer">
-                    <p>A platform for skilled workers or talented people to freelance, find projects to work on, extra ways to earn income.</p>
+    </div>
+    <div class="ezwork-about">
+        <div class="ezwork-about-container">
+            <div class="text-section">
+                <div class="title">
+                    <h2>We connect our clients to the best talent.</h2>
                 </div>
-                <h4>Why E<span>Z</span>Work?</h4>
-                <div class="answer">
-                    <p>Consumers go to big companies like Home Depot, Best Buy’s geek squad because there are currently no platforms to find those skilled workers, corporate takes advantage of that and charges a huge fee. Not only do they take advantage of consumers, but they also take advantage of the workers who get paid hourly, when the company takes like 90% of the fee charged. Now we bring the options of hiring skilled freelancers, or the people that work at geek squad but off duty to the consumers, not only does consumers benefit from paying less, but the worker also takes the full payout (minus our small service fee) for their hard work!</p>
+                <p>No Middlemen</p>
+                <div class="card-container">
+                    <div class="card">
+                        <p>Over 250,000 Freelancers</p>
+                        <p>Over 700,000 Clients</p>
+                    </div>
+                    <div class="card">
+                        <p>35,312 reviews</p>
+                        <div class="star-container">
+                            <p>4.0</p>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i id="empty" class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </div>
-                <h4>Why Freelancers enjoy  E<span>Z</span>Work?</h4>
-                <div class="answer">
-                    <p>By bringing the option of paying less for consumers and earning the full revenue of the hard work for the freelancers. This will benefit both the consumer by avoiding huge fees and the worker can get all the profit for their hard work.</p>
-                </div>
+            </div>
+            <div class="image-section">
+                <img src="../Image/design.jpg" alt="coder">
             </div>
         </div>
-        <div class="review-section">
-            <h2>Customer Reviews</h2>
-            <div class="review">
-                <div class="comment">
-                    <p>"This is one of my favorite websites to use when looking for quick freelancing jobs.
-                        I am able to develop websites for people all around the world, get paid, and keep most of my profit".
-                    </p>
-                </div>
-                <div class="review-info">
-                    <div class="profile-pic">
-                        <img src="./Users/leo.JPG" alt="profile-pic">
-                    </div>
-                    <div class="profile-info">
-                        <p>Leonel Barrientos</p>
-                        <p>Web Developer</p>
-                    </div>
-                </div>
+    </div>
+    <div class="skills-directory">
+        <div class="popular-skills-container">
+            <div class="sort">
+                <h3 class="current" id="topSkill">Top Skills</h3>
+                <h3 id="trendingSkills">Trending Skills</h3>
+                <h3 id="topSkillsUs">Top Skills in US</h3>
+                <h3 id="projects">Projects</h3>
             </div>
-            <div class="review">
-                <div class="comment">
-                    <p>"Wow, i joined EZWork to earn some extra cash doing what i love, writing. This site allows me to connect
-                        with people around the world, needing a professional author to revise or write something for them".
-                    </p>
-                </div>
-                <div class="review-info">
-                    <div class="profile-pic">
-                        <img src="./Users/john.jpg" alt="profile">
-                    </div>
-                    <div class="profile-info">
-                        <p>John Doe</p>
-                        <p>Author</p>
-                    </div>
-                </div>
+            <div class="skills-list-1 show">
+                <a href="#/">Data Entry Specialists</a>
+                <a href="#/">Video Editors</a>
+                <a href="#/">Data Analyst</a>
+                <a href="#/">Shopify Developer</a>
+                <a href="#/">Ruby on Rails Developer</a>
+                <a href="#/">Android Developer</a>
+                <a href="#/">Bookkeeper</a>
+                <a href="#/">Content Writer</a>
+                <a href="#/">Copywriter</a>
+                <a href="#/">Database Administrator</a>
+                <a href="#/">Data Scientist</a>
+                <a href="#/">Front-End Developer</a>
+                <a href="#/">Game Developer</a>
+                <a href="#/">Graphic Designer</a>
+                <a href="#/">iOS Developer</a>
+                <a href="#/">Java Developer</a>
             </div>
-            <div class="review">
-                <div class="comment">
-                    <p>"Many people don't know that i enjoy helping other people create music. I use this site to connect
-                        with my fans, artists, and others to do anything from writing lyrics to making a beat".
-                    </p>
-                </div>
-                <div class="review-info">
-                    <div class="profile-pic">
-                        <img src="./Users/beyonce.jpg" alt="profile">
-                    </div>
-                    <div class="profile-info">
-                        <p>Beyonce</p>
-                        <p>Artist</p>
-                    </div>
-                </div>
+            <div class="TrendingSkills-list-1 hide">
+                <a href="#/">Blockchain</a>
+                <a href="#/">Go Development</a>
+                <a href="#/">Node.js</a>
+                <a href="#/">Vue.js</a>
+                <a href="#/">HR consulting</a>
+                <a href="#/">Microsoft Power BI</a>
+                <a href="#/">Instructional design</a>
+                <a href="#/">React.js</a>
+                <a href="#/">Videographers</a>
+                <a href="#/">HTML5 Developers</a>
+                <a href="#/">Ghostwriters</a>
+                <a href="#/">Unity 3D Developers</a>
+                <a href="#/">Business Consultants</a>
+                <a href="#/">Coders</a>
+                <a href="#/">Marketing Consultants</a>
+                <a href="#/">Web Developers</a>
+            </div>
+            <div class="UsTop-list-1 hide">
+                <a href="#/">Graphic Designers in US</a>
+                <a href="#/">Web Designers in US</a>
+                <a href="#/">Writers in US</a>
+                <a href="#/">Curriculum Developer in US</a>
+                <a href="#/">Fashion Designers in US</a>
+                <a href="#/">ECommerce Developers in US</a>
+                <a href="#/">Vue.js Developers in US</a>
+                <a href="#/">SquareSpace Developers in US</a>
+                <a href="#/">Ghostwriters in US</a>
+                <a href="#/">Shopify Developers in US</a>
+                <a href="#/">Technical Support Agents in US</a>
+                <a href="#/">Accountants in US</a>
+                <a href="#/">Virtual Assistants in US</a>
+                <a href="#/">Product Developers in US</a>
+                <a href="#/">Ebook Designers in US</a>
+                <a href="#/">Tax Preparers in US</a>
+                <a href="#/">Google Adwords Experts in US</a>
+            </div>
+            <div class="projects-list-1 hide">
+                <a href="#/">Resume Writing Services</a>
+                <a href="#/">SEO Services</a>
+                <a href="#/">Translation Services</a>
+                <a href="#/">Transcription Services</a>
+                <a href="#/">Virtual Assistant Services</a>
+                <a href="#/">Email Marketing Services</a>
+                <a href="#/">Web Design Services</a>
+                <a href="#/">Proofreading Services</a>
+                <a href="#/">Business Consulting Services</a>
+                <a href="#/">Logo Design Services</a>
+                <a href="#/">Architecture/Interior Design Services</a>
+                <a href="#/">Branding Services</a>
+                <a href="#/">Social Media Management Services</a>
+                <a href="#/">Video Editing Services</a>
+                <a href="#/">Lead Generation Services</a>
+                <a href="#/">Content Marketing Services</a>
+            </div>
+            <div class="skills-list-2 show">
+                <a href="#/">JavaScript Developer</a>
+                <a href="#/">Logo Designer</a>
+                <a href="#/">Mobile App Developer</a>
+                <a href="#/">PHP Developer</a>
+                <a href="#/">Resume Writer</a>
+                <a href="#/">SEO Expert</a>
+                <a href="#/">Social Media Manager</a>
+                <a href="#/">Software Developer</a>
+                <a href="#/">Software Engineer</a>
+                <a href="#/">Technial Writer</a>
+                <a href="#/">UI Designer</a>
+                <a href="#/">UX Designer</a>
+                <a href="#/">Virtual Assistant</a>
+                <a href="#/">Web Designer</a>
+                <a href="#/">Wordpress Developer</a>
+                <a href="#/">Python Developer</a>
+            </div>
+            <div class="TrendingSkills-list-2 hide">
+                <a href="#/">Illustrator</a>
+                <a href="#/">Google AdWords Experts</a>
+                <a href="#/">Digital Marketers</a>
+                <a href="#/">Arduino Programmers</a>
+                <a href="#/">Project Managers</a>
+                <a href="#/">Ruby Developers</a>
+                <a href="#/">AngularJS Developers</a>
+                <a href="#/">Full Stack Developers</a>
+                <a href="#/">Email Marketing Consultant</a>
+                <a href="#/">React Native Developers</a>
+                <a href="#/">Swift Native Developers</a>
+                <a href="#/">CSS Developers</a>
+                <a href="#/">Google Sketchup Freelancers</a>
+                <a href="#/">Back End Developers</a>
+                <a href="#/">Smartsheet Freelancer</a>
+                <a href="#/">Zoom Video Conferencing Freelancers</a>
+            </div>
+            <div class="UsTop-list-2 hide">
+                <a href="#/">Atlanta, GA Freelancers</a>
+                <a href="#/">Austin, TX Freelancers</a>
+                <a href="#/">Brooklyn, NY Freelancers</a>
+                <a href="#/">Charlotte, NC Freelancers</a>
+                <a href="#/">Chicago, IL Freelancers</a>
+                <a href="#/">Dallas, TX Freelancers</a>
+                <a href="#/">Denver, CO Freelancers</a>
+                <a href="#/">Houston, TX Freelancers</a>
+                <a href="#/">Los Angeles, CA Freelancers</a>
+                <a href="#/">Miami, FL Freelancers</a>
+                <a href="#/">New York, NY Freelancers</a>
+                <a href="#/">Orlando, FL Freelancers</a>
+                <a href="#/">Philadelphia, PA Freelancers</a>
+                <a href="#/">Phoenix, AZ Freelancers</a>
+                <a href="#/">Portland, OR Freelancers</a>
+                <a href="#/">San Diego, CA Freelancers</a>
+                <a href="#/">San Francisco, CA Freelancers</a>
+                <a href="#/">San Jose, CA Freelancers</a>
+                <a href="#/">Seattle, WA Freelancers</a>
+            </div>
+            <div class="projects-list-2 hide">
+                <a href="#/">Survey Services</a>
+                <a href="#/">Landscape Design Services</a>
+                <a href="#/">Photoshop Services</a>
+                <a href="#/">Mobile App Development Services</a>
+                <a href="#/">Data Entry Services</a>
+                <a href="#/">Building Information Modeling Services</a>
+                <a href="#/">Podcast Editing Services</a>
+                <a href="#/">Wellness Services</a>
+                <a href="#/">HR Consulting Services</a>
+                <a href="#/">Video Marketing Services</a>
+                <a href="#/">WordPress Development Services</a>
+                <a href="#/">Ecommerce Services</a>
+                <a href="#/">Influencer Marketing Services</a>
+                <a href="#/">Public Relations Services</a>
+                <a href="#/">QA Services</a>
             </div>
         </div>
-        <footer>
-           <h2>
-               &copy Copyright.
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="directory-tree">
+                <div class="directory-tree-user">
+                    <h6>For Users</h6>
+                    <a href="#/">Find Talent</a>
+                    <a href="#/">See Projects</a>
+                    <a href="#/">Create Account</a>
+                    <a href="#/">How To See Progress</a>
+                    <a href="#/">How To Pay Freelancer?</a>
+                    <a href="#/">View Current Listings</a>
+                    <a href="#/">Report</a>
+                    <a href="#/">Settings</a>
+                </div>
+                <div class="directory-tree-talent">
+                    <h6>For Talent</h6>
+                    <a href="#/">How To Find Work</a>
+                    <a href="#/">Agree Job</a>
+                    <a href="#/">How to get pay</a>
+                    <a href="#/">Check Balance</a>
+                    <a href="#/">Manage Jobs</a>
+                    <a href="#/">Report</a>
+                    <a href="#/">Settings</a>
+                </div>
+                <div class="directory-tree-resource">
+                    <h6>Resource</h6>
+                    <a href="#/">Help & Support</a>
+                    <a href="#/">EzWork Reviews</a> 
+                    <a href="#/">Trust & Security</a> 
+                </div>
+                <div class="directory-tree-ezwork">
+                    <h6>About</h6>
+                    <a href="#/">About Us</a>
+                    <a href="#/">Developers</a>
+                    <a href="#/">Contact Us</a>
+                </div>
+            </div>
+            <div class="social-links">
+                <p>Follow Us</p>
+                <a href="https://github.com/leobarrientos02/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+                <a href="https://twitter.com/L3O_BARRI3nT0S" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/leonel-barrientos-519b5a152/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UCnLwo3-caCdv6eOjGzJ0eEg" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play"></i></a>
+                <a href="https://www.instagram.com/leo_barrientos182/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="copyright-section">
+                &copy Copyright. 2021-
                 <script>document.write(new Date().getFullYear())</script>
-                All Rights Reserved.
-            </h2>
-        </footer>
-    </main>
+                EzWork&trade; Global Inc.
+                <p>|</p>
+                <a href="#/">Terms of Service</a>
+                <a href="#/">Privacy Policy</a>
+                <a href="#/">Accesibility</a>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="/js/mainPage.js"></script>
 </html>

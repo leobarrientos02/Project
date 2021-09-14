@@ -83,6 +83,16 @@ header {
     }
   }
 }
+.client-pulldown,
+.freelance-pulldown,
+.ezwork-pulldown {
+  width: 100%;
+  background: white;
+  display: none;
+  padding: 2rem;
+  height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
 .categories {
   padding: 1rem;
   ul {
@@ -170,7 +180,7 @@ header {
     width: 95%;
     height: 95%;
     border-radius: 25px;
-    background-image: url("../Image/pexels-ono-kosuki-5647660.jpg");
+    background-image: url("/Image/clients-container-bgImage.jpg");
     background-size: cover;
     background-position: center;
   }

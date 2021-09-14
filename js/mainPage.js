@@ -101,7 +101,37 @@ const ArrowDown1 = document.getElementById("clients");
 const ArrowDown2 = document.getElementById("worker");
 const ArrowDown3 = document.getElementById("why");
 
+const clientPulldown = document.querySelector(".client-pulldown");
+const freelancePulldown = document.querySelector(".freelance-pulldown");
+const ezworkPulldown = document.querySelector(".ezwork-pulldown");
+
+const categories = document.getElementById("categories");
+
 ArrowDown1.addEventListener("mouseover", () => {
-  console.log("leo");
+  categories.style.display = "none";
+  clientPulldown.style.display = "block";
 });
+ArrowDown1.addEventListener("mouseleave", () => {
+  categories.style.display = "block";
+  clientPulldown.style.display = "none";
+});
+
+ArrowDown2.addEventListener("mouseover", () => {
+  categories.style.display = "none";
+  freelancePulldown.style.display = "block";
+});
+ArrowDown2.addEventListener("mouseleave", () => {
+  categories.style.display = "block";
+  freelancePulldown.style.display = "none";
+});
+
+ArrowDown3.addEventListener("mouseover", () => {
+  categories.style.display = "none";
+  ezworkPulldown.style.display = "block";
+});
+ArrowDown3.addEventListener("mouseleave", () => {
+  categories.style.display = "block";
+  ezworkPulldown.style.display = "none";
+});
+
 // Header arrows Functionality Ends Here
