@@ -1198,7 +1198,9 @@ header {
 
 .skills {
   width: 100%;
-  height: 90vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1208,13 +1210,86 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-content: center;
 }
 
 .skills .skills-container {
   width: 95%;
   height: 95%;
+  padding: 2rem 0rem;
   border-radius: 25px;
-  border: 5px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.skills .skills-container .skills-tree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.skills .skills-container .skills-tree h3 {
+  width: 75%;
+  font-weight: bold;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.skills .skills-container .skills-tree a {
+  font-weight: bolder;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 0.7rem;
+  color: #797979;
+  font-size: 2rem;
+}
+
+.skills .skills-container .skills-tree a:hover {
+  color: #0a345e;
+}
+
+.skills .skills-container .skills-tree .current {
+  color: #054e97;
+}
+
+.skills .skills-container .skills-result {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills .skills-container .skills-result .image-container {
+  width: 100%;
+  height: 50%;
+}
+
+.skills .skills-container .skills-result .image-container img {
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.skills .skills-container .skills-result .results-container {
+  width: 100%;
+  height: 50%;
 }
 
 .talent-section {
@@ -1347,7 +1422,9 @@ header {
 
 .reviews {
   width: 100%;
-  height: 90vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1366,19 +1443,25 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.reviews .reviews-container h2 {
-  width: 50%;
+.reviews .reviews-container .card1 {
+  width: 100%;
+}
+
+.reviews .reviews-container .card1 h2 {
   font-family: "Kaisei Tokumin", serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: #2e2e2e;
 }
 
@@ -1391,6 +1474,82 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.reviews .reviews-container .card2,
+.reviews .reviews-container .card3,
+.reviews .reviews-container .card4 {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews .reviews-container .review {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  background: #054e97;
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: bolder;
+  border-radius: 25px;
+  border: white 3px solid;
+}
+
+.reviews .reviews-container .review .comment {
+  padding-bottom: 1rem;
+  margin: 0.5rem;
+  border-bottom: lightgray 0.75px solid;
+}
+
+.reviews .reviews-container .review .comment p {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.reviews .reviews-container .review .review-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews .reviews-container .review .review-info .profile-pic img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0.5rem;
+  border: 3px white solid;
+}
+
+.reviews .reviews-container .review .review-info .profile-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reviews .reviews-container .review .review-info .profile-info p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.reviews #green-review {
+  background: #49af7c;
 }
 
 .ezwork-about {
