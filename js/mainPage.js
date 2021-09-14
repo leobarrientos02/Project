@@ -154,6 +154,14 @@ const image4 = document.getElementById("image4");
 const image5 = document.getElementById("image5");
 const image6 = document.getElementById("image6");
 
+//Divs
+const results1 = document.querySelector(".results1");
+const results2 = document.querySelector(".results2");
+const results3 = document.querySelector(".results3");
+const results4 = document.querySelector(".results4");
+const results5 = document.querySelector(".results5");
+const results6 = document.querySelector(".results6");
+
 // Button1
 developement_IT.addEventListener("click", () => {
   developement_IT.classList.add("current");
@@ -163,6 +171,23 @@ developement_IT.addEventListener("click", () => {
   admin_customer.classList.remove("current");
   finance_accounting.classList.remove("current");
   see_all_skills.classList.remove("current");
+
+  //Toggle the images
+  image1.style.display = "block";
+  image2.style.display = "none";
+  image3.style.display = "none";
+  image4.style.display = "none";
+  image5.style.display = "none";
+  image6.style.display = "none";
+
+  //Toggle the div
+  results1.classList.remove("hide");
+  results1.classList.add("show2");
+  results2.classList.add("hide");
+  results3.classList.add("hide");
+  results4.classList.add("hide");
+  results5.classList.add("hide");
+  results6.classList.add("hide");
 });
 
 //Button2
@@ -174,6 +199,21 @@ design_creative.addEventListener("click", () => {
   admin_customer.classList.remove("current");
   finance_accounting.classList.remove("current");
   see_all_skills.classList.remove("current");
+
+  image1.style.display = "none";
+  image2.style.display = "block";
+  image3.style.display = "none";
+  image4.style.display = "none";
+  image5.style.display = "none";
+  image6.style.display = "none";
+
+  results2.classList.remove("hide");
+  results2.classList.add("show2");
+  results1.classList.add("hide");
+  results3.classList.add("hide");
+  results4.classList.add("hide");
+  results5.classList.add("hide");
+  results6.classList.add("hide");
 });
 
 //Button3
@@ -185,6 +225,21 @@ sales_marketing.addEventListener("click", () => {
   admin_customer.classList.remove("current");
   finance_accounting.classList.remove("current");
   see_all_skills.classList.remove("current");
+
+  image1.style.display = "none";
+  image2.style.display = "none";
+  image3.style.display = "block";
+  image4.style.display = "none";
+  image5.style.display = "none";
+  image6.style.display = "none";
+
+  results3.classList.remove("hide");
+  results3.classList.add("show2");
+  results1.classList.add("hide");
+  results2.classList.add("hide");
+  results4.classList.add("hide");
+  results5.classList.add("hide");
+  results6.classList.add("hide");
 });
 
 //Button4
@@ -198,8 +253,19 @@ writing_translation.addEventListener("click", () => {
   see_all_skills.classList.remove("current");
 
   image1.style.display = "none";
-  image3.style.display = "block";
-  image3.classList.add(".swing-top-fwd");
+  image2.style.display = "none";
+  image3.style.display = "none";
+  image4.style.display = "block";
+  image5.style.display = "none";
+  image6.style.display = "none";
+
+  results4.classList.remove("hide");
+  results4.classList.add("show2");
+  results1.classList.add("hide");
+  results2.classList.add("hide");
+  results3.classList.add("hide");
+  results5.classList.add("hide");
+  results6.classList.add("hide");
 });
 
 //Button5
@@ -211,6 +277,21 @@ admin_customer.addEventListener("click", () => {
   design_creative.classList.remove("current");
   finance_accounting.classList.remove("current");
   see_all_skills.classList.remove("current");
+
+  image1.style.display = "none";
+  image2.style.display = "none";
+  image3.style.display = "none";
+  image4.style.display = "none";
+  image5.style.display = "block";
+  image6.style.display = "none";
+
+  results5.classList.remove("hide");
+  results5.classList.add("show2");
+  results1.classList.add("hide");
+  results2.classList.add("hide");
+  results3.classList.add("hide");
+  results4.classList.add("hide");
+  results6.classList.add("hide");
 });
 
 // Button6
@@ -222,6 +303,21 @@ finance_accounting.addEventListener("click", () => {
   developement_IT.classList.remove("current");
   design_creative.classList.remove("current");
   see_all_skills.classList.remove("current");
+
+  image1.style.display = "none";
+  image2.style.display = "none";
+  image3.style.display = "none";
+  image4.style.display = "none";
+  image5.style.display = "none";
+  image6.style.display = "block";
+
+  results6.classList.remove("hide");
+  results6.classList.add("show2");
+  results1.classList.add("hide");
+  results2.classList.add("hide");
+  results3.classList.add("hide");
+  results4.classList.add("hide");
+  results5.classList.add("hide");
 });
 
 //Button7
@@ -233,4 +329,18 @@ see_all_skills.addEventListener("click", () => {
   sales_marketing.classList.remove("current");
   developement_IT.classList.remove("current");
   design_creative.classList.remove("current");
+
+  image1.style.display = "none";
+  image2.style.display = "none";
+  image3.style.display = "none";
+  image4.style.display = "none";
+  image5.style.display = "none";
+  image6.style.display = "none";
+
+  results1.classList.add("hide");
+  results2.classList.add("hide");
+  results3.classList.add("hide");
+  results4.classList.add("hide");
+  results5.classList.add("hide");
+  results6.classList.add("hide");
 });
