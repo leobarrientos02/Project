@@ -135,3 +135,98 @@ ArrowDown3.addEventListener("mouseleave", () => {
 });
 
 // Header arrows Functionality Ends Here
+
+// Skills section
+// Buttons
+const developement_IT = document.getElementById("developement_IT");
+const design_creative = document.getElementById("design_creative ");
+const sales_marketing = document.getElementById("sales_marketing");
+const writing_translation = document.getElementById("writing_translation");
+const admin_customer = document.getElementById("admin_customer");
+const finance_accounting = document.getElementById("finance_accounting");
+const see_all_skills = document.getElementById("see_all_skills");
+
+//Image
+const image1 = document.getElementById("image1");
+const image3 = document.getElementById("image3");
+
+// Button1
+developement_IT.addEventListener("click", () => {
+  developement_IT.classList.add("current");
+  design_creative.classList.remove("current");
+  sales_marketing.classList.remove("current");
+  writing_translation.classList.remove("current");
+  admin_customer.classList.remove("current");
+  finance_accounting.classList.remove("current");
+  see_all_skills.classList.remove("current");
+});
+
+//Button2
+design_creative.addEventListener("click", () => {
+  design_creative.classList.add("current");
+  developement_IT.classList.remove("current");
+  sales_marketing.classList.remove("current");
+  writing_translation.classList.remove("current");
+  admin_customer.classList.remove("current");
+  finance_accounting.classList.remove("current");
+  see_all_skills.classList.remove("current");
+});
+
+//Button3
+sales_marketing.addEventListener("click", () => {
+  sales_marketing.classList.add("current");
+  developement_IT.classList.remove("current");
+  design_creative.classList.remove("current");
+  writing_translation.classList.remove("current");
+  admin_customer.classList.remove("current");
+  finance_accounting.classList.remove("current");
+  see_all_skills.classList.remove("current");
+});
+
+//Button4
+writing_translation.addEventListener("click", () => {
+  writing_translation.classList.add("current");
+  sales_marketing.classList.remove("current");
+  developement_IT.classList.remove("current");
+  design_creative.classList.remove("current");
+  admin_customer.classList.remove("current");
+  finance_accounting.classList.remove("current");
+  see_all_skills.classList.remove("current");
+
+  image1.style.display = "none";
+  image3.style.display = "block";
+  image3.classList.add(".swing-top-fwd");
+});
+
+//Button5
+admin_customer.addEventListener("click", () => {
+  admin_customer.classList.add("current");
+  writing_translation.classList.remove("current");
+  sales_marketing.classList.remove("current");
+  developement_IT.classList.remove("current");
+  design_creative.classList.remove("current");
+  finance_accounting.classList.remove("current");
+  see_all_skills.classList.remove("current");
+});
+
+// Button6
+finance_accounting.addEventListener("click", () => {
+  finance_accounting.classList.add("current");
+  admin_customer.classList.remove("current");
+  writing_translation.classList.remove("current");
+  sales_marketing.classList.remove("current");
+  developement_IT.classList.remove("current");
+  design_creative.classList.remove("current");
+  see_all_skills.classList.remove("current");
+});
+
+//Button7
+see_all_skills.addEventListener("click", () => {
+  see_all_skills.classList.add("current");
+  finance_accounting.classList.remove("current");
+  admin_customer.classList.remove("current");
+  writing_translation.classList.remove("current");
+  sales_marketing.classList.remove("current");
+  developement_IT.classList.remove("current");
+  design_creative.classList.remove("current");
+});
