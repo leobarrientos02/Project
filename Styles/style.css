@@ -181,11 +181,47 @@ header {
 .ezwork-pulldown {
   width: 100%;
   background: white;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2rem;
-  height: 70vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.client-pulldown .card,
+.freelance-pulldown .card,
+.ezwork-pulldown .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#arrow1UP,
+#arrow2UP,
+#arrow3UP {
+  color: #797979;
+  margin-left: 5px;
 }
 
 .categories {
@@ -1107,6 +1143,10 @@ header {
 }
 
 /* Hide and show is used for javascritp */
+.hide {
+  display: none;
+}
+
 .hide a {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;

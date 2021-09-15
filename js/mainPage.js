@@ -101,6 +101,14 @@ const ArrowDown1 = document.getElementById("clients");
 const ArrowDown2 = document.getElementById("worker");
 const ArrowDown3 = document.getElementById("why");
 
+const arrow1 = document.getElementById("arrow1");
+const arrow2 = document.getElementById("arrow2");
+const arrow3 = document.getElementById("arrow3");
+
+const arrow1UP = document.getElementById("arrow1UP");
+const arrow2UP = document.getElementById("arrow2UP");
+const arrow3UP = document.getElementById("arrow3UP");
+
 const clientPulldown = document.querySelector(".client-pulldown");
 const freelancePulldown = document.querySelector(".freelance-pulldown");
 const ezworkPulldown = document.querySelector(".ezwork-pulldown");
@@ -110,28 +118,46 @@ const categories = document.getElementById("categories");
 ArrowDown1.addEventListener("mouseover", () => {
   categories.style.display = "none";
   clientPulldown.style.display = "block";
+
+  arrow1.classList.add("hide");
+  arrow1UP.classList.remove("hide");
 });
 ArrowDown1.addEventListener("mouseleave", () => {
   categories.style.display = "block";
   clientPulldown.style.display = "none";
+
+  arrow1UP.classList.add("hide");
+  arrow1.classList.remove("hide");
 });
 
 ArrowDown2.addEventListener("mouseover", () => {
   categories.style.display = "none";
   freelancePulldown.style.display = "block";
+
+  arrow2.classList.add("hide");
+  arrow2UP.classList.remove("hide");
 });
 ArrowDown2.addEventListener("mouseleave", () => {
   categories.style.display = "block";
   freelancePulldown.style.display = "none";
+
+  arrow2UP.classList.add("hide");
+  arrow2.classList.remove("hide");
 });
 
 ArrowDown3.addEventListener("mouseover", () => {
   categories.style.display = "none";
   ezworkPulldown.style.display = "block";
+
+  arrow3.classList.add("hide");
+  arrow3UP.classList.remove("hide");
 });
 ArrowDown3.addEventListener("mouseleave", () => {
   categories.style.display = "block";
   ezworkPulldown.style.display = "none";
+
+  arrow3UP.classList.add("hide");
+  arrow3.classList.remove("hide");
 });
 
 // Header arrows Functionality Ends Here

@@ -88,10 +88,24 @@ header {
 .ezwork-pulldown {
   width: 100%;
   background: white;
-  display: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   padding: 2rem;
-  height: 70vh;
+  height: fit-content;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+#arrow1UP,
+#arrow2UP,
+#arrow3UP {
+  color: $darktext;
+  margin-left: 5px;
 }
 .categories {
   padding: 1rem;
@@ -667,6 +681,7 @@ header {
 }
 /* Hide and show is used for javascritp */
 .hide {
+  display: none;
   a {
     transition: all.5s ease;
     display: none;
