@@ -151,6 +151,46 @@ header {
   margin-left: 5px;
 }
 
+.header-container .searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 25px;
+  width: 20rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 0.75px solid lightgray;
+}
+
+.header-container .searchBar #search {
+  border: none;
+  width: 80%;
+  margin-left: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.header-container .searchBar #search:focus {
+  outline: none;
+}
+
+.header-container .searchBar #submit {
+  width: 20%;
+  height: 2rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background: transparent;
+}
+
+.header-container .searchBar #submit:hover {
+  color: #054e97;
+}
+
 .header-container .login button {
   cursor: pointer;
   font-size: 1.2rem;
@@ -181,20 +221,7 @@ header {
 .ezwork-pulldown {
   width: 100%;
   background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2rem;
+  display: none;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -202,9 +229,130 @@ header {
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.client-pulldown .card,
-.freelance-pulldown .card,
-.ezwork-pulldown .card {
+.client-pulldown .card-container2,
+.freelance-pulldown .card-container2,
+.ezwork-pulldown .card-container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client-pulldown .card-container2 .card2,
+.freelance-pulldown .card-container2 .card2,
+.ezwork-pulldown .card-container2 .card2 {
+  width: 20%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.client-pulldown .card-container2 .card2 h3,
+.freelance-pulldown .card-container2 .card2 h3,
+.ezwork-pulldown .card-container2 .card2 h3 {
+  width: 100%;
+  font-weight: lighter;
+  font-size: 1rem;
+  color: #272727;
+  padding: 0.4rem 0rem;
+}
+
+.client-pulldown .card-container2 .card2 p,
+.freelance-pulldown .card-container2 .card2 p,
+.ezwork-pulldown .card-container2 .card2 p {
+  width: 90%;
+  font-size: 0.85rem;
+  color: #797979;
+}
+
+.client-pulldown .card-container2 .card2:hover,
+.freelance-pulldown .card-container2 .card2:hover,
+.ezwork-pulldown .card-container2 .card2:hover {
+  background-color: #ececec;
+}
+
+.client-pulldown .ezwork-main-container,
+.freelance-pulldown .ezwork-main-container,
+.ezwork-pulldown .ezwork-main-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2rem;
+}
+
+.client-pulldown .ezwork-main-container .card-container3-reviews,
+.freelance-pulldown .ezwork-main-container .card-container3-reviews,
+.ezwork-pulldown .ezwork-main-container .card-container3-reviews {
+  width: 70%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.client-pulldown .ezwork-main-container .card-container3-reviews .card3,
+.freelance-pulldown .ezwork-main-container .card-container3-reviews .card3,
+.ezwork-pulldown .ezwork-main-container .card-container3-reviews .card3 {
+  width: 70%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.client-pulldown .ezwork-main-container .card-container3-reviews .card3 h3,
+.freelance-pulldown .ezwork-main-container .card-container3-reviews .card3 h3,
+.ezwork-pulldown .ezwork-main-container .card-container3-reviews .card3 h3 {
+  font-size: 1rem;
+  padding: 1rem 0rem;
+}
+
+.client-pulldown .ezwork-main-container .card-container3-reviews .card3 p,
+.freelance-pulldown .ezwork-main-container .card-container3-reviews .card3 p,
+.ezwork-pulldown .ezwork-main-container .card-container3-reviews .card3 p {
+  font-size: 0.8rem;
+  color: #797979;
+}
+
+.client-pulldown .ezwork-main-container .card-container3-reviews .card3:hover,
+.freelance-pulldown .ezwork-main-container .card-container3-reviews .card3:hover,
+.ezwork-pulldown .ezwork-main-container .card-container3-reviews .card3:hover {
+  background-color: #ececec;
+}
+
+.client-pulldown .ezwork-main-container .card-container3-guides,
+.freelance-pulldown .ezwork-main-container .card-container3-guides,
+.ezwork-pulldown .ezwork-main-container .card-container3-guides {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,9 +360,48 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.client-pulldown .ezwork-main-container .card-container3-guides h3,
+.freelance-pulldown .ezwork-main-container .card-container3-guides h3,
+.ezwork-pulldown .ezwork-main-container .card-container3-guides h3 {
+  font-size: 1rem;
+}
+
+.client-pulldown .ezwork-main-container .card-container3-guides .guide,
+.freelance-pulldown .ezwork-main-container .card-container3-guides .guide,
+.ezwork-pulldown .ezwork-main-container .card-container3-guides .guide {
+  width: 80%;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 5px;
+  border: 0.75px solid lightgray;
+}
+
+.client-pulldown .ezwork-main-container .card-container3-guides .guide:hover,
+.freelance-pulldown .ezwork-main-container .card-container3-guides .guide:hover,
+.ezwork-pulldown .ezwork-main-container .card-container3-guides .guide:hover {
+  background-color: #e9e8e8;
+}
+
+.client-pulldown .ezwork-main-container .card-container3-guides .guide h4,
+.freelance-pulldown .ezwork-main-container .card-container3-guides .guide h4,
+.ezwork-pulldown .ezwork-main-container .card-container3-guides .guide h4 {
+  font-size: 0.8rem;
+  color: #797979;
+  font-weight: lighter;
+}
+
+.client-pulldown .ezwork-main-container .card-container3-guides a,
+.freelance-pulldown .ezwork-main-container .card-container3-guides a,
+.ezwork-pulldown .ezwork-main-container .card-container3-guides a {
+  margin: 1rem;
+  color: #054e97;
 }
 
 #arrow1UP,

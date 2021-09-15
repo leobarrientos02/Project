@@ -59,6 +59,34 @@ header {
       }
     }
   }
+  .searchBar {
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    width: 20rem;
+    height: fit-content;
+    border: 0.75px solid lightgray;
+    #search {
+      border: none;
+      width: 80%;
+      margin-left: 0.8rem;
+      font-size: 1.1rem;
+      &:focus {
+        outline: none;
+      }
+    }
+    #submit {
+      width: 20%;
+      height: 2rem;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      background: transparent;
+      &:hover {
+        color: $lightColor;
+      }
+    }
+  }
   .login {
     button {
       cursor: pointer;
@@ -88,17 +116,99 @@ header {
 .ezwork-pulldown {
   width: 100%;
   background: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 2rem;
+  display: none;
   height: fit-content;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  .card {
+  .card-container2 {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+    padding: 2rem;
     justify-content: flex-start;
+    align-items: center;
+    .card2 {
+      width: 20%;
+      height: fit-content;
+      cursor: pointer;
+      border-radius: 15px;
+      padding: 1rem;
+      h3 {
+        width: 100%;
+        font-weight: lighter;
+        font-size: 1rem;
+        color: rgb(39, 39, 39);
+        padding: 0.4rem 0rem;
+      }
+      p {
+        width: 90%;
+        font-size: 0.85rem;
+        color: $darktext;
+      }
+      &:hover {
+        background-color: rgb(236, 236, 236);
+      }
+    }
+  }
+  .ezwork-main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    padding: 2rem;
+    .card-container3-reviews {
+      width: 70%;
+      height: fit-content;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .card3 {
+        width: 70%;
+        height: fit-content;
+        cursor: pointer;
+        border-radius: 15px;
+        padding: 2rem;
+        h3 {
+          font-size: 1rem;
+          padding: 1rem 0rem;
+        }
+        p {
+          font-size: 0.8rem;
+          color: $darktext;
+        }
+        &:hover {
+          background-color: rgb(236, 236, 236);
+        }
+      }
+    }
+    .card-container3-guides {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      justify-content: center;
+      h3 {
+        font-size: 1rem;
+      }
+      .guide {
+        width: 80%;
+        cursor: pointer;
+        border-radius: 15px;
+        padding: 1rem;
+        margin: 5px;
+        border: 0.75px solid lightgray;
+        &:hover {
+          background-color: rgb(233, 232, 232);
+        }
+        h4 {
+          font-size: 0.8rem;
+          color: $darktext;
+          font-weight: lighter;
+        }
+      }
+      a {
+        margin: 1rem;
+        color: $lightColor;
+      }
+    }
   }
 }
 #arrow1UP,
