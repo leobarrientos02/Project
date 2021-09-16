@@ -205,8 +205,40 @@ ezworkPulldown.addEventListener("mouseleave", () => {
   arrow2.classList.remove("hide");
   arrow3.classList.remove("hide");
 });
-
 // Header arrows Functionality Ends Here
+
+//Client Pulldown section//
+
+//Links
+const link1 = document.getElementById("client-pulldown-link1");
+const link2 = document.getElementById("client-pulldown-link2");
+const link3 = document.getElementById("client-pulldown-link3");
+
+//Results
+const job_result = document.querySelector(".job-result");
+const projects_result = document.querySelector(".projects-result");
+const categories_result = document.querySelector(".categories-result");
+
+//First link
+link1.addEventListener("click", () => {
+  job_result.style.display = "block";
+  projects_result.style.display = "none";
+  categories_result.style.display = "none";
+});
+
+//second link
+link2.addEventListener("click", () => {
+  projects_result.style.display = "block";
+  job_result.style.display = "none";
+  categories_result.style.display = "none";
+});
+
+//third link
+link3.addEventListener("click", () => {
+  categories_result.style.display = "block";
+  job_result.style.display = "none";
+  projects_result.style.display = "none";
+});
 
 // Skills section
 // Buttons

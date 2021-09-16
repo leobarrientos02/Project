@@ -217,6 +217,7 @@ header {
   color: white;
 }
 
+/*Pull down section begins */
 .client-pulldown,
 .freelance-pulldown,
 .ezwork-pulldown {
@@ -228,6 +229,9 @@ header {
   height: fit-content;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* First pulldown */
+  /*Secong pull down*/
+  /* Third Pull Down */
 }
 
 .client-pulldown .client-card-container,
@@ -314,17 +318,322 @@ header {
 .client-pulldown .client-card-container .client-map .client-map-link:hover,
 .freelance-pulldown .client-card-container .client-map .client-map-link:hover,
 .ezwork-pulldown .client-card-container .client-map .client-map-link:hover {
-  background-color: #f1f1f1;
+  background-color: rgba(5, 78, 151, 0.1);
 }
 
-.client-pulldown .result-card,
-.freelance-pulldown .result-card,
-.ezwork-pulldown .result-card {
+.client-pulldown .job-result,
+.freelance-pulldown .job-result,
+.ezwork-pulldown .job-result {
   width: 60%;
-  margin: 0rem 1rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.client-pulldown .job-result .result-container,
+.freelance-pulldown .job-result .result-container,
+.ezwork-pulldown .job-result .result-container {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.client-pulldown .job-result .result-container .job-result-card1,
+.freelance-pulldown .job-result .result-container .job-result-card1,
+.ezwork-pulldown .job-result .result-container .job-result-card1 {
+  width: 50%;
+  margin: 1rem;
+  border-top: 3px solid #054e97;
+  border-bottom: 3px solid #054e97;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.client-pulldown .job-result .result-container .job-result-card1 h4,
+.freelance-pulldown .job-result .result-container .job-result-card1 h4,
+.ezwork-pulldown .job-result .result-container .job-result-card1 h4 {
+  color: #1b1b1b;
+  font-size: 1.1rem;
+  margin: 1rem 0rem;
+}
+
+.client-pulldown .job-result .result-container .job-result-card1 p,
+.freelance-pulldown .job-result .result-container .job-result-card1 p,
+.ezwork-pulldown .job-result .result-container .job-result-card1 p {
+  width: 70%;
+  color: #797979;
+  font-size: 0.85rem;
+}
+
+.client-pulldown .job-result .result-container .job-result-card1 button,
+.freelance-pulldown .job-result .result-container .job-result-card1 button,
+.ezwork-pulldown .job-result .result-container .job-result-card1 button {
+  margin: 1rem 0rem;
+  color: #054e97;
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.client-pulldown .job-result .result-container .job-result-card1 button:hover,
+.freelance-pulldown .job-result .result-container .job-result-card1 button:hover,
+.ezwork-pulldown .job-result .result-container .job-result-card1 button:hover {
+  text-decoration: underline;
+}
+
+.client-pulldown .job-result .result-container .job-result-card2,
+.freelance-pulldown .job-result .result-container .job-result-card2,
+.ezwork-pulldown .job-result .result-container .job-result-card2 {
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.client-pulldown .job-result .result-container .job-result-card2 ul li,
+.freelance-pulldown .job-result .result-container .job-result-card2 ul li,
+.ezwork-pulldown .job-result .result-container .job-result-card2 ul li {
+  width: 50%;
+  font-size: 0.9rem;
+  color: #181818;
+  margin: 2px;
+  padding: 0.5rem 1rem;
+  list-style: none;
+  border-radius: 10px;
+}
+
+.client-pulldown .job-result .result-container .job-result-card2 ul li:hover,
+.freelance-pulldown .job-result .result-container .job-result-card2 ul li:hover,
+.ezwork-pulldown .job-result .result-container .job-result-card2 ul li:hover {
+  background-color: rgba(5, 78, 151, 0.1);
+}
+
+.client-pulldown .projects-result,
+.freelance-pulldown .projects-result,
+.ezwork-pulldown .projects-result {
+  width: 60%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: none;
+}
+
+.client-pulldown .projects-result .projects-container,
+.freelance-pulldown .projects-result .projects-container,
+.ezwork-pulldown .projects-result .projects-container {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.client-pulldown .projects-result .projects-container .projects-card1,
+.freelance-pulldown .projects-result .projects-container .projects-card1,
+.ezwork-pulldown .projects-result .projects-container .projects-card1 {
+  width: 40%;
+  margin: 1rem;
+  border-top: 3px solid #054e97;
+  border-bottom: 3px solid #054e97;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.client-pulldown .projects-result .projects-container .projects-card1 h4,
+.freelance-pulldown .projects-result .projects-container .projects-card1 h4,
+.ezwork-pulldown .projects-result .projects-container .projects-card1 h4 {
+  color: #1b1b1b;
+  font-size: 1.1rem;
+  margin: 1rem 0rem;
+}
+
+.client-pulldown .projects-result .projects-container .projects-card1 p,
+.freelance-pulldown .projects-result .projects-container .projects-card1 p,
+.ezwork-pulldown .projects-result .projects-container .projects-card1 p {
+  width: 70%;
+  color: #797979;
+  font-size: 0.85rem;
+}
+
+.client-pulldown .projects-result .projects-container .projects-card1 button,
+.freelance-pulldown .projects-result .projects-container .projects-card1 button,
+.ezwork-pulldown .projects-result .projects-container .projects-card1 button {
+  margin: 1rem 0rem;
+  color: #054e97;
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.client-pulldown .projects-result .projects-container .projects-card1 button:hover,
+.freelance-pulldown .projects-result .projects-container .projects-card1 button:hover,
+.ezwork-pulldown .projects-result .projects-container .projects-card1 button:hover {
+  text-decoration: underline;
+}
+
+.client-pulldown .projects-result .projects-container .projects-card2,
+.freelance-pulldown .projects-result .projects-container .projects-card2,
+.ezwork-pulldown .projects-result .projects-container .projects-card2 {
+  width: 70%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1rem 0rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.client-pulldown .projects-result .projects-container .projects-card2 .image-card,
+.freelance-pulldown .projects-result .projects-container .projects-card2 .image-card,
+.ezwork-pulldown .projects-result .projects-container .projects-card2 .image-card {
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+  margin: 0.5rem;
+  border-radius: 20px;
+  border: 0.8px solid lightgray;
+}
+
+.client-pulldown .projects-result .projects-container .projects-card2 .image-card img,
+.freelance-pulldown .projects-result .projects-container .projects-card2 .image-card img,
+.ezwork-pulldown .projects-result .projects-container .projects-card2 .image-card img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.client-pulldown .projects-result .projects-container .projects-card2 .image-card p,
+.freelance-pulldown .projects-result .projects-container .projects-card2 .image-card p,
+.ezwork-pulldown .projects-result .projects-container .projects-card2 .image-card p {
+  width: 100%;
+  text-align: center;
+}
+
+.client-pulldown .projects-result .projects-container .projects-card2 .image-card:hover,
+.freelance-pulldown .projects-result .projects-container .projects-card2 .image-card:hover,
+.ezwork-pulldown .projects-result .projects-container .projects-card2 .image-card:hover {
+  background: rgba(5, 78, 151, 0.1);
+}
+
+.client-pulldown .categories-result,
+.freelance-pulldown .categories-result,
+.ezwork-pulldown .categories-result {
+  width: 60%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: none;
+}
+
+.client-pulldown .categories-result .categories-container,
+.freelance-pulldown .categories-result .categories-container,
+.ezwork-pulldown .categories-result .categories-container {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.client-pulldown .categories-result .categories-card1,
+.freelance-pulldown .categories-result .categories-card1,
+.ezwork-pulldown .categories-result .categories-card1 {
+  width: 50%;
+  border-top: 3px solid #054e97;
+  border-bottom: 3px solid #054e97;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1rem;
+}
+
+.client-pulldown .categories-result .categories-card1 h4,
+.freelance-pulldown .categories-result .categories-card1 h4,
+.ezwork-pulldown .categories-result .categories-card1 h4 {
+  color: #1b1b1b;
+  font-size: 1.1rem;
+  margin: 1rem 0rem;
+}
+
+.client-pulldown .categories-result .categories-card1 p,
+.freelance-pulldown .categories-result .categories-card1 p,
+.ezwork-pulldown .categories-result .categories-card1 p {
+  width: 70%;
+  color: #797979;
+  font-size: 0.85rem;
+}
+
+.client-pulldown .categories-result .categories-card1 button,
+.freelance-pulldown .categories-result .categories-card1 button,
+.ezwork-pulldown .categories-result .categories-card1 button {
+  margin: 1rem 0rem;
+  color: #054e97;
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.client-pulldown .categories-result .categories-card1 button:hover,
+.freelance-pulldown .categories-result .categories-card1 button:hover,
+.ezwork-pulldown .categories-result .categories-card1 button:hover {
+  text-decoration: underline;
+}
+
+.client-pulldown .categories-result .categories-card2,
+.freelance-pulldown .categories-result .categories-card2,
+.ezwork-pulldown .categories-result .categories-card2 {
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1.5rem;
+}
+
+.client-pulldown .categories-result .categories-card2 ul li,
+.freelance-pulldown .categories-result .categories-card2 ul li,
+.ezwork-pulldown .categories-result .categories-card2 ul li {
+  width: 50%;
+  font-size: 0.9rem;
+  color: #181818;
+  margin: 2px;
+  padding: 0.5rem 1rem;
+  list-style: none;
+  border-radius: 10px;
+}
+
+.client-pulldown .categories-result .categories-card2 ul li:hover,
+.freelance-pulldown .categories-result .categories-card2 ul li:hover,
+.ezwork-pulldown .categories-result .categories-card2 ul li:hover {
+  background-color: rgba(5, 78, 151, 0.1);
 }
 
 .client-pulldown .card-container2,
@@ -509,6 +818,7 @@ header {
   margin-left: 5px;
 }
 
+/*Pull Down Section ends */
 .categories {
   padding: 1rem;
 }
