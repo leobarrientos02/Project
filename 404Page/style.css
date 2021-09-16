@@ -27,8 +27,8 @@ h1 {
 }
 .star {
   position: absolute;
-  width: 4px;
-  height: 4px;
+  width: 2px;
+  height: 2px;
   background: #fff;
   right: 0;
   animation: starTwinkle 3s infinite linear;
