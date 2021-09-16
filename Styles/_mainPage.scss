@@ -79,6 +79,7 @@ header {
       width: 20%;
       height: 2rem;
       border: none;
+      color: $darktext;
       font-size: 1rem;
       cursor: pointer;
       background: transparent;
@@ -119,6 +120,54 @@ header {
   display: none;
   height: fit-content;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  .client-card-container {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    .client-map {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      width: 30%;
+      border-right: 0.75px solid lightgray;
+      height: fit-content;
+      .client-map-link {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        padding: 1rem;
+        cursor: pointer;
+        width: 80%;
+        h3 {
+          width: 100%;
+          font-weight: lighter;
+          font-size: 1rem;
+          color: rgb(39, 39, 39);
+        }
+        p {
+          font-size: 0.85rem;
+          color: $darktext;
+        }
+        i {
+          width: 100%;
+          text-align: end;
+          color: $lightColor;
+        }
+        &:hover {
+          background-color: rgb(241, 241, 241);
+        }
+      }
+    }
+  }
+  .result-card {
+    width: 60%;
+    margin: 0rem 1rem;
+    height: fit-content;
+  }
   .card-container2 {
     display: flex;
     width: 100%;

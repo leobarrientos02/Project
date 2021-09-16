@@ -182,6 +182,7 @@ header {
   width: 20%;
   height: 2rem;
   border: none;
+  color: #797979;
   font-size: 1rem;
   cursor: pointer;
   background: transparent;
@@ -227,6 +228,103 @@ header {
   height: fit-content;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.client-pulldown .client-card-container,
+.freelance-pulldown .client-card-container,
+.ezwork-pulldown .client-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client-pulldown .client-card-container .client-map,
+.freelance-pulldown .client-card-container .client-map,
+.ezwork-pulldown .client-card-container .client-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 30%;
+  border-right: 0.75px solid lightgray;
+  height: fit-content;
+}
+
+.client-pulldown .client-card-container .client-map .client-map-link,
+.freelance-pulldown .client-card-container .client-map .client-map-link,
+.ezwork-pulldown .client-card-container .client-map .client-map-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
+  width: 80%;
+}
+
+.client-pulldown .client-card-container .client-map .client-map-link h3,
+.freelance-pulldown .client-card-container .client-map .client-map-link h3,
+.ezwork-pulldown .client-card-container .client-map .client-map-link h3 {
+  width: 100%;
+  font-weight: lighter;
+  font-size: 1rem;
+  color: #272727;
+}
+
+.client-pulldown .client-card-container .client-map .client-map-link p,
+.freelance-pulldown .client-card-container .client-map .client-map-link p,
+.ezwork-pulldown .client-card-container .client-map .client-map-link p {
+  font-size: 0.85rem;
+  color: #797979;
+}
+
+.client-pulldown .client-card-container .client-map .client-map-link i,
+.freelance-pulldown .client-card-container .client-map .client-map-link i,
+.ezwork-pulldown .client-card-container .client-map .client-map-link i {
+  width: 100%;
+  text-align: end;
+  color: #054e97;
+}
+
+.client-pulldown .client-card-container .client-map .client-map-link:hover,
+.freelance-pulldown .client-card-container .client-map .client-map-link:hover,
+.ezwork-pulldown .client-card-container .client-map .client-map-link:hover {
+  background-color: #f1f1f1;
+}
+
+.client-pulldown .result-card,
+.freelance-pulldown .result-card,
+.ezwork-pulldown .result-card {
+  width: 60%;
+  margin: 0rem 1rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .client-pulldown .card-container2,
