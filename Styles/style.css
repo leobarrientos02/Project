@@ -93,7 +93,6 @@ header {
 .header-container .logo {
   margin: 0rem 2rem;
   cursor: pointer;
-  grid: logo;
   margin: 1rem;
 }
 
@@ -1807,5 +1806,868 @@ header {
 
 .show2 a:hover {
   background: #f0f0f0;
+}
+
+@media only screen and (max-width: 760px) {
+  header {
+    bottom: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+  .header-container {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-container .logo h3 {
+    font-size: 1.5rem;
+  }
+  .header-container .logo span {
+    font-size: 1.5rem;
+  }
+  .header-container .links {
+    display: none;
+  }
+  .header-container .searchBar {
+    display: none;
+  }
+  .header-container .login button {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #797979;
+    border: none;
+    background: none;
+    margin: 0rem 0.5rem;
+  }
+  .header-container .login button:hover {
+    color: #054e97;
+  }
+  .header-container .login .sign-up-btn {
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    color: #797979;
+  }
+  .header-container .login .sign-up-btn:hover {
+    color: #054e97;
+  }
+  /*Pull Down Section ends */
+  .categories {
+    display: none;
+  }
+  /* Header Section Ends */
+  .intro-container {
+    margin: 5rem 1rem 1rem 1rem;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro-container .intro-title {
+    width: 80%;
+  }
+  .intro-container .intro-title h2 {
+    margin-top: 1rem;
+    color: #054e97;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  .intro-container .intro-title h3 {
+    margin-top: 1rem;
+    width: 100%;
+    color: #797979;
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+  .intro-container .intro-image {
+    display: none;
+  }
+  .intro-container button {
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    background: #054e97;
+    padding: 0.7rem 1.5rem;
+    margin: 1rem 0.5rem 1rem 0rem;
+    border-radius: 25px;
+  }
+  .intro-container button:hover {
+    background: #054688;
+  }
+  .intro-container .find-work-btn {
+    border: 2px solid #054e97;
+    border-radius: 25px;
+    background: transparent;
+    color: #054e97;
+  }
+  .intro-container .find-work-btn:hover {
+    background-color: rgba(5, 78, 151, 0.1);
+  }
+  .clients {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .clients .clients-container {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 0;
+    background-image: url("/Image/clients-container-bgImage.jpg");
+    background-size: cover;
+    background-position: right;
+  }
+  .clients .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    color: white;
+    font-weight: bold;
+  }
+  .clients .content #for-client {
+    width: 100%;
+    text-align: start;
+    font-size: 1.25rem;
+    margin: 2rem 0rem 1rem 2rem;
+  }
+  .clients .content h2 {
+    font-family: "Kaisei Tokumin", serif;
+    width: 70%;
+    margin: 2rem 0rem 1rem 2rem;
+    text-align: start;
+    font-size: 2.3rem;
+  }
+  .clients .content #description-for-client {
+    width: 90%;
+    text-align: start;
+    font-size: 1.1rem;
+    margin: 1rem 0rem 0rem 2rem;
+  }
+  .clients .content .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 2rem 0rem;
+  }
+  .clients .content .card-container .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 1rem;
+    width: 90%;
+    border-radius: 15px;
+    padding: 1rem;
+    background: #054e97;
+    cursor: pointer;
+  }
+  .clients .content .card-container .card h4 {
+    width: 45%;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .clients .content .card-container .card p {
+    width: 60%;
+    text-align: end;
+    margin-top: 3.5rem;
+    font-size: 1rem;
+  }
+  .clients .content .card-container .card:hover {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: white;
+    color: #0a345e;
+  }
+  .skills {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-content: center;
+  }
+  .skills .skills-container {
+    width: 95%;
+    height: 95%;
+    padding: 2rem 0rem;
+    border-radius: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills .skills-container .skills-tree {
+    margin-left: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    height: 100%;
+  }
+  .skills .skills-container .skills-tree h3 {
+    width: 95%;
+    color: #292727;
+    font-weight: bold;
+    font-size: 4.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .skills .skills-container .skills-tree a {
+    font-weight: bolder;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 0.7rem;
+    color: #797979;
+    font-size: 1.8rem;
+  }
+  .skills .skills-container .skills-tree a:hover {
+    color: #0a345e;
+  }
+  .skills .skills-container .skills-tree .current {
+    color: #054e97;
+  }
+  .skills .skills-container .skills-result {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills .skills-container .skills-result .image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 30%;
+  }
+  .skills .skills-container .skills-result .image-container img {
+    border-radius: 25px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 60%;
+    height: 60%;
+  }
+  .skills .hide {
+    display: none;
+  }
+  .skills .show {
+    display: block;
+  }
+  .talent-section {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .talent-section p {
+    font-family: "Kaisei Tokumin", serif;
+    color: white;
+    font-size: 1.25rem;
+  }
+  .talent-section .talent-container {
+    width: 95%;
+    height: 95%;
+    background: #49af7c;
+    border-radius: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .talent-section .talent-container .image-card {
+    width: 50%;
+  }
+  .talent-section .talent-container .image-card img {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 100%;
+    height: 100%;
+    -o-object-position: bottom;
+       object-position: bottom;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .talent-section .talent-container .text-card {
+    width: 50%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 2rem;
+  }
+  .talent-section .talent-container .text-card #card-title-name {
+    font-size: 1.5rem;
+  }
+  .talent-section .talent-container .text-card #card-text {
+    width: 70%;
+  }
+  .talent-section .talent-container .text-card h2 {
+    font-size: 4rem;
+    color: white;
+    font-family: "Kaisei Tokumin", serif;
+    width: 60%;
+    margin: 1.2rem 0rem;
+  }
+  .talent-section .talent-container .text-card .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    margin-top: 4.5rem;
+    border-top: 0.75px solid lightgray;
+  }
+  .talent-section .talent-container .text-card .card-container .card {
+    width: 30%;
+    margin: 0.5rem 1rem 2rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .talent-section .talent-container button {
+    cursor: pointer;
+    width: 45%;
+    border-radius: 25px;
+    border: none;
+    background: white;
+    color: #49af7c;
+    font-size: 1.25rem;
+    padding: 0.3rem;
+  }
+  .talent-section .talent-container button:hover {
+    background: #e2e1e1;
+  }
+  .reviews {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reviews .reviews-container {
+    width: 95%;
+    height: 95%;
+    border-radius: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reviews .reviews-container .card1 {
+    width: 100%;
+  }
+  .reviews .reviews-container .card1 h2 {
+    font-family: "Kaisei Tokumin", serif;
+    font-size: 4rem;
+    color: #2e2e2e;
+  }
+  .reviews .reviews-container .card {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reviews .reviews-container .card2,
+  .reviews .reviews-container .card3,
+  .reviews .reviews-container .card4 {
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .reviews .reviews-container .review {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1rem 0rem;
+    background: #054e97;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: bolder;
+    border-radius: 25px;
+    border: white 3px solid;
+  }
+  .reviews .reviews-container .review .comment {
+    padding-bottom: 1rem;
+    margin: 0.5rem;
+    border-bottom: lightgray 0.75px solid;
+  }
+  .reviews .reviews-container .review .comment p {
+    font-size: 1.3rem;
+    color: white;
+  }
+  .reviews .reviews-container .review .review-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reviews .reviews-container .review .review-info .profile-pic img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0.5rem;
+    border: 3px white solid;
+  }
+  .reviews .reviews-container .review .review-info .profile-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reviews .reviews-container .review .review-info .profile-info p {
+    color: white;
+    font-size: 1.2rem;
+  }
+  .reviews #green-review {
+    background: #49af7c;
+  }
+  .ezwork-about {
+    width: 100%;
+    height: 95vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ezwork-about .ezwork-about-container {
+    width: 95%;
+    height: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .ezwork-about .ezwork-about-container .text-section {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 50%;
+    background: #054e97;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 2rem;
+  }
+  .ezwork-about .ezwork-about-container .text-section .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 80%;
+    margin: 0rem 0rem 0.5rem 0rem;
+  }
+  .ezwork-about .ezwork-about-container .text-section .title h2 {
+    font-family: "Kaisei Tokumin", serif;
+    font-size: 3.5rem;
+    color: white;
+  }
+  .ezwork-about .ezwork-about-container .text-section p {
+    font-family: "Kaisei Tokumin", serif;
+    font-size: 1.5rem;
+    color: white;
+  }
+  .ezwork-about .ezwork-about-container .text-section .card-container {
+    margin-top: 6.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+  .ezwork-about .ezwork-about-container .text-section .card-container .card {
+    width: 50%;
+    margin: 0rem 1.5em 1rem 0rem;
+    border-top: 0.75px solid lightgray;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .ezwork-about .ezwork-about-container .text-section .card-container .card p {
+    margin: 0.5rem 0rem;
+    font-size: 1.2rem;
+  }
+  .ezwork-about .ezwork-about-container .text-section .card-container .card .star-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ezwork-about .ezwork-about-container .text-section .card-container .card .star-container p {
+    margin: 0.5rem 1rem 0.5rem 0rem;
+    font-size: 1.4rem;
+  }
+  .ezwork-about .ezwork-about-container .text-section .card-container .card .star-container #empty {
+    color: #a5a5a5;
+  }
+  .ezwork-about .ezwork-about-container .text-section .card-container .card .star-container i {
+    color: white;
+  }
+  .ezwork-about .ezwork-about-container .image-section {
+    width: 50%;
+  }
+  .ezwork-about .ezwork-about-container .image-section img {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .skills-directory {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills-directory .popular-skills-container {
+    width: 95%;
+    height: 95%;
+    padding: 3rem 2rem;
+    border-radius: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .skills-directory .popular-skills-container .sort {
+    width: 37%;
+  }
+  .skills-directory .popular-skills-container .sort h3 {
+    cursor: pointer;
+    font-size: 2.3rem;
+    color: #afafaf;
+  }
+  .skills-directory .popular-skills-container .sort h3:hover {
+    color: #0a345e;
+  }
+  .skills-directory .popular-skills-container .sort .current {
+    color: #054e97;
+  }
+  .footer {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #0a345e;
+  }
+  .footer .footer-container {
+    width: 95%;
+    height: 95%;
+    border-radius: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 0.78rem;
+    margin: 0rem 3rem;
+  }
+  .footer .footer-container .directory-tree {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 2rem 0rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .footer-container .directory-tree h6 {
+    font-size: 0.83rem;
+    color: whitesmoke;
+  }
+  .footer .footer-container .directory-tree .directory-tree-user,
+  .footer .footer-container .directory-tree .directory-tree-talent,
+  .footer .footer-container .directory-tree .directory-tree-resource,
+  .footer .footer-container .directory-tree .directory-tree-ezwork {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0rem 10rem 0rem 0rem;
+  }
+  .footer .footer-container .directory-tree .directory-tree-user a,
+  .footer .footer-container .directory-tree .directory-tree-talent a,
+  .footer .footer-container .directory-tree .directory-tree-resource a,
+  .footer .footer-container .directory-tree .directory-tree-ezwork a {
+    margin: 0.5rem 0rem;
+    color: white;
+  }
+  .footer .footer-container .directory-tree .directory-tree-user a:hover,
+  .footer .footer-container .directory-tree .directory-tree-talent a:hover,
+  .footer .footer-container .directory-tree .directory-tree-resource a:hover,
+  .footer .footer-container .directory-tree .directory-tree-ezwork a:hover {
+    text-decoration: underline;
+  }
+  .footer .footer-container .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 0.8px solid lightgrey;
+    border-top: 0.8px solid lightgrey;
+    padding: 1rem 0rem;
+  }
+  .footer .footer-container .social-links p {
+    color: white;
+    margin: 0rem 1rem 0rem 0rem;
+  }
+  .footer .footer-container .social-links a {
+    border-radius: 50%;
+    margin: 0.5rem;
+    color: lightgray;
+    border: lightgray 0.9px solid;
+  }
+  .footer .footer-container .social-links a i {
+    border-radius: 50%;
+    background: #0a345e;
+    padding: 0.5rem;
+  }
+  .footer .footer-container .social-links a i:hover {
+    background: #054e97;
+  }
+  .footer .footer-container .copyright-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem 0rem 2rem 0rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    color: whitesmoke;
+  }
+  .footer .footer-container .copyright-section p {
+    margin: 0rem 0rem 0rem 2rem;
+  }
+  .footer .footer-container .copyright-section a {
+    cursor: pointer;
+    color: whitesmoke;
+    padding: 0rem 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
