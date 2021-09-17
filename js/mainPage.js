@@ -448,3 +448,12 @@ see_all_skills.addEventListener("click", () => {
   results5.classList.add("hide");
   results6.classList.add("hide");
 });
+
+//Nav Button
+const navIcon = document.getElementById("nav-burger");
+
+navIcon.addEventListener("click", () => {
+  const mobileNav = document.querySelector(".mobile-nav");
+
+  mobileNav.style.display = "inline-block";
+});

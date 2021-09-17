@@ -19,8 +19,32 @@
     </head>
 </head>
 <body>
+    <div class="mobile-nav">
+        <div class="mobile-nav-content">
+            <div class="searchBar">
+                <input type="search" name="search" id="search">
+                <input type="button" value="Search" id="submit">
+            </div>
+            <div class="links">
+                <ul>
+                    <li id="clients">Find Talent<i id="arrow1" class="fa fa-sort-down"></i> <i id="arrow1UP" class="fa fa-sort-up hide"></i></li>
+                    <li id="worker">Find Work<i id="arrow2" class="fa fa-sort-down"></i> <i id="arrow2UP" class="fa fa-sort-up hide"></i></li>
+                    <li id="why">Why EzWork<i id="arrow3" class="fa fa-sort-down"></i> <i id="arrow3UP" class="fa fa-sort-up hide"></i></li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class="login">
+                <button class="sign-up-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="header-container">
+            <div class="burger" id="nav-burger" onclick='myFunction(this)'>
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
             <div class="logo">
                 <a href="./index.html"><h3><span>E</span>z<span>Work</span></h3></a>
             </div>
@@ -665,6 +689,12 @@
     </div>
 </body>
 <script src="/js/mainPage.js"></script>
+<!--Toggle the nav button-->
+<script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    </script>
 <!--<script src="/js/api.js"></script>
  onclick="window.location='page_name.php';"
 -->

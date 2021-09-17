@@ -20,13 +20,16 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  .burger {
+    display: none;
+  }
   .logo {
     margin: 0rem 2rem;
     cursor: pointer;
     margin: 1rem;
     h3 {
       font-family: "Archivo Black", sans-serif;
-      color: rgb(69, 89, 177);
+      color: rgb(78, 101, 202);
       font-size: 2rem;
     }
     span {
@@ -1021,7 +1024,9 @@ header {
     }
   }
 }
-/* Hide and show is used for javascritp */
+
+//Other classes used in the system
+/* Hide and show is used for javascript */
 .hide {
   display: none;
   a {
@@ -1044,6 +1049,7 @@ header {
   }
   transition: all.5s ease;
 }
+//For getting the images off the categories section
 .show2 {
   transition: all.5s ease;
   width: 100%;
@@ -1065,6 +1071,38 @@ header {
     }
   }
 }
+//nav animation
+.change .line1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .line2 {
+  opacity: 0;
+}
+.change .line3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.mobile-nav {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  .mobile-nav-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+  }
+}
+// Other classes end
+
+//Media Queires
 @media only screen and (max-width: 760px) {
   header {
     bottom: auto;
@@ -1076,8 +1114,24 @@ header {
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    .burger {
+      z-index: 2;
+      display: inline-block;
+      cursor: pointer;
+      .line1,
+      .line2,
+      .line3 {
+        width: 2rem;
+        height: 0.3rem;
+        margin: 0.4rem;
+        border-radius: 5px;
+        background: $lightColor;
+        pointer-events: none;
+        transition: 0.4s;
+      }
+    }
     .logo {
       h3 {
         font-size: 1.5rem;
@@ -1093,6 +1147,7 @@ header {
       display: none;
     }
     .login {
+      margin-left: 2.5rem;
       button {
         cursor: pointer;
         font-size: 1rem;
