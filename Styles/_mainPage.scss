@@ -604,64 +604,67 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: center;
   .skills-container {
     width: 95%;
     height: 95%;
     padding: 2rem 0rem;
     border-radius: 25px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    .skills-tree {
-      margin-left: 4rem;
-      display: flex;
-      flex-direction: column;
+    flex-direction: row;
+    .card1 {
       width: 50%;
-      height: 100%;
-      h3 {
-        width: 95%;
-        color: rgb(41, 39, 39);
-        font-weight: bold;
-        font-size: 4.3rem;
-        margin-bottom: 0.5rem;
-      }
-      a {
-        font-weight: bolder;
-        width: fit-content;
-        margin-bottom: 0.7rem;
-        color: $darktext;
-        font-size: 1.8rem;
-        &:hover {
-          color: $color1;
-        }
-      }
-      .current {
-        color: $lightColor;
-      }
-    }
-    .skills-result {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      .image-container {
+      .skills-title {
         display: flex;
+        justify-content: flex-start;
+        width: 70%;
+        margin-left: 5rem;
+        h3 {
+          color: rgb(41, 39, 39);
+          font-weight: bold;
+          font-size: 4.3rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+      .skills-tree {
+        margin-left: 5rem;
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        height: 30%;
-        img {
-          border-radius: 25px;
-          object-fit: cover;
-          width: 60%;
-          height: 60%;
+        height: 100%;
+        a {
+          font-weight: bolder;
+          width: fit-content;
+          margin-bottom: 0.7rem;
+          color: $darktext;
+          font-size: 1.8rem;
+          &:hover {
+            color: $color1;
+          }
+        }
+        .current {
+          color: $lightColor;
         }
       }
     }
-  }
-  .hide {
-    display: none;
-  }
-  .show {
-    display: block;
+    .card2 {
+      width: 50%;
+      .skills-result {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .image-container {
+          display: flex;
+          width: 100%;
+          height: 30%;
+          img {
+            border-radius: 25px;
+            object-fit: cover;
+            width: 60%;
+            height: 60%;
+          }
+        }
+      }
+    }
   }
 }
 .talent-section {
@@ -1308,62 +1311,30 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem 1.2rem;
-    .skills-container {
-      width: 100%;
-      height: fit-content;
+    margin: 2rem;
+    .skills-title {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      .skills-tree {
-        margin-left: 0;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: fit-content;
-        h3 {
-          width: 100%;
-          color: rgb(41, 39, 39);
-          font-weight: bold;
-          font-size: 2rem;
-          margin-bottom: 0.5rem;
-        }
-        a {
-          font-weight: bolder;
-          width: fit-content;
-          margin-bottom: 0.7rem;
-          color: $darktext;
-          font-size: 1.8rem;
-          &:hover {
-            color: $color1;
-          }
-        }
-        .current {
-          color: $lightColor;
-        }
+      justify-content: flex-start;
+      width: 100%;
+      h3 {
+        color: rgb(41, 39, 39);
+        font-weight: bold;
+        font-size: 2.5rem;
+        width: 60%;
       }
+    }
+    .skills-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
       .skills-result {
         width: 50%;
         display: flex;
         flex-direction: column;
         .image-container {
-          display: flex;
-          width: 100%;
-          height: 30%;
-          img {
-            border-radius: 25px;
-            object-fit: cover;
-            width: 60%;
-            height: 60%;
-          }
+          display: none;
         }
       }
-    }
-    .hide {
-      display: none;
-    }
-    .show {
-      display: block;
     }
   }
   .talent-section {
