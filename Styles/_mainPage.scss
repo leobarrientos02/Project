@@ -1308,26 +1308,24 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: center;
+    margin: 2rem 1.2rem;
     .skills-container {
-      width: 95%;
-      height: 95%;
-      padding: 2rem 0rem;
-      border-radius: 25px;
+      width: 100%;
+      height: fit-content;
       display: flex;
       justify-content: center;
       align-items: center;
       .skills-tree {
-        margin-left: 4rem;
+        margin-left: 0;
         display: flex;
         flex-direction: column;
-        width: 50%;
-        height: 100%;
+        width: 100%;
+        height: fit-content;
         h3 {
-          width: 95%;
+          width: 100%;
           color: rgb(41, 39, 39);
           font-weight: bold;
-          font-size: 4.3rem;
+          font-size: 2rem;
           margin-bottom: 0.5rem;
         }
         a {

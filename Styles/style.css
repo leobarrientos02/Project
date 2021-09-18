@@ -2112,13 +2112,13 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    justify-content: center;
+    margin: 2rem 1.2rem;
   }
   .skills .skills-container {
-    width: 95%;
-    height: 95%;
-    padding: 2rem 0rem;
-    border-radius: 25px;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2130,7 +2130,7 @@ header {
             align-items: center;
   }
   .skills .skills-container .skills-tree {
-    margin-left: 4rem;
+    margin-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2138,14 +2138,16 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .skills .skills-container .skills-tree h3 {
-    width: 95%;
+    width: 100%;
     color: #292727;
     font-weight: bold;
-    font-size: 4.3rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
   }
   .skills .skills-container .skills-tree a {
