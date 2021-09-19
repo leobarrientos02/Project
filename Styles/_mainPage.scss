@@ -673,6 +673,28 @@ header {
     }
   }
 }
+/* use in relation with skills section above */
+.show2 {
+  transition: all.5s ease;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  a {
+    transition: all.5s ease;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    width: fit-content;
+    border: 1px solid $darktext;
+    border-radius: 25px;
+    padding: 0.5rem;
+    color: $darktext;
+    &:hover {
+      background: rgb(240, 240, 240);
+    }
+  }
+}
 .talent-section {
   p {
     font-family: "Kaisei Tokumin", serif;
@@ -1059,27 +1081,6 @@ header {
   transition: all.5s ease;
 }
 //For getting the images off the categories section
-.show2 {
-  transition: all.5s ease;
-  width: 100%;
-  height: 70%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  a {
-    transition: all.5s ease;
-    font-size: 1.2rem;
-    margin: 0.5rem;
-    width: fit-content;
-    border: 1px solid $darktext;
-    border-radius: 25px;
-    padding: 0.5rem;
-    color: $darktext;
-    &:hover {
-      background: rgb(240, 240, 240);
-    }
-  }
-}
 //nav animation
 .change .line1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -1317,44 +1318,46 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem 0rem;
     .skills-container {
       width: 95%;
       height: 95%;
-      padding: 2rem 0rem;
-      margin: 1rem 2rem;
+      padding: 0;
+      margin: 1rem;
       border-radius: 25px;
       display: flex;
       flex-direction: column;
       .skills-title {
         display: flex;
         justify-content: flex-start;
-        width: 60%;
-        margin-left: 0.5rem;
+        width: 100%;
+        margin-left: 0rem;
         h3 {
-          width: 100%;
+          width: 70%;
           color: rgb(41, 39, 39);
           font-weight: bold;
-          font-size: 2rem;
+          font-size: 2.5rem;
           margin-bottom: 0.5rem;
         }
       }
       .skills-container-content {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         .card1 {
-          width: 50%;
+          width: fit-content;
           .skills-tree {
-            margin-left: 5rem;
-            display: flex;
-            flex-direction: column;
+            margin-left: 0;
             width: 100%;
-            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
             a {
               font-weight: bolder;
               width: fit-content;
-              margin-bottom: 0.5rem;
+              margin-bottom: 0;
+              margin: 1rem;
               color: $darktext;
-              font-size: 1.7rem;
+              font-size: 1.1rem;
               &:hover {
                 color: $color1;
               }
@@ -1365,16 +1368,38 @@ header {
           }
         }
         .card2 {
-          width: 50%;
+          width: 100%;
           .skills-result {
             width: 100%;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            /*Text is in show2 class */
             .image-container {
               display: none;
             }
           }
         }
+      }
+    }
+  }
+  .show2 {
+    transition: all.5s ease;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    a {
+      transition: all.5s ease;
+      font-size: 1rem;
+      margin: 0.5rem;
+      width: fit-content;
+      border: 1px solid $darktext;
+      border-radius: 25px;
+      padding: 0.5rem;
+      color: $darktext;
+      &:hover {
+        background: rgb(240, 240, 240);
       }
     }
   }
