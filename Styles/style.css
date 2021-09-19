@@ -10,8 +10,8 @@
 html {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
-  -webkit-animation: opening 2s ease-in-out;
-          animation: opening 2s ease-in-out;
+  -webkit-animation: opening 1s ease-in-out;
+          animation: opening 1s ease-in-out;
 }
 
 body {
@@ -816,6 +816,7 @@ header {
   color: #054e97;
 }
 
+/* THe next three id are used to style the arrow up which appears when user pulld down the nav */
 #arrow1UP,
 #arrow2UP,
 #arrow3UP {
@@ -936,6 +937,7 @@ header {
   background-color: rgba(5, 78, 151, 0.1);
 }
 
+/*Second card: Clients section */
 .clients {
   width: 100%;
   height: 110vh;
@@ -1038,6 +1040,7 @@ header {
   color: #0a345e;
 }
 
+/*Third card: Categorized skills section */
 .skills {
   width: 100%;
   height: -webkit-fit-content;
@@ -1199,6 +1202,7 @@ header {
   background: #f0f0f0;
 }
 
+/*Fourth Card: Talent or freelancers section */
 .talent-section {
   width: 100%;
   height: 100vh;
@@ -1327,6 +1331,7 @@ header {
   background: #e2e1e1;
 }
 
+/*Fifth card: Customer reviews section */
 .reviews {
   width: 100%;
   height: -webkit-fit-content;
@@ -1459,6 +1464,7 @@ header {
   background: #49af7c;
 }
 
+/*Sixth card: About ezwork section section */
 .ezwork-about {
   width: 100%;
   height: 95vh;
@@ -1601,6 +1607,7 @@ header {
      object-fit: cover;
 }
 
+/*Seventh card: Secong skills in sorted order section */
 .skills-directory {
   width: 100%;
   height: -webkit-fit-content;
@@ -1649,6 +1656,7 @@ header {
   color: #054e97;
 }
 
+/*Footer section */
 .footer {
   width: 100%;
   height: -webkit-fit-content;
@@ -1846,6 +1854,7 @@ header {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
+/* Mobile nav code start here*/
 .mobile-nav {
   display: none;
   width: 100%;
@@ -1867,6 +1876,7 @@ header {
 }
 
 @media only screen and (max-width: 760px) {
+  /*Header Section */
   header {
     bottom: auto;
     height: -webkit-fit-content;
@@ -1948,6 +1958,7 @@ header {
     display: none;
   }
   /* Header Section Ends */
+  /*First Card with intro */
   .intro-container {
     margin: 5rem 1rem 1rem 1rem;
     width: 100%;
@@ -2009,6 +2020,7 @@ header {
   .intro-container .find-work-btn:hover {
     background-color: rgba(5, 78, 151, 0.1);
   }
+  /*Second card: Clients section */
   .clients {
     width: 100%;
     height: -webkit-fit-content;
@@ -2118,6 +2130,7 @@ header {
     background: white;
     color: #0a345e;
   }
+  /*Third card: Categorized skills section */
   .skills {
     width: 100%;
     height: -webkit-fit-content;
@@ -2260,9 +2273,12 @@ header {
   .show2 a:hover {
     background: #f0f0f0;
   }
+  /*Fourth Card: Talent or freelancers section */
   .talent-section {
     width: 100%;
-    height: 100vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2279,35 +2295,40 @@ header {
     font-size: 1.25rem;
   }
   .talent-section .talent-container {
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     background: #49af7c;
-    border-radius: 25px;
+    border-radius: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .talent-section .talent-container .image-card {
-    width: 50%;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .talent-section .talent-container .image-card img {
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     width: 100%;
-    height: 100%;
+    height: 60%;
     -o-object-position: bottom;
        object-position: bottom;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .talent-section .talent-container .text-card {
-    width: 50%;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2318,7 +2339,7 @@ header {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding: 2rem;
+    padding: 1rem;
   }
   .talent-section .talent-container .text-card #card-title-name {
     font-size: 1.5rem;
@@ -2375,6 +2396,7 @@ header {
   .talent-section .talent-container button:hover {
     background: #e2e1e1;
   }
+  /*Fifth card: Customer reviews section */
   .reviews {
     width: 100%;
     height: -webkit-fit-content;
@@ -2493,6 +2515,7 @@ header {
   .reviews #green-review {
     background: #49af7c;
   }
+  /*Sixth card: About ezwork section section */
   .ezwork-about {
     width: 100%;
     height: 95vh;
@@ -2620,6 +2643,7 @@ header {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  /*Seventh card: Secong skills in sorted order section */
   .skills-directory {
     width: 100%;
     height: -webkit-fit-content;
@@ -2662,6 +2686,7 @@ header {
   .skills-directory .popular-skills-container .sort .current {
     color: #054e97;
   }
+  /*Foooter */
   .footer {
     width: 100%;
     height: -webkit-fit-content;

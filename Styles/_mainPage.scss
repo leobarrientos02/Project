@@ -445,6 +445,7 @@ header {
     }
   }
 }
+/* THe next three id are used to style the arrow up which appears when user pulld down the nav */
 #arrow1UP,
 #arrow2UP,
 #arrow3UP {
@@ -529,6 +530,7 @@ header {
     }
   }
 }
+/*Second card: Clients section */
 .clients {
   width: 100%;
   height: 110vh;
@@ -598,6 +600,7 @@ header {
     }
   }
 }
+/*Third card: Categorized skills section */
 .skills {
   width: 100%;
   height: fit-content;
@@ -695,6 +698,7 @@ header {
     }
   }
 }
+/*Fourth Card: Talent or freelancers section */
 .talent-section {
   p {
     font-family: "Kaisei Tokumin", serif;
@@ -776,6 +780,7 @@ header {
     }
   }
 }
+/*Fifth card: Customer reviews section */
 .reviews {
   width: 100%;
   height: fit-content;
@@ -857,6 +862,7 @@ header {
     background: #49af7c;
   }
 }
+/*Sixth card: About ezwork section section */
 .ezwork-about {
   width: 100%;
   height: 95vh;
@@ -940,6 +946,7 @@ header {
     }
   }
 }
+/*Seventh card: Secong skills in sorted order section */
 .skills-directory {
   width: 100%;
   height: fit-content;
@@ -969,6 +976,7 @@ header {
     }
   }
 }
+/*Footer section */
 .footer {
   width: 100%;
   height: fit-content;
@@ -1093,6 +1101,7 @@ header {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
+/* Mobile nav code start here*/
 .mobile-nav {
   display: none;
   width: 100%;
@@ -1114,6 +1123,7 @@ header {
 
 //Media Queires
 @media only screen and (max-width: 760px) {
+  /*Header Section */
   header {
     bottom: auto;
     height: fit-content;
@@ -1185,6 +1195,7 @@ header {
     display: none;
   }
   /* Header Section Ends */
+  /*First Card with intro */
   .intro-container {
     margin: 5rem 1rem 1rem 1rem;
     width: 100%;
@@ -1235,6 +1246,7 @@ header {
       }
     }
   }
+  /*Second card: Clients section */
   .clients {
     width: 100%;
     height: fit-content;
@@ -1312,6 +1324,7 @@ header {
       }
     }
   }
+  /*Third card: Categorized skills section */
   .skills {
     width: 100%;
     height: fit-content;
@@ -1403,6 +1416,7 @@ header {
       }
     }
   }
+  /*Fourth Card: Talent or freelancers section */
   .talent-section {
     p {
       font-family: "Kaisei Tokumin", serif;
@@ -1410,36 +1424,37 @@ header {
       font-size: 1.25rem;
     }
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     .talent-container {
-      width: 95%;
-      height: 95%;
+      width: 100%;
+      height: fit-content;
       background: #49af7c;
-      border-radius: 25px;
+      border-radius: 0;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       .image-card {
-        width: 50%;
+        width: 100%;
+        height: fit-content;
         img {
-          border-top-left-radius: 25px;
-          border-bottom-left-radius: 25px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
           width: 100%;
-          height: 100%;
+          height: 60%;
           object-position: bottom;
           object-fit: cover;
         }
       }
       .text-card {
-        width: 50%;
-        border-top-right-radius: 25px;
-        border-bottom-right-radius: 25px;
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding: 2rem;
+        padding: 1rem;
         #card-title-name {
           font-size: 1.5rem;
         }
@@ -1484,6 +1499,7 @@ header {
       }
     }
   }
+  /*Fifth card: Customer reviews section */
   .reviews {
     width: 100%;
     height: fit-content;
@@ -1565,6 +1581,7 @@ header {
       background: #49af7c;
     }
   }
+  /*Sixth card: About ezwork section section */
   .ezwork-about {
     width: 100%;
     height: 95vh;
@@ -1648,6 +1665,7 @@ header {
       }
     }
   }
+  /*Seventh card: Secong skills in sorted order section */
   .skills-directory {
     width: 100%;
     height: fit-content;
@@ -1677,6 +1695,7 @@ header {
       }
     }
   }
+  /*Foooter */
   .footer {
     width: 100%;
     height: fit-content;
