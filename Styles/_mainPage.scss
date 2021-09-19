@@ -639,7 +639,7 @@ header {
           a {
             font-weight: bolder;
             width: fit-content;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.9rem;
             color: $darktext;
             font-size: 1.7rem;
             &:hover {
@@ -1068,7 +1068,7 @@ header {
   flex-wrap: wrap;
   a {
     transition: all.5s ease;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin: 0.5rem;
     width: fit-content;
     border: 1px solid $darktext;
@@ -1319,58 +1319,60 @@ header {
     align-items: center;
     .skills-container {
       width: 95%;
-      height: fit-content;
+      height: 95%;
       padding: 2rem 0rem;
+      margin: 1rem 2rem;
       border-radius: 25px;
       display: flex;
-      flex-direction: row;
-      margin: 2rem 1.3rem;
+      flex-direction: column;
       .skills-title {
         display: flex;
         justify-content: flex-start;
-        width: 100%;
-        margin-left: 0;
+        width: 60%;
+        margin-left: 0.5rem;
         h3 {
+          width: 100%;
           color: rgb(41, 39, 39);
           font-weight: bold;
-          font-size: 2.3rem;
+          font-size: 2rem;
           margin-bottom: 0.5rem;
         }
       }
-      .card1 {
-        width: 50%;
-        .skills-tree {
-          margin-left: 0;
-          display: flex;
-          flex-direction: row;
-          width: 100%;
-          height: fit-content;
-          flex-wrap: wrap;
-          a {
-            font-weight: bolder;
+      .skills-container-content {
+        display: flex;
+        flex-direction: row;
+        .card1 {
+          width: 50%;
+          .skills-tree {
+            margin-left: 5rem;
+            display: flex;
+            flex-direction: column;
             width: 100%;
-            margin-bottom: 0.7rem;
-            color: $darktext;
-            font-size: 1rem;
-            margin: 1rem;
-            &:hover {
-              color: $color1;
+            height: 100%;
+            a {
+              font-weight: bolder;
+              width: fit-content;
+              margin-bottom: 0.5rem;
+              color: $darktext;
+              font-size: 1.7rem;
+              &:hover {
+                color: $color1;
+              }
+            }
+            .current {
+              color: $lightColor;
             }
           }
-          .current {
-            color: $lightColor;
-          }
         }
-      }
-      .card2 {
-        width: 100%;
-        .skills-result {
-          width: 100%;
-          display: flex;
-          flex-wrap: wrap;
-          flex-direction: column;
-          .image-container {
-            display: none;
+        .card2 {
+          width: 50%;
+          .skills-result {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .image-container {
+              display: none;
+            }
           }
         }
       }
