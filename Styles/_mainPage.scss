@@ -608,59 +608,65 @@ header {
     width: 95%;
     height: 95%;
     padding: 2rem 0rem;
+    margin: 2rem 4rem;
     border-radius: 25px;
     display: flex;
-    flex-direction: row;
-    .card1 {
+    flex-direction: column;
+    .skills-title {
+      display: flex;
+      justify-content: flex-start;
       width: 50%;
-      .skills-title {
-        display: flex;
-        justify-content: flex-start;
-        width: 70%;
-        margin-left: 5rem;
-        h3 {
-          color: rgb(41, 39, 39);
-          font-weight: bold;
-          font-size: 4.3rem;
-          margin-bottom: 0.5rem;
-        }
-      }
-      .skills-tree {
-        margin-left: 5rem;
-        display: flex;
-        flex-direction: column;
+      margin-left: 5rem;
+      h3 {
         width: 100%;
-        height: 100%;
-        a {
-          font-weight: bolder;
-          width: fit-content;
-          margin-bottom: 0.7rem;
-          color: $darktext;
-          font-size: 1.8rem;
-          &:hover {
-            color: $color1;
-          }
-        }
-        .current {
-          color: $lightColor;
-        }
+        color: rgb(41, 39, 39);
+        font-weight: bold;
+        font-size: 4rem;
+        margin-bottom: 0.5rem;
       }
     }
-    .card2 {
-      width: 50%;
-      .skills-result {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        .image-container {
+    .skills-container-content {
+      display: flex;
+      flex-direction: row;
+      .card1 {
+        width: 50%;
+        .skills-tree {
+          margin-left: 5rem;
           display: flex;
+          flex-direction: column;
           width: 100%;
-          height: 30%;
-          img {
-            border-radius: 25px;
-            object-fit: cover;
-            width: 60%;
-            height: 60%;
+          height: 100%;
+          a {
+            font-weight: bolder;
+            width: fit-content;
+            margin-bottom: 0.5rem;
+            color: $darktext;
+            font-size: 1.7rem;
+            &:hover {
+              color: $color1;
+            }
+          }
+          .current {
+            color: $lightColor;
+          }
+        }
+      }
+      .card2 {
+        width: 50%;
+        .skills-result {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          .image-container {
+            display: flex;
+            width: 100%;
+            height: 65%;
+            img {
+              border-radius: 20px;
+              object-fit: cover;
+              width: 50%;
+              height: 50%;
+            }
           }
         }
       }
@@ -1311,28 +1317,61 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
-    .skills-title {
-      display: flex;
-      justify-content: flex-start;
-      width: 100%;
-      h3 {
-        color: rgb(41, 39, 39);
-        font-weight: bold;
-        font-size: 2.5rem;
-        width: 60%;
-      }
-    }
     .skills-container {
+      width: 95%;
+      height: fit-content;
+      padding: 2rem 0rem;
+      border-radius: 25px;
       display: flex;
-      flex-direction: column;
-      width: 100%;
-      .skills-result {
-        width: 50%;
+      flex-direction: row;
+      margin: 2rem 1.3rem;
+      .skills-title {
         display: flex;
-        flex-direction: column;
-        .image-container {
-          display: none;
+        justify-content: flex-start;
+        width: 100%;
+        margin-left: 0;
+        h3 {
+          color: rgb(41, 39, 39);
+          font-weight: bold;
+          font-size: 2.3rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+      .card1 {
+        width: 50%;
+        .skills-tree {
+          margin-left: 0;
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          height: fit-content;
+          flex-wrap: wrap;
+          a {
+            font-weight: bolder;
+            width: 100%;
+            margin-bottom: 0.7rem;
+            color: $darktext;
+            font-size: 1rem;
+            margin: 1rem;
+            &:hover {
+              color: $color1;
+            }
+          }
+          .current {
+            color: $lightColor;
+          }
+        }
+      }
+      .card2 {
+        width: 100%;
+        .skills-result {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          .image-container {
+            display: none;
+          }
         }
       }
     }

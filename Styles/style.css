@@ -1058,7 +1058,37 @@ header {
   width: 95%;
   height: 95%;
   padding: 2rem 0rem;
+  margin: 2rem 4rem;
   border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills .skills-container .skills-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 50%;
+  margin-left: 5rem;
+}
+
+.skills .skills-container .skills-title h3 {
+  width: 100%;
+  color: #292727;
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.skills .skills-container .skills-container-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1068,29 +1098,11 @@ header {
           flex-direction: row;
 }
 
-.skills .skills-container .card1 {
+.skills .skills-container .skills-container-content .card1 {
   width: 50%;
 }
 
-.skills .skills-container .card1 .skills-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 70%;
-  margin-left: 5rem;
-}
-
-.skills .skills-container .card1 .skills-title h3 {
-  color: #292727;
-  font-weight: bold;
-  font-size: 4.3rem;
-  margin-bottom: 0.5rem;
-}
-
-.skills .skills-container .card1 .skills-tree {
+.skills .skills-container .skills-container-content .card1 .skills-tree {
   margin-left: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1103,29 +1115,29 @@ header {
   height: 100%;
 }
 
-.skills .skills-container .card1 .skills-tree a {
+.skills .skills-container .skills-container-content .card1 .skills-tree a {
   font-weight: bolder;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
   color: #797979;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
-.skills .skills-container .card1 .skills-tree a:hover {
+.skills .skills-container .skills-container-content .card1 .skills-tree a:hover {
   color: #0a345e;
 }
 
-.skills .skills-container .card1 .skills-tree .current {
+.skills .skills-container .skills-container-content .card1 .skills-tree .current {
   color: #054e97;
 }
 
-.skills .skills-container .card2 {
+.skills .skills-container .skills-container-content .card2 {
   width: 50%;
 }
 
-.skills .skills-container .card2 .skills-result {
+.skills .skills-container .skills-container-content .card2 .skills-result {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1136,20 +1148,20 @@ header {
           flex-direction: column;
 }
 
-.skills .skills-container .card2 .skills-result .image-container {
+.skills .skills-container .skills-container-content .card2 .skills-result .image-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 30%;
+  height: 65%;
 }
 
-.skills .skills-container .card2 .skills-result .image-container img {
-  border-radius: 25px;
+.skills .skills-container .skills-container-content .card2 .skills-result .image-container img {
+  border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 50%;
 }
 
 .talent-section {
@@ -2119,9 +2131,24 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 2rem;
   }
-  .skills .skills-title {
+  .skills .skills-container {
+    width: 95%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2rem 0rem;
+    border-radius: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 2rem 1.3rem;
+  }
+  .skills .skills-container .skills-title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2129,34 +2156,63 @@ header {
         -ms-flex-pack: start;
             justify-content: flex-start;
     width: 100%;
+    margin-left: 0;
   }
-  .skills .skills-title h3 {
+  .skills .skills-container .skills-title h3 {
     color: #292727;
     font-weight: bold;
-    font-size: 2.5rem;
-    width: 60%;
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
   }
-  .skills .skills-container {
+  .skills .skills-container .card1 {
+    width: 50%;
+  }
+  .skills .skills-container .card1 .skills-tree {
+    margin-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skills .skills-container .card1 .skills-tree a {
+    font-weight: bolder;
+    width: 100%;
+    margin-bottom: 0.7rem;
+    color: #797979;
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  .skills .skills-container .card1 .skills-tree a:hover {
+    color: #0a345e;
+  }
+  .skills .skills-container .card1 .skills-tree .current {
+    color: #054e97;
+  }
+  .skills .skills-container .card2 {
     width: 100%;
   }
-  .skills .skills-container .skills-result {
-    width: 50%;
+  .skills .skills-container .card2 .skills-result {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .skills .skills-container .skills-result .image-container {
+  .skills .skills-container .card2 .skills-result .image-container {
     display: none;
   }
   .talent-section {
