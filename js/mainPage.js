@@ -148,7 +148,7 @@ clientPulldown.addEventListener("mouseleave", () => {
 ArrowDown2.addEventListener("click", () => {
   categories.style.display = "none";
 
-  freelancePulldown.style.display = "block";
+  freelancePulldown.style.display = "inline-block";
   clientPulldown.style.display = "none";
   ezworkPulldown.style.display = "none";
 

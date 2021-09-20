@@ -1426,8 +1426,10 @@ header {
     width: 100%;
     height: fit-content;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
     .talent-container {
       width: 100%;
       height: fit-content;
@@ -1435,49 +1437,53 @@ header {
       border-radius: 0;
       display: flex;
       flex-direction: column;
+      padding: 0rem 0rem 2rem 0rem;
       .image-card {
         width: 100%;
-        height: fit-content;
+        height: 20rem;
         img {
           border-top-left-radius: 0;
           border-bottom-left-radius: 0;
           width: 100%;
-          height: 60%;
+          height: 100%;
           object-position: bottom;
           object-fit: cover;
         }
       }
       .text-card {
         width: 100%;
+        height: fit-content;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding: 1rem;
+        padding: 0rem;
+        margin: 1rem;
         #card-title-name {
           font-size: 1.5rem;
         }
-        #card-text {
-          width: 70%;
-        }
         h2 {
-          font-size: 4rem;
+          font-size: 2.5rem;
           color: white;
           font-family: "Kaisei Tokumin", serif;
-          width: 60%;
+          width: 50%;
           margin: 1.2rem 0rem;
+        }
+        #card-text {
+          width: 95%;
         }
         .card-container {
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
+          flex-wrap: wrap;
           width: 100%;
-          margin-top: 4.5rem;
+          margin-top: 3rem;
           border-top: 0.75px solid lightgray;
           .card {
-            width: 30%;
-            margin: 0.5rem 1rem 2rem 0rem;
+            width: 45%;
+            margin: 1rem 1rem 1rem 0rem;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -1485,6 +1491,7 @@ header {
         }
       }
       button {
+        margin-top: 1rem;
         cursor: pointer;
         width: 45%;
         border-radius: 25px;
@@ -1514,11 +1521,13 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin: 2rem 0rem;
       .card1 {
         width: 100%;
         h2 {
+          width: 60%;
           font-family: "Kaisei Tokumin", serif;
-          font-size: 4rem;
+          font-size: 2.55rem;
           color: rgb(46, 46, 46);
         }
       }
@@ -1530,25 +1539,25 @@ header {
       .card2,
       .card3,
       .card4 {
-        width: 65%;
+        width: 100%;
         display: flex;
       }
       .review {
         width: 100%;
         height: fit-content;
-        padding: 1rem;
-        margin: 1rem 0rem;
-        background: $lightColor;
+        padding: 0.8rem;
+        margin: 0.8rem 0rem;
+        background: $color1;
         font-family: "Kaisei Tokumin", serif;
         font-weight: bolder;
-        border-radius: 25px;
+        border-radius: 15px;
         border: white 3px solid;
         .comment {
           padding-bottom: 1rem;
           margin: 0.5rem;
           border-bottom: lightgray 0.75px solid;
           p {
-            font-size: 1.3rem;
+            font-size: 1rem;
             color: white;
           }
         }
@@ -1558,18 +1567,18 @@ header {
           align-items: center;
           .profile-pic {
             img {
-              width: 5rem;
-              height: 5rem;
+              width: 4rem;
+              height: 4rem;
               border-radius: 50%;
               object-fit: cover;
               margin: 0.5rem;
-              border: 3px white solid;
+              border: 3px #49af7c solid;
             }
           }
           .profile-info {
             p {
               color: white;
-              font-size: 1.2rem;
+              font-size: 1rem;
             }
             display: flex;
             flex-direction: column;
@@ -1579,24 +1588,33 @@ header {
     }
     #green-review {
       background: #49af7c;
+      img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0.5rem;
+        border: 3px $color1 solid;
+      }
     }
   }
   /*Sixth card: About ezwork section section */
   .ezwork-about {
     width: 100%;
-    height: 95vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     .ezwork-about-container {
-      width: 95%;
-      height: 95%;
+      width: 100%;
+      height: 100%;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      padding: 2rem 0rem 0rem 0rem;
       .text-section {
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
-        width: 50%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        width: 100%;
         background: $lightColor;
         display: flex;
         flex-direction: column;
@@ -1609,17 +1627,17 @@ header {
           margin: 0rem 0rem 0.5rem 0rem;
           h2 {
             font-family: "Kaisei Tokumin", serif;
-            font-size: 3.5rem;
+            font-size: 3rem;
             color: white;
           }
         }
         p {
           font-family: "Kaisei Tokumin", serif;
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           color: white;
         }
         .card-container {
-          margin-top: 6.5rem;
+          margin-top: 3rem;
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
@@ -1641,7 +1659,7 @@ header {
               align-items: center;
               p {
                 margin: 0.5rem 1rem 0.5rem 0rem;
-                font-size: 1.4rem;
+                font-size: 1.3rem;
               }
               #empty {
                 color: rgb(165, 165, 165);
@@ -1654,10 +1672,11 @@ header {
         }
       }
       .image-section {
-        width: 50%;
+        width: 100%;
+        height: 70%;
         img {
-          border-top-right-radius: 25px;
-          border-bottom-right-radius: 25px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
           width: 100%;
           height: 100%;
           object-fit: cover;
