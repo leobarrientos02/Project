@@ -1895,7 +1895,7 @@ header {
   text-align: center;
 }
 
-@media only screen and (max-width: 760px) {
+@media screen and (max-width: 754px) {
   /*Header Section */
   header {
     bottom: auto;
