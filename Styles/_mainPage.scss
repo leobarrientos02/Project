@@ -1078,6 +1078,9 @@ header {
         padding: 0rem 2rem;
       }
     }
+    .mobile-copyright {
+      display: none;
+    }
   }
 }
 
@@ -1782,12 +1785,12 @@ header {
     background: $color1;
     .footer-container {
       width: 95%;
-      height: 95%;
+      height: fit-content;
       border-radius: 25px;
       display: flex;
       flex-direction: column;
       font-size: 0.78rem;
-      margin: 0rem 3rem;
+      margin: 0rem 1rem;
       /*Mobile view directory tree*/
       .mobile-directory-tree {
         display: inline-block;
@@ -1917,7 +1920,7 @@ header {
         align-items: center;
         border-bottom: 0.8px solid lightgrey;
         border-top: 0;
-        padding: 1.5rem 0rem;
+        padding: 0.5rem 0rem;
         width: 100%;
         p {
           color: white;
@@ -1939,16 +1942,27 @@ header {
         }
       }
       .copyright-section {
+        display: none;
+      }
+      .mobile-copyright {
         display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
         padding: 1.5rem 0rem;
-        flex-direction: row;
-        color: whitesmoke;
         width: 100%;
-        #copyright {
+        .card1 {
           width: 100%;
+          color: white;
+          text-align: left;
         }
-        #copyright-line {
-          display: none;
+        .card2 {
+          margin-top: 0.8rem;
+          width: 100%;
+          a {
+            margin-right: 1rem;
+            color: white;
+          }
         }
       }
     }
