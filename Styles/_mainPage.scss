@@ -1004,6 +1004,9 @@ header {
     /*Mobile view directory tree*/
     .mobile-directory-tree {
       display: none;
+      .mobile-user-footer {
+        display: none;
+      }
     }
     .directory-tree {
       display: flex;
@@ -1812,37 +1815,34 @@ header {
               color: white;
               cursor: pointer;
             }
+            #mobile-footer-up1 {
+              display: none;
+            }
+          }
+          .mobile-user-footer {
+            display: none;
+            .mobile-user-links {
+              display: flex;
+              flex-direction: column;
+              margin-right: 14rem;
+              margin-bottom: 1rem;
+              a {
+                margin: 0.5rem 0rem;
+                color: white;
+                font-size: 0.8rem;
+              }
+              a:hover {
+                margin: 0.5rem 0rem;
+                color: white;
+                font-size: 0.8rem;
+                text-decoration: underline;
+              }
+            }
           }
         }
       }
       .directory-tree {
         display: none;
-        flex-direction: row;
-        justify-content: flex-start;
-        margin: 2rem 0rem;
-        h6 {
-          font-size: 0.83rem;
-          color: whitesmoke;
-          i {
-            margin-left: 4px;
-            display: inline-block;
-          }
-        }
-        .directory-tree-user,
-        .directory-tree-talent,
-        .directory-tree-resource,
-        .directory-tree-ezwork {
-          display: flex;
-          flex-direction: column;
-          margin: 0rem 10rem 0rem 0rem;
-          a {
-            margin: 0.5rem 0rem;
-            color: white;
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-        }
       }
       .social-links {
         display: flex;

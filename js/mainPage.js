@@ -475,3 +475,37 @@ skillsDirectoryRight.addEventListener("click", () => {
 
   skillsDirectoryLeft.style.display = "inline-block";
 });
+
+//Mobile footer JS
+const mobileFooterDown1 = document.getElementById("mobile-footer-down1");
+const mobileFooterDown2 = document.getElementById("mobile-footer-down2");
+const mobileFooterDown3 = document.getElementById("mobile-footer-down3");
+const mobileFooterDown4 = document.getElementById("mobile-footer-down4");
+
+//Up arrows
+const mobileFooterArrowUp1 = document.getElementById("mobile-footer-up1");
+
+// The pulldown content
+const UserFooter = document.querySelector(".mobile-user-footer");
+
+mobileFooterDown1.addEventListener("click", () => {
+  UserFooter.style.display = "inline-block";
+
+  //Hide Down arrow
+  mobileFooterDown1.style.display = "none";
+
+  //Show UP Arrow
+  mobileFooterArrowUp1.style.display = "inline-block";
+});
+
+//Pull user section back up
+mobileFooterArrowUp1.addEventListener("click", () => {
+  //Hide user content
+  UserFooter.style.display = "none";
+
+  //Hide up Arrow
+  mobileFooterArrowUp1.style.display = "none";
+
+  //Show down arrow
+  mobileFooterDown1.style.display = "inline-block";
+});
