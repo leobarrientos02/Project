@@ -483,8 +483,10 @@
     <div class="skills-directory">
         <div class="popular-skills-container">
             <div class="sort">
-                <h3 class="current" id="topSkill" onclick="next()">Top Skills</h3>
+                <i class="fa fa-chevron-left" id="skills-directory-left" aria-hidden="true"></i>
+                <h3 class="current" id="topSkill">Top Skills</h3>
                 <h3 id="trendingSkills">Trending Skills</h3>
+                <i class="fa fa-chevron-right" id="skills-directory-right" aria-hidden="true"></i>
                 <h3 id="topSkillsUs">Top Skills in US</h3>
                 <h3 id="projects">Projects</h3>
             </div>
@@ -711,16 +713,6 @@
         else{
             mobileNav.style.display='none';
         }
-    }
-</script>
-<script>
-    const topSkillBtn = document.getElementById("topSkill");
-    const trendingSkillBtn = document.getElementById("trendingSkills");
-    const UsTopSkillBtn = document.getElementById("topSkillsUs");
-    const projectsBtn = document.getElementById("projects");
-    
-    function next(){
-
     }
 </script>
 <!--<script src="/js/api.js"></sc>

@@ -448,3 +448,30 @@ see_all_skills.addEventListener("click", () => {
   results5.classList.add("hide");
   results6.classList.add("hide");
 });
+
+// Media Query
+const skillsDirectoryLeft = document.getElementById("skills-directory-left");
+const skillsDirectoryRight = document.getElementById("skills-directory-right");
+
+skillsDirectoryLeft.addEventListener("click", () => {
+  skillsDirectoryRight.style.display = "inline-block";
+
+  topSkillBtn.style.display = "inline-block";
+  trendingSkillBtn.style.display = "inline-block";
+
+  UsTopSkillBtn.style.display = "none";
+  projectsBtn.style.display = "none";
+
+  skillsDirectoryLeft.style.display = "none";
+});
+skillsDirectoryRight.addEventListener("click", () => {
+  skillsDirectoryRight.style.display = "none";
+
+  topSkillBtn.style.display = "none";
+  trendingSkillBtn.style.display = "none";
+
+  UsTopSkillBtn.style.display = "inline-block";
+  projectsBtn.style.display = "inline-block";
+
+  skillsDirectoryLeft.style.display = "inline-block";
+});

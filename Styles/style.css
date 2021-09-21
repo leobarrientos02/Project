@@ -1640,6 +1640,16 @@ header {
 
 .skills-directory .popular-skills-container .sort {
   width: 37%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills-directory .popular-skills-container .sort i {
+  display: none;
 }
 
 .skills-directory .popular-skills-container .sort h3 {
@@ -2724,13 +2734,30 @@ header {
     height: -moz-fit-content;
     height: fit-content;
   }
+  .skills-directory .popular-skills-container .sort i {
+    display: inline-block;
+    font-size: 1rem;
+    color: #054e97;
+    cursor: pointer;
+  }
+  .skills-directory .popular-skills-container .sort #skills-directory-left {
+    display: none;
+  }
   .skills-directory .popular-skills-container .sort h3 {
     cursor: pointer;
     font-size: 1.5rem;
+    margin: 1.5rem;
+    text-align: center;
     color: #afafaf;
   }
   .skills-directory .popular-skills-container .sort h3:hover {
     color: #0a345e;
+  }
+  .skills-directory .popular-skills-container .sort #projects {
+    display: none;
+  }
+  .skills-directory .popular-skills-container .sort #topSkillsUs {
+    display: none;
   }
   .skills-directory .popular-skills-container .sort .current {
     color: #054e97;
