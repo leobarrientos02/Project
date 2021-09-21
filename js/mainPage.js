@@ -484,9 +484,15 @@ const mobileFooterDown4 = document.getElementById("mobile-footer-down4");
 
 //Up arrows
 const mobileFooterArrowUp1 = document.getElementById("mobile-footer-up1");
+const mobileFooterArrowUp2 = document.getElementById("mobile-footer-up2");
+const mobileFooterArrowUp3 = document.getElementById("mobile-footer-up3");
+const mobileFooterArrowUp4 = document.getElementById("mobile-footer-up4");
 
 // The pulldown content
 const UserFooter = document.querySelector(".mobile-user-footer");
+const TalentFooter = document.querySelector(".mobile-talent-footer");
+const ResourceFooter = document.querySelector(".mobile-resource-footer");
+const AboutFooter = document.querySelector(".mobile-about-footer");
 
 mobileFooterDown1.addEventListener("click", () => {
   UserFooter.style.display = "inline-block";
@@ -508,4 +514,67 @@ mobileFooterArrowUp1.addEventListener("click", () => {
 
   //Show down arrow
   mobileFooterDown1.style.display = "inline-block";
+});
+
+//Mobile Talent footer puldown
+mobileFooterDown2.addEventListener("click", () => {
+  TalentFooter.style.display = "inline-block";
+
+  //Hide Down arrow
+  mobileFooterDown2.style.display = "none";
+
+  //Show UP Arrow
+  mobileFooterArrowUp2.style.display = "inline-block";
+});
+mobileFooterArrowUp2.addEventListener("click", () => {
+  //Hide user content
+  TalentFooter.style.display = "none";
+
+  //Hide up Arrow
+  mobileFooterArrowUp2.style.display = "none";
+
+  //Show down arrow
+  mobileFooterDown2.style.display = "inline-block";
+});
+
+//Resource Section
+mobileFooterDown3.addEventListener("click", () => {
+  ResourceFooter.style.display = "inline-block";
+
+  //Hide Down arrow
+  mobileFooterDown3.style.display = "none";
+
+  //Show UP Arrow
+  mobileFooterArrowUp3.style.display = "inline-block";
+});
+mobileFooterArrowUp3.addEventListener("click", () => {
+  //Hide user content
+  ResourceFooter.style.display = "none";
+
+  //Hide up Arrow
+  mobileFooterArrowUp3.style.display = "none";
+
+  //Show down arrow
+  mobileFooterDown3.style.display = "inline-block";
+});
+
+//About Section
+mobileFooterDown4.addEventListener("click", () => {
+  AboutFooter.style.display = "inline-block";
+
+  //Hide Down arrow
+  mobileFooterDown4.style.display = "none";
+
+  //Show UP Arrow
+  mobileFooterArrowUp4.style.display = "inline-block";
+});
+mobileFooterArrowUp4.addEventListener("click", () => {
+  //Hide user content
+  AboutFooter.style.display = "none";
+
+  //Hide up Arrow
+  mobileFooterArrowUp4.style.display = "none";
+
+  //Show down arrow
+  mobileFooterDown4.style.display = "inline-block";
 });

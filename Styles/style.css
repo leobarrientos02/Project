@@ -1714,7 +1714,10 @@ header {
   display: none;
 }
 
-.footer .footer-container .mobile-directory-tree .mobile-user-footer {
+.footer .footer-container .mobile-directory-tree .mobile-user-footer,
+.footer .footer-container .mobile-directory-tree .mobile-talent-footer,
+.footer .footer-container .mobile-directory-tree .mobile-resource-footer,
+.footer .footer-container .mobile-directory-tree .mobile-about-footer {
   display: none;
 }
 
@@ -2882,7 +2885,10 @@ header {
     color: white;
     cursor: pointer;
   }
-  .footer .footer-container .mobile-directory-tree .mobile-directory-container .card #mobile-footer-up1 {
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .card #mobile-footer-up1,
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .card #mobile-footer-up2,
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .card #mobile-footer-up3,
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .card #mobile-footer-up4 {
     display: none;
   }
   .footer .footer-container .mobile-directory-tree .mobile-directory-container .mobile-user-footer {
@@ -2896,7 +2902,7 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-right: 14rem;
+    margin-right: 16rem;
     margin-bottom: 1rem;
   }
   .footer .footer-container .mobile-directory-tree .mobile-directory-container .mobile-user-footer .mobile-user-links a {
@@ -2905,6 +2911,81 @@ header {
     font-size: 0.8rem;
   }
   .footer .footer-container .mobile-directory-tree .mobile-directory-container .mobile-user-footer .mobile-user-links a:hover {
+    margin: 0.5rem 0rem;
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: underline;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .mobile-talent-footer {
+    display: none;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .mobile-talent-footer .mobile-talent-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 16rem;
+    margin-bottom: 1rem;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .mobile-talent-footer .mobile-talent-links a {
+    margin: 0.5rem 0rem;
+    color: white;
+    font-size: 0.8rem;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .mobile-talent-footer .mobile-talent-links a:hover {
+    margin: 0.5rem 0rem;
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: underline;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .mobile-resource-footer {
+    display: none;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .mobile-resource-footer .mobile-resource-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 17rem;
+    margin-bottom: 1rem;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .mobile-resource-footer .mobile-resource-links a {
+    margin: 0.5rem 0rem;
+    color: white;
+    font-size: 0.8rem;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .mobile-resource-footer .mobile-resource-links a:hover {
+    margin: 0.5rem 0rem;
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: underline;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .mobile-about-footer {
+    display: none;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .mobile-about-footer .mobile-about-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 18rem;
+    margin-bottom: 1rem;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .mobile-about-footer .mobile-about-links a {
+    margin: 0.5rem 0rem;
+    color: white;
+    font-size: 0.8rem;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .mobile-about-footer .mobile-about-links a:hover {
     margin: 0.5rem 0rem;
     color: white;
     font-size: 0.8rem;

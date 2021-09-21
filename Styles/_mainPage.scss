@@ -1004,7 +1004,10 @@ header {
     /*Mobile view directory tree*/
     .mobile-directory-tree {
       display: none;
-      .mobile-user-footer {
+      .mobile-user-footer,
+      .mobile-talent-footer,
+      .mobile-resource-footer,
+      .mobile-about-footer {
         display: none;
       }
     }
@@ -1815,7 +1818,10 @@ header {
               color: white;
               cursor: pointer;
             }
-            #mobile-footer-up1 {
+            #mobile-footer-up1,
+            #mobile-footer-up2,
+            #mobile-footer-up3,
+            #mobile-footer-up4 {
               display: none;
             }
           }
@@ -1824,7 +1830,67 @@ header {
             .mobile-user-links {
               display: flex;
               flex-direction: column;
-              margin-right: 14rem;
+              margin-right: 16rem;
+              margin-bottom: 1rem;
+              a {
+                margin: 0.5rem 0rem;
+                color: white;
+                font-size: 0.8rem;
+              }
+              a:hover {
+                margin: 0.5rem 0rem;
+                color: white;
+                font-size: 0.8rem;
+                text-decoration: underline;
+              }
+            }
+          }
+          .mobile-talent-footer {
+            display: none;
+            .mobile-talent-links {
+              display: flex;
+              flex-direction: column;
+              margin-right: 16rem;
+              margin-bottom: 1rem;
+              a {
+                margin: 0.5rem 0rem;
+                color: white;
+                font-size: 0.8rem;
+              }
+              a:hover {
+                margin: 0.5rem 0rem;
+                color: white;
+                font-size: 0.8rem;
+                text-decoration: underline;
+              }
+            }
+          }
+          .mobile-resource-footer {
+            display: none;
+            .mobile-resource-links {
+              display: flex;
+              flex-direction: column;
+              margin-right: 17rem;
+              margin-bottom: 1rem;
+              a {
+                margin: 0.5rem 0rem;
+                color: white;
+                font-size: 0.8rem;
+              }
+              a:hover {
+                margin: 0.5rem 0rem;
+                color: white;
+                font-size: 0.8rem;
+                text-decoration: underline;
+              }
+            }
+          }
+          .mobile-about-footer {
+            display: none;
+            .mobile-about-links {
+              display: flex;
+              flex-direction: column;
+              margin-right: 18rem;
               margin-bottom: 1rem;
               a {
                 margin: 0.5rem 0rem;
