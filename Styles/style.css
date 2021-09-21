@@ -1707,6 +1707,11 @@ header {
           flex-direction: column;
   font-size: 0.78rem;
   margin: 0rem 3rem;
+  /*Mobile view directory tree*/
+}
+
+.footer .footer-container .mobile-directory-tree {
+  display: none;
 }
 
 .footer .footer-container .directory-tree {
@@ -1721,8 +1726,6 @@ header {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin: 2rem 0rem;
-  display: flex;
-  flex-direction: row;
 }
 
 .footer .footer-container .directory-tree h6 {
@@ -2824,11 +2827,59 @@ header {
             flex-direction: column;
     font-size: 0.78rem;
     margin: 0rem 3rem;
+    /*Mobile view directory tree*/
   }
-  .footer .footer-container .directory-tree {
+  .footer .footer-container .mobile-directory-tree {
+    display: inline-block;
+    margin: 0rem 0.5rem;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .card {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1rem 0rem;
+    border-bottom: 0.75px solid lightgray;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .card h6 {
+    width: 95%;
+    pointer-events: none;
+    color: white;
+    font-size: 0.9rem;
+  }
+  .footer .footer-container .mobile-directory-tree .mobile-directory-container .card i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+  }
+  .footer .footer-container .directory-tree {
+    display: none;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2837,12 +2888,14 @@ header {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin: 2rem 0rem;
-    display: flex;
-    flex-direction: row;
   }
   .footer .footer-container .directory-tree h6 {
     font-size: 0.83rem;
     color: whitesmoke;
+  }
+  .footer .footer-container .directory-tree h6 i {
+    margin-left: 4px;
+    display: inline-block;
   }
   .footer .footer-container .directory-tree .directory-tree-user,
   .footer .footer-container .directory-tree .directory-tree-talent,
@@ -2877,16 +2930,21 @@ header {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     border-bottom: 0.8px solid lightgrey;
-    border-top: 0.8px solid lightgrey;
-    padding: 1rem 0rem;
+    border-top: 0;
+    padding: 1.5rem 0rem;
+    width: 100%;
   }
   .footer .footer-container .social-links p {
     color: white;
-    margin: 0rem 1rem 0rem 0rem;
+    margin-left: 0.5rem;
   }
   .footer .footer-container .social-links a {
     border-radius: 50%;
@@ -2906,26 +2964,19 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 1rem 0rem 2rem 0rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding: 1.5rem 0rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     color: whitesmoke;
+    width: 100%;
   }
-  .footer .footer-container .copyright-section p {
-    margin: 0rem 0rem 0rem 2rem;
+  .footer .footer-container .copyright-section #copyright {
+    width: 100%;
   }
-  .footer .footer-container .copyright-section a {
-    cursor: pointer;
-    color: whitesmoke;
-    padding: 0rem 2rem;
+  .footer .footer-container .copyright-section #copyright-line {
+    display: none;
   }
   .hide {
     display: none;

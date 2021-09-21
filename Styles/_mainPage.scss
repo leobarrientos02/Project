@@ -1001,6 +1001,10 @@ header {
     flex-direction: column;
     font-size: 0.78rem;
     margin: 0rem 3rem;
+    /*Mobile view directory tree*/
+    .mobile-directory-tree {
+      display: none;
+    }
     .directory-tree {
       display: flex;
       flex-direction: row;
@@ -1010,8 +1014,6 @@ header {
         font-size: 0.83rem;
         color: whitesmoke;
       }
-      display: flex;
-      flex-direction: row;
       .directory-tree-user,
       .directory-tree-talent,
       .directory-tree-resource,
@@ -1780,17 +1782,52 @@ header {
       flex-direction: column;
       font-size: 0.78rem;
       margin: 0rem 3rem;
+      /*Mobile view directory tree*/
+      .mobile-directory-tree {
+        display: inline-block;
+        margin: 0rem 0.5rem;
+        .mobile-directory-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          .card {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 1rem 0rem;
+            border-bottom: 0.75px solid lightgray;
+            h6 {
+              width: 95%;
+              pointer-events: none;
+              color: white;
+              font-size: 0.9rem;
+            }
+            i {
+              display: flex;
+              justify-self: flex-end;
+              align-self: flex-end;
+              font-size: 1rem;
+              color: white;
+              cursor: pointer;
+            }
+          }
+        }
+      }
       .directory-tree {
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: flex-start;
         margin: 2rem 0rem;
         h6 {
           font-size: 0.83rem;
           color: whitesmoke;
+          i {
+            margin-left: 4px;
+            display: inline-block;
+          }
         }
-        display: flex;
-        flex-direction: row;
         .directory-tree-user,
         .directory-tree-talent,
         .directory-tree-resource,
@@ -1810,13 +1847,15 @@ header {
       .social-links {
         display: flex;
         justify-content: flex-start;
+        flex-direction: row;
         align-items: center;
         border-bottom: 0.8px solid lightgrey;
-        border-top: 0.8px solid lightgrey;
-        padding: 1rem 0rem;
+        border-top: 0;
+        padding: 1.5rem 0rem;
+        width: 100%;
         p {
           color: white;
-          margin: 0rem 1rem 0rem 0rem;
+          margin-left: 0.5rem;
         }
         a {
           border-radius: 50%;
@@ -1835,18 +1874,15 @@ header {
       }
       .copyright-section {
         display: flex;
-        padding: 1rem 0rem 2rem 0rem;
-        align-items: center;
+        padding: 1.5rem 0rem;
         flex-direction: row;
-        justify-content: flex-start;
         color: whitesmoke;
-        p {
-          margin: 0rem 0rem 0rem 2rem;
+        width: 100%;
+        #copyright {
+          width: 100%;
         }
-        a {
-          cursor: pointer;
-          color: whitesmoke;
-          padding: 0rem 2rem;
+        #copyright-line {
+          display: none;
         }
       }
     }
