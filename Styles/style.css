@@ -2043,8 +2043,6 @@ header {
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-login {
-  position: fixed;
-  top: 90%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2055,6 +2053,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 0.5rem;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-login .nav-sign-up-btn {

@@ -1219,12 +1219,11 @@ header {
       }
     }
     .mobile-nav-login {
-      position: fixed;
-      top: 90%;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 0.5rem;
       .nav-sign-up-btn {
         cursor: pointer;
         width: 90%;
