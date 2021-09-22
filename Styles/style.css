@@ -3265,4 +3265,166 @@ header {
     color: #0a345e;
   }
 }
+
+@media screen and (max-width: 1605px) {
+  /* Header Section Ends */
+  .intro-container {
+    margin-top: 5.5rem;
+    width: 100%;
+    height: 95vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro-container .intro-title {
+    width: 50%;
+  }
+  .intro-container .intro-title h2 {
+    color: #054e97;
+    font-size: 3.8rem;
+  }
+  .intro-container .intro-title h3 {
+    width: 70%;
+    color: #797979;
+    font-size: 1.65rem;
+    font-weight: lighter;
+  }
+  .intro-container .intro-image {
+    margin: 1rem;
+  }
+  .intro-container .intro-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+  }
+  .intro-container button {
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    background: #054e97;
+    padding: 0.4rem 1.3rem;
+    margin: 1rem 0.5rem;
+    border-radius: 25px;
+  }
+  .intro-container button:hover {
+    background: #054688;
+  }
+  .intro-container .find-work-btn {
+    padding: 0.4rem 1.3rem;
+    border: 2px solid #054e97;
+    border-radius: 25px;
+    background: transparent;
+    color: #054e97;
+  }
+  .intro-container .find-work-btn:hover {
+    background-color: rgba(5, 78, 151, 0.1);
+  }
+  /*Second card: Clients section */
+  .clients {
+    width: 100%;
+    height: 110vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .clients .clients-container {
+    width: 95%;
+    height: 95%;
+    border-radius: 25px;
+    background-image: url("/Image/clients-container-bgImage.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .clients .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    color: white;
+    font-weight: bold;
+  }
+  .clients .content #for-client {
+    width: 100%;
+    text-align: start;
+    font-size: 1.5rem;
+    margin: 1rem 0rem 1rem 2rem;
+  }
+  .clients .content #description-for-client {
+    width: 30%;
+    text-align: start;
+    font-size: 1.35rem;
+    margin: 1rem 0rem 0rem 2rem;
+  }
+  .clients .content h2 {
+    font-family: "Kaisei Tokumin", serif;
+    width: 40%;
+    margin: 2rem 0rem 1rem 2rem;
+    text-align: start;
+    font-size: 4rem;
+  }
+  .clients .content .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 6rem 0rem 0rem 0rem;
+  }
+  .clients .content .card-container .card {
+    margin: 1rem;
+    width: 30%;
+    border-radius: 25px;
+    padding: 1.5rem;
+    background: #054e97;
+    cursor: pointer;
+  }
+  .clients .content .card-container .card h4 {
+    font-size: 1.75rem;
+    margin: 0rem 3rem 2rem 0rem;
+  }
+  .clients .content .card-container .card p {
+    font-size: 1.25rem;
+  }
+  .clients .content .card-container .card:hover {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: white;
+    color: #0a345e;
+  }
+}
 /*# sourceMappingURL=style.css.map */
