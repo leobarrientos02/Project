@@ -1188,7 +1188,6 @@ header {
           h6 {
             width: 95%;
             margin-left: 1rem;
-            pointer-events: none;
             color: $darktext;
             font-size: 1rem;
           }
@@ -1200,6 +1199,9 @@ header {
             color: $darktext;
             cursor: pointer;
             margin-right: 1rem;
+          }
+          #MobileNavAbout {
+            cursor: pointer;
           }
           #mobile-nav-up1,
           #mobile-nav-up2,
@@ -2091,133 +2093,5 @@ header {
       }
     }
     transition: all.5s ease;
-  }
-}
-@media screen and (min-width: 1200px) and(max-width: 1700px) {
-  /* Header Section Ends */
-  .intro-container {
-    margin-top: 5.5rem;
-    width: 100%;
-    height: 95vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    .intro-title {
-      width: 50%;
-      h2 {
-        color: $lightColor;
-        font-size: 3.8rem;
-      }
-      h3 {
-        width: 70%;
-        color: $darktext;
-        font-size: 1.65rem;
-        font-weight: lighter;
-      }
-    }
-    .intro-image {
-      margin: 1rem;
-      img {
-        object-fit: cover;
-        width: 30rem;
-        height: 30rem;
-        border-radius: 50%;
-      }
-    }
-    button {
-      cursor: pointer;
-      font-size: 1rem;
-      color: white;
-      border: none;
-      background: $lightColor;
-      padding: 0.4rem 1.3rem;
-      margin: 1rem 0.5rem;
-      border-radius: 25px;
-      &:hover {
-        background: #054688;
-      }
-    }
-    .find-work-btn {
-      padding: 0.4rem 1.3rem;
-      border: 2px solid $lightColor;
-      border-radius: 25px;
-      background: transparent;
-      color: $lightColor;
-      &:hover {
-        background-color: rgba($color: $lightColor, $alpha: 0.1);
-      }
-    }
-  }
-  /*Second card: Clients section */
-  .clients {
-    width: 100%;
-    height: 110vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .clients-container {
-      width: 95%;
-      height: 95%;
-      border-radius: 25px;
-      background-image: url("/Image/clients-container-bgImage.jpg");
-      background-size: cover;
-      background-position: center;
-    }
-    .content {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      color: white;
-      font-weight: bold;
-      #for-client {
-        width: 100%;
-        text-align: start;
-        font-size: 1.5rem;
-        margin: 1rem 0rem 1rem 2rem;
-      }
-      #description-for-client {
-        width: 30%;
-        text-align: start;
-        font-size: 1.35rem;
-        margin: 1rem 0rem 0rem 2rem;
-      }
-      h2 {
-        font-family: "Kaisei Tokumin", serif;
-        width: 40%;
-        margin: 2rem 0rem 1rem 2rem;
-        text-align: start;
-        font-size: 4rem;
-      }
-      .card-container {
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 6rem 0rem 0rem 0rem;
-        .card {
-          h4 {
-            font-size: 1.75rem;
-            margin: 0rem 3rem 2rem 0rem;
-          }
-          p {
-            font-size: 1.25rem;
-          }
-          margin: 1rem;
-          width: 30%;
-          border-radius: 25px;
-          padding: 1.5rem;
-          background: $lightColor;
-          cursor: pointer;
-          &:hover {
-            transition: all 0.3s ease;
-            background: white;
-            color: $color1;
-          }
-        }
-      }
-    }
   }
 }
