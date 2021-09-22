@@ -3266,7 +3266,7 @@ header {
   }
 }
 
-@media screen and (max-width: 1605px) {
+@media screen and (min-width: 1370px) and (max-width: 1605px) {
   /* Header Section Ends */
   .intro-container {
     margin-top: 5.5rem;
