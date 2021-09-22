@@ -1171,7 +1171,7 @@ header {
     .mobile-nav-links {
       display: flex;
       flex-direction: column;
-      width: 90%;
+      width: 100%;
       height: fit-content;
       margin-top: 1rem;
       .mobile-nav-links-container {
@@ -1187,6 +1187,7 @@ header {
           padding: 1rem 0rem;
           h6 {
             width: 95%;
+            margin-left: 1rem;
             pointer-events: none;
             color: $darktext;
             font-size: 1rem;
@@ -1198,93 +1199,22 @@ header {
             font-size: 1rem;
             color: $darktext;
             cursor: pointer;
+            margin-right: 1rem;
           }
-          #mobile-footer-up1,
-          #mobile-footer-up2,
-          #mobile-footer-up3,
-          #mobile-footer-up4 {
+          #mobile-nav-up1,
+          #mobile-nav-up2,
+          #mobile-nav-up3 {
             display: none;
           }
         }
-        .mobile-user-footer {
+        .mobile-talent {
           display: none;
-          .mobile-user-links {
-            display: flex;
-            flex-direction: column;
-            margin-right: 16rem;
-            margin-bottom: 1rem;
-            a {
-              margin: 0.5rem 0rem;
-              color: $darktext;
-              font-size: 0.8rem;
-            }
-            a:hover {
-              margin: 0.5rem 0rem;
-              color: white;
-              font-size: 0.8rem;
-              text-decoration: underline;
-            }
-          }
         }
-        .mobile-talent-footer {
+        .mobile-work {
           display: none;
-          .mobile-talent-links {
-            display: flex;
-            flex-direction: column;
-            margin-right: 16rem;
-            margin-bottom: 1rem;
-            a {
-              margin: 0.5rem 0rem;
-              color: white;
-              font-size: 0.8rem;
-            }
-            a:hover {
-              margin: 0.5rem 0rem;
-              color: white;
-              font-size: 0.8rem;
-              text-decoration: underline;
-            }
-          }
         }
-        .mobile-resource-footer {
+        .mobile-ezwork {
           display: none;
-          .mobile-resource-links {
-            display: flex;
-            flex-direction: column;
-            margin-right: 17rem;
-            margin-bottom: 1rem;
-            a {
-              margin: 0.5rem 0rem;
-              color: white;
-              font-size: 0.8rem;
-            }
-            a:hover {
-              margin: 0.5rem 0rem;
-              color: white;
-              font-size: 0.8rem;
-              text-decoration: underline;
-            }
-          }
-        }
-        .mobile-about-footer {
-          display: none;
-          .mobile-about-links {
-            display: flex;
-            flex-direction: column;
-            margin-right: 18rem;
-            margin-bottom: 1rem;
-            a {
-              margin: 0.5rem 0rem;
-              color: white;
-              font-size: 0.8rem;
-            }
-            a:hover {
-              margin: 0.5rem 0rem;
-              color: white;
-              font-size: 0.8rem;
-              text-decoration: underline;
-            }
-          }
         }
       }
     }

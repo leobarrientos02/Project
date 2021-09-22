@@ -579,3 +579,128 @@ mobileFooterArrowUp4.addEventListener("click", () => {
   //Show down arrow
   mobileFooterDown4.style.display = "inline-block";
 });
+
+// Javascrtipt for mobile nav section
+// Down Arrows //
+const MobileNavDownArrow1 = document.getElementById("mobile-nav-down1");
+const MobileNavDownArrow2 = document.getElementById("mobile-nav-down2");
+const MobileNavDownArrow3 = document.getElementById("mobile-nav-down3");
+// Up Arrows //
+const MobileNavUpArrow1 = document.getElementById("mobile-nav-up1");
+const MobileNavUpArrow2 = document.getElementById("mobile-nav-up2");
+const MobileNavUpArrow3 = document.getElementById("mobile-nav-up3");
+
+// Get Nav Sections
+const MobileNavTalent = document.querySelector(".mobile-talent");
+const MobileNavWork = document.querySelector(".mobile-work");
+const MobileNavEzwork = document.querySelector(".mobile-ezwork");
+
+// Card ID
+const MobileNavTalentCard = document.getElementById("MobileNav-Talent");
+const MobileNavWorkCard = document.getElementById("MobileNav-Work");
+const MobileNavEzworkCard = document.getElementById("MobileNav-Ezwork");
+
+// Add events
+MobileNavDownArrow1.addEventListener("click", () => {
+  //Replace arrow
+  MobileNavDownArrow1.style.display = "none";
+  MobileNavUpArrow1.style.display = "inline-block";
+
+  //Add grey background
+  MobileNavTalentCard.style.background = "whitesmoke";
+
+  //Display content
+  MobileNavTalent.style.display = "inline-block";
+
+  //Reset other parts
+  MobileNavWork.style.display = "none";
+  MobileNavWorkCard.style.background = "transparent";
+  MobileNavUpArrow2.style.display = "none";
+  MobileNavDownArrow2.style.display = "inline-block";
+
+  MobileNavEzworkCard.style.background = "transparent";
+  MobileNavUpArrow3.style.display = "none";
+  MobileNavDownArrow3.style.display = "inline-block";
+  MobileNavEzwork.style.display = "none";
+});
+MobileNavUpArrow1.addEventListener("click", () => {
+  //Replace arrow
+  MobileNavUpArrow1.style.display = "none";
+  MobileNavDownArrow1.style.display = "inline-block";
+
+  //Remove grey background
+  MobileNavTalentCard.style.background = "transparent";
+
+  //Display content
+  MobileNavTalent.style.display = "none";
+});
+
+// Find Work section
+MobileNavDownArrow2.addEventListener("click", () => {
+  //Replace arrow
+  MobileNavDownArrow2.style.display = "none";
+  MobileNavUpArrow2.style.display = "inline-block";
+
+  //Add grey background
+  MobileNavWorkCard.style.background = "whitesmoke";
+
+  //Display content
+  MobileNavWork.style.display = "inline-block";
+
+  //Reset other parts
+  MobileNavTalent.style.display = "none";
+  MobileNavTalentCard.style.background = "transparent";
+  MobileNavUpArrow1.style.display = "none";
+  MobileNavDownArrow1.style.display = "inline-block";
+
+  MobileNavEzworkCard.style.background = "transparent";
+  MobileNavUpArrow3.style.display = "none";
+  MobileNavDownArrow3.style.display = "inline-block";
+  MobileNavEzwork.style.display = "none";
+});
+MobileNavUpArrow2.addEventListener("click", () => {
+  //Replace arrow
+  MobileNavUpArrow2.style.display = "none";
+  MobileNavDownArrow2.style.display = "inline-block";
+
+  //Reomve grey background
+  MobileNavWorkCard.style.background = "transparent";
+
+  //Display content
+  MobileNavWork.style.display = "none";
+});
+
+//Ezwork section
+MobileNavDownArrow3.addEventListener("click", () => {
+  //Replace arrow
+  MobileNavDownArrow3.style.display = "none";
+  MobileNavUpArrow3.style.display = "inline-block";
+
+  //Add grey background
+  MobileNavEzworkCard.style.background = "whitesmoke";
+
+  //Display content
+  MobileNavEzwork.style.display = "inline-block";
+
+  //Reset other parts
+  MobileNavTalent.style.display = "none";
+  MobileNavTalentCard.style.background = "transparent";
+  MobileNavUpArrow1.style.display = "none";
+  MobileNavDownArrow1.style.display = "inline-block";
+
+  MobileNavWork.style.display = "none";
+  MobileNavWorkCard.style.background = "transparent";
+  MobileNavUpArrow2.style.display = "none";
+  MobileNavDownArrow2.style.display = "inline-block";
+});
+MobileNavUpArrow3.addEventListener("click", () => {
+  //Replace arrow
+  MobileNavUpArrow3.style.display = "none";
+  MobileNavDownArrow3.style.display = "inline-block";
+
+  //Remove grey background
+  MobileNavEzworkCard.style.background = "transparent";
+
+  //Display content
+  MobileNavEzwork.style.display = "none";
+});
