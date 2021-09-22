@@ -145,6 +145,7 @@ clientPulldown.addEventListener("mouseleave", () => {
   arrow2.classList.remove("hide");
   arrow3.classList.remove("hide");
 });
+
 ArrowDown2.addEventListener("click", () => {
   categories.style.display = "none";
 
@@ -175,6 +176,7 @@ freelancePulldown.addEventListener("mouseleave", () => {
   arrow2.classList.remove("hide");
   arrow3.classList.remove("hide");
 });
+
 ArrowDown3.addEventListener("click", () => {
   categories.style.display = "none";
 
@@ -208,7 +210,6 @@ ezworkPulldown.addEventListener("mouseleave", () => {
 // Header arrows Functionality Ends Here
 
 //Client Pulldown section//
-
 //Links
 const link1 = document.getElementById("client-pulldown-link1");
 const link2 = document.getElementById("client-pulldown-link2");

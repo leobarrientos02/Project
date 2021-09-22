@@ -1136,7 +1136,179 @@ header {
     position: relative;
     top: 10%;
     width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .mobile-nav-searchBar {
+      display: flex;
+      flex-direction: row;
+      border-radius: 25px;
+      width: 20rem;
+      height: fit-content;
+      border: 0.75px solid lightgray;
+      #search {
+        border: none;
+        width: 80%;
+        margin-left: 0.8rem;
+        font-size: 1.1rem;
+        &:focus {
+          outline: none;
+        }
+      }
+      #submit {
+        width: 20%;
+        height: 2rem;
+        border: none;
+        color: $darktext;
+        font-size: 1rem;
+        cursor: pointer;
+        background: transparent;
+        &:hover {
+          color: $lightColor;
+        }
+      }
+    }
+    .mobile-nav-links {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      height: fit-content;
+      margin-top: 1rem;
+      .mobile-nav-links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .card {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          padding: 1rem 0rem;
+          h6 {
+            width: 95%;
+            pointer-events: none;
+            color: $darktext;
+            font-size: 1rem;
+          }
+          i {
+            display: flex;
+            justify-self: flex-end;
+            align-self: flex-end;
+            font-size: 1rem;
+            color: $darktext;
+            cursor: pointer;
+          }
+          #mobile-footer-up1,
+          #mobile-footer-up2,
+          #mobile-footer-up3,
+          #mobile-footer-up4 {
+            display: none;
+          }
+        }
+        .mobile-user-footer {
+          display: none;
+          .mobile-user-links {
+            display: flex;
+            flex-direction: column;
+            margin-right: 16rem;
+            margin-bottom: 1rem;
+            a {
+              margin: 0.5rem 0rem;
+              color: $darktext;
+              font-size: 0.8rem;
+            }
+            a:hover {
+              margin: 0.5rem 0rem;
+              color: white;
+              font-size: 0.8rem;
+              text-decoration: underline;
+            }
+          }
+        }
+        .mobile-talent-footer {
+          display: none;
+          .mobile-talent-links {
+            display: flex;
+            flex-direction: column;
+            margin-right: 16rem;
+            margin-bottom: 1rem;
+            a {
+              margin: 0.5rem 0rem;
+              color: white;
+              font-size: 0.8rem;
+            }
+            a:hover {
+              margin: 0.5rem 0rem;
+              color: white;
+              font-size: 0.8rem;
+              text-decoration: underline;
+            }
+          }
+        }
+        .mobile-resource-footer {
+          display: none;
+          .mobile-resource-links {
+            display: flex;
+            flex-direction: column;
+            margin-right: 17rem;
+            margin-bottom: 1rem;
+            a {
+              margin: 0.5rem 0rem;
+              color: white;
+              font-size: 0.8rem;
+            }
+            a:hover {
+              margin: 0.5rem 0rem;
+              color: white;
+              font-size: 0.8rem;
+              text-decoration: underline;
+            }
+          }
+        }
+        .mobile-about-footer {
+          display: none;
+          .mobile-about-links {
+            display: flex;
+            flex-direction: column;
+            margin-right: 18rem;
+            margin-bottom: 1rem;
+            a {
+              margin: 0.5rem 0rem;
+              color: white;
+              font-size: 0.8rem;
+            }
+            a:hover {
+              margin: 0.5rem 0rem;
+              color: white;
+              font-size: 0.8rem;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    .mobile-nav-login {
+      position: fixed;
+      top: 85%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .nav-sign-up-btn {
+        cursor: pointer;
+        width: 90%;
+        padding: 0.5rem;
+        border-radius: 15px;
+        border: none;
+        font-size: 1rem;
+        background: $lightColor;
+        color: white;
+        &:hover {
+          color: lightgray;
+        }
+      }
+    }
   }
 }
 // Other classes end
@@ -1391,6 +1563,7 @@ header {
               margin: 1rem;
               color: $darktext;
               font-size: 1.1rem;
+              text-decoration: underline;
               &:hover {
                 color: $color1;
               }
