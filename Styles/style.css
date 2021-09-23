@@ -2043,6 +2043,64 @@ header {
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-ezwork {
   display: none;
+  width: 100%;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-ezwork .mobile-ezwork-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 0rem 1.5rem;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-ezwork .mobile-ezwork-container .mobile-ezwork-reviews .card {
+  cursor: pointer;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-ezwork .mobile-ezwork-container .mobile-ezwork-reviews .card h3 {
+  color: #1b1b1b;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-ezwork .mobile-ezwork-container .mobile-ezwork-guides {
+  width: 100%;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-ezwork .mobile-ezwork-container .mobile-ezwork-guides h3 {
+  color: #181818;
+  font-size: 1.3rem;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-ezwork .mobile-ezwork-container .mobile-ezwork-guides .guide {
+  width: 80%;
+  border: 0.7px solid lightgray;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-ezwork .mobile-ezwork-container .mobile-ezwork-guides .guide h4 {
+  font-size: 1rem;
+  color: #797979;
+  font-weight: lighter;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-ezwork .mobile-ezwork-container .mobile-ezwork-guides .guide p {
+  font-size: 0.8rem;
+  color: #797979;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-ezwork .mobile-ezwork-container .mobile-ezwork-guides a {
+  font-size: 0.7rem;
+  color: #054e97;
+  cursor: pointer;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-login {
