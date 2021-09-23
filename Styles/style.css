@@ -2039,6 +2039,42 @@ header {
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-work {
   display: none;
+  width: 100%;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-work .mobile-work-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 0rem 1.5rem;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-work .mobile-work-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  cursor: pointer;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-work .mobile-work-container .card h3 {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-work .mobile-work-container .card p {
+  color: #797979;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-ezwork {

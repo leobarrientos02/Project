@@ -1214,6 +1214,28 @@ header {
         }
         .mobile-work {
           display: none;
+          width: 100%;
+          .mobile-work-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0rem 1.5rem;
+            .card {
+              display: flex;
+              flex-direction: column;
+              width: 80%;
+              cursor: pointer;
+              h3 {
+                font-size: 1rem;
+                font-weight: lighter;
+              }
+              p {
+                color: $darktext;
+                margin-top: 0.5rem;
+                font-size: 0.8rem;
+              }
+            }
+          }
         }
         .mobile-ezwork {
           display: none;
