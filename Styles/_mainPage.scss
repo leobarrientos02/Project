@@ -1211,6 +1211,33 @@ header {
         }
         .mobile-talent {
           display: none;
+          width: 100%;
+          .mobile-talent-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 1rem 1.5rem;
+            .card {
+              display: flex;
+              flex-direction: column;
+              width: 85%;
+              cursor: pointer;
+              h3 {
+                font-size: 1rem;
+                font-weight: lighter;
+              }
+              p {
+                color: $darktext;
+                margin-top: 0.5rem;
+                font-size: 0.8rem;
+              }
+              i {
+                height: fit-content;
+                cursor: pointer;
+                font-size: 0.7rem;
+              }
+            }
+          }
         }
         .mobile-work {
           display: none;
@@ -1224,7 +1251,6 @@ header {
               display: flex;
               flex-direction: column;
               width: 80%;
-              cursor: pointer;
               h3 {
                 font-size: 1rem;
                 font-weight: lighter;
