@@ -704,3 +704,23 @@ MobileNavUpArrow3.addEventListener("click", () => {
   //Display content
   MobileNavEzwork.style.display = "none";
 });
+
+// Javascript for Mobile Nav Talent Section
+// Card
+const card1 = document.getElementById("card1");
+
+//Get content
+const MobileFindFreelancer = document.querySelector(".MobileFindFreelancer");
+
+//Get arrows in the content
+const MobileFreelancerLeftArrow = document.getElementById(
+  "MobileFreelancerLeftArrow"
+);
+MobileFreelancerLeftArrow.addEventListener("click", () => {
+  MobileFindFreelancer.style.display = "none";
+});
+
+card1.addEventListener("click", () => {
+  // Show Content
+  MobileFindFreelancer.style.display = "inline-block";
+});
