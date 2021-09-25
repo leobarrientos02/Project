@@ -2006,7 +2006,7 @@ header {
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .card h6 {
   width: 95%;
   margin-left: 1rem;
-  color: #797979;
+  color: #222222;
   font-size: 1rem;
 }
 
@@ -2078,7 +2078,7 @@ header {
   height: -moz-fit-content;
   height: fit-content;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileFindFreelancer {
@@ -2104,8 +2104,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 0rem;
-  border-bottom: 0.3px solid lightgray;
+  padding: 0.7rem 0rem;
+  border-bottom: 0.3px solid whitesmoke;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileFindFreelancer .MobileFindFreelancerHeader i {
@@ -2129,12 +2129,12 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileFindFreelancer .MobileFindFreelancerContainer .MobileFindFreelancerCard p {
   font-size: 0.8rem;
-  padding: 1rem 0rem;
+  padding: 0.6rem 0rem 0.3rem 0rem;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileFindFreelancer .MobileFindFreelancerContainer .MobileFindFreelancerCard p a {
@@ -2182,8 +2182,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 0rem;
-  border-bottom: 0.3px solid lightgray;
+  padding: 0.7rem 0rem;
+  border-bottom: 0.3px solid whitesmoke;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileProject .MobileProjectHeader i {
@@ -2220,8 +2220,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 0rem;
-  border-bottom: 0.3px solid lightgray;
+  padding: 0.7rem 0rem;
+  border-bottom: 0.3px solid whitesmoke;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileSkills .MobileSkillsHeader i {
@@ -2245,12 +2245,12 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileSkills .MobileSkillsContainer .MobileSkillsCard p {
   font-size: 0.8rem;
-  padding: 1rem 0rem;
+  padding: 0.6rem 0rem 0.3rem 0rem;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileSkills .MobileSkillsContainer .MobileSkillsCard p a {

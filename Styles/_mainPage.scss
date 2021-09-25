@@ -1188,7 +1188,7 @@ header {
           h6 {
             width: 95%;
             margin-left: 1rem;
-            color: $darktext;
+            color: rgb(34, 34, 34);
             font-size: 1rem;
           }
           i {
@@ -1234,7 +1234,7 @@ header {
               i {
                 height: fit-content;
                 cursor: pointer;
-                font-size: 0.9rem;
+                font-size: 0.7rem;
               }
             }
             .MobileFindFreelancer {
@@ -1251,8 +1251,8 @@ header {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                padding: 1rem 0rem;
-                border-bottom: 0.3px solid lightgray;
+                padding: 0.7rem 0rem;
+                border-bottom: 0.3px solid whitesmoke;
                 i {
                   margin: 0rem 1rem;
                   font-size: 0.9rem;
@@ -1268,11 +1268,11 @@ header {
                 margin: 0rem 0.7rem;
                 display: flex;
                 flex-direction: column;
-                padding: 1rem;
+                padding: 0.7rem 1rem;
                 .MobileFindFreelancerCard {
                   p {
                     font-size: 0.8rem;
-                    padding: 1rem 0rem;
+                    padding: 0.6rem 0rem 0.3rem 0rem;
                     a {
                       color: $lightColor;
                       cursor: pointer;
@@ -1308,8 +1308,8 @@ header {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                padding: 1rem 0rem;
-                border-bottom: 0.3px solid lightgray;
+                padding: 0.7rem 0rem;
+                border-bottom: 0.3px solid whitesmoke;
                 i {
                   margin: 0rem 1rem;
                   font-size: 0.9rem;
@@ -1335,8 +1335,8 @@ header {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                padding: 1rem 0rem;
-                border-bottom: 0.3px solid lightgray;
+                padding: 0.7rem 0rem;
+                border-bottom: 0.3px solid whitesmoke;
                 i {
                   margin: 0rem 1rem;
                   font-size: 0.9rem;
@@ -1352,11 +1352,11 @@ header {
                 margin: 0rem 0.7rem;
                 display: flex;
                 flex-direction: column;
-                padding: 1rem;
+                padding: 0.7rem 1rem;
                 .MobileSkillsCard {
                   p {
                     font-size: 0.8rem;
-                    padding: 1rem 0rem;
+                    padding: 0.6rem 0rem 0.3rem 0rem;
                     a {
                       color: $lightColor;
                       cursor: pointer;
