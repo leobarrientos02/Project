@@ -708,19 +708,35 @@ MobileNavUpArrow3.addEventListener("click", () => {
 // Javascript for Mobile Nav Talent Section
 // Card
 const card1 = document.getElementById("card1");
+const card2 = document.getElementById("card2");
+const card3 = document.getElementById("card3");
 
 //Get content
 const MobileFindFreelancer = document.querySelector(".MobileFindFreelancer");
+const MobileProject = document.querySelector(".MobileProject");
 
 //Get arrows in the content
 const MobileFreelancerLeftArrow = document.getElementById(
   "MobileFreelancerLeftArrow"
 );
+const MobileFreelancerLeftArrow2 = document.getElementById(
+  "MobileFreelancerLeftArrow2"
+);
+
+//Add events for back arrow
 MobileFreelancerLeftArrow.addEventListener("click", () => {
   MobileFindFreelancer.style.display = "none";
 });
+MobileFreelancerLeftArrow2.addEventListener("click", () => {
+  MobileProject.style.display = "none";
+});
 
+//Add Event to open content
 card1.addEventListener("click", () => {
   // Show Content
   MobileFindFreelancer.style.display = "inline-block";
+});
+card2.addEventListener("click", () => {
+  //Show Content
+  MobileProject.style.display = "inline-block";
 });
