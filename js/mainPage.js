@@ -714,6 +714,7 @@ const card3 = document.getElementById("card3");
 //Get content
 const MobileFindFreelancer = document.querySelector(".MobileFindFreelancer");
 const MobileProject = document.querySelector(".MobileProject");
+const MobileSkills = document.querySelector(".MobileSkills");
 
 //Get arrows in the content
 const MobileFreelancerLeftArrow = document.getElementById(
@@ -722,6 +723,9 @@ const MobileFreelancerLeftArrow = document.getElementById(
 const MobileFreelancerLeftArrow2 = document.getElementById(
   "MobileFreelancerLeftArrow2"
 );
+const MobileFreelancerLeftArrow3 = document.getElementById(
+  "MobileFreelancerLeftArrow3"
+);
 
 //Add events for back arrow
 MobileFreelancerLeftArrow.addEventListener("click", () => {
@@ -729,6 +733,9 @@ MobileFreelancerLeftArrow.addEventListener("click", () => {
 });
 MobileFreelancerLeftArrow2.addEventListener("click", () => {
   MobileProject.style.display = "none";
+});
+MobileFreelancerLeftArrow3.addEventListener("click", () => {
+  MobileSkills.style.display = "none";
 });
 
 //Add Event to open content
@@ -739,4 +746,8 @@ card1.addEventListener("click", () => {
 card2.addEventListener("click", () => {
   //Show Content
   MobileProject.style.display = "inline-block";
+});
+card3.addEventListener("click", () => {
+  //Show Content
+  MobileSkills.style.display = "inline-block";
 });
