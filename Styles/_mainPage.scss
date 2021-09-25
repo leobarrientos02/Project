@@ -1252,7 +1252,7 @@ header {
                 flex-direction: row;
                 align-items: center;
                 padding: 1rem 0rem;
-                border-bottom: 0.75px solid lightgray;
+                border-bottom: 0.3px solid lightgray;
                 i {
                   margin: 0rem 1rem;
                   font-size: 0.9rem;
@@ -1309,7 +1309,7 @@ header {
                 flex-direction: row;
                 align-items: center;
                 padding: 1rem 0rem;
-                border-bottom: 0.75px solid lightgray;
+                border-bottom: 0.3px solid lightgray;
                 i {
                   margin: 0rem 1rem;
                   font-size: 0.9rem;
@@ -1336,7 +1336,7 @@ header {
                 flex-direction: row;
                 align-items: center;
                 padding: 1rem 0rem;
-                border-bottom: 0.75px solid lightgray;
+                border-bottom: 0.3px solid lightgray;
                 i {
                   margin: 0rem 1rem;
                   font-size: 0.9rem;
@@ -1345,6 +1345,36 @@ header {
                 }
                 h3 {
                   color: $color1;
+                }
+              }
+              .MobileSkillsContainer {
+                width: 100%;
+                margin: 0rem 0.7rem;
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+                .MobileSkillsCard {
+                  p {
+                    font-size: 0.8rem;
+                    padding: 1rem 0rem;
+                    a {
+                      color: $lightColor;
+                      cursor: pointer;
+                      &:hover {
+                        text-decoration: underline;
+                      }
+                    }
+                  }
+                  ul {
+                    list-style: none;
+                    a {
+                      cursor: pointer;
+                      color: black;
+                      li {
+                        margin: 1.5rem 0rem;
+                      }
+                    }
+                  }
                 }
               }
             }

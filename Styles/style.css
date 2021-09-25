@@ -2105,7 +2105,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 0rem;
-  border-bottom: 0.75px solid lightgray;
+  border-bottom: 0.3px solid lightgray;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileFindFreelancer .MobileFindFreelancerHeader i {
@@ -2183,7 +2183,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 0rem;
-  border-bottom: 0.75px solid lightgray;
+  border-bottom: 0.3px solid lightgray;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileProject .MobileProjectHeader i {
@@ -2221,7 +2221,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 0rem;
-  border-bottom: 0.75px solid lightgray;
+  border-bottom: 0.3px solid lightgray;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileSkills .MobileSkillsHeader i {
@@ -2233,6 +2233,46 @@ header {
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileSkills .MobileSkillsHeader h3 {
   color: #0a345e;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileSkills .MobileSkillsContainer {
+  width: 100%;
+  margin: 0rem 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileSkills .MobileSkillsContainer .MobileSkillsCard p {
+  font-size: 0.8rem;
+  padding: 1rem 0rem;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileSkills .MobileSkillsContainer .MobileSkillsCard p a {
+  color: #054e97;
+  cursor: pointer;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileSkills .MobileSkillsContainer .MobileSkillsCard p a:hover {
+  text-decoration: underline;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileSkills .MobileSkillsContainer .MobileSkillsCard ul {
+  list-style: none;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileSkills .MobileSkillsContainer .MobileSkillsCard ul a {
+  cursor: pointer;
+  color: black;
+}
+
+.mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileSkills .MobileSkillsContainer .MobileSkillsCard ul a li {
+  margin: 1.5rem 0rem;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-work {
