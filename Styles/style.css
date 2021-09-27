@@ -1897,9 +1897,9 @@ header {
   top: 0;
   left: 0;
   background-color: white;
-  overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  overflow: scroll !important;
 }
 
 .mobile-nav .mobile-nav-content {
@@ -2254,7 +2254,7 @@ header {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   width: 40%;
-  height: 85%;
+  height: 70%;
   -o-object-fit: contain;
      object-fit: contain;
 }

@@ -1130,8 +1130,8 @@ header {
   top: 0;
   left: 0;
   background-color: white;
-  overflow-x: hidden;
   transition: 0.5s;
+  overflow: scroll !important;
   .mobile-nav-content {
     position: relative;
     top: 10%;
@@ -1360,7 +1360,7 @@ header {
                       border-top-left-radius: 20px;
                       border-bottom-left-radius: 20px;
                       width: 40%;
-                      height: 85%;
+                      height: 70%;
                       object-fit: contain;
                     }
                     p {
