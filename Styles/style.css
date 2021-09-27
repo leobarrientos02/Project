@@ -3917,10 +3917,10 @@ section .container .register .register-container button:hover {
   .login-header .login-header-container .logo h3 {
     font-family: "Archivo Black", sans-serif;
     color: #4e65ca;
-    font-size: 1.55rem;
+    font-size: 2rem;
   }
   .login-header .login-header-container .logo span {
-    font-size: 1.55rem;
+    font-size: 2rem;
     color: #054e97;
   }
   section {
