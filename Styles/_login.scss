@@ -1,23 +1,29 @@
-header {
+.login-header {
   width: 100%;
-  border: solid lightgray 0.8px;
-  .header-container {
+  border-bottom: solid 0.7px lightgray;
+  padding: 1rem;
+  .login-header-container {
     border: none;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     .logo {
+      margin-left: 1rem;
+      cursor: pointer;
       h3 {
-        font-size: 1.4rem;
+        font-family: "Archivo Black", sans-serif;
+        color: rgb(78, 101, 202);
+        font-size: 1.5rem;
       }
       span {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+        color: $lightColor;
       }
     }
   }
 }
 section {
-  margin: 5rem 0rem 2rem 0rem;
+  margin: 2.5rem 0rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -128,9 +134,9 @@ section {
     }
   }
 }
-footer {
+.login-footer {
   width: 100%;
-  .footer-container {
+  .login-footer-container {
     width: 100%;
     display: flex;
     flex-direction: column;

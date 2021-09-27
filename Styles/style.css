@@ -3677,12 +3677,13 @@ header {
 }
 
 /*Login Page: index.html */
-header {
+.login-header {
   width: 100%;
-  border: solid lightgray 0.8px;
+  border-bottom: solid 0.7px lightgray;
+  padding: 1rem;
 }
 
-header .header-container {
+.login-header .login-header-container {
   border: none;
   width: 100%;
   display: -webkit-box;
@@ -3693,16 +3694,24 @@ header .header-container {
           justify-content: flex-start;
 }
 
-header .header-container .logo h3 {
-  font-size: 1.4rem;
+.login-header .login-header-container .logo {
+  margin-left: 1rem;
+  cursor: pointer;
 }
 
-header .header-container .logo span {
-  font-size: 1.4rem;
+.login-header .login-header-container .logo h3 {
+  font-family: "Archivo Black", sans-serif;
+  color: #4e65ca;
+  font-size: 1.5rem;
+}
+
+.login-header .login-header-container .logo span {
+  font-size: 1.5rem;
+  color: #054e97;
 }
 
 section {
-  margin: 5rem 0rem 2rem 0rem;
+  margin: 2.5rem 0rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3851,11 +3860,11 @@ section .container .register .register-container button:hover {
   background: whitesmoke;
 }
 
-footer {
+.login-footer {
   width: 100%;
 }
 
-footer .footer-container {
+.login-footer .login-footer-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3871,17 +3880,17 @@ footer .footer-container {
   padding: 1.2rem;
 }
 
-footer .footer-container p {
+.login-footer .login-footer-container p {
   color: white;
   padding: 1rem 0rem;
 }
 
-footer .footer-container a {
+.login-footer .login-footer-container a {
   text-decoration: none;
   color: white;
 }
 
-footer .footer-container a:hover {
+.login-footer .login-footer-container a:hover {
   color: #3131c7;
 }
 /*# sourceMappingURL=style.css.map */
