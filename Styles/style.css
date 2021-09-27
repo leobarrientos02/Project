@@ -2181,7 +2181,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.5rem 0rem;
+  padding: 0.6rem 0rem;
   border-bottom: 0.3px solid whitesmoke;
 }
 
@@ -2234,13 +2234,13 @@ header {
           flex-direction: row;
   border-radius: 10px;
   border: 0.7px solid lightgray;
-  margin: 0.5rem 1rem 0.5rem 0rem;
+  margin: 0.7rem 1rem 0.7rem 0rem;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileProject .MobileProjectContainer .MobileProjectCard2 .image-card img {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  width: 4.5rem;
+  width: 5.5rem;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -2249,7 +2249,7 @@ header {
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileProject .MobileProjectContainer .MobileProjectCard2 .image-card p {
   font-size: 1rem;
   width: 100%;
-  margin-left: 0.8rem;
+  margin-left: 1rem;
   text-align: left;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
