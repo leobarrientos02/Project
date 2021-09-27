@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="description" content="A platform for skilled workers or talented people to freelance, find projects to work on, extra ways to earn income.">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://kit.fontawesome.com/e9089fea9d.js" crossorigin="anonymous"></script>
+            <title>EZWork | Find Jobs or Freelancers</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet"> 
+            <link rel="icon" href="../icons/team.svg">
+            <link rel="stylesheet" href="../Styles/style.css">
+        </head>
+    </head>
 <body>
-    <h3>LEONEL</h3>
+    <div class="register-header">
+        <div class="register-header-container">
+            <div class="logo">
+                <a href="../index.html"><h3><span>E</span>z<span>Work</span></h3></a>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="register-container">
+                <form id="registerForm" action="">
+                    <h3>Create your Free Account</h3>
+                    <div class="tab">
+                        <h4>Full name:</h4>
+                        <p><input 
+                            type="text" 
+                            placeholder="First name..." 
+                            oninput="this.className = ''" 
+                            required></p>
+                        <p><input 
+                            type="text" 
+                            placeholder="Last name..." 
+                            oninput="this.className = ''" 
+                            required>
+                        </p>
+                    </div>
+
+                    <div class="tab">
+                        <h4>Contact Info:</h4>
+                        <p><input 
+                            type="email" 
+                            placeholder="E-mail..."
+                            title="Enter a valid Email" 
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            oninput="this.className = ''"
+                            required>
+                        </p>
+                        <p><input type="tel" 
+                            name="mobilePhone" 
+                            id="mobilePhone" 
+                            placeholder="Mobile Phone..." 
+                            title="Enter Valid phone number"
+                            oninput="this.className = ''"
+                            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" 
+                            required>
+                        </p>
+                        <p><input 
+                            type="tel" 
+                            name="homePhone" 
+                            id="homePhone" 
+                            title="Enter Valid phone number"
+                            placeholder="Home Phone..."
+                            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  
+                            oninput="this.className = ''" 
+                            required>
+                        </p>
+                    </div>
+
+                    <div class="tab">
+                        <h4>Date of Birth:</h4>
+                        <p><input
+                            type="number"
+                            placeholder="dd" 
+                            oninput="this.className = ''">
+                        </p>
+                        <p><input
+                            type="month" 
+                            placeholder="mm"
+                            oninput="this.className = ''">
+                        </p>
+                        <p><input
+                            type="number" 
+                            placeholder="yyyy" 
+                            oninput="this.className = ''">
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="login">
+                <div class="login-container">
+                    <h3>Already have an account?</h3>
+                    <button onclick="location.href='../login/index.html'">Log In</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="register-footer">
+        <div class="register-footer-container">
+            <p id="register-copyright">
+                &copy Copyright. 2021-
+                <script>document.write(new Date().getFullYear())</script>
+                EzWork&trade; Global Inc.
+            </p>
+            <a href="/404Page/index.html">Terms of Service</a>
+            <a href="/404Page/index.html">Privacy Policy</a>
+            <a href="/404Page/index.html">Accesibility</a>
+        </div>
+    </div>
+    <script src="./register.js"></script>
 </body>
 </html>
