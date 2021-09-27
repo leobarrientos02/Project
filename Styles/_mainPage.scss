@@ -1302,7 +1302,6 @@ header {
               top: 8%;
               left: 0;
               background-color: white;
-              overflow-x: hidden;
               .MobileProjectHeader {
                 width: 100%;
                 display: flex;
@@ -1360,7 +1359,7 @@ header {
                     img {
                       border-top-left-radius: 20px;
                       border-bottom-left-radius: 20px;
-                      width: 60%;
+                      width: 40%;
                       height: 100%;
                       object-fit: contain;
                     }

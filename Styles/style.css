@@ -2167,7 +2167,6 @@ header {
   top: 8%;
   left: 0;
   background-color: white;
-  overflow-x: hidden;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileProject .MobileProjectHeader {
@@ -2254,7 +2253,7 @@ header {
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileProject .MobileProjectContainer .MobileProjectCard2 .image-card img {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  width: 60%;
+  width: 40%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
