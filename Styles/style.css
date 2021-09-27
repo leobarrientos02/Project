@@ -2167,6 +2167,7 @@ header {
   top: 8%;
   left: 0;
   background-color: white;
+  overflow: scroll !important;
 }
 
 .mobile-nav .mobile-nav-content .mobile-nav-links .mobile-nav-links-container .mobile-talent .mobile-talent-container .MobileProject .MobileProjectHeader {
