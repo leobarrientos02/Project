@@ -57,6 +57,15 @@ section {
             background: $color1;
           }
         }
+        p {
+          width: fit-content;
+          font-size: 0.9rem;
+          cursor: pointer;
+          &:hover {
+            color: $color1;
+            text-decoration: underline;
+          }
+        }
       }
     }
     .help-container {

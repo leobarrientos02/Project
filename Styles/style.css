@@ -3770,6 +3770,19 @@ section .container .login-container form #submit:hover {
   background: #0a345e;
 }
 
+section .container .login-container form p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+section .container .login-container form p:hover {
+  color: #0a345e;
+  text-decoration: underline;
+}
+
 section .container .help-container {
   margin: 0.7rem 0rem;
   width: 100%;
