@@ -3975,6 +3975,9 @@ section .container .register .register-container button:hover {
     border: 0.7px solid #054e97;
   }
   section .container .login-container form #submit {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background: #054e97;
     color: white;
     cursor: pointer;

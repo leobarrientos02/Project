@@ -214,6 +214,9 @@ section {
             border: 0.7px solid $lightColor;
           }
           #submit {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
             background: $lightColor;
             color: white;
             cursor: pointer;
