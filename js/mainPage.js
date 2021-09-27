@@ -751,3 +751,6 @@ card3.addEventListener("click", () => {
   //Show Content
   MobileSkills.style.display = "inline-block";
 });
+
+//Login
+const loginBtn = document.querySelector(".login-btn");

@@ -3675,4 +3675,200 @@ header {
     color: #0a345e;
   }
 }
+
+/*Login Page: index.html */
+header {
+  width: 100%;
+  border: solid lightgray 0.8px;
+}
+
+header .header-container {
+  border: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header .header-container .logo h3 {
+  font-size: 1.4rem;
+}
+
+header .header-container .logo span {
+  font-size: 1.4rem;
+}
+
+section {
+  margin: 5rem 0rem 2rem 0rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .container {
+  padding: 2.5rem 0rem;
+  width: 40%;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .container .login-container {
+  width: 100%;
+  padding: 0rem 5rem;
+}
+
+section .container .login-container h3 {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+section .container .login-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .container .login-container form input {
+  margin: 1rem 0rem;
+  border-radius: 5px;
+  padding: 0.7rem;
+  border: 0.7px solid #054e97;
+}
+
+section .container .login-container form #submit {
+  background: #054e97;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 15px;
+}
+
+section .container .login-container form #submit:hover {
+  background: #0a345e;
+}
+
+section .container .help-container {
+  margin: 0.7rem 0rem;
+  width: 100%;
+  text-align: center;
+  padding: 0rem 5rem;
+}
+
+section .container .help-container h3 {
+  color: #1f1f1f;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+section .container .help-container h3 span {
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  color: #797979;
+}
+
+section .container .help-container button {
+  margin: 0.8rem 0rem;
+  width: 90%;
+  cursor: pointer;
+  background: transparent;
+  color: #797979;
+  padding: 0.5rem 0rem;
+  font-size: 1rem;
+  border-radius: 15px;
+  border: solid 0.8px #797979;
+}
+
+section .container .help-container button:hover {
+  background: whitesmoke;
+}
+
+section .container .register {
+  width: 100%;
+  border-top: 0.8px solid lightgray;
+}
+
+section .container .register .register-container {
+  width: 100%;
+  text-align: center;
+}
+
+section .container .register .register-container h3 {
+  color: #797979;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-top: 1rem;
+}
+
+section .container .register .register-container button {
+  margin: 0.8rem 0rem;
+  width: 40%;
+  cursor: pointer;
+  background: transparent;
+  color: #0a345e;
+  padding: 0.5rem 0rem;
+  font-size: 1rem;
+  border-radius: 15px;
+  border: solid 1.2px #0a345e;
+}
+
+section .container .register .register-container button:hover {
+  background: whitesmoke;
+}
+
+footer {
+  width: 100%;
+}
+
+footer .footer-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0a345e;
+  padding: 1.2rem;
+}
+
+footer .footer-container p {
+  color: white;
+  padding: 1rem 0rem;
+}
+
+footer .footer-container a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer-container a:hover {
+  color: #3131c7;
+}
 /*# sourceMappingURL=style.css.map */
