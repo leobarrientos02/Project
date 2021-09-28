@@ -4155,11 +4155,10 @@ section .container .register-container h3 {
   width: 100%;
   font-size: 2rem;
   text-align: center;
-  margin: 1rem 0rem 1.3rem 0rem;
+  margin: 1rem 0rem 1rem 0rem;
 }
 
 section .container .register-container form {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4170,83 +4169,167 @@ section .container .register-container form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Mark input boxes that gets an error on validation: */
-  /* Hide all steps by default: */
-  /* Make circles that indicate the steps of the form: */
-  /* Mark the active step: */
-  /* Mark the steps that are finished and valid: */
+  margin-bottom: 1rem;
+}
+
+section .container .register-container form input {
+  text-align: center;
+}
+
+section .container .register-container form ::-webkit-input-placeholder {
+  text-align: center;
+}
+
+section .container .register-container form :-moz-placeholder {
+  text-align: center;
 }
 
 section .container .register-container form h4 {
-  color: #0a345e;
-  font-size: 1.6rem;
-  width: 100%;
-  text-align: start;
+  font-size: 1.4rem;
+  color: #054e97;
 }
 
-section .container .register-container form input.invalid {
-  background-color: #ffdddd;
-}
-
-section .container .register-container form .tab {
-  display: none;
-  width: 100%;
-  padding: 0rem 4rem;
-}
-
-section .container .register-container form .tab p {
-  width: 100%;
-}
-
-section .container .register-container form .tab p input {
-  width: 100%;
+section .container .register-container form .name {
   margin: 1rem 0rem;
-  border-radius: 5px;
-  padding: 0.7rem;
-  border: 0.7px solid #054e97;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+section .container .register-container form .name p {
+  text-align: center;
+  width: 100%;
+}
+
+section .container .register-container form .name p input {
+  border-radius: 10px;
+  border: none;
+  border: solid 1px #0a345e;
+  width: 50%;
+  font-size: 1rem;
+  margin: 0.5rem 0rem;
+  padding: 0.2rem 0.6rem;
+}
+
+section .container .register-container form .dateofBirth {
+  margin: 1rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+section .container .register-container form .dateofBirth p {
+  text-align: center;
+  width: 100%;
+}
+
+section .container .register-container form .dateofBirth p input {
+  border-radius: 10px;
+  border: none;
+  border: solid 1px #0a345e;
+  font-size: 1rem;
+  margin: 0.5rem 0rem;
+  padding: 0.2rem 0.6rem 0.2rem 1rem;
+}
+
+section .container .register-container form .contact {
+  margin: 1rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+section .container .register-container form .contact p {
+  text-align: center;
+  width: 100%;
+}
+
+section .container .register-container form .contact p input {
+  border-radius: 10px;
+  border: none;
+  border: solid 1px #0a345e;
+  width: 50%;
+  font-size: 1rem;
+  margin: 0.5rem 0rem;
+  padding: 0.2rem 0.6rem;
+}
+
+section .container .register-container form .account {
+  margin: 1rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+section .container .register-container form .account p {
+  text-align: center;
+  width: 100%;
+}
+
+section .container .register-container form .account p input {
+  border-radius: 10px;
+  border: none;
+  border: solid 1px #0a345e;
+  width: 50%;
+  font-size: 1rem;
+  margin: 0.5rem 0rem;
+  padding: 0.2rem 0.6rem;
+}
+
+section .container .register-container form .account span {
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 0.2rem;
+}
+
+section .container .register-container form .account span:hover {
+  color: #054e97;
 }
 
 section .container .register-container form button {
-  background-color: #054e97;
-  color: #ffffff;
+  font-size: 1.25rem;
+  padding: 0.6rem 2rem;
   border: none;
-  border-radius: 10px;
-  padding: 10px 30px;
-  font-size: 1rem;
+  border-radius: 15px;
   cursor: pointer;
+  background: #054e97;
+  color: white;
 }
 
 section .container .register-container form button:hover {
   background: #0a345e;
-}
-
-section .container .register-container form .step {
-  height: 15px;
-  width: 15px;
-  margin: 0.2rem 2px;
-  background-color: #bbbbbb;
-  border: none;
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.5;
-}
-
-section .container .register-container form .step.active {
-  opacity: 1;
-}
-
-section .container .register-container form .step.finish {
-  background-color: #0a345e;
-}
-
-section .container .register-container form #show {
-  cursor: pointer;
-  color: #054e97;
-  margin: 0.5rem 0rem;
-}
-
-section .container .register-container form #show:hover {
-  text-decoration: underline;
 }
 
 section .container .login {
