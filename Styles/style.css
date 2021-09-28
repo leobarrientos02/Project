@@ -4185,7 +4185,8 @@ section .container .register-container form :-moz-placeholder {
 }
 
 section .container .register-container form h4 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 0rem;
   color: #054e97;
 }
 
@@ -4213,7 +4214,7 @@ section .container .register-container form .name p input {
   border-radius: 10px;
   border: none;
   border: solid 1px #0a345e;
-  width: 50%;
+  width: 60%;
   font-size: 1rem;
   margin: 0.5rem 0rem;
   padding: 0.2rem 0.6rem;
@@ -4272,7 +4273,7 @@ section .container .register-container form .contact p input {
   border-radius: 10px;
   border: none;
   border: solid 1px #0a345e;
-  width: 50%;
+  width: 60%;
   font-size: 1rem;
   margin: 0.5rem 0rem;
   padding: 0.2rem 0.6rem;
@@ -4302,7 +4303,7 @@ section .container .register-container form .account p input {
   border-radius: 10px;
   border: none;
   border: solid 1px #0a345e;
-  width: 50%;
+  width: 60%;
   font-size: 1rem;
   margin: 0.5rem 0rem;
   padding: 0.2rem 0.6rem;
@@ -4316,6 +4317,11 @@ section .container .register-container form .account span {
 
 section .container .register-container form .account span:hover {
   color: #054e97;
+}
+
+section .container .register-container form #error {
+  color: red;
+  font-size: 0.9rem;
 }
 
 section .container .register-container form button {
