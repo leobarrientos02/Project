@@ -15,3 +15,5 @@ function showPassword() {
     show.innerText = "Show Password";
   }
 }
+const submit = document.getElementById("submit");
+submit.addEventListener("click", () => {});

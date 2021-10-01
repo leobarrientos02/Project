@@ -1,0 +1,67 @@
+.profileHeader {
+  width: 100%;
+  background: #1d4354;
+  padding: 1rem 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  .logo {
+    a {
+      text-decoration: none;
+      color: white;
+      font-family: "Archivo Black", sans-serif;
+      font-size: 1rem;
+    }
+  }
+  .searchBar {
+    input {
+      border: none;
+      font-size: 1rem;
+      color: white;
+      border-radius: 20px;
+      padding: 0.7rem 3rem 0.7rem 1rem;
+      background: #2b5468;
+      &:focus {
+        border: none;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    li {
+      padding: 0rem 0.7rem;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      &:hover {
+        color: lightgreen;
+      }
+    }
+  }
+  .guide {
+    i {
+      cursor: pointer;
+      padding: 0rem 0.4rem;
+      color: white;
+      font-size: 1.2rem;
+      &:hover {
+        color: lightgreen;
+      }
+    }
+  }
+  .divider {
+    padding: 1rem 0.5px;
+    background: lightgrey;
+  }
+  .profileImage {
+    img {
+      cursor: pointer;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+    }
+  }
+}

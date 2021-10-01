@@ -4557,4 +4557,87 @@ section .container .login .login-container button:hover {
     color: #3131c7;
   }
 }
+
+.profileHeader {
+  width: 100%;
+  background: #1d4354;
+  padding: 1rem 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.profileHeader .logo a {
+  text-decoration: none;
+  color: white;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1rem;
+}
+
+.profileHeader .searchBar input {
+  border: none;
+  font-size: 1rem;
+  color: white;
+  border-radius: 20px;
+  padding: 0.7rem 3rem 0.7rem 1rem;
+  background: #2b5468;
+}
+
+.profileHeader .searchBar input:focus {
+  border: none;
+}
+
+.profileHeader ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+.profileHeader ul li {
+  padding: 0rem 0.7rem;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.profileHeader ul li:hover {
+  color: lightgreen;
+}
+
+.profileHeader .guide i {
+  cursor: pointer;
+  padding: 0rem 0.4rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.profileHeader .guide i:hover {
+  color: lightgreen;
+}
+
+.profileHeader .divider {
+  padding: 1rem 0.5px;
+  background: lightgrey;
+}
+
+.profileHeader .profileImage img {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
 /*# sourceMappingURL=style.css.map */
