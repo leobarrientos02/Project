@@ -4720,8 +4720,8 @@ section .container .login .login-container button:hover {
 
 .profile {
   width: 100%;
-  background: white;
-  padding: 3rem 10rem;
+  background: whitesmoke;
+  padding: 2.5rem 10rem;
 }
 
 .profile .user-profile-header {
@@ -4733,10 +4733,222 @@ section .container .login .login-container button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.5rem 0rem;
 }
 
 .profile .user-profile-header h2 {
-  font-size: 2rem;
+  justify-self: flex-start;
+  font-size: 2.5rem;
+}
+
+.profile .user-profile-header .quick-links #quick-link-job {
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  background: #dbdbdb;
+  font-size: 1.1rem;
+  color: #0a345e;
+  font-weight: bolder;
+  padding: 0.6rem 1.5rem;
+  margin-right: 0.25rem;
+  border: 1px solid lightgrey;
+}
+
+.profile .user-profile-header .quick-links #quick-link-job:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background: #e9e9e9;
+}
+
+.profile .user-profile-header .quick-links #quick-link-market {
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  background: #054e97;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: bolder;
+  padding: 0.6rem 1.5rem;
+  margin-left: 0.25rem;
+}
+
+.profile .user-profile-header .quick-links #quick-link-market:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: #0a345e;
+}
+
+.profile .user-postings {
+  border: 1px solid lightgrey;
+  background: white;
+  border-radius: 15px;
+  max-width: 65%;
+}
+
+.profile .user-postings .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 1px solid lightgrey;
+  padding: 2rem 1.5rem;
+}
+
+.profile .user-postings .title h3 {
+  font-size: 1.5rem;
+}
+
+.profile .user-postings .title span {
+  color: #054e97;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.profile .user-postings .title span:hover {
+  text-decoration: underline;
+}
+
+.profile .user-postings .result {
+  width: 100%;
+  padding: 3rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile .user-postings .result #quick-link-job {
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  background: #054e97;
+  font-size: 1.1rem;
+  color: white;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  font-weight: bolder;
+  padding: 0.6rem 1.5rem;
+  margin-left: 0.25rem;
+}
+
+.profile .user-postings .result #quick-link-job:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: #0a345e;
+}
+
+.profile .user-postings .result span {
+  margin-top: 1rem;
+}
+
+.profile .profile-projects {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+  border-radius: 15px;
+}
+
+.profile .profile-projects .profile-projects-images {
+  width: 18rem;
+  height: 14rem;
+  border: none;
+}
+
+.profile .profile-projects .profile-projects-images img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.profile .profile-projects .profile-projects-content {
+  border: lightgrey 0.7px solid;
+  border-top: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .profile-projects .profile-projects-content span {
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #797979;
+}
+
+.profile .profile-projects .profile-projects-content h4 {
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+}
+
+.profile .profile-projects .profile-projects-content button {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #0a345e;
+  font-weight: bolder;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  padding: 0.6rem 1rem;
+  border: 1px solid lightgrey;
+}
+
+.profile .profile-projects .profile-projects-content button:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background: #e9e9e9;
 }
 
 .profileFooter {

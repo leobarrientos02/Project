@@ -39,27 +39,27 @@
         <div class="divider"></div>
         <div class="profileImage">
             <img src="../Users/user.svg" id="profileImage" alt="">
-        </div>
-    </div>
-    <div class="sessionCard">
-        <div class="card card1">
-            <div class="image">
-                <img src="../Users/user.svg" id="profileImage2" alt="">
+            <div class="sessionCard">
+                <div class="card card1">
+                    <div class="image">
+                        <img src="../Users/user.svg" id="profileImage2" alt="">
+                    </div>
+                    <div class="name">
+                        <span id="name">John Doe</span>
+                        <span id="type">Client</span>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <p>
+                        <i class="fa fa-cog" aria-hidden="true"></i> Settings
+                    </p>
+                </div>
+                <div class="card card3" onclick="location.href='../login/index.html'">
+                    <p>
+                        <i class="fa fa-sign-out-alt"></i> Sign Out
+                    </p>
+                </div>
             </div>
-            <div class="name">
-                <span id="name">John Doe</span>
-                <span id="type">Client</span>
-            </div>
-        </div>
-        <div class="card card2">
-            <p>
-                <i class="fa fa-cog" aria-hidden="true"></i> Settings
-            </p>
-        </div>
-        <div class="card card3" onclick="location.href='../login/index.html'">
-            <p>
-                <i class="fa fa-sign-out-alt"></i> Sign Out
-            </p>
         </div>
     </div>
 
@@ -67,8 +67,37 @@
         <div class="user-profile-header">
             <h2>John Doe</h2>
             <div class="quick-links">
-                <button>Post A Job</button>
-                <button>Browse Marketplace</button>
+                <button id="quick-link-job">Post A Job</button>
+                <button id="quick-link-market">Browse Marketplace</button>
+            </div>
+        </div>
+        <div class="user-profile-body">
+            <div class="user-postings">
+                <div class="card title">
+                    <h3>My Postings</h3>
+                    <span>All Postings</span>
+                </div>
+                <div class="card result">
+                    <button id="quick-link-job">Post A Job</button>
+                    <span>
+                        You currently have no job postings listed.
+                    </span>
+                </div>
+            </div>
+            <div class="profile-projects">
+                <div class="profile-projects-images">
+                    <i style="border-radius: 50%;background: white;color: blueviolet;font-size: 1.5rem; padding: 1rem; cursor: pointer;" class="fa fa-chevron-left"></i>
+                    <img src="../Image/logoDesign.jpg" alt="">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="profile-projects-content">
+                    <span>We think you might like help with</span>
+                    <h4 id="skill">Logo Design</h4>
+                    <button>Learn More</button>
+                </div>
+            </div>
+            <div class="how-to-work">
+
             </div>
         </div>
     </div>

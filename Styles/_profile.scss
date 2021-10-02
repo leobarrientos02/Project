@@ -126,14 +126,161 @@
 
 .profile {
   width: 100%;
-  background: white;
-  padding: 3rem 10rem;
+  background: whitesmoke;
+  padding: 2.5rem 10rem;
   .user-profile-header {
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 0rem;
     h2 {
-      font-size: 2rem;
+      justify-self: flex-start;
+      font-size: 2.5rem;
+    }
+    .quick-links {
+      #quick-link-job {
+        cursor: pointer;
+        border-radius: 15px;
+        border: none;
+        background: rgb(219, 219, 219);
+        font-size: 1.1rem;
+        color: $color1;
+        font-weight: bolder;
+        padding: 0.6rem 1.5rem;
+        margin-right: 0.25rem;
+        border: 1px solid lightgrey;
+        &:hover {
+          transition: all 0.2s ease;
+          background: rgb(233, 233, 233);
+        }
+      }
+      #quick-link-market {
+        cursor: pointer;
+        border-radius: 15px;
+        border: none;
+        background: $lightColor;
+        font-size: 1.1rem;
+        color: white;
+        font-weight: bolder;
+        padding: 0.6rem 1.5rem;
+        margin-left: 0.25rem;
+        &:hover {
+          transition: all 0.5s ease;
+          background: $color1;
+        }
+      }
+    }
+  }
+  .user-postings {
+    border: 1px solid lightgrey;
+    background: white;
+    border-radius: 15px;
+    max-width: 65%;
+    .title {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom: 1px solid lightgrey;
+      padding: 2rem 1.5rem;
+      h3 {
+        font-size: 1.5rem;
+      }
+      span {
+        color: $lightColor;
+        font-size: 0.9rem;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .result {
+      width: 100%;
+      padding: 3rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      #quick-link-job {
+        cursor: pointer;
+        border-radius: 15px;
+        border: none;
+        background: $lightColor;
+        font-size: 1.1rem;
+        color: white;
+        max-width: fit-content;
+        font-weight: bolder;
+        padding: 0.6rem 1.5rem;
+        margin-left: 0.25rem;
+        &:hover {
+          transition: all 0.5s ease;
+          background: $color1;
+        }
+      }
+      span {
+        margin-top: 1rem;
+      }
+    }
+  }
+  .profile-projects {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    .profile-projects-images {
+      width: 18rem;
+      height: 14rem;
+      border: none;
+      img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+    .profile-projects-content {
+      border: lightgrey 0.7px solid;
+      border-top: none;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      span {
+        padding-top: 1rem;
+        font-size: 0.9rem;
+        color: $darktext;
+      }
+      h4 {
+        font-size: 1.5rem;
+        padding: 1rem 0rem;
+      }
+      button {
+        margin-bottom: 1rem;
+        cursor: pointer;
+        border-radius: 15px;
+        border: none;
+        background: transparent;
+        font-size: 1rem;
+        color: $color1;
+        font-weight: bolder;
+        min-width: fit-content;
+        padding: 0.6rem 1rem;
+        border: 1px solid lightgrey;
+        &:hover {
+          transition: all 0.2s ease;
+          background: rgb(233, 233, 233);
+        }
+      }
     }
   }
 }
