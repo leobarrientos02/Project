@@ -4591,6 +4591,9 @@ section .container .login .login-container button:hover {
   border-radius: 20px;
   padding: 0.7rem 3rem 0.7rem 1rem;
   background: #2b5468;
+  border: none;
+  resize: none;
+  outline: none;
 }
 
 .profileHeader .searchBar input:focus {
@@ -4644,6 +4647,9 @@ section .container .login .login-container button:hover {
 
 .profileFooter {
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background: white;
   padding: 1rem 10rem;
   display: -webkit-box;
@@ -4658,6 +4664,36 @@ section .container .login .login-container button:hover {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.profileFooter .profile-links {
+  width: 100%;
+  padding: 2rem 0rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.profileFooter .profile-links .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profileFooter .profile-links .links ul a {
+  padding: 0.3rem 0rem;
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: #797979;
+}
+
+.profileFooter .profile-links .links ul a:hover {
+  text-decoration: underline;
 }
 
 .profileFooter .profile-social-links {
