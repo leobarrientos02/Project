@@ -38,11 +38,39 @@
         </div>
         <div class="divider"></div>
         <div class="profileImage">
-            <img src="../Users/user.svg" alt="">
+            <img src="../Users/user.svg" id="profileImage" alt="">
         </div>
     </div>
-    <div class="body">
+    <div class="sessionCard">
+        <div class="card card1">
+            <div class="image">
+                <img src="../Users/user.svg" id="profileImage2" alt="">
+            </div>
+            <div class="name">
+                <span id="name">John Doe</span>
+                <span id="type">Client</span>
+            </div>
+        </div>
+        <div class="card card2">
+            <p>
+                <i class="fa fa-cog" aria-hidden="true"></i> Settings
+            </p>
+        </div>
+        <div class="card card3" onclick="location.href='../login/index.html'">
+            <p>
+                <i class="fa fa-sign-out-alt"></i> Sign Out
+            </p>
+        </div>
+    </div>
 
+    <div class="profile">
+        <div class="user-profile-header">
+            <h2>John Doe</h2>
+            <div class="quick-links">
+                <button>Post A Job</button>
+                <button>Browse Marketplace</button>
+            </div>
+        </div>
     </div>
     <div class="profileFooter">
         <div class="profile-links">
@@ -92,4 +120,5 @@
         </div>
     </div>
 </body>
+<script src="./app.js"></script>
 </html>
