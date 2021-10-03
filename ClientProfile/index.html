@@ -62,6 +62,11 @@
             </p>
         </div>
     </div>
+    <div class="mobileSearchCard">
+        <div class="profile-nav-search">
+            <input type="search" name="search" placeholder="Search" id="search">
+        </div>
+    </div>
     <div class="profile-header-container">
         <div class="profileHeader">
             <div class="burger" id="nav-burger" onclick='myFunction(this)'>
@@ -110,7 +115,8 @@
                     </div>
                 </div>
             </div>
-            <i class="fa fa-search" id="mobileSearch"></i>
+            <i class="fa fa-search" id="mobileSearch" onclick='searchFunction(this)'></i>
+            <i class="fa fa-times" id="ExitmobileSearch"></i>
         </div>
     </div>
 
@@ -302,6 +308,9 @@
     const navIcon = document.getElementById("nav-burger");
     const profileMobileNav = document.querySelector(".profile-mobile-nav");
     const searchIcon = document.getElementById('mobileSearch');
+    const mobileSearchCard = document.querySelector('.mobileSearchCard');
+    const exitSearch = document.querySelector('.fa-times');
+
     function myFunction(x) {
         x.classList.toggle("change");
         if(x.classList.contains('change')){
@@ -313,5 +322,11 @@
             searchIcon.style.opacity='1';
         }
     }
+    searchIcon.addEventListener('click',()=>{
+        mobileSearchCard.style.display = "inline-block";
+        searchIcon.style.display='none'
+        navIcon.style.opacity='0';
+        exitSearch.style.display='inline-block'
+    });
 </script>
 </html>
