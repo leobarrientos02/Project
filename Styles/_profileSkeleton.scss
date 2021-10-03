@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  background: #1d4354;
   .profileHeader {
     overflow: hidden;
     width: 100%;
@@ -80,6 +81,9 @@
     .fa-search {
       display: none;
     }
+  }
+  .mobile-search {
+    display: none;
   }
 }
 // Header pulldown
@@ -203,6 +207,13 @@
     color: $darktext;
   }
 }
+
+//Animation
+.move {
+  transform: scale(0);
+  transform: translateX(-100%);
+  transition: all 1s ease;
+}
 @media screen and (max-width: 754px) {
   .profile-header-container {
     position: fixed;
@@ -213,7 +224,7 @@
       overflow: hidden;
       width: 100%;
       background: #1d4354;
-      padding: 1rem;
+      padding: 0.7rem;
       display: flex;
       flex-direction: row;
       align-items: center;
