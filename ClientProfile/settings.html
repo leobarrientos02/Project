@@ -22,7 +22,7 @@
     <div class="profile-header-container">
         <div class="profileHeader">
             <div class="logo">
-                <a href="#"><h2>E<span>z</span>Work</h2></a>
+                <a href="./index.html"><h2>E<span>z</span>Work</h2></a>
             </div>
             <div class="searchBar">
                 <input type="search" name="search" placeholder="Search" id="seach">
@@ -34,8 +34,8 @@
                 <li>Messages</li>
             </ul>
             <div class="guide">
-                <i class="fa fa-bell"></i>
-                <i class="fa fa-question"></i>
+                <i class="fa fa-bell" title="Notification"></i>
+                <i class="fa fa-question" title="Help"></i>
             </div>
             <div class="divider"></div>
             <div class="profileImage">
@@ -50,7 +50,7 @@
                             <span id="type">Client</span>
                         </div>
                     </div>
-                    <div class="card card2"  onclick="location.href='./settings.html'">
+                    <div class="card card2">
                         <p>
                             <i class="fa fa-cog" aria-hidden="true"></i> Settings
                         </p>
@@ -65,42 +65,39 @@
         </div>
     </div>
 
-    <div class="profile">
-        <div class="user-profile-header">
-            <h2>John Doe</h2>
-            <div class="quick-links">
-                <button id="quick-link-job">Post A Job</button>
-                <button id="quick-link-market">Browse Marketplace</button>
-            </div>
+    <div class="settings">
+        <div class="settings-nav">
+            <ul>
+                <li style="background: lightgrey;" id="myInfo"><div class="tab"></div><a href="#/"><i class="fa fa-user"></i> My Info</a></li>
+                <li  id="passwordSecurity"><a href="#/"><i class="fa fa-lock"></i> Password & Security</a></li>
+                <li  id="billingMethods"><a href="#/"><i class="fa fa-credit-card-alt"></i> Billing Methods</a></li>
+                <li  id="notification"><a href="#/"><i class="fa fa-envelope"></i> Notification Settings</a></li>
+                <li  id="connectedServices"><a href="#/"><i class="fa fa-link"></i> Connected Services</a></li>
+            </ul>
         </div>
-        <div class="user-profile-body">
-            <div class="user-postings">
-                <div class="card title">
-                    <h3>My Postings</h3>
-                    <span>All Postings</span>
+        <div class="settings-container">
+            <div class="settings-container-title">
+                <h2 id="settings-title">My Info</h2>
+            </div>
+            <div class="settings-account-container">
+                <div class="settings-account-card">
+                    <h3>Account</h3>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
                 </div>
-                <div class="card result">
-                    <button id="quick-link-job">Post A Job</button>
-                    <span>
-                        You currently have no job postings listed.
-                    </span>
+                <div class="settings-account-profile-image">
+                    <img src="../Users/user.svg" alt="">
+                </div>
+                <div class="settings-account-profile-info">
+                    <p>Name: <span>John Doe</span></p>
+                    <p>Account Type: <span>Client</span></p>
+                    <p>Phone Number: <span>516-960-8086</span></p>
+                    <p>Email: <span>leobarrientos02@gmail.com</span></p>
                 </div>
             </div>
-            <div class="profile-projects">
-                <div class="profile-projects-images">
-                    <img src="../Image/logoDesign.jpg" alt="">
-                </div>
-                <div class="profile-projects-content">
-                    <span>We think you might like help with</span>
-                    <h4 id="skill">Logo Design</h4>
-                    <button>Learn More</button>
-                </div>
-            </div>
-            <div class="how-to-work">
-
-            </div>
-            <div class="findFreelancer">
-                
+            <div class="settings-account-godMode">
+                <p>This is a <span id="accountType">Client</span> account.</p>
+                <button id="becomeFreelancer">Become Freelancer</button>
+                <button id="deleteAccount">Delete Account</button>
             </div>
         </div>
     </div>
