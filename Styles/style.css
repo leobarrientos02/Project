@@ -5362,16 +5362,13 @@ section .container .login .login-container button:hover {
 }
 
 .profile .profile-skills .profile-skills-images {
+  background-image: url("../Image/logoDesign.jpg");
   width: 18rem;
-  height: 14rem;
+  height: 15rem;
   border: none;
-}
-
-.profile .profile-skills .profile-skills-images img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  width: 100% !important;
-  height: 100% !important;
+  background-size: contain;
 }
 
 .profile .profile-skills .profile-skills-content {
@@ -5401,9 +5398,39 @@ section .container .login .login-container button:hover {
   color: #797979;
 }
 
-.profile .profile-skills .profile-skills-content h4 {
+.profile .profile-skills .profile-skills-content .skill-title-carousel {
+  width: 105%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile .profile-skills .profile-skills-content .skill-title-carousel h4 {
   font-size: 1.5rem;
   padding: 1rem 0rem;
+}
+
+.profile .profile-skills .profile-skills-content .skill-title-carousel i {
+  background: #e7e7e7;
+  border-radius: 50%;
+  padding: 0.3rem 0.4rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #0a345e;
+}
+
+.profile .profile-skills .profile-skills-content .skill-title-carousel i:hover {
+  color: #054e97;
 }
 
 .profile .profile-skills .profile-skills-content button {

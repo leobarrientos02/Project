@@ -119,15 +119,13 @@
     background: white;
     border-radius: 15px;
     .profile-skills-images {
+      background-image: url("../Image/logoDesign.jpg");
       width: 18rem;
-      height: 14rem;
+      height: 15rem;
       border: none;
-      img {
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        width: 100% !important;
-        height: 100% !important;
-      }
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      background-size: contain;
     }
     .profile-skills-content {
       border: lightgrey 0.7px solid;
@@ -144,9 +142,27 @@
         font-size: 0.9rem;
         color: $darktext;
       }
-      h4 {
-        font-size: 1.5rem;
-        padding: 1rem 0rem;
+      .skill-title-carousel {
+        width: 105%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        h4 {
+          font-size: 1.5rem;
+          padding: 1rem 0rem;
+        }
+        i {
+          background: rgb(231, 231, 231);
+          border-radius: 50%;
+          padding: 0.3rem 0.4rem;
+          font-size: 1.4rem;
+          cursor: pointer;
+          color: $color1;
+          &:hover {
+            color: $lightColor;
+          }
+        }
       }
       button {
         margin-bottom: 1rem;
