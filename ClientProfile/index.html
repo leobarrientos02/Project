@@ -21,6 +21,11 @@
 <body>
     <div class="profile-header-container">
         <div class="profileHeader">
+            <div class="burger" id="nav-burger" onclick='myFunction(this)'>
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
             <div class="logo">
                 <a href="#"><h2>E<span>z</span>Work</h2></a>
             </div>
@@ -62,6 +67,7 @@
                     </div>
                 </div>
             </div>
+            <i class="fa fa-search"></i>
         </div>
     </div>
 
@@ -248,4 +254,19 @@
     </div>
 </body>
 <script src="./app.js"></script>
+<!--Toggle the nav button-->
+<script>
+    const navIcon = document.getElementById("nav-burger");
+    const mobileNav = document.querySelector(".mobile-nav");
+    function myFunction(x) {
+        x.classList.toggle("change");
+        if(x.classList.contains('change')){
+            mobileNav.style.display = "inline-block";
+        }
+        else{
+            mobileNav.style.display='none';
+        }
+    }
+    console.log("Test");
+</script>
 </html>
