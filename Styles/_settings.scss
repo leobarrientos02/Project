@@ -137,3 +137,146 @@ ul {
     }
   }
 }
+@media screen and (max-width: 754px) {
+  .settings {
+    margin-top: 3.8rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: whitesmoke;
+    padding: 2.5rem 1rem;
+    .settings-nav {
+      min-width: 25%;
+      margin-right: 0;
+      ul {
+        li {
+          cursor: pointer;
+          padding: 1rem 0rem;
+          a {
+            color: black;
+            i {
+              padding: 0rem 1rem;
+            }
+          }
+          &:hover {
+            background: lightgrey;
+          }
+        }
+      }
+    }
+    .settings-container {
+      width: 100%;
+      .settings-container-title {
+        width: 100%;
+        padding: 0.5rem;
+        h2 {
+          font-size: 2rem;
+        }
+      }
+      .settings-account-container {
+        background: white;
+        border-radius: 15px;
+        border: 1px solid lightgrey;
+        margin: 1rem 0rem;
+        .settings-account-card {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding: 1.5rem;
+          background: white;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+          border-bottom: 1px solid lightgrey;
+          h3 {
+            font-size: 1.25rem;
+          }
+          i {
+            cursor: pointer;
+            color: $darktext;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border-radius: 50%;
+            background: transparent;
+            border: 0.7px solid lightgrey;
+            &:hover {
+              background: rgb(226, 226, 226);
+            }
+          }
+        }
+        .settings-account-profile-image {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          border-bottom: 0.7px solid lightgrey;
+          padding: 1rem 0rem;
+          img {
+            width: 6rem;
+            height: 6rem;
+          }
+        }
+        .settings-account-profile-info {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          padding: 1.5rem;
+          p {
+            font-weight: bolder;
+            font-size: 0.85rem;
+            padding: 0.3rem 0rem;
+            span {
+              margin-left: 0.4rem;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+      .settings-account-godMode {
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px;
+        border: 1px solid lightgrey;
+        margin: 1rem 0rem;
+        padding: 2rem;
+        p {
+          text-align: center;
+          font-size: 1rem;
+          padding-bottom: 2rem;
+          span {
+            font-size: 1.1rem;
+          }
+        }
+        #becomeFreelancer {
+          color: white;
+          cursor: pointer;
+          background: $lightColor;
+          border-radius: 15px;
+          border: none;
+          font-size: 1.1rem;
+          padding: 0.4rem 1rem;
+          margin-right: 0;
+          &:hover {
+            background: $color1;
+          }
+        }
+        #deleteAccount {
+          background: transparent;
+          cursor: pointer;
+          color: $lightColor;
+          border-radius: 15px;
+          border: none;
+          margin-top: 1rem;
+          font-size: 1.1rem;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

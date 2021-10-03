@@ -4848,6 +4848,108 @@ section .container .login .login-container button:hover {
   transition: all 1s ease;
 }
 
+.profile-mobile-nav {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #1d4354;
+  margin-top: 3.6rem;
+  padding: 0rem 1rem;
+}
+
+.profile-mobile-nav .profile-nav-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 1rem 0rem;
+}
+
+.profile-mobile-nav .profile-nav-search input {
+  width: 80%;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  background: #2b5468;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.profile-mobile-nav .mobileNavCard {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.8rem 0.5rem;
+  border-bottom: #356880 solid 0.7px;
+}
+
+.profile-mobile-nav .mobileNavCard img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.profile-mobile-nav .mobileNavCard .profile-nav-search {
+  padding: 1rem 0rem;
+}
+
+.profile-mobile-nav .mobileNavCard i {
+  font-size: 1rem;
+}
+
+.profile-mobile-nav #navProfile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.profile-mobile-nav #navProfile span {
+  width: 60%;
+  text-align: start;
+  margin: 0rem 1rem;
+}
+
+.profile-mobile-nav #navProfile i {
+  text-align: end;
+  width: 40%;
+}
+
+.profile-mobile-nav .mobileNavSettings i,
+.profile-mobile-nav .mobileNavLogOut i {
+  margin-right: 1rem;
+}
+
 @media screen and (max-width: 754px) {
   .profile-header-container {
     position: fixed;
@@ -4882,7 +4984,7 @@ section .container .login .login-container button:hover {
   .profile-header-container .profileHeader .burger .line1,
   .profile-header-container .profileHeader .burger .line2,
   .profile-header-container .profileHeader .burger .line3 {
-    width: 2rem;
+    width: 1.6rem;
     height: 0.25rem;
     margin: 0.4rem;
     border-radius: 5px;
@@ -4925,6 +5027,7 @@ section .container .login .login-container button:hover {
     display: inline-block;
     color: white;
     font-size: 1.25rem;
+    margin-right: 1rem;
   }
   .profileFooter {
     width: 100%;
@@ -5451,7 +5554,7 @@ section .container .login .login-container button:hover {
 
 @media screen and (max-width: 754px) {
   .profile {
-    margin-top: 4rem;
+    margin-top: 3.8rem;
     width: 100%;
     background: whitesmoke;
     padding: 1rem;
@@ -6016,5 +6119,181 @@ ul {
 
 .settings .settings-container .settings-account-godMode #deleteAccount:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 754px) {
+  .settings {
+    margin-top: 3.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background: whitesmoke;
+    padding: 2.5rem 1rem;
+  }
+  .settings .settings-nav {
+    min-width: 25%;
+    margin-right: 0;
+  }
+  .settings .settings-nav ul li {
+    cursor: pointer;
+    padding: 1rem 0rem;
+  }
+  .settings .settings-nav ul li a {
+    color: black;
+  }
+  .settings .settings-nav ul li a i {
+    padding: 0rem 1rem;
+  }
+  .settings .settings-nav ul li:hover {
+    background: lightgrey;
+  }
+  .settings .settings-container {
+    width: 100%;
+  }
+  .settings .settings-container .settings-container-title {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .settings .settings-container .settings-container-title h2 {
+    font-size: 2rem;
+  }
+  .settings .settings-container .settings-account-container {
+    background: white;
+    border-radius: 15px;
+    border: 1px solid lightgrey;
+    margin: 1rem 0rem;
+  }
+  .settings .settings-container .settings-account-container .settings-account-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem;
+    background: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid lightgrey;
+  }
+  .settings .settings-container .settings-account-container .settings-account-card h3 {
+    font-size: 1.25rem;
+  }
+  .settings .settings-container .settings-account-container .settings-account-card i {
+    cursor: pointer;
+    color: #797979;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    background: transparent;
+    border: 0.7px solid lightgrey;
+  }
+  .settings .settings-container .settings-account-container .settings-account-card i:hover {
+    background: #e2e2e2;
+  }
+  .settings .settings-container .settings-account-container .settings-account-profile-image {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 0.7px solid lightgrey;
+    padding: 1rem 0rem;
+  }
+  .settings .settings-container .settings-account-container .settings-account-profile-image img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .settings .settings-container .settings-account-container .settings-account-profile-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 1.5rem;
+  }
+  .settings .settings-container .settings-account-container .settings-account-profile-info p {
+    font-weight: bolder;
+    font-size: 0.85rem;
+    padding: 0.3rem 0rem;
+  }
+  .settings .settings-container .settings-account-container .settings-account-profile-info p span {
+    margin-left: 0.4rem;
+    font-weight: normal;
+  }
+  .settings .settings-container .settings-account-godMode {
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 15px;
+    border: 1px solid lightgrey;
+    margin: 1rem 0rem;
+    padding: 2rem;
+  }
+  .settings .settings-container .settings-account-godMode p {
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+  .settings .settings-container .settings-account-godMode p span {
+    font-size: 1.1rem;
+  }
+  .settings .settings-container .settings-account-godMode #becomeFreelancer {
+    color: white;
+    cursor: pointer;
+    background: #054e97;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.1rem;
+    padding: 0.4rem 1rem;
+    margin-right: 0;
+  }
+  .settings .settings-container .settings-account-godMode #becomeFreelancer:hover {
+    background: #0a345e;
+  }
+  .settings .settings-container .settings-account-godMode #deleteAccount {
+    background: transparent;
+    cursor: pointer;
+    color: #054e97;
+    border-radius: 15px;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  .settings .settings-container .settings-account-godMode #deleteAccount:hover {
+    text-decoration: underline;
+  }
 }
 /*# sourceMappingURL=style.css.map */

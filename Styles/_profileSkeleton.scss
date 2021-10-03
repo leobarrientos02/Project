@@ -214,6 +214,82 @@
   transform: translateX(-100%);
   transition: all 1s ease;
 }
+
+//profile-mobile-nav
+.profile-mobile-nav {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  background: #1d4354;
+  margin-top: 3.6rem;
+  padding: 0rem 1rem;
+  .profile-nav-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0rem;
+    input {
+      width: 80%;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 15px;
+      background: #2b5468;
+      border: none;
+      resize: none;
+      outline: none;
+    }
+  }
+  .mobileNavCard {
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+    .profile-nav-search {
+      padding: 1rem 0rem;
+    }
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.8rem 0.5rem;
+    border-bottom: #356880 solid 0.7px;
+    i {
+      font-size: 1rem;
+    }
+  }
+  #navProfile {
+    display: flex;
+    width: 100%;
+    span {
+      width: 60%;
+      text-align: start;
+      margin: 0rem 1rem;
+    }
+    i {
+      text-align: end;
+      width: 40%;
+    }
+  }
+  .mobileNavSettings,
+  .mobileNavLogOut {
+    i {
+      margin-right: 1rem;
+    }
+  }
+}
 @media screen and (max-width: 754px) {
   .profile-header-container {
     position: fixed;
@@ -236,7 +312,7 @@
         .line1,
         .line2,
         .line3 {
-          width: 2rem;
+          width: 1.6rem;
           height: 0.25rem;
           margin: 0.4rem;
           border-radius: 5px;
@@ -275,6 +351,7 @@
         display: inline-block;
         color: white;
         font-size: 1.25rem;
+        margin-right: 1rem;
       }
     }
   }
