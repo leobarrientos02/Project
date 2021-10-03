@@ -4825,6 +4825,158 @@ section .container .login .login-container button:hover {
   color: #797979;
 }
 
+@media screen and (max-width: 754px) {
+  .profile-header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .profile-header-container .profileHeader {
+    overflow: hidden;
+    width: 100%;
+    background: #1d4354;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .profile-header-container .profileHeader .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .profile-header-container .profileHeader .logo a {
+    text-decoration: none;
+    color: white;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 1rem;
+  }
+  .profile-header-container .profileHeader .searchBar {
+    display: none;
+  }
+  .profile-header-container .profileHeader ul {
+    display: none;
+  }
+  .profile-header-container .profileHeader .guide {
+    display: none;
+  }
+  .profile-header-container .profileHeader .divider {
+    display: none;
+  }
+  .profile-header-container .profileHeader .profileImage {
+    display: none;
+  }
+  .profileFooter {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background: white;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .profileFooter .profile-links {
+    width: 100%;
+    padding: 2rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profileFooter .profile-links .links {
+    margin: 1rem 0rem;
+  }
+  .profileFooter .profile-links .links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profileFooter .profile-links .links ul a {
+    padding: 0.3rem 0rem;
+    text-decoration: none;
+    font-size: 0.85rem;
+    color: #797979;
+  }
+  .profileFooter .profile-links .links ul a:hover {
+    text-decoration: underline;
+  }
+  .profileFooter .profile-social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem 0rem;
+    border-top: 0.7px solid lightgrey;
+    border-bottom: 0.7px solid lightgrey;
+  }
+  .profileFooter .profile-social-links p {
+    font-size: 0.85rem;
+    color: #797979;
+    margin-right: 1rem;
+  }
+  .profileFooter .profile-social-links a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    padding: 0.3rem;
+    margin: 0rem 0.5rem;
+    color: dimgray;
+    background: #ebebeb;
+    border-radius: 50%;
+  }
+  .profileFooter .profile-social-links a:hover {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #b6b5b5;
+  }
+  .profileFooter .copyright {
+    width: 100%;
+    padding: 1.5rem 0rem;
+    text-align: center;
+    font-size: 0.7rem;
+    color: #797979;
+  }
+}
+
 .profile {
   margin-top: 4.5rem;
   width: 100%;
@@ -5168,6 +5320,80 @@ section .container .login .login-container button:hover {
 
 .profile .how-to-work .htw-questions p span:hover {
   text-decoration: underline;
+}
+
+.profile .profile-categories-container {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+  border-radius: 15px;
+  margin-top: 7rem;
+  border: 1px solid lightgrey;
+}
+
+.profile .profile-categories-container .categories-title {
+  width: 100%;
+  padding: 1.5rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+.profile .profile-categories-container .categories-title h3 {
+  font-size: 1.5rem;
+}
+
+.profile .profile-categories-container .categoryCard {
+  cursor: pointer;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-bottom: 1px solid lightgrey;
+}
+
+.profile .profile-categories-container .categoryCard svg {
+  width: 15%;
+}
+
+.profile .profile-categories-container .categoryCard p {
+  width: 70%;
+  text-align: start;
+  font-size: 0.8rem;
+}
+
+.profile .profile-categories-container .categoryCard i {
+  width: 15%;
+  font-size: 1.4rem;
+  color: #054e97;
+}
+
+.profile .profile-categories-container .categoryCard:hover {
+  background: #e4e4e4;
 }
 
 ul {

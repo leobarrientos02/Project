@@ -232,4 +232,50 @@
       }
     }
   }
+  .profile-categories-container {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    margin-top: 7rem;
+    border: 1px solid lightgrey;
+    .categories-title {
+      width: 100%;
+      padding: 1.5rem;
+      border-bottom: 1px solid lightgrey;
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+    .categoryCard {
+      cursor: pointer;
+      padding: 1.5rem 1rem;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      border-bottom: 1px solid lightgrey;
+      svg {
+        width: 15%;
+      }
+      p {
+        width: 70%;
+        text-align: start;
+        font-size: 0.8rem;
+      }
+      i {
+        width: 15%;
+        font-size: 1.4rem;
+        color: $lightColor;
+      }
+      &:hover {
+        background: rgb(228, 228, 228);
+      }
+    }
+  }
 }
