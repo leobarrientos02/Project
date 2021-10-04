@@ -640,10 +640,77 @@ const AllFinanceAccounting = FinanceAccountingPopular.concat(
   .concat(FinanceAccountingProjects);
 
 //Legal
+const LegalPopular = [
+    Legal Consultants
+    Contract Law Lawyers & Legal Professionals
+    Legal Researchers
+    Contract Drafters
+    Paralegals Professionals
+    Corporate Law Lawyers & Legal Professionals
+    Legal Assistance Specialists
+    Intellectual Property Law Lawyers & Legal Professionals
+    Partnership Agreements Freelancers
+    Trademark Consultants
+    Business Law Freelancers
+    Patent Law Lawyers & Legal Professionals
+    Non-Disclosure Agreements Specialists
+    Immigration Law Lawyers & Legal Professionals
+    Compliance Specialists
+    Civil Law Lawyers & Legal Professionals
+    Regulatory Compliance Freelancers
+    Family Law Lawyers & Legal Professionals
+    Document Reviewers
+    Litigation Specialists 
+]
 
 //HR & Training
+const HRTrainingPopular = [
+    Technology Freelancers
+    Recruiters & Recruitment Consultants
+    Candidate sourcing Freelancers
+    Interviewers
+    LinkedIn Recruiters
+    Human Resource Managers
+    Boolean Search Specialists
+    Technical Recruiters
+    e-Learning Specialists
+    Instructional Designers
+    Online Freelancers
+    Course Freelancers
+    Learning Management System (LMS) Specialists
+    Curriculum Developers
+    Curriculum design Freelancers
+    Training & Development Professionals
+    Articulate Storyline Specialists
+    Compensation Specialists
+    Leadership Training Freelancers
+    Organizational Development Consultant
+]
 
 //Engineer & Architecture
+const EngineerArchitecturePopular = [
+    3D Designers
+    3D Rendering Artists
+    AutoCAD Drafters
+    Architectural Designers
+    Product Designers
+    Sourcing Specialists
+    Interior Designers
+    Residential Freelancers
+    Architectural Rendering Specialists
+    2D Designers
+    SketchUp Specialists
+    Drafting Specialists
+    Mechanical Engineers
+    Electrical Engineers
+    Floor Plan Designers
+    CAD Designers
+    Concept Design Specialists
+    Logistics & Shipping Specialists
+    Engineering Drawing Specialists
+    Mathematics Specialists 
+]
+
 
 //ALL SKILLS
 const AllSkills = AllDevelopmentIT.concat(AllCreativeDesign)
