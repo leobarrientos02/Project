@@ -62,6 +62,11 @@
             </p>
         </div>
     </div>
+    <div class="mobileSearchCard">
+        <div class="profile-nav-search">
+            <input type="search" name="search" placeholder="Search" id="search">
+        </div>
+    </div>
     <div class="profile-header-container">
         <div class="profileHeader">
             <div class="burger" id="nav-burger" onclick='myFunction(this)'>
@@ -70,7 +75,7 @@
                 <div class="line3"></div>
             </div>
             <div class="logo">
-                <a href="#"><h2>E<span>z</span>Work</h2></a>
+                <a href="./index.html"><h2>E<span>z</span>Work</h2></a>
             </div>
             <div class="searchBar">
                 <input type="search" name="search" placeholder="Search" id="search">
@@ -86,31 +91,34 @@
                 <i class="fa fa-question" title="Help"></i>
             </div>
             <div class="divider"></div>
-            <div class="profileImage">
+            <div class="profileImage" onclick='displayCard(this)'>
                 <img src="../Users/user.svg" id="profileImage" alt="">
-                <div class="sessionCard">
-                    <div class="card card1">
-                        <div class="image">
-                            <img src="../Users/user.svg" id="profileImage2" alt="">
+                <div class="sessionCardContainer">
+                    <div class="sessionCard">
+                        <div class="card card1">
+                            <div class="image">
+                                <img src="../Users/user.svg" id="profileImage2" alt="">
+                            </div>
+                            <div class="name">
+                                <span id="name">John Doe</span>
+                                <span id="type">Client</span>
+                            </div>
                         </div>
-                        <div class="name">
-                            <span id="name">John Doe</span>
-                            <span id="type">Client</span>
+                        <div class="card card2"  onclick="location.href='./settings.html'">
+                            <p>
+                                <i class="fa fa-cog" aria-hidden="true"></i> Settings
+                            </p>
                         </div>
-                    </div>
-                    <div class="card card2"  onclick="location.href='./settings.html'">
-                        <p>
-                            <i class="fa fa-cog" aria-hidden="true"></i> Settings
-                        </p>
-                    </div>
-                    <div class="card card3" onclick="location.href='../login/index.html'">
-                        <p>
-                            <i class="fa fa-sign-out-alt"></i> Sign Out
-                        </p>
+                        <div class="card card3" onclick="location.href='../login/index.html'">
+                            <p>
+                                <i class="fa fa-sign-out-alt"></i> Sign Out
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
             <i class="fa fa-search" id="mobileSearch"></i>
+            <i class="fa fa-times" id="ExitmobileSearch"></i>
         </div>
     </div>
     <div class="settings">
@@ -197,11 +205,13 @@
         </div>
     </div>
 </body>
-<script src="./settings.js"></script>
+<script src="../SkillsContainer/AllSkills.js"></script>
+<script src="./app.js"></script>
+<!--Toggle the nav button-->
 <script>
     const navIcon = document.getElementById("nav-burger");
     const profileMobileNav = document.querySelector(".profile-mobile-nav");
-    const searchIcon = document.getElementById('mobileSearch');
+
     function myFunction(x) {
         x.classList.toggle("change");
         if(x.classList.contains('change')){
@@ -211,6 +221,17 @@
         else{
             profileMobileNav.style.display='none';
             searchIcon.style.opacity='1';
+        }
+    }
+    const sessionCard = document.querySelector(".sessionCard");
+    const profileImage = document.getElementById("profileImage");
+    function displayCard(x){
+        x.classList.toggle("change");
+        if(x.classList.contains('change')){
+            sessionCard.style.display="inline-block";
+        }
+        else{
+            sessionCard.style.display = 'none';
         }
     }
 </script>

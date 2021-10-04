@@ -91,27 +91,29 @@
                 <i class="fa fa-question" title="Help"></i>
             </div>
             <div class="divider"></div>
-            <div class="profileImage">
+            <div class="profileImage" onclick='displayCard(this)'>
                 <img src="../Users/user.svg" id="profileImage" alt="">
-                <div class="sessionCard">
-                    <div class="card card1">
-                        <div class="image">
-                            <img src="../Users/user.svg" id="profileImage2" alt="">
+                <div class="sessionCardContainer">
+                    <div class="sessionCard">
+                        <div class="card card1">
+                            <div class="image">
+                                <img src="../Users/user.svg" id="profileImage2" alt="">
+                            </div>
+                            <div class="name">
+                                <span id="name">John Doe</span>
+                                <span id="type">Client</span>
+                            </div>
                         </div>
-                        <div class="name">
-                            <span id="name">John Doe</span>
-                            <span id="type">Client</span>
+                        <div class="card card2"  onclick="location.href='./settings.html'">
+                            <p>
+                                <i class="fa fa-cog" aria-hidden="true"></i> Settings
+                            </p>
                         </div>
-                    </div>
-                    <div class="card card2"  onclick="location.href='./settings.html'">
-                        <p>
-                            <i class="fa fa-cog" aria-hidden="true"></i> Settings
-                        </p>
-                    </div>
-                    <div class="card card3" onclick="location.href='../login/index.html'">
-                        <p>
-                            <i class="fa fa-sign-out-alt"></i> Sign Out
-                        </p>
+                        <div class="card card3" onclick="location.href='../login/index.html'">
+                            <p>
+                                <i class="fa fa-sign-out-alt"></i> Sign Out
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,17 +143,49 @@
                     </span>
                 </div>
             </div>
-            <div class="profile-skills">
-                <div class="profile-skills-images">
-                </div>
-                <div class="profile-skills-content">
-                    <span>We think you might like help with</span>
-                    <div class="skill-title-carousel">
-                        <i class="fa fa-angle-left"></i>
-                        <h4 id="skill">Logo Design</h4>
-                        <i class="fa fa-angle-right"></i>
+            <div class="profile-skills-container">
+                <div class="profile-skills">
+                    <div class="profile-skills-images">
+                        <img src="../Image/videoEditing.jpg" alt="">
                     </div>
-                    <button>Learn More</button>
+                    <div class="profile-skills-content">
+                        <span>We think you might like help with</span>
+                        <div class="skill-title">
+                            <i class="fa fa-angle-left" onclick='plusSlides(-1,0)'></i>
+                            <h4 class="skill">Video Editing</h4>
+                            <i class="fa fa-angle-right" onclick='plusSlides(1,0)'></i>
+                        </div>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+
+                <div class="profile-skills">
+                    <div class="profile-skills-images">
+                        <img src="../Image/websiteDesign.jpg" alt="">
+                    </div>
+                    <div class="profile-skills-content">
+                        <span>We think you might like help with</span>
+                        <div class="skill-title">
+                            <i class="fa fa-angle-left" onclick='plusSlides(-1,0)'></i>
+                            <h4 class="skill">Web Design</h4>
+                            <i class="fa fa-angle-right" onclick='plusSlides(1,0)'></i>
+                        </div>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                <div class="profile-skills">
+                    <div class="profile-skills-images">
+                        <img src="../Image/appDeveloper.jpg" alt="">
+                    </div>
+                    <div class="profile-skills-content">
+                        <span>We think you might like help with</span>
+                        <div class="skill-title">
+                            <i class="fa fa-angle-left" onclick='plusSlides(-1,0)'></i>
+                            <h4 class="skill">App Development</h4>
+                            <i class="fa fa-angle-right" onclick='plusSlides(1,0)'></i>
+                        </div>
+                        <button>Learn More</button>
+                    </div>
                 </div>
             </div>
             <div class="how-to-work">
@@ -316,6 +350,17 @@
         else{
             profileMobileNav.style.display='none';
             searchIcon.style.opacity='1';
+        }
+    }
+    const sessionCard = document.querySelector(".sessionCard");
+    const profileImage = document.getElementById("profileImage");
+    function displayCard(x){
+        x.classList.toggle("change");
+        if(x.classList.contains('change')){
+            sessionCard.style.display="inline-block";
+        }
+        else{
+            sessionCard.style.display = 'none';
         }
     }
 </script>

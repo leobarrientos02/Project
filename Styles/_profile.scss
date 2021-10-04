@@ -19,7 +19,7 @@
         cursor: pointer;
         border-radius: 15px;
         border: none;
-        background: rgb(219, 219, 219);
+        background: rgb(233, 233, 233);
         font-size: 1.1rem;
         color: $color1;
         font-weight: bolder;
@@ -28,7 +28,7 @@
         border: 1px solid lightgrey;
         &:hover {
           transition: all 0.2s ease;
-          background: rgb(233, 233, 233);
+          background: rgb(219, 219, 219);
         }
       }
       #quick-link-market {
@@ -109,80 +109,84 @@
       }
     }
   }
-  .profile-skills {
+  .profile-skills-container {
     grid-column: 3/4;
     grid-row: 1/3;
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    background: white;
-    border-radius: 15px;
-    .profile-skills-images {
-      background-image: url("../Image/logoDesign.jpg");
-      width: 18rem;
-      height: 14rem;
-      border: none;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      background-size: cover;
-    }
-    .profile-skills-content {
-      border: lightgrey 0.7px solid;
-      border-top: none;
-      border-bottom-left-radius: 15px;
-      border-bottom-right-radius: 15px;
-      width: 100%;
-      display: flex;
+    .profile-skills {
+      min-width: fit-content;
+      height: fit-content;
+      display: none;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      span {
-        padding-top: 1rem;
-        font-size: 0.9rem;
-        color: $darktext;
-      }
-      .skill-title-carousel {
-        width: 105%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        h4 {
-          font-size: 1.5rem;
-          padding: 1rem 0rem;
+      background: white;
+      border-radius: 15px;
+      .profile-skills-images {
+        width: 19rem;
+        height: fit-content;
+        border-right: lightgrey 0.7px solid;
+        border-left: lightgrey 0.7px solid;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        img {
+          width: 100%;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
         }
-        i {
-          background: rgb(231, 231, 231);
-          border-radius: 50%;
-          padding: 0.3rem 0.4rem;
-          font-size: 1.4rem;
-          cursor: pointer;
-          color: $color1;
-          &:hover {
+      }
+      .profile-skills-content {
+        border: lightgrey 0.7px solid;
+        border-top: none;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+          padding-top: 0.7rem;
+          font-size: 0.9rem;
+          color: $darktext;
+        }
+        .skill-title {
+          width: 105%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          h4 {
+            font-size: 1.5rem;
+            padding: 1rem 0rem;
+          }
+          i {
+            font-size: 1.5rem;
             color: $lightColor;
+            cursor: pointer;
+            padding: 0.1rem 0.3rem;
+            border-radius: 50%;
+            background: lightgray;
           }
         }
-      }
-      button {
-        margin-bottom: 1rem;
-        cursor: pointer;
-        border-radius: 15px;
-        border: none;
-        background: transparent;
-        font-size: 1rem;
-        color: $color1;
-        font-weight: bolder;
-        min-width: fit-content;
-        padding: 0.6rem 1rem;
-        border: 1px solid lightgrey;
-        &:hover {
-          transition: all 0.2s ease;
-          background: rgb(233, 233, 233);
+        button {
+          margin-bottom: 1rem;
+          cursor: pointer;
+          border-radius: 15px;
+          border: none;
+          background: transparent;
+          font-size: 1rem;
+          color: $color1;
+          font-weight: bolder;
+          min-width: fit-content;
+          padding: 0.6rem 1rem;
+          border: 1px solid lightgrey;
+          &:hover {
+            transition: all 0.2s ease;
+            background: rgb(233, 233, 233);
+          }
         }
       }
     }
   }
+
   .how-to-work {
     grid-column: 1/3;
     background: white;
@@ -415,58 +419,80 @@
         }
       }
     }
-    .profile-skills {
-      width: 100%;
-      height: fit-content;
-      display: flex;
-      flex-direction: column;
-      background: white;
-      border-radius: 15px;
-      .profile-skills-images {
+    .profile-skills-container {
+      grid-column: 3/4;
+      grid-row: 1/3;
+      .profile-skills {
         width: 100%;
-        height: 14rem;
-        border: none;
-        img {
+        height: fit-content;
+        display: none;
+        flex-direction: column;
+        background: white;
+        border-radius: 15px;
+        .profile-skills-images {
+          width: 100%;
+          height: fit-content;
+          border-right: lightgrey 0.7px solid;
+          border-left: lightgrey 0.7px solid;
           border-top-left-radius: 15px;
           border-top-right-radius: 15px;
-          width: 100% !important;
-          height: 100% !important;
+          img {
+            width: 100%;
+            object-fit: contain;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+          }
         }
-      }
-      .profile-skills-content {
-        border: lightgrey 0.7px solid;
-        border-top: none;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        span {
-          padding-top: 1rem;
-          font-size: 0.9rem;
-          color: $darktext;
-        }
-        h4 {
-          font-size: 1.5rem;
-          padding: 1rem 0rem;
-        }
-        button {
-          margin-bottom: 1rem;
-          cursor: pointer;
-          border-radius: 15px;
-          border: none;
-          background: transparent;
-          font-size: 1rem;
-          color: $color1;
-          font-weight: bolder;
-          min-width: fit-content;
-          padding: 0.6rem 1rem;
-          border: 1px solid lightgrey;
-          &:hover {
-            transition: all 0.2s ease;
-            background: rgb(233, 233, 233);
+        .profile-skills-content {
+          border: lightgrey 0.7px solid;
+          border-top: none;
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          min-width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          span {
+            padding-top: 0.7rem;
+            font-size: 0.9rem;
+            color: $darktext;
+          }
+          .skill-title {
+            width: 105%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            h4 {
+              font-size: 1.5rem;
+              padding: 1rem 0rem;
+            }
+            i {
+              font-size: 1.5rem;
+              color: $lightColor;
+              cursor: pointer;
+              padding: 0.1rem 0.3rem;
+              border-radius: 50%;
+              background: lightgray;
+            }
+          }
+          button {
+            margin-bottom: 1rem;
+            cursor: pointer;
+            border-radius: 15px;
+            border: none;
+            background: transparent;
+            font-size: 1rem;
+            color: $color1;
+            font-weight: bolder;
+            min-width: fit-content;
+            padding: 0.6rem 1rem;
+            border: 1px solid lightgrey;
+            &:hover {
+              transition: all 0.2s ease;
+              background: rgb(233, 233, 233);
+            }
           }
         }
       }

@@ -1,4 +1,4 @@
-const sessionCard = document.querySelector(".sessionCard");
+/*const sessionCard = document.querySelector(".sessionCard");
 const profileImage = document.getElementById("profileImage");
 
 profileImage.addEventListener("click", () => {
@@ -8,24 +8,34 @@ profileImage.addEventListener("click", () => {
 sessionCard.addEventListener("click", () => {
   sessionCard.classList.remove("isVisible");
 });
-
+*/
 //Skills carousel
-//GET Arrows
-const faAngleLeft = document.querySelector(".fa-angle-left");
-const faAngleRight = document.querySelector(".fa-angle-right");
 //Get Elements
 const skillTitle = document.getElementById("skill");
 const skillImage = document.querySelector(".profile-skills-images");
 
-faAngleLeft.addEventListener("click", () => {
-  //console.log("hacked");
-  skillTitle.innerText = "Writing";
-  skillImage.style.backgroundImage = "url('../Image/essay.jpg')";
-});
-faAngleRight.addEventListener("click", () => {
-  skillTitle.innerText = "Logo Design";
-  skillImage.style.backgroundImage = "url('../Image/logoDesign.jpg')";
-});
+var slideIndex = [1, 1];
+var slideId = ["profile-skills"];
+
+showSlides(1, 0);
+
+function plusSlides(n, no) {
+  showSlides((slideIndex[no] += n), no);
+}
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {
+    slideIndex[no] = 1;
+  }
+  if (n < 1) {
+    slideIndex[no] = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex[no] - 1].style.display = "block";
+}
 
 //Mobile Javascript
 const mobileSearchCard = document.querySelector(".mobileSearchCard");

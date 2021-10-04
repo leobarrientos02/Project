@@ -90,59 +90,69 @@
   }
 }
 // Header pulldown
-.sessionCard {
-  display: none;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  background: white;
-  padding: 1.5rem 0rem;
-  width: 23vw;
-  border-radius: 10px;
-  .card {
-    padding: 0.5rem 0rem;
-    cursor: pointer;
-    width: 100%;
-    i {
-      margin: 0rem 0.8rem 0rem 1.5rem;
-    }
-    &:hover {
-      background: lightgrey;
-    }
-  }
-  .card1 {
-    display: flex;
-    flex-direction: row;
-    pointer-events: none;
-    .image {
-      img {
-        margin-left: 1rem;
-        width: 2rem;
-        height: 2rem;
-      }
-    }
-    .name {
-      display: flex;
-      flex-direction: column;
-      padding: 0rem 0.5rem;
-      #name {
-        width: 100%;
-        font-size: 1rem;
-        color: $color1;
-        font-weight: bolder;
-      }
-      #type {
-        width: 100%;
-        font-size: 0.8rem;
+.sessionCardContainer {
+  position: fixed;
+  top: 3.5rem;
+  right: 10rem;
+  .sessionCard {
+    display: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: white;
+    padding: 1.5rem 0rem;
+    width: 23vw;
+    border-radius: 10px;
+    #sessionCardCloseP {
+      width: 100%;
+      text-align: end;
+      i {
+        font-size: 1.3rem;
+        cursor: pointer;
+        display: inline-block;
         color: $darktext;
       }
     }
+    .card {
+      padding: 0.5rem 0rem;
+      cursor: pointer;
+      width: 100%;
+      i {
+        margin: 0rem 0.8rem 0rem 1.5rem;
+      }
+      &:hover {
+        background: lightgrey;
+      }
+    }
+    .card1 {
+      display: flex;
+      flex-direction: row;
+      pointer-events: none;
+      .image {
+        img {
+          margin-left: 1rem;
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+      .name {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 0.5rem;
+        #name {
+          width: 100%;
+          font-size: 1rem;
+          color: $color1;
+          font-weight: bolder;
+        }
+        #type {
+          width: 100%;
+          font-size: 0.8rem;
+          color: $darktext;
+        }
+      }
+    }
   }
 }
-.isVisible {
-  display: inline-block;
-  position: fixed;
-  top: 3.8rem;
-  right: 10rem;
-}
+
 //Footer
 .profileFooter {
   width: 100%;
