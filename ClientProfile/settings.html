@@ -214,8 +214,9 @@
         </div>
     </div>
 </body>
-<script src="./settings.js"></script>
+<script src="../SkillsContainer/AllSkills.js"></script>
 <script src="./app.js"></script>
+<script src="./settings.js"></script>
 <!--Toggle the nav button-->
 <script>
     const navIcon = document.getElementById("nav-burger");
@@ -232,17 +233,5 @@
             searchIcon.style.opacity='1';
         }
     }
-    const sessionCard = document.querySelector(".sessionCard");
-    const profileImage = document.getElementById("profileImage");
-    function displayCard(x){
-        x.classList.toggle("change");
-        if(x.classList.contains('change')){
-            sessionCard.style.display="inline-block";
-        }
-        else{
-            sessionCard.style.display = 'none';
-        }
-    }
 </script>
-<script src="../SkillsContainer/AllSkills.js"></script>
 </html>
