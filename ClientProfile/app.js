@@ -75,6 +75,16 @@ const projects = document.getElementById("projects");
 const projectsTemp = document.getElementById("projectsTemp");
 
 profileImage.addEventListener("click", () => {
+  //Pullldown
+  displayX(sessionCard);
+
+  //Block
+  blockX(jobCardPulldown);
+  blockX(talentCardPulldown);
+  blockX(projectCardPulldown);
+  blockX(helpCardPulldown);
+
+  //Trigger
   blockX(profileImage);
   displayX(profileImageTemp);
 
@@ -90,6 +100,13 @@ profileImage.addEventListener("click", () => {
   blockX(questionMarkTemp);
 });
 profileImageTemp.addEventListener("click", () => {
+  //Pulldown
+  blockX(sessionCard);
+  blockX(jobCardPulldown);
+  blockX(talentCardPulldown);
+  blockX(projectCardPulldown);
+  blockX(helpCardPulldown);
+  //Trigger
   blockX(profileImageTemp);
   displayX(profileImage);
 
@@ -105,6 +122,15 @@ profileImageTemp.addEventListener("click", () => {
   blockX(questionMarkTemp);
 });
 questionMark.addEventListener("click", () => {
+  //Pullldown
+  displayX(helpCardPulldown);
+
+  //Block
+  blockX(jobCardPulldown);
+  blockX(talentCardPulldown);
+  blockX(projectCardPulldown);
+  blockX(sessionCard);
+
   blockX(questionMark);
   displayX(questionMarkTemp);
 
@@ -120,6 +146,13 @@ questionMark.addEventListener("click", () => {
   blockX(profileImageTemp);
 });
 questionMarkTemp.addEventListener("click", () => {
+  //Pulldown
+  blockX(sessionCard);
+  blockX(jobCardPulldown);
+  blockX(talentCardPulldown);
+  blockX(projectCardPulldown);
+  blockX(helpCardPulldown);
+
   blockX(questionMarkTemp);
   displayX(questionMark);
 
@@ -136,6 +169,15 @@ questionMarkTemp.addEventListener("click", () => {
 });
 
 jobs.addEventListener("click", () => {
+  //Pullldown
+  displayX(jobCardPulldown);
+
+  //Block
+  blockX(sessionCard);
+  blockX(talentCardPulldown);
+  blockX(projectCardPulldown);
+  blockX(helpCardPulldown);
+
   blockX(jobs);
   displayX(jobsTemp);
 
@@ -151,6 +193,13 @@ jobs.addEventListener("click", () => {
   blockX(profileImageTemp);
 });
 jobsTemp.addEventListener("click", () => {
+  //Pulldown
+  blockX(sessionCard);
+  blockX(jobCardPulldown);
+  blockX(talentCardPulldown);
+  blockX(projectCardPulldown);
+  blockX(helpCardPulldown);
+
   blockX(jobsTemp);
   displayX(jobs);
 
@@ -167,6 +216,15 @@ jobsTemp.addEventListener("click", () => {
 });
 
 talents.addEventListener("click", () => {
+  //Pullldown
+  displayX(talentCardPulldown);
+
+  //Block
+  blockX(jobCardPulldown);
+  blockX(sessionCard);
+  blockX(projectCardPulldown);
+  blockX(helpCardPulldown);
+
   blockX(talents);
   displayX(talentsTemp);
 
@@ -182,6 +240,13 @@ talents.addEventListener("click", () => {
   blockX(profileImageTemp);
 });
 talentsTemp.addEventListener("click", () => {
+  //Pulldown
+  blockX(sessionCard);
+  blockX(jobCardPulldown);
+  blockX(talentCardPulldown);
+  blockX(projectCardPulldown);
+  blockX(helpCardPulldown);
+
   blockX(talentsTemp);
   displayX(talents);
 
@@ -198,6 +263,15 @@ talentsTemp.addEventListener("click", () => {
 });
 
 projects.addEventListener("click", () => {
+  //Pullldown
+  displayX(projectCardPulldown);
+
+  //Block
+  blockX(jobCardPulldown);
+  blockX(talentCardPulldown);
+  blockX(sessionCard);
+  blockX(helpCardPulldown);
+
   blockX(projects);
   displayX(projectsTemp);
 
@@ -213,6 +287,13 @@ projects.addEventListener("click", () => {
   blockX(profileImageTemp);
 });
 projectsTemp.addEventListener("click", () => {
+  //Pulldown
+  blockX(sessionCard);
+  blockX(jobCardPulldown);
+  blockX(talentCardPulldown);
+  blockX(projectCardPulldown);
+  blockX(helpCardPulldown);
+
   blockX(projectsTemp);
   displayX(projects);
 
