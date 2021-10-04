@@ -662,6 +662,50 @@ const LegalPopular = [
     Document Reviewers
     Litigation Specialists 
 ]
+const LegalRoles = [
+    Real Estate Law Professionals
+Compliance Specialists
+Legal Consultants
+Family Law Professionals
+Legal Assistants
+Trademark Consultants
+Deposition Summary Specialists
+Workplace Safety & Health Professionals
+Arbitration Law Professionals
+Brand Licensing Professionals
+Bankruptcy Professionals
+Patent Law Professionals
+Medical Law Professionals
+Immigration Law Professionals
+Copyright Law Professionals
+Criminal Law Professionals
+Notaries
+Contract Drafters
+]
+const LegalCrossFunctional = [
+    Legal Transcriptionist
+Legal Translators
+Section 508 Compliance Specialists
+Legal Writers
+Property Tax Specialists
+GDPR Freelancers
+Management Consultants
+Legal Researchers
+Fraud Analysts
+]
+const LegalProjects=[
+    Translation Services
+Contracts & Agreement Writing
+Privay Policy Writing
+Terms of Service Writing
+Business & Corporate Legal Consulting
+Intellectual Property Consulting
+Tax Legal Consulting
+Commercial Legal Consulting
+Legal Assistance
+Cybersecurity & Data Protection Services
+Virtual Assistant Services
+]
 
 //HR & Training
 const HRTrainingPopular = [
@@ -686,6 +730,61 @@ const HRTrainingPopular = [
     Leadership Training Freelancers
     Organizational Development Consultant
 ]
+const HRTrainingRoles =[
+    Articulate Specialists
+Articulate Storyline Specialists
+Boolean Search Specialists
+Competencies Assessment Freelancers
+Curriculum Developers
+Distance Education Specialists
+Employee Engagement Specialists
+Executive Coaches
+HR Policies Specialists
+Interviewers
+ISO 9000 Specialists
+Job Description Writers
+Leadership Development Specialists
+LinkedIn Recruiters
+Onboarding Specialists
+Online Freelancers
+QHSE Specialists
+Recruiters & Recruitment Consultants
+Salary Surveys Specialists
+SAP SuccessFactors Freelancers
+SCORM Specialists
+Teachable Specialists
+Technical Recruiters
+]
+const HRTrainingCrossFunctional =[
+    Applied Behavior Analysis (ABA) Professionals
+Business Coaches
+Business Innovation Freelancers
+Career Counselors
+Conflict Resolution Specialists
+Cross Functional Team Leadership Specialists
+Employent Law Lawyers & Legal Professionals
+Information Management Specialists
+International Business Specialists
+Lean Consultants
+Learning Management System (LMS) Specialists
+Legal Professionals
+LinkedIn API Developers
+Moodle Specialists
+Payroll Processing Specialists
+Resume Writers
+Revenue Management Freelancers
+]
+const HRTrainingProjects =[
+    Accounting & Bookkeeping Services
+Business Consulting Services
+Cover Letter Writing Services
+eLearning Video Production Services
+Financial Consulting Services
+LinkedIn Profile Writing Services
+Project Management Services
+Resume Writing Services
+Virtual Assistant Services
+]
 
 //Engineer & Architecture
 const EngineerArchitecturePopular = [
@@ -709,6 +808,51 @@ const EngineerArchitecturePopular = [
     Logistics & Shipping Specialists
     Engineering Drawing Specialists
     Mathematics Specialists 
+]
+const EngineerArchitectureRoles = [
+    3D Printing Experts
+3D Rendering Artists
+AutoCAD Specialists
+Autodesk Fusion 360 Freelancers
+Biologists
+Chemists
+Contract Manufacturing Specialists
+Drafting Specialists
+Engineering Drawing Specialists
+Estimator Specialists
+Interior Designers
+Logistics & Shipping Specialists
+Mathematics Specialists
+PCB Designers
+Product Designers
+Robotics Engineers
+SketchUp Specialists
+SolidWorks Designers
+Sourcing Specialists
+Welders
+]
+const EngineerArchitectureCrossFunctional = [
+    3D Designers & Artists
+Calculus Tutors & Teachers
+Game Designer
+Graphic Designer
+LaTeX Editors
+Photographer
+Project Managers
+Research Specialists
+Scientific Writers
+Section 508 Compliance Specialists
+Urban Designers
+Video Producers
+]
+const EngineerArchitectureCrossProjects = [
+    Architecture & Interior Design Consultation
+BIM 3D Modeling
+Packaging Design Services
+Product Manufacturing
+STEM Consultation & Tutoring
+Supplier & Vendor Sourcing
+Virtual Staging Services
 ]
 
 
