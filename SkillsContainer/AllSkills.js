@@ -641,226 +641,241 @@ const AllFinanceAccounting = FinanceAccountingPopular.concat(
 
 //Legal
 const LegalPopular = [
-    Legal Consultants
-    Contract Law Lawyers & Legal Professionals
-    Legal Researchers
-    Contract Drafters
-    Paralegals Professionals
-    Corporate Law Lawyers & Legal Professionals
-    Legal Assistance Specialists
-    Intellectual Property Law Lawyers & Legal Professionals
-    Partnership Agreements Freelancers
-    Trademark Consultants
-    Business Law Freelancers
-    Patent Law Lawyers & Legal Professionals
-    Non-Disclosure Agreements Specialists
-    Immigration Law Lawyers & Legal Professionals
-    Compliance Specialists
-    Civil Law Lawyers & Legal Professionals
-    Regulatory Compliance Freelancers
-    Family Law Lawyers & Legal Professionals
-    Document Reviewers
-    Litigation Specialists 
-]
+  "Legal Consultants",
+  "Contract Law Lawyers & Legal Professionals",
+  "Legal Researchers",
+  "Contract Drafters",
+  "Paralegals Professionals",
+  "Corporate Law Lawyers & Legal Professionals",
+  "Legal Assistance Specialists",
+  "Intellectual Property Law Lawyers & Legal Professionals",
+  "Partnership Agreements Freelancers",
+  "Trademark Consultants",
+  "Business Law Freelancers",
+  "Patent Law Lawyers & Legal Professionals",
+  "Non-Disclosure Agreements Specialists",
+  "Immigration Law Lawyers & Legal Professionals",
+  "Compliance Specialists",
+  "Civil Law Lawyers & Legal Professionals",
+  "Regulatory Compliance Freelancers",
+  "Family Law Lawyers & Legal Professionals",
+  "Document Reviewers",
+  "Litigation Specialists",
+];
 const LegalRoles = [
-    Real Estate Law Professionals
-Compliance Specialists
-Legal Consultants
-Family Law Professionals
-Legal Assistants
-Trademark Consultants
-Deposition Summary Specialists
-Workplace Safety & Health Professionals
-Arbitration Law Professionals
-Brand Licensing Professionals
-Bankruptcy Professionals
-Patent Law Professionals
-Medical Law Professionals
-Immigration Law Professionals
-Copyright Law Professionals
-Criminal Law Professionals
-Notaries
-Contract Drafters
-]
+  "Real Estate Law Professionals",
+  "Compliance Specialists",
+  "Legal Consultants",
+  "Family Law Professionals",
+  "Legal Assistants",
+  "Trademark Consultants",
+  "Deposition Summary Specialists",
+  "Workplace Safety & Health Professionals",
+  "Arbitration Law Professionals",
+  "Brand Licensing Professionals",
+  "Bankruptcy Professionals",
+  "Patent Law Professionals",
+  "Medical Law Professionals",
+  "Immigration Law Professionals",
+  "Copyright Law Professionals",
+  "Criminal Law Professionals",
+  "Notaries",
+  "Contract Drafters",
+];
 const LegalCrossFunctional = [
-    Legal Transcriptionist
-Legal Translators
-Section 508 Compliance Specialists
-Legal Writers
-Property Tax Specialists
-GDPR Freelancers
-Management Consultants
-Legal Researchers
-Fraud Analysts
-]
-const LegalProjects=[
-    Translation Services
-Contracts & Agreement Writing
-Privay Policy Writing
-Terms of Service Writing
-Business & Corporate Legal Consulting
-Intellectual Property Consulting
-Tax Legal Consulting
-Commercial Legal Consulting
-Legal Assistance
-Cybersecurity & Data Protection Services
-Virtual Assistant Services
-]
+  "Legal Transcriptionist",
+  "Legal Translators",
+  "Section 508 Compliance Specialists",
+  "Legal Writers",
+  "Property Tax Specialists",
+  "GDPR Freelancers",
+  "Management Consultants",
+  "Legal Researchers",
+  "Fraud Analysts",
+];
+const LegalProjects = [
+  "Translation Services",
+  "Contracts & Agreement Writing",
+  "Privay Policy Writing",
+  "Terms of Service Writing",
+  "Business & Corporate Legal Consulting",
+  "Intellectual Property Consulting",
+  "Tax Legal Consulting",
+  "Commercial Legal Consulting",
+  "Legal Assistance",
+  "Cybersecurity & Data Protection Services",
+  "Virtual Assistant Services",
+];
+const AllLegal = LegalPopular.concat(LegalRoles)
+  .concat(LegalCrossFunctional)
+  .concat(LegalProjects);
 
 //HR & Training
 const HRTrainingPopular = [
-    Technology Freelancers
-    Recruiters & Recruitment Consultants
-    Candidate sourcing Freelancers
-    Interviewers
-    LinkedIn Recruiters
-    Human Resource Managers
-    Boolean Search Specialists
-    Technical Recruiters
-    e-Learning Specialists
-    Instructional Designers
-    Online Freelancers
-    Course Freelancers
-    Learning Management System (LMS) Specialists
-    Curriculum Developers
-    Curriculum design Freelancers
-    Training & Development Professionals
-    Articulate Storyline Specialists
-    Compensation Specialists
-    Leadership Training Freelancers
-    Organizational Development Consultant
-]
-const HRTrainingRoles =[
-    Articulate Specialists
-Articulate Storyline Specialists
-Boolean Search Specialists
-Competencies Assessment Freelancers
-Curriculum Developers
-Distance Education Specialists
-Employee Engagement Specialists
-Executive Coaches
-HR Policies Specialists
-Interviewers
-ISO 9000 Specialists
-Job Description Writers
-Leadership Development Specialists
-LinkedIn Recruiters
-Onboarding Specialists
-Online Freelancers
-QHSE Specialists
-Recruiters & Recruitment Consultants
-Salary Surveys Specialists
-SAP SuccessFactors Freelancers
-SCORM Specialists
-Teachable Specialists
-Technical Recruiters
-]
-const HRTrainingCrossFunctional =[
-    Applied Behavior Analysis (ABA) Professionals
-Business Coaches
-Business Innovation Freelancers
-Career Counselors
-Conflict Resolution Specialists
-Cross Functional Team Leadership Specialists
-Employent Law Lawyers & Legal Professionals
-Information Management Specialists
-International Business Specialists
-Lean Consultants
-Learning Management System (LMS) Specialists
-Legal Professionals
-LinkedIn API Developers
-Moodle Specialists
-Payroll Processing Specialists
-Resume Writers
-Revenue Management Freelancers
-]
-const HRTrainingProjects =[
-    Accounting & Bookkeeping Services
-Business Consulting Services
-Cover Letter Writing Services
-eLearning Video Production Services
-Financial Consulting Services
-LinkedIn Profile Writing Services
-Project Management Services
-Resume Writing Services
-Virtual Assistant Services
-]
+  "Technology Freelancers",
+  "Recruiters & Recruitment Consultants",
+  "Candidate sourcing Freelancers",
+  "Interviewers",
+  "LinkedIn Recruiters",
+  "Human Resource Managers",
+  "Boolean Search Specialists",
+  "Technical Recruiters",
+  "e-Learning Specialists",
+  "Instructional Designers",
+  "Online Freelancers",
+  "Course Freelancers",
+  "Learning Management System (LMS) Specialists",
+  "Curriculum Developers",
+  "Curriculum design Freelancers",
+  "Training & Development Professionals",
+  "Articulate Storyline Specialists",
+  "Compensation Specialists",
+  "Leadership Training Freelancers",
+  "Organizational Development Consultant",
+];
+const HRTrainingRoles = [
+  "Articulate Specialists",
+  "Articulate Storyline Specialists",
+  "Boolean Search Specialists",
+  "Competencies Assessment Freelancers",
+  "Curriculum Developers",
+  "Distance Education Specialists",
+  "Employee Engagement Specialists",
+  "Executive Coaches",
+  "HR Policies Specialists",
+  "Interviewers",
+  "ISO 9000 Specialists",
+  "Job Description Writers",
+  "Leadership Development Specialists",
+  "LinkedIn Recruiters",
+  "Onboarding Specialists",
+  "Online Freelancers",
+  "QHSE Specialists",
+  "Recruiters & Recruitment Consultants",
+  "Salary Surveys Specialists",
+  "SAP SuccessFactors Freelancers",
+  "SCORM Specialists",
+  "Teachable Specialists",
+  "Technical Recruiters",
+];
+const HRTrainingCrossFunctional = [
+  "Applied Behavior Analysis (ABA) Professionals",
+  "Business Coaches",
+  "Business Innovation Freelancers",
+  "Career Counselors",
+  "Conflict Resolution Specialists",
+  "Cross Functional Team Leadership Specialists",
+  "Employent Law Lawyers & Legal Professionals",
+  "Information Management Specialists",
+  "International Business Specialists",
+  "Lean Consultants",
+  "Learning Management System (LMS) Specialists",
+  "Legal Professionals",
+  "LinkedIn API Developers",
+  "Moodle Specialists",
+  "Payroll Processing Specialists",
+  "Resume Writers",
+  "Revenue Management Freelancers",
+];
+const HRTrainingProjects = [
+  "Accounting & Bookkeeping Services",
+  "Business Consulting Services",
+  "Cover Letter Writing Services",
+  "eLearning Video Production Services",
+  "Financial Consulting Services",
+  "LinkedIn Profile Writing Services",
+  "Project Management Services",
+  "Resume Writing Services",
+  "Virtual Assistant Services",
+];
+
+const AllHRTraining = HRTrainingPopular.concat(HRTrainingRoles)
+  .concat(HRTrainingCrossFunctional)
+  .concat(HRTrainingProjects);
 
 //Engineer & Architecture
 const EngineerArchitecturePopular = [
-    3D Designers
-    3D Rendering Artists
-    AutoCAD Drafters
-    Architectural Designers
-    Product Designers
-    Sourcing Specialists
-    Interior Designers
-    Residential Freelancers
-    Architectural Rendering Specialists
-    2D Designers
-    SketchUp Specialists
-    Drafting Specialists
-    Mechanical Engineers
-    Electrical Engineers
-    Floor Plan Designers
-    CAD Designers
-    Concept Design Specialists
-    Logistics & Shipping Specialists
-    Engineering Drawing Specialists
-    Mathematics Specialists 
-]
+  "3D Designers",
+  "3D Rendering Artists",
+  "AutoCAD Drafters",
+  "Architectural Designers",
+  "Product Designers",
+  "Sourcing Specialists",
+  "Interior Designers",
+  "Residential Freelancers",
+  "Architectural Rendering Specialists",
+  "2D Designers",
+  "SketchUp Specialists",
+  "Drafting Specialists",
+  "Mechanical Engineers",
+  "Electrical Engineers",
+  "Floor Plan Designers",
+  "CAD Designers",
+  "Concept Design Specialists",
+  "Logistics & Shipping Specialists",
+  "Engineering Drawing Specialists",
+  "Mathematics Specialists",
+];
 const EngineerArchitectureRoles = [
-    3D Printing Experts
-3D Rendering Artists
-AutoCAD Specialists
-Autodesk Fusion 360 Freelancers
-Biologists
-Chemists
-Contract Manufacturing Specialists
-Drafting Specialists
-Engineering Drawing Specialists
-Estimator Specialists
-Interior Designers
-Logistics & Shipping Specialists
-Mathematics Specialists
-PCB Designers
-Product Designers
-Robotics Engineers
-SketchUp Specialists
-SolidWorks Designers
-Sourcing Specialists
-Welders
-]
+  "3D Printing Experts",
+  "3D Rendering Artists",
+  "AutoCAD Specialists",
+  "Autodesk Fusion 360 Freelancers",
+  "Biologists",
+  "Chemists",
+  "Contract Manufacturing Specialists",
+  "Drafting Specialists",
+  "Engineering Drawing Specialists",
+  "Estimator Specialists",
+  "Interior Designers",
+  "Logistics & Shipping Specialists",
+  "Mathematics Specialists",
+  "PCB Designers",
+  "Product Designers",
+  "Robotics Engineers",
+  "SketchUp Specialists",
+  "SolidWorks Designers",
+  "Sourcing Specialists",
+  "Welders",
+];
 const EngineerArchitectureCrossFunctional = [
-    3D Designers & Artists
-Calculus Tutors & Teachers
-Game Designer
-Graphic Designer
-LaTeX Editors
-Photographer
-Project Managers
-Research Specialists
-Scientific Writers
-Section 508 Compliance Specialists
-Urban Designers
-Video Producers
-]
-const EngineerArchitectureCrossProjects = [
-    Architecture & Interior Design Consultation
-BIM 3D Modeling
-Packaging Design Services
-Product Manufacturing
-STEM Consultation & Tutoring
-Supplier & Vendor Sourcing
-Virtual Staging Services
-]
-
+  "3D Designers & Artists",
+  "Calculus Tutors & Teachers",
+  "Game Designer",
+  "Graphic Designer",
+  "LaTeX Editors",
+  "Photographer",
+  "Project Managers",
+  "Research Specialists",
+  "Scientific Writers",
+  "Section 508 Compliance Specialists",
+  "Urban Designers",
+  "Video Producers",
+];
+const EngineerArchitectureProjects = [
+  "Architecture & Interior Design Consultation",
+  "BIM 3D Modeling",
+  "Packaging Design Services",
+  "Product Manufacturing",
+  "STEM Consultation & Tutoring",
+  "Supplier & Vendor Sourcing",
+  "Virtual Staging Services",
+];
+const AllEngineerArchitecture = EngineerArchitecturePopular.concat(
+  EngineerArchitectureRoles
+)
+  .concat(EngineerArchitectureCrossFunctional)
+  .concat(EngineerArchitectureProjects);
 
 //ALL SKILLS
 const AllSkills = AllDevelopmentIT.concat(AllCreativeDesign)
   .concat(AllSalesMarketing)
   .concat(AllWritingTranslation)
   .concat(AllAdminCustomer)
-  .concat(AllFinanceAccounting);
+  .concat(AllFinanceAccounting)
+  .concat(AllLegal)
+  .concat(AllHRTraining)
+  .concat(AllEngineerArchitecture);
 
-console.log(AllSkills);
+const random = Math.floor(Math.random() * AllSkills.length);
+console.log(random, AllSkills[random]);
