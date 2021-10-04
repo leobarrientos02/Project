@@ -61,6 +61,12 @@
       }
     }
     ul {
+      #jobsTemp,
+      #talentsTemp,
+      #projectsTemp {
+        display: none;
+        color: lightgreen;
+      }
       display: flex;
       flex-direction: row;
       list-style: none;
@@ -75,6 +81,10 @@
       }
     }
     .guide {
+      #questionTemp {
+        display: none;
+        color: lightgreen;
+      }
       i {
         cursor: pointer;
         padding: 0rem 0.4rem;
@@ -95,6 +105,9 @@
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 50%;
+      }
+      #profileImageTemp {
+        display: none;
       }
     }
     .burger {
@@ -175,7 +188,110 @@
     }
   }
 }
-
+.helpContainer {
+  position: fixed;
+  top: 3rem;
+  right: 16.5rem;
+  .helpCard {
+    display: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: white;
+    padding: 0.5rem 0rem;
+    width: 15rem;
+    border-radius: 10px;
+    .card {
+      padding: 0.3rem 0rem;
+      cursor: pointer;
+      width: 100%;
+      h4 {
+        font-weight: lighter;
+        font-size: 0.85rem;
+        margin-left: 0.8rem;
+      }
+      &:hover {
+        background: lightgrey;
+      }
+    }
+  }
+}
+.projectCardContainer {
+  position: fixed;
+  top: 3.3rem;
+  right: 17rem;
+  .projectCard {
+    display: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: white;
+    padding: 0.5rem 0rem;
+    width: 15rem;
+    border-radius: 10px;
+    .card {
+      padding: 0.3rem 0rem;
+      cursor: pointer;
+      width: 100%;
+      h4 {
+        font-weight: lighter;
+        font-size: 0.9rem;
+        margin-left: 0.8rem;
+      }
+      &:hover {
+        background: lightgrey;
+      }
+    }
+  }
+}
+.talentCardContainer {
+  position: fixed;
+  top: 3.3rem;
+  right: 22rem;
+  .talentCard {
+    display: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: white;
+    padding: 0.5rem 0rem;
+    width: 15rem;
+    border-radius: 10px;
+    .card {
+      padding: 0.3rem 0rem;
+      cursor: pointer;
+      width: 100%;
+      h4 {
+        font-weight: lighter;
+        font-size: 0.9rem;
+        margin-left: 0.8rem;
+      }
+      &:hover {
+        background: lightgrey;
+      }
+    }
+  }
+}
+.jobCardContainer {
+  position: fixed;
+  top: 3.2rem;
+  right: 27rem;
+  .jobCard {
+    display: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: white;
+    padding: 0.5rem 0rem;
+    width: 15rem;
+    border-radius: 10px;
+    .card {
+      padding: 0.3rem 0rem;
+      cursor: pointer;
+      width: 100%;
+      h4 {
+        font-weight: lighter;
+        font-size: 0.9rem;
+        margin-left: 0.8rem;
+      }
+      &:hover {
+        background: lightgrey;
+      }
+    }
+  }
+}
 //Footer
 .profileFooter {
   width: 100%;

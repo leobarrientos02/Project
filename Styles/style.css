@@ -4652,6 +4652,13 @@ section .container .login .login-container button:hover {
   list-style: none;
 }
 
+.profile-header-container .profileHeader ul #jobsTemp,
+.profile-header-container .profileHeader ul #talentsTemp,
+.profile-header-container .profileHeader ul #projectsTemp {
+  display: none;
+  color: lightgreen;
+}
+
 .profile-header-container .profileHeader ul li {
   padding: 0rem 0.7rem;
   color: white;
@@ -4660,6 +4667,11 @@ section .container .login .login-container button:hover {
 }
 
 .profile-header-container .profileHeader ul li:hover {
+  color: lightgreen;
+}
+
+.profile-header-container .profileHeader .guide #questionTemp {
+  display: none;
   color: lightgreen;
 }
 
@@ -4684,6 +4696,10 @@ section .container .login .login-container button:hover {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
+}
+
+.profile-header-container .profileHeader .profileImage #profileImageTemp {
+  display: none;
 }
 
 .profile-header-container .profileHeader .burger {
@@ -4784,6 +4800,134 @@ section .container .login .login-container button:hover {
   width: 100%;
   font-size: 0.8rem;
   color: #797979;
+}
+
+.helpContainer {
+  position: fixed;
+  top: 3rem;
+  right: 16.5rem;
+}
+
+.helpContainer .helpCard {
+  display: none;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: white;
+  padding: 0.5rem 0rem;
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.helpContainer .helpCard .card {
+  padding: 0.3rem 0rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.helpContainer .helpCard .card h4 {
+  font-weight: lighter;
+  font-size: 0.85rem;
+  margin-left: 0.8rem;
+}
+
+.helpContainer .helpCard .card:hover {
+  background: lightgrey;
+}
+
+.projectCardContainer {
+  position: fixed;
+  top: 3.3rem;
+  right: 17rem;
+}
+
+.projectCardContainer .projectCard {
+  display: none;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: white;
+  padding: 0.5rem 0rem;
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.projectCardContainer .projectCard .card {
+  padding: 0.3rem 0rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.projectCardContainer .projectCard .card h4 {
+  font-weight: lighter;
+  font-size: 0.9rem;
+  margin-left: 0.8rem;
+}
+
+.projectCardContainer .projectCard .card:hover {
+  background: lightgrey;
+}
+
+.talentCardContainer {
+  position: fixed;
+  top: 3.3rem;
+  right: 22rem;
+}
+
+.talentCardContainer .talentCard {
+  display: none;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: white;
+  padding: 0.5rem 0rem;
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.talentCardContainer .talentCard .card {
+  padding: 0.3rem 0rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.talentCardContainer .talentCard .card h4 {
+  font-weight: lighter;
+  font-size: 0.9rem;
+  margin-left: 0.8rem;
+}
+
+.talentCardContainer .talentCard .card:hover {
+  background: lightgrey;
+}
+
+.jobCardContainer {
+  position: fixed;
+  top: 3.2rem;
+  right: 27rem;
+}
+
+.jobCardContainer .jobCard {
+  display: none;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: white;
+  padding: 0.5rem 0rem;
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.jobCardContainer .jobCard .card {
+  padding: 0.3rem 0rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.jobCardContainer .jobCard .card h4 {
+  font-weight: lighter;
+  font-size: 0.9rem;
+  margin-left: 0.8rem;
+}
+
+.jobCardContainer .jobCard .card:hover {
+  background: lightgrey;
 }
 
 .profileFooter {

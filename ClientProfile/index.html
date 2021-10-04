@@ -68,7 +68,7 @@
     <div class="mobileSearchCard">
         <div class="profile-nav-search">
             <form id="searchContainer">
-                <input type="text" autocomplete="off" name="search" placeholder="Search" id="searchMobile">
+                <input type="text" autocomplete="off" name="search" list="AllSkills" placeholder="Search" id="search">
                 <input type="submit" value="Find">
             </form>
         </div>
@@ -90,23 +90,83 @@
                 </form>
             </div>
             <ul>
-                <li>Jobs</li>
-                <li>Talents</li>
-                <li>Projects</li>
+                <li id="jobs">Jobs</li>
+                <li id="jobsTemp">Jobs</li>
+                <div class="jobCardContainer">
+                    <div class="jobCard">
+                        <div class="card card1">
+                            <h4>My Jobs</h4>
+                        </div>
+                        <div class="card card2">
+                            <h4>All Job Posts</h4>
+                        </div>
+                        <div class="card card3">
+                            <h4>All Contracts</h4>
+                        </div>
+                        <div class="card card4">
+                            <h4>Post A Job</h4>
+                        </div>
+                    </div>
+                </div>
+                <li id="talents">Talents</li>
+                <li id="talentsTemp">Talents</li>
+                <div class="talentCardContainer">
+                    <div class="talentCard">
+                        <div class="card card1">
+                            <h4>Discover</h4>
+                        </div>
+                        <div class="card card2">
+                            <h4>Your Hires</h4>
+                        </div>
+                        <div class="card card4">
+                            <h4>Talent History</h4>
+                        </div>
+                    </div>
+                </div>
+                <li id="projects">Projects</li>
+                <li id="projectsTemp">Projects</li>
+                <div class="projectCardContainer">
+                    <div class="projectCard">
+                        <div class="card card1">
+                            <h4>Current Projects</h4>
+                        </div>
+                        <div class="card card2">
+                            <h4>Project History</h4>
+                        </div>
+                        <div class="card card3">
+                            <h4>Browse by Projects</h4>
+                        </div>
+                    </div>
+                </div>
                 <li>Messages</li>
             </ul>
             <div class="guide">
                 <i class="fa fa-bell" title="Notification"></i>
-                <i class="fa fa-question" title="Help"></i>
+                <i class="fa fa-question" id="question"></i>
+                <i class="fa fa-question" id="questionTemp"></i>
+                <div class="helpContainer">
+                    <div class="helpCard">
+                        <div class="card card1">
+                            <h4>Help & Support</h4>
+                        </div>
+                        <div class="card card2">
+                            <h4>Guides</h4>
+                        </div>
+                        <div class="card card3">
+                            <h4>Contact Us</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="divider"></div>
-            <div class="profileImage" onclick='displayCard(this)'>
-                <img src="../Users/user.svg" id="profileImage" alt="">
+            <div class="profileImage">
+                <img src="../Users/user.svg" id="profileImage1" alt="">
+                <img src="../Users/user.svg" id="profileImageTemp" alt="">
                 <div class="sessionCardContainer">
                     <div class="sessionCard">
                         <div class="card card1">
                             <div class="image">
-                                <img src="../Users/user.svg" id="profileImage2" alt="">
+                                <img src="../Users/user.svg" id="profileImage3" alt="">
                             </div>
                             <div class="name">
                                 <span id="name">John Doe</span>
@@ -359,17 +419,6 @@
         else{
             profileMobileNav.style.display='none';
             searchIcon.style.opacity='1';
-        }
-    }
-    const sessionCard = document.querySelector(".sessionCard");
-    const profileImage = document.getElementById("profileImage");
-    function displayCard(x){
-        x.classList.toggle("change");
-        if(x.classList.contains('change')){
-            sessionCard.style.display="inline-block";
-        }
-        else{
-            sessionCard.style.display = 'none';
         }
     }
 </script>
