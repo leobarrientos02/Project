@@ -4559,6 +4559,10 @@ section .container .login .login-container button:hover {
 }
 
 /*Profiles*/
+.fa-times {
+  display: none;
+}
+
 .profile-header-container {
   position: fixed;
   top: 0;

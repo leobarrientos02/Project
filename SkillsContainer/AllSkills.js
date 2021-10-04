@@ -1,6 +1,6 @@
 //Developement and IT
 const DevelopementITPopular = [
-  " JavaScript Developers",
+  "JavaScript Developers",
   "Web Designers",
   "WordPress Developers",
   "HTML Developers",
@@ -99,9 +99,19 @@ const DevelopementITProjects = [
   "Website & CMS Software Services",
   "WordPress Development Services",
 ];
+const Data = [
+  "Databases",
+  "Data Analytics",
+  "Data Processing",
+  "Data Visualization",
+  "Data Engineering",
+  "Data Science",
+  "Data Entry",
+];
 const AllDevelopmentIT = DevelopementITPopular.concat(DevelopementITRoles)
   .concat(DevelopementITCrossFunctionalRoles)
-  .concat(DevelopementITProjects);
+  .concat(DevelopementITProjects)
+  .concat(Data);
 
 // Design and Creative
 const DesignCreativePopular = [
@@ -194,9 +204,117 @@ const DesignCreativeProjects = [
   "T-Shirts & Merchandise Design Services",
   "Web & Mobile Design Services",
 ];
-const AllCreativeDesign = DesignCreativePopular.concat(
-  DesignCreativeRoles
-).concat(DesignCreativeProjects);
+const GraphicsDesign = [
+  "Logo Design",
+  "Brand Style Guides",
+  "Game Art",
+  "Graphics for Streamers",
+  "Business Cards & Stationery",
+  "Illustration",
+  "Pattern Design",
+  "Packaging & Label Design",
+  "Brochure Design",
+  "Poster Design",
+  "Signage Design",
+  "Flyer Design",
+  "Book Design",
+  "Album Cover Design",
+  "Podcast Cover Art",
+  "Website Design",
+  "App Design",
+  "UX Design",
+  "Landing Page Design",
+  "Social Media Design",
+  "Email Design",
+  "Icon Design",
+  "AR Filters & Lenses",
+  "Catalog Design",
+  "Invitation Design",
+  "Portraits & Caricatures",
+  "Cartoons & Comics",
+  "Tattoo Design",
+  "Web Banners",
+  "Photoshop Editing",
+  "Architecture & Interior Design",
+  "Landscape Design",
+  "Building Information Modeling",
+  "Character Modeling",
+  "Industrial & Product Design",
+  "Trade Booth Design",
+  "Fashion Design",
+  "T-Shirts & Merchandise",
+  "Jewelry Design",
+  "Presentation Design",
+  "Infographic Design",
+  "Resume Design",
+  "Storyboards",
+  "Car Wraps",
+  "Menu Design",
+  "Postcard Design",
+  "Vector Tracing",
+  "Twitch Store",
+];
+const videoAnimation = [
+  "Whiteboard & Animated Explainers",
+  "Video Editing",
+  "Short Video Ads",
+  "Character Animation",
+  "Animated GIFs",
+  "Logo Animation",
+  "Intros & Outros",
+  "Lyric & Music Videos",
+  "E-Commerce Product Videos",
+  "3D Product Animation",
+  "Unboxing Videos",
+  "Live Action Explainers",
+  "Corporate Videos",
+  "Crowdfunding Videos",
+  "Spokespersons Videos",
+  "Visual Effects",
+  "Subtitles & Captions",
+  "Lottie & Website Animation",
+  "Animation for Kids",
+  "App & Website Previews",
+  "eLearning Video Production",
+  "Slideshows Videos",
+  "Screencasting Videos",
+  "Game Trailers",
+  "Book Trailers",
+  "Animation for Streamers",
+  "Article to Video",
+  "Real Estate Promos",
+  "Product Photography",
+  "Local Photography",
+  "Drone Videography",
+];
+const MusicAudio = [
+  "Voice Over",
+  "Mixing & Mastering",
+  "Producers & Composers",
+  "Singers & Vocalists",
+  "Session Musicians",
+  "Online Music Lessons",
+  "Songwriters",
+  "Beat Making",
+  "Podcast Editing",
+  "Audiobook Production",
+  "Audio Ads Production",
+  "Sound Design",
+  "Dialogue Editing",
+  "Music Transcription",
+  "Vocal Tuning",
+  "Jingles & Intros",
+  "DJ Drops & Tags",
+  "DJ Mixing",
+  "Remixing & Mashups",
+  "Synth Presets",
+  "Meditation Music",
+];
+const AllCreativeDesign = DesignCreativePopular.concat(DesignCreativeRoles)
+  .concat(DesignCreativeProjects)
+  .concat(GraphicsDesign)
+  .concat(MusicAudio)
+  .concat(videoAnimation);
 
 //Sales & Marketing
 const SalesMarketingPopular = [
@@ -310,9 +428,34 @@ const SalesMarketingProjects = [
   "Web Analytics Services",
   "Web Traffic Optimization Services",
 ];
+const DigitalMarketing = [
+  "Social Media Marketing",
+  "Search Engine Optimization (SEO)",
+  "Social Media Advertising",
+  "Public Relations",
+  "Content Marketing",
+  "Podcast Marketing",
+  "Video Marketing",
+  "Email Marketing",
+  "Crowdfunding",
+  "Search Engine Marketing (SEM)",
+  "Display Advertising",
+  "Marketing Strategy",
+  "Web Analytics",
+  "Book & eBook Marketing",
+  "Influencer Marketing",
+  "Community Management",
+  "Local SEO",
+  "E-Commerce Marketing",
+  "Affiliate Marketing",
+  "Mobile App Marketing",
+  "Music Promotion",
+  "Text Message Marketing",
+];
 const AllSalesMarketing = SalesMarketingPopular.concat(SalesMarketingRoles)
   .concat(SalesMarketingCrossFunctional)
-  .concat(SalesMarketingProjects);
+  .concat(SalesMarketingProjects)
+  .concat(DigitalMarketing);
 
 //Writing & Translation
 const WritingTranslationPopular = [
@@ -633,11 +776,30 @@ const FinanceAccountingProjects = [
   "HR Consulting Services",
   "Legal Consulting Services",
 ];
+const business = [
+  "Virtual Assistant",
+  "E-Commerce Management",
+  "Market Research",
+  "Business Plans",
+  "Legal Consulting",
+  "Financial Consulting",
+  "Sales",
+  "Customer Care",
+  "Business Consulting",
+  "HR Consulting",
+  "Presentations",
+  "Supply Chain Management",
+  "Game Concept Design",
+  "Career Counseling",
+  "Project Management",
+  "Flyer Distribution",
+];
 const AllFinanceAccounting = FinanceAccountingPopular.concat(
   FinanceAccountingRoles
 )
   .concat(FinanceAccountingCrossFunctional)
-  .concat(FinanceAccountingProjects);
+  .concat(FinanceAccountingProjects)
+  .concat(business);
 
 //Legal
 const LegalPopular = [
@@ -733,6 +895,25 @@ const HRTrainingPopular = [
   "Leadership Training Freelancers",
   "Organizational Development Consultant",
 ];
+const lifestyles = [
+  "Online Tutoring",
+  "Gaming",
+  "Astrology & Psychics",
+  "Modeling & Acting",
+  "Fitness Lessons",
+  "Dance Lessons",
+  "Life Coaching",
+  "Greeting Cards & Videos",
+  "Personal Stylists",
+  "Cooking Lessons",
+  "Craft Lessons",
+  "Arts & Crafts",
+  "Wellness",
+  "Family & Genealogy",
+  "Your Message On...",
+  "Collectibles",
+  "Traveling",
+];
 const HRTrainingRoles = [
   "Articulate Specialists",
   "Articulate Storyline Specialists",
@@ -791,7 +972,8 @@ const HRTrainingProjects = [
 
 const AllHRTraining = HRTrainingPopular.concat(HRTrainingRoles)
   .concat(HRTrainingCrossFunctional)
-  .concat(HRTrainingProjects);
+  .concat(HRTrainingProjects)
+  .concat(lifestyles);
 
 //Engineer & Architecture
 const EngineerArchitecturePopular = [
@@ -876,6 +1058,14 @@ const AllSkills = AllDevelopmentIT.concat(AllCreativeDesign)
   .concat(AllLegal)
   .concat(AllHRTraining)
   .concat(AllEngineerArchitecture);
+
+//Removing all duplicates
+let AllSkills2 = [];
+AllSkills.forEach((c) => {
+  if (!AllSkills2.includes(c)) {
+    AllSkills2.push(c);
+  }
+});
 
 //Search AutoComplete
 function autocomplete(inp, arr) {
@@ -981,6 +1171,4 @@ function autocomplete(inp, arr) {
   });
 }
 
-autocomplete(document.getElementById("searchMAIN"), AllSkills);
-autocomplete(document.getElementById("searchNAV"), AllSkills);
-autocomplete(document.getElementById("searchMobile"), AllSkills);
+autocomplete(document.getElementById("searchMAIN"), AllSkills2);
