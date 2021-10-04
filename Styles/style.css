@@ -4594,20 +4594,47 @@ section .container .login .login-container button:hover {
   font-size: 1rem;
 }
 
-.profile-header-container .profileHeader .searchBar input {
+.profile-header-container .profileHeader .searchBar #searchContainer {
   border: none;
-  font-size: 1rem;
-  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   border-radius: 20px;
-  padding: 0.7rem 3rem 0.7rem 1rem;
+  width: 16rem;
+  padding: 0.3rem 0.5rem;
   background: #2b5468;
   border: none;
   resize: none;
   outline: none;
 }
 
-.profile-header-container .profileHeader .searchBar input:focus {
+.profile-header-container .profileHeader .searchBar #searchContainer input[type="text"] {
   border: none;
+  font-size: 1rem;
+  width: 85%;
+  color: white;
+  background: #2b5468;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.profile-header-container .profileHeader .searchBar #searchContainer input[type="submit"] {
+  width: 15%;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  background: transparent;
+  color: lightgreen;
+}
+
+.profile-header-container .profileHeader .searchBar #searchContainer input[type="submit"]:hover {
+  color: #7ac97a;
 }
 
 .profile-header-container .profileHeader ul {
@@ -4874,28 +4901,56 @@ section .container .login .login-container button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+
+.profile-mobile-nav .profile-nav-search #searchContainer {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  padding: 1rem 0rem;
-}
-
-.profile-mobile-nav .profile-nav-search input {
-  width: 80%;
-  border: none;
-  color: white;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 15px;
+  border-radius: 20px;
+  width: 16rem;
+  padding: 0.3rem 0.5rem;
   background: #2b5468;
   border: none;
   resize: none;
   outline: none;
+}
+
+.profile-mobile-nav .profile-nav-search #searchContainer input[type="text"] {
+  border: none;
+  font-size: 1rem;
+  width: 85%;
+  color: white;
+  background: #2b5468;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.profile-mobile-nav .profile-nav-search #searchContainer input[type="submit"] {
+  width: 15%;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  background: transparent;
+  color: lightgreen;
+}
+
+.profile-mobile-nav .profile-nav-search #searchContainer input[type="submit"]:hover {
+  color: #7ac97a;
 }
 
 .profile-mobile-nav .mobileNavCard {
@@ -4987,17 +5042,77 @@ section .container .login .login-container button:hover {
   padding: 1rem 0rem;
 }
 
-.mobileSearchCard .profile-nav-search input {
-  width: 80%;
+.mobileSearchCard .profile-nav-search #searchContainer {
   border: none;
-  color: white;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 20px;
+  width: 16rem;
+  padding: 0.3rem 0.5rem;
   background: #2b5468;
   border: none;
   resize: none;
   outline: none;
+}
+
+.mobileSearchCard .profile-nav-search #searchContainer input[type="text"] {
+  border: none;
+  font-size: 1rem;
+  width: 85%;
+  color: white;
+  background: #2b5468;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.mobileSearchCard .profile-nav-search #searchContainer input[type="submit"] {
+  width: 15%;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  background: transparent;
+  color: lightgreen;
+}
+
+.mobileSearchCard .profile-nav-search #searchContainer input[type="submit"]:hover {
+  color: #7ac97a;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 7px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: #054e97 !important;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 754px) {
