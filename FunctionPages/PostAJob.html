@@ -19,7 +19,6 @@
         </head>
     </head>
 <body>
-
     <div class="profile-mobile-nav">
         <div class="profile-nav-search">
             <form id="searchContainer">
@@ -55,7 +54,7 @@
             <p>Notifications</p>
             <i class="fa fa-bell" title="Notification"></i>
         </div>
-        <div class="mobileNavCard mobileNavSettings" onclick="location.href='./settings.html'">
+        <div class="mobileNavCard mobileNavSettings" onclick="location.href='../ClientProfile/settings.html'">
             <p>
                 <i class="fa fa-cog" aria-hidden="true"></i> Settings
             </p>
@@ -82,7 +81,7 @@
                 <div class="line3"></div>
             </div>
             <div class="logo">
-                <a href="#"><h2>E<span>z</span>Work</h2></a>
+                <a href="../ClientProfile/index.html"><h2>E<span>z</span>Work</h2></a>
             </div>
             <div class="searchBar">
                 <form id="searchContainer">
@@ -104,7 +103,7 @@
                         <div class="card card3">
                             <h4>All Contracts</h4>
                         </div>
-                        <div class="card card4" onclick="location.href='../FunctionPages/PostAJob.html'">
+                        <div class="card card4" onclick="location.href='./PostAJob.html'">
                             <h4>Post A Job</h4>
                         </div>
                     </div>
@@ -174,7 +173,7 @@
                                 <span id="type">Client</span>
                             </div>
                         </div>
-                        <div class="card card2"  onclick="location.href='./settings.html'">
+                        <div class="card card2"  onclick="location.href='../ClientProfile/settings.html'">
                             <p>
                                 <i class="fa fa-cog" aria-hidden="true"></i> Settings
                             </p>
@@ -192,47 +191,53 @@
         </div>
     </div>
 
-    <div class="settings">
-        <div class="settings-nav">
-            <ul>
-                <li style="background: lightgrey;" id="myInfo"><div class="tab"></div><a href="#/"><i class="fa fa-user"></i> My Info</a></li>
-                <li  id="passwordSecurity"><a href="#/"><i class="fa fa-lock"></i> Password & Security</a></li>
-                <li  id="billingMethods"><a href="#/"><i class="fa fa-credit-card-alt"></i> Billing Methods</a></li>
-                <li  id="notification"><a href="#/"><i class="fa fa-envelope"></i> Notification Settings</a></li>
-                <li  id="connectedServices"><a href="#/"><i class="fa fa-link"></i> Connected Services</a></li>
-            </ul>
-        </div>
-        <div class="settings-container">
-            <div class="settings-container-title">
-                <h2 id="settings-title">My Info</h2>
+    <!--Post A Job Start-->
+   
+    <div class="PostAJob">
+        <div class="PostAJobContainer">
+            <div class="PostAJobTitle">
+                <h3>Getting Started</h3>
             </div>
-            <div class="settings-account-container">
-                <div class="settings-account-card">
-                    <h3>Account</h3>
-                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                </div>
-                <div class="settings-account-profile-image">
-                    <img src="../Users/user.svg" alt="">
-                </div>
-                <div class="settings-account-profile-info">
-                    <p>Name: <span>John Doe</span></p>
-                    <p>Account Type: <span>Client</span></p>
-                    <p>Phone Number: <span>516-960-8086</span></p>
-                    <p>Email: <span>leobarrientos02@gmail.com</span></p>
+            <div class="PostAJobQuestion">
+                <h4>Choose an Option</h4>
+                <div class="options">
+                    <div class="optionCard" id="option1">
+                        <div class="choosen">
+                            <i class="fa fa-circle" aria-hidden="true" id="option1Circle"></i>
+                        </div>
+                        <div class="option1">
+                            <i class="fa fa-clock" aria-hidden="true"></i>
+                            <h4>Short term or part time work</h4>
+                            <p>Less than 30hrs/week</p>
+                            <p>Less than 3 months</p>
+                        </div>
+                    </div>
+                    <div class="optionCard" id="option2">
+                        <div class="choosen">
+                            <i class="fa fa-circle" aria-hidden="true" id="option2Circle"></i>
+                        </div>
+                        <div class="option2">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <h4>Designated, longer term work</h4>
+                                <p>More than 30hrs/week</p>
+                                <p>3+ months</p>
+                         </div>
+                    </div>
                 </div>
             </div>
-            <div class="settings-account-godMode">
-                <p>This is a <span id="accountType">Client</span> account.</p>
-                <button id="becomeFreelancer">Become Freelancer</button>
-                <button id="deleteAccount">Delete Account</button>
+            <div class="PostAJobCancel0rContinue">
+                <button id="cancel" onclick="location.href='../ClientProfile/index.html'">Cancel</button>
+                <button id="continue">Continue</button>
             </div>
         </div>
     </div>
+    <!--Post A Job End-->
+
     <div class="profileFooter">
         <div class="profile-links">
             <div class="links">
                 <ul>
-                    <a href="../FunctionPages/PostAJob.html">Post a Job</a>
+                    <a href="./PostAJob.html">Post a Job</a>
                     <a href="#/">Find Talent</a>
                     <a href="#/">Browse Projects</a>
                 </ul>
@@ -277,8 +282,8 @@
     </div>
 </body>
 <script src="../SkillsContainer/AllSkills.js"></script>
-<script src="./nav.js"></script>
-<script src="./settings.js"></script>
+<script src="../ClientProfile/nav.js"></script>
+<script src="./PostAJob.js"></script>
 <!--Toggle the nav button-->
 <script>
     const navIcon = document.getElementById("nav-burger");

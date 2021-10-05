@@ -22,7 +22,7 @@
     <div class="profile-mobile-nav">
         <div class="profile-nav-search">
             <form id="searchContainer">
-                <input type="text" autocomplete="off" name="searchNAV" placeholder="Search" id="searchNAV">
+                <input type="text" autocomplete="off" name="searchNAV" placeholder="Search" id="searchMain">
                 <input type="submit" value="Find">
             </form>
         </div>
@@ -68,7 +68,7 @@
     <div class="mobileSearchCard">
         <div class="profile-nav-search">
             <form id="searchContainer">
-                <input type="text" autocomplete="off" name="search" list="AllSkills" placeholder="Search" id="search">
+                <input type="text" autocomplete="off" name="search" list="AllSkills" placeholder="Search" id="searchMain">
                 <input type="submit" value="Find">
             </form>
         </div>
@@ -103,7 +103,7 @@
                         <div class="card card3">
                             <h4>All Contracts</h4>
                         </div>
-                        <div class="card card4">
+                        <div class="card card4" onclick="location.href='../FunctionPages/PostAJob.html'">
                             <h4>Post A Job</h4>
                         </div>
                     </div>
@@ -195,7 +195,7 @@
         <div class="user-profile-header">
             <h2>John Doe</h2>
             <div class="quick-links">
-                <button id="quick-link-job">Post A Job</button>
+                <button id="quick-link-job" onclick="location.href='../FunctionPages/PostAJob.html'">Post A Job</button>
                 <button id="quick-link-market">Browse Marketplace</button>
             </div>
         </div>
@@ -206,7 +206,7 @@
                     <span>All Postings</span>
                 </div>
                 <div class="card result">
-                    <button id="quick-link-job">Post A Job</button>
+                    <button id="quick-link-job" onclick="location.href='../FunctionPages/PostAJob.html'">Post A Job</button>
                     <span>
                         You currently have no job postings listed.
                     </span>
@@ -359,7 +359,7 @@
         <div class="profile-links">
             <div class="links">
                 <ul>
-                    <a href="#/">Post a Job</a>
+                    <a href="../FunctionPages/PostAJob.html">Post a Job</a>
                     <a href="#/">Find Talent</a>
                     <a href="#/">Browse Projects</a>
                 </ul>
@@ -405,6 +405,7 @@
 </body>
 <script src="../SkillsContainer/AllSkills.js"></script>
 <script src="./app.js"></script>
+<script src="./nav.js"></script>
 <!--Toggle the nav button-->
 <script>
     const navIcon = document.getElementById("nav-burger");
