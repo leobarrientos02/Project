@@ -34,6 +34,7 @@ ul {
   }
 
   .settings-container {
+    display: none;
     width: 80%;
 
     .settings-container-title {
@@ -49,6 +50,7 @@ ul {
       border-radius: 15px;
       border: 1px solid lightgrey;
       margin: 1rem 0rem;
+
       .settings-account-card {
         display: flex;
         flex-direction: row;
@@ -66,7 +68,7 @@ ul {
         i {
           cursor: pointer;
           color: $darktext;
-          padding: 0.8rem;
+          padding: 0.6rem;
           border-radius: 50%;
           background: transparent;
           border: 0.7px solid lightgrey;
@@ -103,6 +105,7 @@ ul {
         }
       }
     }
+
     .settings-account-godMode {
       background: white;
       border-radius: 15px;
@@ -155,6 +158,128 @@ ul {
       padding-bottom: 1rem;
       h2 {
         font-size: 2rem;
+      }
+    }
+  }
+
+  .settings-password {
+    display: inline-block;
+    .settings-password-container {
+      background: white;
+      border-radius: 15px;
+      border: 1px solid lightgrey;
+      margin: 1rem 0rem;
+      p {
+        font-size: 0.9rem;
+        color: $darktext;
+      }
+      .settings-password-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1.6rem;
+        background: white;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom: 1px solid lightgrey;
+        h3 {
+          font-size: 1.25rem;
+        }
+        i {
+          cursor: pointer;
+          color: $darktext;
+          padding: 0.6rem;
+          border-radius: 50%;
+          background: transparent;
+          border: 0.7px solid lightgrey;
+          &:hover {
+            background: rgb(226, 226, 226);
+          }
+        }
+      }
+      .settings-password-card2 {
+        width: 100%;
+        padding: 1.6rem;
+      }
+    }
+
+    .settings-password-twoStep {
+      background: white;
+      border-radius: 15px;
+      border: 1px solid lightgrey;
+      margin: 1rem 0rem;
+      p {
+        font-size: 0.9rem;
+        color: $darktext;
+      }
+      .settings-password-twoStep-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 1.6rem;
+        background: white;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom: 1px solid lightgrey;
+        h3 {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          i {
+            cursor: pointer;
+            color: $darktext;
+            padding: 0.4rem;
+            border-radius: 50%;
+            background: transparent;
+            border: 0.7px solid lightgrey;
+            &:hover {
+              background: rgb(226, 226, 226);
+            }
+          }
+        }
+        p {
+          font-size: 0.9rem;
+          padding-top: 1rem;
+        }
+      }
+
+      .settings-password-twoStep-option {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.6rem;
+        border-bottom: 1px solid lightgrey;
+        h3 {
+          width: 100%;
+          text-align: start;
+          font-size: 1.1rem;
+        }
+        p {
+          width: 100%;
+          text-align: start;
+          padding-top: 1rem;
+        }
+        button {
+          align-self: flex-end;
+          width: 17%;
+          color: white;
+          cursor: pointer;
+          background: $lightColor;
+          border-radius: 15px;
+          border: none;
+          font-size: 1.1rem;
+          padding: 0.4rem 1rem;
+          margin-right: 1rem;
+          &:hover {
+            background: $color1;
+          }
+        }
       }
     }
   }
