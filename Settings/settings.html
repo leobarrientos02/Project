@@ -204,7 +204,7 @@
             <div class="settings-account-container">
                 <div class="settings-account-card">
                     <h3>Account</h3>
-                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    <i class="fa fa-pencil" id="editAccountIcon" aria-hidden="true"></i>
                 </div>
                 <div class="settings-account-profile-image">
                     <img src="../Users/user.svg" alt="">
@@ -222,6 +222,8 @@
                 <button id="deleteAccount">Delete Account</button>
             </div>
         </div>
+
+        <!--Password section-->
         <div class="settings-password">
             <div class="settings-container-title">
                 <h2 id="settings-title">Password & Security</h2>
@@ -229,7 +231,7 @@
             <div class="settings-password-container">
                 <div class="settings-password-card">
                     <h3>Password</h3>
-                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    <i class="fa fa-pencil" onclick="openSearch()" id="changePasswordIcon" aria-hidden="true"></i>
                 </div>
                 <div class="settings-password-card2">
                     <p>Use this section to view and edit your current password.</p>
@@ -237,7 +239,7 @@
             </div>
             <div class="settings-password-twoStep">
                 <div class="settings-password-twoStep-card">
-                    <h3>Two-step verification options <i class="fa fa-cog" aria-hidden="true"></i></h3>
+                    <h3>Two-step verification options</h3>
                     <p>Add an extra layer of security to prevent unauthorized access.</p>
                 </div>
                 <div class="settings-password-twoStep-option">
@@ -262,6 +264,14 @@
                     <button>Enable</button>
                 </div>
             </div>
+        </div>
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <form id="editForm" >
+                <label for="password">Confirm Password</label>
+                <input type="password" name="password" id="password">
+                <input type="button" value="Continue">
+            </form>
         </div>
         <div class="settings-billing">
             <div class="settings-container-title">
@@ -421,4 +431,13 @@
         }
     }
 </script>
+<script>
+    function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
 </html>

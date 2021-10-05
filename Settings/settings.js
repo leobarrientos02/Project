@@ -103,3 +103,13 @@ connectedServices.addEventListener("click", () => {
   //Display Card
   servicesCard.style.display = "inline-block";
 });
+
+//Edit account
+const editAccountIcon = document.getElementById("editAccountIcon");
+
+// Password section
+const changePasswordIcon = document.getElementById("changePasswordIcon");
+
+changePasswordIcon.addEventListener("click", () => {
+  console.log("hello");
+});

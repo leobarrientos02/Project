@@ -6414,7 +6414,6 @@ ul {
 }
 
 .settings .settings-container {
-  display: none;
   width: 80%;
 }
 
@@ -6585,7 +6584,7 @@ ul {
 }
 
 .settings .settings-password {
-  display: inline-block;
+  display: none;
 }
 
 .settings .settings-password .settings-password-container {
@@ -6676,33 +6675,7 @@ ul {
 }
 
 .settings .settings-password .settings-password-twoStep .settings-password-twoStep-card h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
-}
-
-.settings .settings-password .settings-password-twoStep .settings-password-twoStep-card h3 i {
-  cursor: pointer;
-  color: #797979;
-  padding: 0.4rem;
-  border-radius: 50%;
-  background: transparent;
-  border: 0.7px solid lightgrey;
-}
-
-.settings .settings-password .settings-password-twoStep .settings-password-twoStep-card h3 i:hover {
-  background: #e2e2e2;
 }
 
 .settings .settings-password .settings-password-twoStep .settings-password-twoStep-card p {
@@ -6754,6 +6727,51 @@ ul {
 
 .settings .settings-password .settings-password-twoStep .settings-password-twoStep-option button:hover {
   background: #0a345e;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+#editForm {
+  position: fixed;
+  top: 40%;
+  left: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
 }
 
 @media screen and (max-width: 754px) {
