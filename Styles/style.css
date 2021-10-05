@@ -6830,17 +6830,13 @@ ul {
 }
 
 .PostAJob .PostAJobContainer .PostAJobCancel0rContinue #continue {
-  color: white;
+  color: gray;
   font-size: 1rem;
-  background: #054e97;
+  background: lightgrey;
   border: none;
-  cursor: pointer;
+  cursor: not-allowed;
   padding: 0.5rem 2rem;
   border-radius: 20px;
-}
-
-.PostAJob .PostAJobContainer .PostAJobCancel0rContinue #continue:hover {
-  background: #0a345e;
 }
 
 @media screen and (max-width: 754px) {

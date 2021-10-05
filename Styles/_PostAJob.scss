@@ -100,17 +100,13 @@
       }
 
       #continue {
-        color: white;
+        color: gray;
         font-size: 1rem;
-        background: $lightColor;
+        background: lightgrey;
         border: none;
-        cursor: pointer;
+        cursor: not-allowed;
         padding: 0.5rem 2rem;
         border-radius: 20px;
-
-        &:hover {
-          background: $color1;
-        }
       }
     }
   }
