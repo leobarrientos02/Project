@@ -54,7 +54,7 @@
             <p>Notifications</p>
             <i class="fa fa-bell" title="Notification"></i>
         </div>
-        <div class="mobileNavCard mobileNavSettings" onclick="location.href='../ClientProfile/settings.html'">
+        <div class="mobileNavCard mobileNavSettings" onclick="location.href='../Settings/settings.html'">
             <p>
                 <i class="fa fa-cog" aria-hidden="true"></i> Settings
             </p>
@@ -90,8 +90,7 @@
                 </form>
             </div>
             <ul>
-                <li id="jobs">Jobs</li>
-                <li id="jobsTemp">Jobs</li>
+                <li onclick="toggleJob()" id="jobs">Jobs</li>
                 <div class="jobCardContainer">
                     <div class="jobCard">
                         <div class="card card1">
@@ -103,13 +102,12 @@
                         <div class="card card3">
                             <h4>All Contracts</h4>
                         </div>
-                        <div class="card card4" onclick="location.href='./PostAJob.html'">
+                        <div class="card card4" onclick="location.href='../PostAJob/PostAJob.html'">
                             <h4>Post A Job</h4>
                         </div>
                     </div>
                 </div>
-                <li id="talents">Talents</li>
-                <li id="talentsTemp">Talents</li>
+                <li onclick="toggleTalent()" id="talents">Talents</li>
                 <div class="talentCardContainer">
                     <div class="talentCard">
                         <div class="card card1">
@@ -123,8 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <li id="projects">Projects</li>
-                <li id="projectsTemp">Projects</li>
+                <li onclick="toggleProject()" id="projects">Projects</li>
                 <div class="projectCardContainer">
                     <div class="projectCard">
                         <div class="card card1">
@@ -142,8 +139,7 @@
             </ul>
             <div class="guide">
                 <i class="fa fa-bell" title="Notification"></i>
-                <i class="fa fa-question" id="question"></i>
-                <i class="fa fa-question" id="questionTemp"></i>
+                <i class="fa fa-question" onclick="toggleHelp()" id="question"></i>
                 <div class="helpContainer">
                     <div class="helpCard">
                         <div class="card card1">
@@ -159,9 +155,8 @@
                 </div>
             </div>
             <div class="divider"></div>
-            <div class="profileImage">
+            <div class="profileImage" onclick="toggleSession()">
                 <img src="../Users/user.svg" id="profileImage1" alt="">
-                <img src="../Users/user.svg" id="profileImageTemp" alt="">
                 <div class="sessionCardContainer">
                     <div class="sessionCard">
                         <div class="card card1">
@@ -173,7 +168,7 @@
                                 <span id="type">Client</span>
                             </div>
                         </div>
-                        <div class="card card2"  onclick="location.href='../ClientProfile/settings.html'">
+                        <div class="card card2"  onclick="location.href='../Settings/settings.html'">
                             <p>
                                 <i class="fa fa-cog" aria-hidden="true"></i> Settings
                             </p>
@@ -282,9 +277,81 @@
     </div>
 </body>
 <script src="../SkillsContainer/AllSkills.js"></script>
-<script src="../ClientProfile/nav.js"></script>
-<script src="./PostAJob.js"></script>
-<!--Toggle the nav button-->
+<script>
+    var job = document.querySelector('.jobCard');
+    var talent = document.querySelector('.talentCard');
+    var project = document.querySelector('.projectCard');
+    var help = document.querySelector('.helpCard');
+    var session = document.querySelector('.sessionCard');
+    function toggleJob(){
+        var job = document.querySelector('.jobCard');
+        if(job.style.display === 'none'){
+            job.style.display = 'inline-block';
+            talent.style.display = 'none';
+            project.style.display = 'none';
+            help.style.display = 'none';
+            session.style.display = 'none';
+        }
+        else{
+            job.style.display='none';
+            
+        }
+    }
+    function toggleTalent(){
+        var talent = document.querySelector('.talentCard');
+        if(talent.style.display==='none'){
+            talent.style.display = 'inline-block';
+            job.style.display = 'none';
+            project.style.display = 'none';
+            help.style.display = 'none';
+            session.style.display = 'none';
+        }
+        else{
+            talent.style.display = 'none';
+        }
+    }
+    function toggleProject(){
+        var project = document.querySelector('.projectCard');
+        if(project.style.display==='none'){
+            project.style.display = 'inline-block';
+            talent.style.display = 'none';
+            job.style.display = 'none';
+            help.style.display = 'none';
+            session.style.display = 'none';
+        }
+        else{
+            project.style.display = 'none';
+        }
+    }
+    function toggleHelp(){
+        var help = document.querySelector('.helpCard');
+        if(help.style.display==='none'){
+            help.style.display = 'inline-block';
+            talent.style.display = 'none';
+            project.style.display = 'none';
+            job.style.display = 'none';
+            session.style.display = 'none';
+        }
+        else{
+            help.style.display = 'none';
+        }
+    }
+    function toggleSession(){
+       
+        if(session.style.display==='none'){
+            session.style.display = 'inline-block';
+            talent.style.display = 'none';
+            project.style.display = 'none';
+            help.style.display = 'none';
+            job.style.display = 'none';
+        }
+        else{
+            session.style.display = 'none';
+        }
+    }
+
+</script>
+<!--Toggle the nav burger button-->
 <script>
     const navIcon = document.getElementById("nav-burger");
     const profileMobileNav = document.querySelector(".profile-mobile-nav");
