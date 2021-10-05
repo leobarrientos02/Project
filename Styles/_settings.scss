@@ -2,6 +2,7 @@
 ul {
   list-style: none;
 }
+
 .settings {
   margin-top: 4.8rem;
   display: flex;
@@ -10,9 +11,11 @@ ul {
   width: 100%;
   background: whitesmoke;
   padding: 2.5rem 10rem;
+
   .settings-nav {
     min-width: 25%;
     margin-right: 1rem;
+
     ul {
       li {
         cursor: pointer;
@@ -29,8 +32,10 @@ ul {
       }
     }
   }
+
   .settings-container {
     width: 80%;
+
     .settings-container-title {
       width: 100%;
       padding-bottom: 1rem;
@@ -38,6 +43,7 @@ ul {
         font-size: 2rem;
       }
     }
+
     .settings-account-container {
       background: white;
       border-radius: 15px;
@@ -133,6 +139,22 @@ ul {
         &:hover {
           text-decoration: underline;
         }
+      }
+    }
+  }
+
+  .settings-password,
+  .settings-billing,
+  .notification,
+  .connectedServices {
+    display: none;
+    width: 80%;
+
+    .settings-container-title {
+      width: 100%;
+      padding-bottom: 1rem;
+      h2 {
+        font-size: 2rem;
       }
     }
   }

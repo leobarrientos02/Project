@@ -6560,6 +6560,29 @@ ul {
   text-decoration: underline;
 }
 
+.settings .settings-password,
+.settings .settings-billing,
+.settings .notification,
+.settings .connectedServices {
+  display: none;
+  width: 80%;
+}
+
+.settings .settings-password .settings-container-title,
+.settings .settings-billing .settings-container-title,
+.settings .notification .settings-container-title,
+.settings .connectedServices .settings-container-title {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.settings .settings-password .settings-container-title h2,
+.settings .settings-billing .settings-container-title h2,
+.settings .notification .settings-container-title h2,
+.settings .connectedServices .settings-container-title h2 {
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 754px) {
   .settings {
     margin-top: 3.8rem;

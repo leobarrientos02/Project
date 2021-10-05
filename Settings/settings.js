@@ -7,6 +7,13 @@ const connectedServices = document.getElementById("connectedServices");
 
 const settingsTitle = document.getElementById("settings-title");
 
+//All cards
+const accountInfo = document.querySelector(".settings-container");
+const passwordCard = document.querySelector(".settings-password");
+const billingCard = document.querySelector(".settings-billing");
+const notificationCard = document.querySelector(".notification");
+const servicesCard = document.querySelector(".connectedServices");
+
 myInfo.addEventListener("click", () => {
   myInfo.style.background = "lightgrey";
   passwordSecurity.style.background = "transparent";
@@ -14,7 +21,15 @@ myInfo.addEventListener("click", () => {
   notification.style.background = "transparent";
   connectedServices.style.background = "transparent";
 
-  settingsTitle.innerText = "My Info";
+  // Hide other cards
+  //accountInfo.style.display = "none";
+  passwordCard.style.display = "none";
+  billingCard.style.display = "none";
+  notificationCard.style.display = "none";
+  servicesCard.style.display = "none";
+
+  //Display Card
+  accountInfo.style.display = "inline-block";
 });
 
 passwordSecurity.addEventListener("click", () => {
@@ -24,18 +39,35 @@ passwordSecurity.addEventListener("click", () => {
   notification.style.background = "transparent";
   connectedServices.style.background = "transparent";
 
-  settingsTitle.innerText = "Password & Security";
+  // Hide other cards
+  accountInfo.style.display = "none";
+  //passwordCard.style.display = "none";
+  billingCard.style.display = "none";
+  notificationCard.style.display = "none";
+  servicesCard.style.display = "none";
+
+  //Display Card
+  passwordCard.style.display = "inline-block";
 });
 
 billingMethods.addEventListener("click", () => {
   myInfo.style.background = "transparent";
   passwordSecurity.style.background = "transparent";
   billingMethods.style.background = "lightgrey";
-  notification.style.background = "transparent";
+  notificationCard.style.background = "transparent";
   connectedServices.style.background = "transparent";
 
-  settingsTitle.innerText = "Billing Methods";
+  // Hide other cards
+  accountInfo.style.display = "none";
+  passwordCard.style.display = "none";
+  //billingCard.style.display = "none";
+  notificationCard.style.display = "none";
+  servicesCard.style.display = "none";
+
+  //Display Card
+  billingCard.style.display = "inline-block";
 });
+
 notification.addEventListener("click", () => {
   myInfo.style.background = "transparent";
   passwordSecurity.style.background = "transparent";
@@ -43,8 +75,17 @@ notification.addEventListener("click", () => {
   notification.style.background = "lightgrey";
   connectedServices.style.background = "transparent";
 
-  settingsTitle.innerText = "Notification Settings";
+  // Hide other cards
+  accountInfo.style.display = "none";
+  passwordCard.style.display = "none";
+  billingCard.style.display = "none";
+  //notificationCard.style.display = "none";
+  servicesCard.style.display = "none";
+
+  //Display Card
+  notificationCard.style.display = "inline-block";
 });
+
 connectedServices.addEventListener("click", () => {
   myInfo.style.background = "transparent";
   passwordSecurity.style.background = "transparent";
@@ -52,5 +93,13 @@ connectedServices.addEventListener("click", () => {
   notification.style.background = "transparent";
   connectedServices.style.background = "lightgrey";
 
-  settingsTitle.innerText = "Connected Services";
+  // Hide other cards
+  accountInfo.style.display = "none";
+  passwordCard.style.display = "none";
+  billingCard.style.display = "none";
+  notificationCard.style.display = "none";
+  //servicesCard.style.display = "none";
+
+  //Display Card
+  servicesCard.style.display = "inline-block";
 });
