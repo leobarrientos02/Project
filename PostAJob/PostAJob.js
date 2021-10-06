@@ -39,19 +39,11 @@ option2.addEventListener("click", () => {
 continueBtn.addEventListener("click", () => {
   if (choosen === 1) {
     localStorage.setItem("TimePeriod", "Short Term");
-    window.location.href = "./GetJobDetail.html";
+    window.location.href = "./postTitle.html";
   } else if (choosen === 2) {
     localStorage.setItem("TimePeriod", "Long Term");
-    window.location.href = "./GetJobDetail.html";
+    window.location.href = "./postTitle.html";
   } else {
     localStorage.setItem("TimePeriod", null);
   }
-});
-
-const job_title = document.getElementById("job_title");
-const nextSkillsBtn = document.getElementById("nextSkills");
-
-job_title.addEventListener("input", () => {
-  var text = job_title.innerText;
-  console.log(text);
 });
