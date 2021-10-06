@@ -2492,6 +2492,7 @@ header {
   }
   .header-container {
     margin: 0;
+    padding: 0rem 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2500,9 +2501,9 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2515,14 +2516,18 @@ header {
   .header-container .burger .line1,
   .header-container .burger .line2,
   .header-container .burger .line3 {
-    width: 2rem;
+    width: 1.7rem;
     height: 0.3rem;
-    margin: 0.4rem;
+    margin: 0.3rem;
     border-radius: 5px;
     background: #054e97;
     pointer-events: none;
     -webkit-transition: 0.4s;
     transition: 0.4s;
+  }
+  .header-container .logo {
+    width: 40%;
+    text-align: end;
   }
   .header-container .logo h3 {
     font-size: 1.5rem;
@@ -2537,27 +2542,29 @@ header {
     display: none;
   }
   .header-container .login {
-    margin-left: 2.5rem;
+    margin-left: 0;
   }
   .header-container .login button {
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #797979;
     border: none;
     background: none;
-    margin: 0rem 0.5rem;
+    margin: 0;
   }
   .header-container .login button:hover {
-    color: #054e97;
+    color: #797979;
   }
   .header-container .login .sign-up-btn {
     padding: 0;
+    margin-left: 0.4rem;
     border-radius: 0;
     background: none;
     color: #797979;
   }
   .header-container .login .sign-up-btn:hover {
-    color: #054e97;
+    background: none;
+    color: #797979;
   }
   /*Pull Down Section ends */
   .categories {

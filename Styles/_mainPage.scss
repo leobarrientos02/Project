@@ -1545,10 +1545,11 @@ header {
   }
   .header-container {
     margin: 0;
+    padding: 0rem 1rem;
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     .burger {
       z-index: 2;
@@ -1557,9 +1558,9 @@ header {
       .line1,
       .line2,
       .line3 {
-        width: 2rem;
+        width: 1.7rem;
         height: 0.3rem;
-        margin: 0.4rem;
+        margin: 0.3rem;
         border-radius: 5px;
         background: $lightColor;
         pointer-events: none;
@@ -1567,6 +1568,8 @@ header {
       }
     }
     .logo {
+      width: 40%;
+      text-align: end;
       h3 {
         font-size: 1.5rem;
       }
@@ -1581,25 +1584,27 @@ header {
       display: none;
     }
     .login {
-      margin-left: 2.5rem;
+      margin-left: 0;
       button {
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 0.9rem;
         color: $darktext;
         border: none;
         background: none;
-        margin: 0rem 0.5rem;
+        margin: 0;
         &:hover {
-          color: $lightColor;
+          color: $darktext;
         }
       }
       .sign-up-btn {
         padding: 0;
+        margin-left: 0.4rem;
         border-radius: 0;
         background: none;
         color: $darktext;
         &:hover {
-          color: $lightColor;
+          background: none;
+          color: $darktext;
         }
       }
     }
