@@ -114,12 +114,14 @@ changePasswordIcon.addEventListener("click", () => {
   console.log("hello");
 });
 
+//Blocks Pay Now BUtton from being pressed
 const balance = document.getElementById("balance");
 const payBalance = document.getElementById("payBalance");
 
 if (balance.innerText === "0.00") {
   payBalance.style.cursor = "not-allowed";
   payBalance.style.background = "lightgrey";
+  payBalance.style.pointerEvents = "none";
 } else {
   payBalance.style.cursor = "pointer";
 }

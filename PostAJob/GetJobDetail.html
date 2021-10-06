@@ -188,8 +188,41 @@
 
     <!--Post A Job More Details-->
    
-    <div class="PostAJob">
+    <div class="postJob-detail">
+        <div class="detail-container">
+            <div class="detail-progress-section">
+                <div class="progressBar">
+                    <progress id="jobPostProgress" value="25" max="100"></progress>
+                    <ul>
+                        <li id="current">Title</li>
+                        <li>Skills</li>
+                        <li>Scope</li>
+                        <li>Location</li>
+                        <li>Budget</li>
+                    </ul>
+                </div>
+                <div class="title-card-intro">
+                    <h2>Let's start with a strong title.</h2>
+                    <p>A strong, detailed title would stand out to the right freelancers. It's the first thing they would see.</p>
+                </div>
+            </div>
+            <div class="detail-input-section">
+                <h3>Write a title for your job post</h3>
+                <input type="text" name="job_title" id="job_title" required placeholder="Write a title for your job post">
+                
+                <h4>Example titles</h4>
+                <ul>
+                    <li>Build a website for my local coffee shop business</li>
+                    <li>Logo Desingner needed to design a modern company logo.</li>
+                    <li>Computer Technician needed to build my custom gaming pc.</li>
+                </ul>
 
+                <div class="CancelOrNext">
+                    <button>Cancel</button>
+                    <button>Next: Skills</button>
+                </div>
+            </div>
+        </div>
     </div>
     <!--Post A Job End-->
 
@@ -242,7 +275,6 @@
     </div>
 </body>
 <script src="../SkillsContainer/AllSkills.js"></script>
-<script src="./PostAJob.js"></script>
 <script>
     var job = document.querySelector('.jobCard');
     var talent = document.querySelector('.talentCard');

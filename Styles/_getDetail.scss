@@ -1,0 +1,89 @@
+.postJob-detail {
+  margin-top: 4.5rem;
+  width: 100%;
+  background: whitesmoke;
+  padding: 2.5rem 10rem;
+
+  .detail-container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    border: 1.25px solid lightgrey;
+    border-radius: 15px;
+    background: white;
+
+    .detail-progress-section {
+      width: 50%;
+      height: 100%;
+      padding: 1.5rem;
+      background: $color1;
+      display: flex;
+      flex-direction: column;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      #current {
+        color: lightgreen;
+      }
+      .progressBar {
+        width: 100%;
+        progress {
+          border-radius: 10px;
+          width: 100%;
+          padding: 0;
+          border: none;
+          background: #104880;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+        }
+        progress::-webkit-progress-value {
+          background: lightgreen;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          height: 100%;
+          border: none;
+        }
+        progress::-moz-progress-bar {
+          background: lightgreen;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          height: 100%;
+          border: none;
+        }
+        ul {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 0.3rem;
+          li {
+            color: white;
+            font-size: 0.9rem;
+          }
+        }
+      }
+      .title-card-intro {
+        h2 {
+          padding: 6rem 0rem 1rem 0rem;
+          color: white;
+          font-size: 2.3rem;
+        }
+        p {
+          color: white;
+          font-size: 0.95rem;
+        }
+      }
+    }
+    .detail-input-section {
+      width: 50%;
+      height: 100%;
+      padding: 2rem;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+  }
+}

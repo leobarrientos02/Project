@@ -3976,6 +3976,7 @@ section .container .register .register-container button:hover {
             flex-direction: column;
   }
   section .container .login-container form input {
+    font-size: 1.2rem;
     margin: 1rem 0rem;
     border-radius: 5px;
     padding: 0.7rem;
@@ -7482,6 +7483,9 @@ ul {
     text-decoration: underline;
   }
   .settings #editForm input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     border: none;
     border: solid 1px #0a345e;
     border-radius: 15px;
@@ -7816,5 +7820,127 @@ ul {
   .PostAJob .PostAJobContainer .PostAJobCancel0rContinue #continue:hover {
     background: #0a345e;
   }
+}
+
+.postJob-detail {
+  margin-top: 4.5rem;
+  width: 100%;
+  background: whitesmoke;
+  padding: 2.5rem 10rem;
+}
+
+.postJob-detail .detail-container {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1.25px solid lightgrey;
+  border-radius: 15px;
+  background: white;
+}
+
+.postJob-detail .detail-container .detail-progress-section {
+  width: 50%;
+  height: 100%;
+  padding: 1.5rem;
+  background: #0a345e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.postJob-detail .detail-container .detail-progress-section #current {
+  color: lightgreen;
+}
+
+.postJob-detail .detail-container .detail-progress-section .progressBar {
+  width: 100%;
+}
+
+.postJob-detail .detail-container .detail-progress-section .progressBar progress {
+  border-radius: 10px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: #104880;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.postJob-detail .detail-container .detail-progress-section .progressBar progress::-webkit-progress-value {
+  background: lightgreen;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
+  border: none;
+}
+
+.postJob-detail .detail-container .detail-progress-section .progressBar progress::-moz-progress-bar {
+  background: lightgreen;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
+  border: none;
+}
+
+.postJob-detail .detail-container .detail-progress-section .progressBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 0.3rem;
+}
+
+.postJob-detail .detail-container .detail-progress-section .progressBar ul li {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.postJob-detail .detail-container .detail-progress-section .title-card-intro h2 {
+  padding: 6rem 0rem 1rem 0rem;
+  color: white;
+  font-size: 2.3rem;
+}
+
+.postJob-detail .detail-container .detail-progress-section .title-card-intro p {
+  color: white;
+  font-size: 0.95rem;
+}
+
+.postJob-detail .detail-container .detail-input-section {
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 /*# sourceMappingURL=style.css.map */

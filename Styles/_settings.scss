@@ -866,6 +866,9 @@ ul {
         text-decoration: underline;
       }
       input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
         border: none;
         border: solid 1px $color1;
         border-radius: 15px;
