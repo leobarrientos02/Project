@@ -209,7 +209,7 @@
             <div class="detail-input-section">
                 <h3>Write a title for your job post</h3>
                 <input type="text" name="job_title" id="job_title" required placeholder="Write a title for your job post">
-                
+                <span id="titleError"></span>
                 <h4>Example titles</h4>
                 <ul>
                     <li>Build a website for my local coffee shop business</li>
@@ -218,8 +218,8 @@
                 </ul>
 
                 <div class="CancelOrNext">
-                    <button>Cancel</button>
-                    <button>Next: Skills</button>
+                    <button id="cancel" onclick="location.href='./PostAJob.html'">Back</button>
+                    <button id="nextSkills">Next: Skills</button>
                 </div>
             </div>
         </div>
@@ -365,5 +365,45 @@
             searchIcon.style.opacity='1';
         }
     }
+</script>
+<script>
+    const job_title = document.getElementById('job_title'); 
+    const nextSkillsBtn = document.getElementById('nextSkills');
+    const titleNotification = document.getElementById('titleError');
+
+    const inputContainer1 = document.querySelector('.detail-input-section'); 
+
+    job_title.addEventListener('input',()=>{
+        if( document.getElementById('job_title').value !== ""){
+            nextSkillsBtn.style.background = '#054e97';
+            nextSkillsBtn.style.color = 'white';
+            nextSkillsBtn.style.border = '0.6px solid #054e97';
+            nextSkillsBtn.style.cursor = "pointer";
+            nextSkillsBtn.style.pointerEvents = 'visible';
+        }
+        else if( document.getElementById('job_title').value === ""){
+            nextSkillsBtn.style.background = 'lightgrey';
+            nextSkillsBtn.style.color = 'grey';
+            nextSkillsBtn.style.border = '0.6px solid grey';
+            nextSkillsBtn.style.pointerEvents = 'none';
+        }
+    })
+    nextSkillsBtn.addEventListener('click',()=>{
+
+        var jobTitleTemp = document.getElementById('job_title').value;
+        var titleValidate = countWords(jobTitleTemp);
+        if( titleValidate < 7 ){
+            titleNotification.innerText = "Please enter more details"
+        }
+        else{
+            localStorage.setItem("Job_Title", jobTitleTemp);
+            inputContainer1.style.display = 'none'
+        }
+    });
+    
+    function countWords(str) {
+        return str.trim().split(/\s+/).length;
+    }
+    
 </script>
 </html>

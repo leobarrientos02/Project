@@ -47,3 +47,11 @@ continueBtn.addEventListener("click", () => {
     localStorage.setItem("TimePeriod", null);
   }
 });
+
+const job_title = document.getElementById("job_title");
+const nextSkillsBtn = document.getElementById("nextSkills");
+
+job_title.addEventListener("input", () => {
+  var text = job_title.innerText;
+  console.log(text);
+});
