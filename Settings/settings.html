@@ -204,7 +204,7 @@
             <div class="settings-account-container">
                 <div class="settings-account-card">
                     <h3>Account</h3>
-                    <i class="fa fa-pencil" id="editAccountIcon" aria-hidden="true"></i>
+                    <i class="fa fa-pencil" onclick="openCard()" id="editAccountIcon" aria-hidden="true"></i>
                 </div>
                 <div class="settings-account-profile-image">
                     <img src="../Users/user.svg" alt="">
@@ -219,7 +219,7 @@
             <div class="settings-account-godMode">
                 <p>This is a <span id="accountType">Client</span> account.</p>
                 <button id="becomeFreelancer">Become Freelancer</button>
-                <button id="deleteAccount">Delete Account</button>
+                <button id="deleteAccount" onclick="openCard()">Delete Account</button>
             </div>
         </div>
 
@@ -231,7 +231,7 @@
             <div class="settings-password-container">
                 <div class="settings-password-card">
                     <h3>Password</h3>
-                    <i class="fa fa-pencil" onclick="openSearch()" id="changePasswordIcon" aria-hidden="true"></i>
+                    <i class="fa fa-pencil" onclick="openCard()" id="changePasswordIcon" aria-hidden="true"></i>
                 </div>
                 <div class="settings-password-card2">
                     <p>Use this section to view and edit your current password.</p>
@@ -265,17 +265,34 @@
                 </div>
             </div>
         </div>
-        <div id="myOverlay" class="overlay">
-            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-            <form id="editForm" >
-                <label for="password">Confirm Password</label>
-                <input type="password" name="password" id="password">
-                <input type="button" value="Continue">
-            </form>
-        </div>
         <div class="settings-billing">
             <div class="settings-container-title">
-                <h2 id="settings-title">Billing Methods</h2>
+                <h2 id="settings-title">Billing Methods & Payments</h2>
+            </div>
+            <div class="settings-balance-container">
+                <div class="settings-balance-card">
+                    <h3>Balance Due</h3>
+                </div>
+                <div class="settings-balance-card2">
+                    <p>Your balance due is <span>$</span><span id="balance">0.00</span></p>
+                    <button id="payBalance">Pay Now</button>
+                </div>
+            </div>
+            <div class="settings-billing-container">
+                <div class="settings-billing-card">
+                    <h3>Billing Methods</h3>
+                    <button>Add a New Billing Method</button>
+                </div>
+                <div class="settings-password-billing-option">
+                    <p>You have not set up any billing methods yet.</p>
+                    <span>Set up your billing methods so you'll be able to hire right away when you're ready.</span>
+                </div>
+                <div class="settings-password-billing-option">
+                    
+                </div>
+                <div class="settings-password-billing-option">
+                   
+                </div>
             </div>
         </div>
         <div class="notification">
@@ -288,7 +305,14 @@
                 <h2 id="settings-title">Connected Services</h2>
             </div>
         </div>
-
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeCard()" title="Close Overlay">×</span>
+            <form id="editForm" >
+                <label for="password">Confirm Password</label>
+                <input type="password" name="password" id="password">
+                <input type="button" id="continueBtn" value="Continue">
+            </form>
+        </div>
     </div>
     <div class="profileFooter">
         <div class="profile-links">
@@ -432,12 +456,12 @@
     }
 </script>
 <script>
-    function openSearch() {
+    function openCard() {
       document.getElementById("myOverlay").style.display = "block";
     }
     
-    function closeSearch() {
+    function closeCard() {
       document.getElementById("myOverlay").style.display = "none";
     }
-    </script>
+</script>
 </html>
