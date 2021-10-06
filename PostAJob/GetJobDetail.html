@@ -371,7 +371,6 @@
     const nextSkillsBtn = document.getElementById('nextSkills');
     const titleNotification = document.getElementById('titleError');
 
-    const inputContainer1 = document.querySelector('.detail-input-section'); 
 
     job_title.addEventListener('input',()=>{
         if( document.getElementById('job_title').value !== ""){
@@ -392,12 +391,11 @@
 
         var jobTitleTemp = document.getElementById('job_title').value;
         var titleValidate = countWords(jobTitleTemp);
-        if( titleValidate < 7 ){
+        if( titleValidate < 5 ){
             titleNotification.innerText = "Please enter more details"
         }
         else{
             localStorage.setItem("Job_Title", jobTitleTemp);
-            inputContainer1.style.display = 'none'
         }
     });
     
