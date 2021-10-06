@@ -34,7 +34,7 @@ ul {
   }
 
   .settings-container {
-    display: none;
+    display: inline-block;
     width: 80%;
 
     .settings-container-title {
@@ -399,7 +399,7 @@ ul {
   top: 0;
   left: 0;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .overlay .closebtn {
   position: absolute;
@@ -593,6 +593,303 @@ ul {
           }
         }
       }
+    }
+    .settings-password {
+      display: none;
+      width: 100%;
+      .settings-password-container {
+        background: white;
+        border-radius: 15px;
+        border: 1px solid lightgrey;
+        margin: 1rem 0rem;
+        p {
+          font-size: 0.9rem;
+          color: $darktext;
+        }
+        .settings-password-card {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding: 1rem;
+          background: white;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+          border-bottom: 1px solid lightgrey;
+          h3 {
+            font-size: 1.25rem;
+          }
+          i {
+            cursor: pointer;
+            color: $darktext;
+            padding: 0.6rem;
+            border-radius: 50%;
+            background: transparent;
+            border: 0.7px solid lightgrey;
+            &:hover {
+              background: rgb(226, 226, 226);
+            }
+          }
+        }
+        .settings-password-card2 {
+          width: 100%;
+          padding: 1.6rem;
+        }
+      }
+
+      // Password CSS
+      .settings-password-twoStep {
+        background: white;
+        border-radius: 15px;
+        border: 1px solid lightgrey;
+        margin: 1rem 0rem;
+        p {
+          font-size: 0.9rem;
+          color: $darktext;
+        }
+        .settings-password-twoStep-card {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+          padding: 1rem;
+          background: white;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+          border-bottom: 1px solid lightgrey;
+          h3 {
+            width: 100%;
+          }
+          p {
+            font-size: 0.9rem;
+            padding-top: 1rem;
+          }
+        }
+
+        .settings-password-twoStep-option {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 1rem;
+          border-bottom: 1px solid lightgrey;
+          h3 {
+            width: 100%;
+            text-align: start;
+            font-size: 1.1rem;
+          }
+          p {
+            width: 100%;
+            text-align: start;
+            padding-top: 1rem;
+          }
+          button {
+            align-self: flex-start;
+            width: 100%;
+            color: white;
+            cursor: pointer;
+            background: $lightColor;
+            border-radius: 15px;
+            border: none;
+            font-size: 1.1rem;
+            padding: 0.4rem 1rem;
+            margin-right: 0;
+            margin-top: 1rem;
+            &:hover {
+              background: $color1;
+            }
+          }
+        }
+      }
+    }
+
+    .settings-billing {
+      width: 100%;
+      display: none;
+      .settings-balance-container {
+        background: white;
+        border-radius: 15px;
+        border: 1px solid lightgrey;
+        margin: 1rem 0rem;
+        p {
+          font-size: 0.9rem;
+          color: $darktext;
+        }
+        .settings-balance-card {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding: 1rem;
+          background: white;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+          border-bottom: 1px solid lightgrey;
+          h3 {
+            font-size: 1.25rem;
+          }
+          i {
+            cursor: pointer;
+            color: $darktext;
+            padding: 0.6rem;
+            border-radius: 50%;
+            background: transparent;
+            border: 0.7px solid lightgrey;
+            &:hover {
+              background: rgb(226, 226, 226);
+            }
+          }
+        }
+        .settings-balance-card2 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+          padding: 1rem;
+
+          span {
+            width: 100%;
+            text-align: start;
+            color: black;
+            font-size: 1.2rem;
+          }
+          button {
+            width: 100%;
+            margin-top: 1rem;
+            color: white;
+            cursor: pointer;
+            background: $lightColor;
+            border-radius: 15px;
+            border: none;
+            font-size: 1.1rem;
+            padding: 0.4rem 1rem;
+            &:hover {
+              background: $color1;
+            }
+          }
+        }
+      }
+
+      .settings-billing-container {
+        background: white;
+        border-radius: 15px;
+        border: 1px solid lightgrey;
+        margin: 1rem 0rem;
+        p {
+          font-size: 0.9rem;
+          color: $darktext;
+        }
+        .settings-billing-card {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+          padding: 1rem;
+          background: white;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+          border-bottom: 1px solid lightgrey;
+          h3 {
+            font-size: 1.2rem;
+          }
+          button {
+            margin-top: 1rem;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 15px;
+            border: none;
+            background: transparent;
+            font-size: 1rem;
+            color: $color1;
+            padding: 0.6rem 1rem;
+            border: 1px solid lightgrey;
+            &:hover {
+              transition: all 0.2s ease;
+              background: rgb(233, 233, 233);
+            }
+          }
+        }
+
+        .settings-billing-option {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 1rem;
+          p {
+            color: black;
+            font-size: 1rem;
+            padding-bottom: 0.5rem;
+          }
+          span {
+            color: $darktext;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+    .overlay {
+      height: 100%;
+      width: 100%;
+      display: none;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+      cursor: pointer;
+      color: white;
+    }
+    #editForm {
+      position: fixed;
+      top: 25%;
+      left: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      height: fit-content;
+      padding: 2rem;
+      background: white;
+      border-radius: 15px;
+      label {
+        font-size: 1.5rem;
+        color: $color1;
+        text-decoration: underline;
+      }
+      input {
+        border: none;
+        border: solid 1px $color1;
+        border-radius: 15px;
+        width: 80%;
+        text-align: center;
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+      }
+      #continueBtn {
+        width: 70%;
+        color: white;
+        cursor: pointer;
+        background: $lightColor;
+        border-radius: 15px;
+        border: none;
+        font-size: 1.1rem;
+        padding: 0.4rem 1rem;
+        &:hover {
+          background: $color1;
+        }
+      }
+    }
+    .overlay .closebtn:hover {
+      color: #ccc;
     }
   }
 }
