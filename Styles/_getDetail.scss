@@ -37,6 +37,26 @@
           -moz-appearance: none;
           appearance: none;
         }
+        progress::-webkit-progress-bar {
+          border-radius: 10px;
+          width: 100%;
+          padding: 0;
+          border: none;
+          background: #104880;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+        }
+        progress::-moz-progress-bar {
+          border-radius: 10px;
+          width: 100%;
+          padding: 0;
+          border: none;
+          background: #104880;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+        }
         progress::-webkit-progress-value {
           background: lightgreen;
           border-top-left-radius: 10px;

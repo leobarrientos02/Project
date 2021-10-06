@@ -7882,6 +7882,28 @@ ul {
   appearance: none;
 }
 
+.postJob-detail .detail-container .detail-progress-section .progressBar progress::-webkit-progress-bar {
+  border-radius: 10px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: #104880;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.postJob-detail .detail-container .detail-progress-section .progressBar progress::-moz-progress-bar {
+  border-radius: 10px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: #104880;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .postJob-detail .detail-container .detail-progress-section .progressBar progress::-webkit-progress-value {
   background: lightgreen;
   border-top-left-radius: 10px;
