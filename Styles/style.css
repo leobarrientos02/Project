@@ -7671,14 +7671,15 @@ ul {
 
 @media screen and (max-width: 754px) {
   .PostAJob {
-    margin-top: 3.5rem;
+    margin-top: 3rem;
     width: 100%;
     background: whitesmoke;
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
   }
   .PostAJob .PostAJobContainer {
+    width: 100%;
     border: 1.25px solid lightgrey;
-    border-radius: 10px;
+    border-radius: 0;
     background: white;
   }
   .PostAJob .PostAJobContainer .PostAJobTitle {
@@ -7765,10 +7766,12 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0.25rem 2.5rem 2rem 2.5rem;
+    padding: 1rem;
   }
   .PostAJob .PostAJobContainer .PostAJobQuestion .options .optionCard .option1 h4,
   .PostAJob .PostAJobContainer .PostAJobQuestion .options .optionCard .option2 h4 {
+    width: 100%;
+    text-align: center;
     font-size: 1rem;
     padding: 1rem 0rem;
   }
@@ -8034,14 +8037,14 @@ ul {
 
 @media screen and (max-width: 754px) {
   .postJob-detail {
-    margin-top: 3.5rem;
+    margin-top: 3rem;
     width: 100%;
     background: whitesmoke;
     padding: 2.5rem 0rem;
   }
   .postJob-detail .detail-container {
     width: 100%;
-    height: 95vh;
+    height: 90vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
