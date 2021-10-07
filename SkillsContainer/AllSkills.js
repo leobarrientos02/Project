@@ -204,6 +204,43 @@ const DesignCreativeProjects = [
   "T-Shirts & Merchandise Design Services",
   "Web & Mobile Design Services",
 ];
+const DesignCreativeSpecialy = [
+  "Brand Identity Design",
+  "Logo Design",
+  "Singing",
+  "Acting",
+  "Voice Talent",
+  "Visual Effects",
+  "2D Animation",
+  "Video Editing",
+  "Video Production",
+  "Motion Graphics",
+  "Videography",
+  "3D Animation",
+  "Packaging Design",
+  "Art Direction",
+  "Image Editing",
+  "Presentation Design",
+  "Creative Direction",
+  "Editorial Design",
+  "Cartoons & Comics",
+  "Pattern Design",
+  "Fine Art",
+  "Caricatures & Portraits",
+  "Illustration",
+  "Musician",
+  "Music Composition",
+  "Music Production",
+  "Audio Editing",
+  "Audio Production",
+  "Fashion Design",
+  "Jewelry Design",
+  "Product & Industrial Design",
+  "AR/VR Design",
+  "Game Art",
+  "Product Photography",
+  "Local Photography ",
+];
 const GraphicsDesign = [
   "Logo Design",
   "Brand Style Guides",
@@ -1049,6 +1086,22 @@ const AllEngineerArchitecture = EngineerArchitecturePopular.concat(
   .concat(EngineerArchitectureCrossFunctional)
   .concat(EngineerArchitectureProjects);
 
+//All Categories
+const AllCategories = [
+  "Accounting & Consulting",
+  "Admin Support",
+  "Customer Service",
+  "Data Science & Analytics",
+  "Design & Creative",
+  "Engineering & Architecture",
+  "IT & Networking",
+  "Legal",
+  "Sales & Marketing",
+  "Translation",
+  "Web, Mobile & Software Dev",
+  "Writing",
+];
+
 //ALL SKILLS
 const AllSkills = AllDevelopmentIT.concat(AllCreativeDesign)
   .concat(AllSalesMarketing)
@@ -1057,7 +1110,19 @@ const AllSkills = AllDevelopmentIT.concat(AllCreativeDesign)
   .concat(AllFinanceAccounting)
   .concat(AllLegal)
   .concat(AllHRTraining)
-  .concat(AllEngineerArchitecture);
+  .concat(AllEngineerArchitecture)
+  .concat(WritingSpecialty)
+  .concat(WebMobileSoftwareSpecialty)
+  .concat(TranslationSpecialty)
+  .concat(SalesMarketingSpecialty)
+  .concat(LegalSpecialty)
+  .concat(ITNetworkingSpecialty)
+  .concat(EngineeringArchitectureSpeciality)
+  .concat(DesignCreativeSpecialty)
+  .concat(DataScienceAnalyticsSpecialty)
+  .concat(CustomerServiceSpecialty)
+  .concat(AdminSupportSpecialty)
+  .concat(AccountingConsultingSpecialty);
 
 //Removing all duplicates
 let AllSkills2 = [];
