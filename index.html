@@ -22,7 +22,7 @@
     <div class="mobile-nav">
         <div class="mobile-nav-content">
             <div class="mobile-nav-searchBar">
-                <input type="search" name="search" id="search">
+                <input type="search" list="allskills" autocomplete="off" name="search" id="search">
                 <input type="button" value="Search" id="submit">
             </div>
             <div class="mobile-nav-links">
@@ -217,7 +217,9 @@
                 </ul>
             </div>
             <div class="searchBar">
-                <input type="search" name="search" id="search">
+                <input type="search" list="allskills" autocomplete="off" name="search" id="search">
+                <!--DataList-->
+                <datalist id="allskills"></datalist>
                 <input type="button" value="Search" id="submit">
             </div>
             <div class="login">
@@ -933,6 +935,7 @@
         </div>
     </div>
 </body>
+<script src="./SkillsContainer/searchMainPage.js"></script>
 <script src="./js/mainPage.js"></script>
 <!--Toggle the nav button-->
 <script>

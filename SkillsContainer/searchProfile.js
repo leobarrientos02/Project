@@ -1086,43 +1086,6 @@ const AllEngineerArchitecture = EngineerArchitecturePopular.concat(
   .concat(EngineerArchitectureCrossFunctional)
   .concat(EngineerArchitectureProjects);
 
-const specialtyContainer = document.querySelector(".specialtyContainer");
-
-const SpecialtyUL1 = document.createElement("ul");
-SpecialtyUL1.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL2 = document.createElement("ul");
-SpecialtyUL2.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL3 = document.createElement("ul");
-SpecialtyUL3.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL4 = document.createElement("ul");
-SpecialtyUL4.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL5 = document.createElement("ul");
-SpecialtyUL5.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL6 = document.createElement("ul");
-SpecialtyUL6.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL7 = document.createElement("ul");
-SpecialtyUL7.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL8 = document.createElement("ul");
-SpecialtyUL8.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL9 = document.createElement("ul");
-SpecialtyUL9.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL10 = document.createElement("ul");
-SpecialtyUL10.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL11 = document.createElement("ul");
-SpecialtyUL11.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL12 = document.createElement("ul");
-SpecialtyUL12.classList.add("SkillsUnderCategory");
 //"Accounting & Consulting'
 const AccountingConsultingSpecialty = [
   "Business Analysis",
@@ -1138,15 +1101,7 @@ const AccountingConsultingSpecialty = [
   "Financial Management/CFO",
   "Financial Analysis & Modeling",
 ];
-for (let i = 0; i < AccountingConsultingSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
 
-  specialtyPill.innerHTML = AccountingConsultingSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  SpecialtyUL1.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL1);
-}
 //"Admin Support"
 const AdminSupportSpecialty = [
   "Virtual/Administrative Assistance",
@@ -1156,25 +1111,10 @@ const AdminSupportSpecialty = [
   "Order Processing",
   "Online Research",
 ];
-for (let i = 0; i < AdminSupportSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = AdminSupportSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  SpecialtyUL2.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL2);
-}
+
 //"Customer Service"
 const CustomerServiceSpecialty = ["Customer Service", "Tech Support "];
-for (let i = 0; i < CustomerServiceSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = CustomerServiceSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
 
-  SpecialtyUL3.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL3);
-}
 //"Data Science & Analytics"
 const DataScienceAnalyticsSpecialty = [
   "Data Mining",
@@ -1189,14 +1129,7 @@ const DataScienceAnalyticsSpecialty = [
   "Experimentation & Testing",
   "A/B Testing",
 ];
-for (let i = 0; i < DataScienceAnalyticsSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = DataScienceAnalyticsSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  SpecialtyUL4.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL4);
-}
+
 //"Design & Creative",
 const DesignCreativeSpecialty = [
   "Brand Identity Design",
@@ -1235,14 +1168,7 @@ const DesignCreativeSpecialty = [
   "Product Photography",
   "Local Photography ",
 ];
-for (let i = 0; i < DesignCreativeSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = DesignCreativeSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  SpecialtyUL5.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL5);
-}
+
 //"Engineering & Architecture
 const EngineeringArchitectureSpeciality = [
   "Structural Engineering",
@@ -1267,14 +1193,7 @@ const EngineeringArchitectureSpeciality = [
   "Logistics & Supply Chain Management",
   "Sourcing & Procurement",
 ];
-for (let i = 0; i < EngineeringArchitectureSpeciality.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = EngineeringArchitectureSpeciality[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  SpecialtyUL6.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL6);
-}
+
 //"IT & Networking"
 const ITNetworkingSpecialty = [
   "Network Security",
@@ -1290,14 +1209,7 @@ const ITNetworkingSpecialty = [
   "Systems Administration",
   "Network Administration",
 ];
-for (let i = 0; i < ITNetworkingSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = ITNetworkingSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  SpecialtyUL7.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL7);
-}
+
 //"Legal"
 const LegalSpecialty = [
   "Business & Corporate Law",
@@ -1311,14 +1223,7 @@ const LegalSpecialty = [
   "Intellectual Property Law",
   "Paralegal",
 ];
-for (let i = 0; i < LegalSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = LegalSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  SpecialtyUL8.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL8);
-}
+
 //"Sales & Marketing"
 const SalesMarketingSpecialty = [
   "Social Media Strategy",
@@ -1339,14 +1244,7 @@ const SalesMarketingSpecialty = [
   "Lead Generation",
   "Sales & Business Development",
 ];
-for (let i = 0; i < SalesMarketingSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = SalesMarketingSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  SpecialtyUL9.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL9);
-}
+
 //"Translation"
 const TranslationSpecialty = [
   "Legal Translation",
@@ -1356,14 +1254,7 @@ const TranslationSpecialty = [
   "Language Localization",
   "Medical Translation",
 ];
-for (let i = 0; i < TranslationSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = TranslationSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  SpecialtyUL10.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL10);
-}
+
 //"Web, Mobile & Software Dev"
 const WebMobileSoftwareSpecialty = [
   "Ecommerce Development",
@@ -1391,14 +1282,7 @@ const WebMobileSoftwareSpecialty = [
   "CMS Development",
   "Game Development",
 ];
-for (let i = 0; i < WebMobileSoftwareSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = WebMobileSoftwareSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  SpecialtyUL11.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL11);
-}
+
 //"Writing"
 const WritingSpecialty = [
   "Editing & Proofreading",
@@ -1413,132 +1297,6 @@ const WritingSpecialty = [
   "Content Writing",
   "Copywriting",
 ];
-for (let i = 0; i < WritingSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = WritingSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  SpecialtyUL12.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL12);
-}
-
-var selectedCategorySpan = document.getElementById("selectedCategory");
-SpecialtyUL1.style.display = "flex";
-SpecialtyUL2.style.display = "none";
-SpecialtyUL3.style.display = "none";
-SpecialtyUL4.style.display = "none";
-SpecialtyUL5.style.display = "none";
-SpecialtyUL6.style.display = "none";
-SpecialtyUL7.style.display = "none";
-SpecialtyUL8.style.display = "none";
-SpecialtyUL9.style.display = "none";
-SpecialtyUL10.style.display = "none";
-SpecialtyUL11.style.display = "none";
-SpecialtyUL12.style.display = "none";
-
-const e = document.getElementById("categoryID");
-e.addEventListener("input", () => {
-  var value = e.options[e.selectedIndex].value;
-  var text = e.options[e.selectedIndex].text;
-  selectedCategorySpan.innerText =
-    document.getElementById("categoryID").selectedOptions[0].text;
-
-  if (selectedCategorySpan.innerText.localeCompare("Writing") === 0) {
-    SpecialtyUL1.style.display = "none";
-    SpecialtyUL12.style.display = "flex";
-  } else {
-    SpecialtyUL12.style.display = "none";
-  }
-  if (
-    selectedCategorySpan.innerText.localeCompare(
-      "Web, Mobile & Software Dev"
-    ) === 0
-  ) {
-    SpecialtyUL11.style.display = "flex";
-    SpecialtyUL1.style.display = "none";
-  } else {
-    SpecialtyUL11.style.display = "none";
-  }
-
-  if (selectedCategorySpan.innerText.localeCompare("Admin Support") === 0) {
-    SpecialtyUL2.style.display = "flex";
-    SpecialtyUL1.style.display = "none";
-  } else {
-    SpecialtyUL2.style.display = "none";
-  }
-
-  if (selectedCategorySpan.innerText.localeCompare("Customer Service") === 0) {
-    SpecialtyUL3.style.display = "flex";
-    SpecialtyUL1.style.display = "none";
-  } else {
-    SpecialtyUL3.style.display = "none";
-  }
-
-  if (
-    selectedCategorySpan.innerText.localeCompare("Data Science & Analytics") ===
-    0
-  ) {
-    SpecialtyUL4.style.display = "flex";
-    SpecialtyUL1.style.display = "none";
-  } else {
-    SpecialtyUL4.style.display = "none";
-  }
-
-  if (selectedCategorySpan.innerText.localeCompare("Design & Creative") === 0) {
-    SpecialtyUL5.style.display = "flex";
-    SpecialtyUL1.style.display = "none";
-  } else {
-    SpecialtyUL5.style.display = "none";
-  }
-
-  if (
-    selectedCategorySpan.innerText.localeCompare(
-      "Engineering & Architecture"
-    ) === 0
-  ) {
-    SpecialtyUL6.style.display = "flex";
-    SpecialtyUL1.style.display = "none";
-  } else {
-    SpecialtyUL6.style.display = "none";
-  }
-
-  if (selectedCategorySpan.innerText.localeCompare("IT & Networking") === 0) {
-    SpecialtyUL7.style.display = "flex";
-    SpecialtyUL1.style.display = "none";
-  } else {
-    SpecialtyUL7.style.display = "none";
-  }
-
-  if (selectedCategorySpan.innerText.localeCompare("Legal") === 0) {
-    SpecialtyUL8.style.display = "flex";
-    SpecialtyUL1.style.display = "none";
-  } else {
-    SpecialtyUL8.style.display = "none";
-  }
-
-  if (selectedCategorySpan.innerText.localeCompare("Sales & Marketing") === 0) {
-    SpecialtyUL9.style.display = "flex";
-    SpecialtyUL1.style.display = "none";
-  } else {
-    SpecialtyUL9.style.display = "none";
-  }
-
-  if (selectedCategorySpan.innerText.localeCompare("Translation") === 0) {
-    SpecialtyUL10.style.display = "flex";
-    SpecialtyUL1.style.display = "none";
-  } else {
-    SpecialtyUL10.style.display = "none";
-  }
-
-  if (
-    selectedCategorySpan.innerText.localeCompare("Accounting & Consulting") ===
-    0
-  ) {
-    SpecialtyUL1.style.display = "flex";
-  } else {
-    SpecialtyUL1.style.display = "none";
-  }
-});
 
 //All Specialty
 const AllSpecialty = WritingSpecialty.concat(WebMobileSoftwareSpecialty)
@@ -1599,214 +1357,15 @@ AllSkills.forEach((c) => {
   }
 });
 
-//Search AutoComplete
-function autocomplete(inp, arr) {
-  /*the autocomplete function takes two arguments,
-  the text field element and an array of possible autocompleted values:*/
-  var currentFocus;
-  /*execute a function when someone writes in the text field:*/
-  inp.addEventListener("input", function (e) {
-    var a,
-      b,
-      i,
-      val = this.value;
-    /*close any already open lists of autocompleted values*/
-    closeAllLists();
-    if (!val) {
-      return false;
-    }
-    currentFocus = -1;
-    /*create a DIV element that will contain the items (values):*/
-    a = document.createElement("DIV");
-    a.setAttribute("id", this.id + "autocomplete-list");
-    a.setAttribute("class", "autocomplete-items");
-    /*append the DIV element as a child of the autocomplete container:*/
-    this.parentNode.appendChild(a);
-    /*for each item in the array...*/
-    for (i = 0; i < arr.length; i++) {
-      /*check if the item starts with the same letters as the text field value:*/
-      if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-        /*create a DIV element for each matching element:*/
-        b = document.createElement("DIV");
-        /*make the matching letters bold:*/
-        b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-        b.innerHTML += arr[i].substr(val.length);
-        /*insert a input field that will hold the current array item's value:*/
-        b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-        /*execute a function when someone clicks on the item value (DIV element):*/
-        b.addEventListener("click", function (e) {
-          /*insert the value for the autocomplete text field:*/
-          inp.value = this.getElementsByTagName("input")[0].value;
-          /*close the list of autocompleted values,
-              (or any other open lists of autocompleted values:*/
-          closeAllLists();
-        });
-        a.appendChild(b);
-      }
-    }
-  });
-  /*execute a function presses a key on the keyboard:*/
-  inp.addEventListener("keydown", function (e) {
-    var x = document.getElementById(this.id + "autocomplete-list");
-    if (x) x = x.getElementsByTagName("div");
-    if (e.keyCode == 40) {
-      /*If the arrow DOWN key is pressed,
-        increase the currentFocus variable:*/
-      currentFocus++;
-      /*and and make the current item more visible:*/
-      addActive(x);
-    } else if (e.keyCode == 38) {
-      //up
-      /*If the arrow UP key is pressed,
-        decrease the currentFocus variable:*/
-      currentFocus--;
-      /*and and make the current item more visible:*/
-      addActive(x);
-    } else if (e.keyCode == 13) {
-      /*If the ENTER key is pressed, prevent the form from being submitted,*/
-      e.preventDefault();
-      if (currentFocus > -1) {
-        /*and simulate a click on the "active" item:*/
-        if (x) x[currentFocus].click();
-      }
-    }
-  });
-  function addActive(x) {
-    /*a function to classify an item as "active":*/
-    if (!x) return false;
-    /*start by removing the "active" class on all items:*/
-    removeActive(x);
-    if (currentFocus >= x.length) currentFocus = 0;
-    if (currentFocus < 0) currentFocus = x.length - 1;
-    /*add class "autocomplete-active":*/
-    x[currentFocus].classList.add("autocomplete-active");
-  }
-  function removeActive(x) {
-    /*a function to remove the "active" class from all autocomplete items:*/
-    for (var i = 0; i < x.length; i++) {
-      x[i].classList.remove("autocomplete-active");
-    }
-  }
-  function closeAllLists(elmnt) {
-    /*close all autocomplete lists in the document,
-    except the one passed as an argument:*/
-    var x = document.getElementsByClassName("autocomplete-items");
-    for (var i = 0; i < x.length; i++) {
-      if (elmnt != x[i] && elmnt != inp) {
-        x[i].parentNode.removeChild(x[i]);
-      }
-    }
-  }
-  /*execute a function when someone clicks in the document:*/
-  document.addEventListener("click", function (e) {
-    closeAllLists(e.target);
-  });
-}
-//Search AutoComplete
-function autocomplete2(inp, arr) {
-  /*the autocomplete function takes two arguments,
-  the text field element and an array of possible autocompleted values:*/
-  var currentFocus;
-  /*execute a function when someone writes in the text field:*/
-  inp.addEventListener("input", function (e) {
-    var a,
-      b,
-      i,
-      val = this.value;
-    /*close any already open lists of autocompleted values*/
-    closeAllLists();
-    if (!val) {
-      return false;
-    }
-    currentFocus = -1;
-    /*create a DIV element that will contain the items (values):*/
-    a = document.createElement("DIV");
-    a.setAttribute("id", this.id + "autocomplete-list");
-    a.setAttribute("class", "autocomplete-items");
-    /*append the DIV element as a child of the autocomplete container:*/
-    this.parentNode.appendChild(a);
-    /*for each item in the array...*/
-    for (i = 0; i < arr.length; i++) {
-      /*check if the item starts with the same letters as the text field value:*/
-      if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-        /*create a DIV element for each matching element:*/
-        b = document.createElement("DIV");
-        /*make the matching letters bold:*/
-        b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-        b.innerHTML += arr[i].substr(val.length);
-        /*insert a input field that will hold the current array item's value:*/
-        b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-        /*execute a function when someone clicks on the item value (DIV element):*/
-        b.addEventListener("click", function (e) {
-          /*insert the value for the autocomplete text field:*/
-          inp.value = this.getElementsByTagName("input")[0].value;
-          /*close the list of autocompleted values,
-              (or any other open lists of autocompleted values:*/
-          closeAllLists();
-        });
-        a.appendChild(b);
-      }
-    }
-  });
-  /*execute a function presses a key on the keyboard:*/
-  inp.addEventListener("keydown", function (e) {
-    var x = document.getElementById(this.id + "autocomplete-list");
-    if (x) x = x.getElementsByTagName("div");
-    if (e.keyCode == 40) {
-      /*If the arrow DOWN key is pressed,
-        increase the currentFocus variable:*/
-      currentFocus++;
-      /*and and make the current item more visible:*/
-      addActive(x);
-    } else if (e.keyCode == 38) {
-      //up
-      /*If the arrow UP key is pressed,
-        decrease the currentFocus variable:*/
-      currentFocus--;
-      /*and and make the current item more visible:*/
-      addActive(x);
-    } else if (e.keyCode == 13) {
-      /*If the ENTER key is pressed, prevent the form from being submitted,*/
-      e.preventDefault();
-      if (currentFocus > -1) {
-        /*and simulate a click on the "active" item:*/
-        if (x) x[currentFocus].click();
-      }
-    }
-  });
-  function addActive(x) {
-    /*a function to classify an item as "active":*/
-    if (!x) return false;
-    /*start by removing the "active" class on all items:*/
-    removeActive(x);
-    if (currentFocus >= x.length) currentFocus = 0;
-    if (currentFocus < 0) currentFocus = x.length - 1;
-    /*add class "autocomplete-active":*/
-    x[currentFocus].classList.add("autocomplete-active");
-  }
-  function removeActive(x) {
-    /*a function to remove the "active" class from all autocomplete items:*/
-    for (var i = 0; i < x.length; i++) {
-      x[i].classList.remove("autocomplete-active");
-    }
-  }
-  function closeAllLists(elmnt) {
-    /*close all autocomplete lists in the document,
-    except the one passed as an argument:*/
-    var x = document.getElementsByClassName("autocomplete-items");
-    for (var i = 0; i < x.length; i++) {
-      if (elmnt != x[i] && elmnt != inp) {
-        x[i].parentNode.removeChild(x[i]);
-      }
-    }
-  }
-  /*execute a function when someone clicks in the document:*/
-  document.addEventListener("click", function (e) {
-    closeAllLists(e.target);
-  });
-}
+const AllSkillsDatalist = document.getElementById("allskills");
 
-autocomplete(document.getElementById("searchMAIN"), AllSkills2);
+for (let i = 0; i < AllSkills2.length; i++) {
+  var option = document.createElement("option");
+
+  option.value = AllSkills2[i];
+
+  AllSkillsDatalist.appendChild(option);
+}
 
 const mobileSearchCard = document.querySelector(".mobileSearchCard");
 const searchIcon = document.getElementById("mobileSearch");
@@ -1823,13 +1382,3 @@ exitSearch.addEventListener("click", () => {
   navIcon.style.opacity = "1";
   exitSearch.style.display = "none";
 });
-
-const AllSkillsDatalist = document.getElementById("allskills");
-
-for (let i = 0; i < AllSkills2.length; i++) {
-  var option = document.createElement("option");
-
-  option.value = AllSkills2[i];
-
-  AllSkillsDatalist.appendChild(option);
-}
