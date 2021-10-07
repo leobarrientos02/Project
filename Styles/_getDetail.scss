@@ -1,3 +1,6 @@
+#choosenSkill {
+  display: flex;
+}
 .postJob-detail {
   margin-top: 4.5rem;
   width: 100%;
@@ -241,7 +244,7 @@
           margin-bottom: 1rem;
           width: fit-content;
           font-size: 0.8rem;
-          background: $lightColor;
+          background: rgb(127, 214, 127);
           color: white;
           padding: 0.5rem;
           border-radius: 10px;
@@ -408,7 +411,7 @@
             background: rgb(235, 235, 235);
           }
         }
-        #nextSkills {
+        #nextScope {
           margin-left: 1rem;
           color: $color1;
           font-size: 1rem;
@@ -490,8 +493,8 @@
           margin: 0rem 0.5rem 1rem 0rem;
           width: fit-content;
           font-size: 0.8rem;
-          background: $lightColor;
-          color: white;
+          background: rgb(134, 226, 134);
+          color: black;
           padding: 0.5rem;
           border-radius: 10px;
           border: none;
@@ -499,6 +502,9 @@
           i {
             margin-left: 0.2rem;
             font-size: 0.5rem;
+          }
+          &:hover {
+            background: rgb(123, 207, 123);
           }
         }
       }
@@ -848,32 +854,32 @@
             color: $darktext;
           }
           input {
+            border-radius: 8px;
             border: none;
           }
         }
 
         // Selected Skills
         .selectedSkills {
-          padding: 1rem 0rem;
           width: 100%;
           ul {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
             list-style: none;
+            display: flexbox;
+            flex-direction: row;
+            flex-wrap: wrap;
             li {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              margin: 0rem 0.5rem 1rem 0rem;
               width: fit-content;
               font-size: 0.8rem;
-              background: $color1;
+              background: $lightColor;
               color: white;
-              padding: 0.4rem 1rem;
-              border-radius: 15px;
-              border: 0.6px solid gray;
+              padding: 0.5rem;
+              border-radius: 10px;
+              border: none;
               cursor: pointer;
-            }
-            i {
-              margin-left: 0.5rem;
-              font-size: 0.5rem;
             }
           }
         }
@@ -892,6 +898,7 @@
           margin-left: 0.5rem;
           color: $lightColor;
         }
+
         .SkillsUnderCategory {
           list-style: none;
           display: flex;
@@ -901,7 +908,7 @@
             margin: 0rem 0.5rem 1rem 0rem;
             width: fit-content;
             font-size: 0.8rem;
-            background: $lightColor;
+            background: rgb(127, 214, 127);
             color: white;
             padding: 0.5rem;
             border-radius: 10px;

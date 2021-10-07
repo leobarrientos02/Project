@@ -7825,6 +7825,12 @@ ul {
   }
 }
 
+#choosenSkill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .postJob-detail {
   margin-top: 4.5rem;
   width: 100%;
@@ -8155,7 +8161,7 @@ ul {
   width: -moz-fit-content;
   width: fit-content;
   font-size: 0.8rem;
-  background: #054e97;
+  background: #7fd67f;
   color: white;
   padding: 0.5rem;
   border-radius: 10px;
@@ -8378,7 +8384,7 @@ ul {
   background: #ebebeb;
 }
 
-.postJob-detail-skills .detail-skills-container .detail-input-section .CancelOrNext #nextSkills {
+.postJob-detail-skills .detail-skills-container .detail-input-section .CancelOrNext #nextScope {
   margin-left: 1rem;
   color: #0a345e;
   font-size: 1rem;
@@ -8489,8 +8495,8 @@ ul {
   width: -moz-fit-content;
   width: fit-content;
   font-size: 0.8rem;
-  background: #054e97;
-  color: white;
+  background: #86e286;
+  color: black;
   padding: 0.5rem;
   border-radius: 10px;
   border: none;
@@ -8500,6 +8506,10 @@ ul {
 .postJob-detail-skills .detail-skills-container .detail-input-section .SkillsUnderCategory li i {
   margin-left: 0.2rem;
   font-size: 0.5rem;
+}
+
+.postJob-detail-skills .detail-skills-container .detail-input-section .SkillsUnderCategory li:hover {
+  background: #7bcf7b;
 }
 
 @media screen and (max-width: 754px) {
@@ -8918,13 +8928,23 @@ ul {
     color: #797979;
   }
   .postJob-detail-skills .detail-skills-container .detail-input-section .skillSearch input {
+    border-radius: 8px;
     border: none;
   }
   .postJob-detail-skills .detail-skills-container .detail-input-section .selectedSkills {
-    padding: 1rem 0rem;
     width: 100%;
   }
   .postJob-detail-skills .detail-skills-container .detail-input-section .selectedSkills ul {
+    list-style: none;
+    display: flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .postJob-detail-skills .detail-skills-container .detail-input-section .selectedSkills ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8932,24 +8952,20 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 100%;
-    list-style: none;
-  }
-  .postJob-detail-skills .detail-skills-container .detail-input-section .selectedSkills ul li {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0rem 0.5rem 1rem 0rem;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     font-size: 0.8rem;
-    background: #0a345e;
+    background: #054e97;
     color: white;
-    padding: 0.4rem 1rem;
-    border-radius: 15px;
-    border: 0.6px solid gray;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
     cursor: pointer;
-  }
-  .postJob-detail-skills .detail-skills-container .detail-input-section .selectedSkills ul i {
-    margin-left: 0.5rem;
-    font-size: 0.5rem;
   }
   .postJob-detail-skills .detail-skills-container .detail-input-section select {
     width: 100%;
@@ -8984,7 +9000,7 @@ ul {
     width: -moz-fit-content;
     width: fit-content;
     font-size: 0.8rem;
-    background: #054e97;
+    background: #7fd67f;
     color: white;
     padding: 0.5rem;
     border-radius: 10px;

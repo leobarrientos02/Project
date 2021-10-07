@@ -1144,6 +1144,7 @@ for (let i = 0; i < AccountingConsultingSpecialty.length; i++) {
   specialtyPill.innerHTML = AccountingConsultingSpecialty[i].concat(
     "<i class='fa fa-plus'></i>"
   );
+  specialtyPill.setAttribute("id", `skillPill${[i]}`);
   SpecialtyUL1.appendChild(specialtyPill);
   specialtyContainer.appendChild(SpecialtyUL1);
 }
@@ -1161,6 +1162,7 @@ for (let i = 0; i < AdminSupportSpecialty.length; i++) {
   specialtyPill.innerHTML = AdminSupportSpecialty[i].concat(
     "<i class='fa fa-plus'></i>"
   );
+  specialtyPill.setAttribute("id", "skillPill");
   SpecialtyUL2.appendChild(specialtyPill);
   specialtyContainer.appendChild(SpecialtyUL2);
 }
@@ -1171,7 +1173,7 @@ for (let i = 0; i < CustomerServiceSpecialty.length; i++) {
   specialtyPill.innerHTML = CustomerServiceSpecialty[i].concat(
     "<i class='fa fa-plus'></i>"
   );
-
+  specialtyPill.setAttribute("id", "skillPill");
   SpecialtyUL3.appendChild(specialtyPill);
   specialtyContainer.appendChild(SpecialtyUL3);
 }
@@ -1194,6 +1196,7 @@ for (let i = 0; i < DataScienceAnalyticsSpecialty.length; i++) {
   specialtyPill.innerHTML = DataScienceAnalyticsSpecialty[i].concat(
     "<i class='fa fa-plus'></i>"
   );
+  specialtyPill.setAttribute("id", "skillPill");
   SpecialtyUL4.appendChild(specialtyPill);
   specialtyContainer.appendChild(SpecialtyUL4);
 }
@@ -1240,6 +1243,7 @@ for (let i = 0; i < DesignCreativeSpecialty.length; i++) {
   specialtyPill.innerHTML = DesignCreativeSpecialty[i].concat(
     "<i class='fa fa-plus'></i>"
   );
+  specialtyPill.setAttribute("id", "skillPill");
   SpecialtyUL5.appendChild(specialtyPill);
   specialtyContainer.appendChild(SpecialtyUL5);
 }
@@ -1272,6 +1276,7 @@ for (let i = 0; i < EngineeringArchitectureSpeciality.length; i++) {
   specialtyPill.innerHTML = EngineeringArchitectureSpeciality[i].concat(
     "<i class='fa fa-plus'></i>"
   );
+  specialtyPill.setAttribute("id", "skillPill");
   SpecialtyUL6.appendChild(specialtyPill);
   specialtyContainer.appendChild(SpecialtyUL6);
 }
@@ -1295,6 +1300,7 @@ for (let i = 0; i < ITNetworkingSpecialty.length; i++) {
   specialtyPill.innerHTML = ITNetworkingSpecialty[i].concat(
     "<i class='fa fa-plus'></i>"
   );
+  specialtyPill.setAttribute("id", "skillPill");
   SpecialtyUL7.appendChild(specialtyPill);
   specialtyContainer.appendChild(SpecialtyUL7);
 }
@@ -1316,6 +1322,7 @@ for (let i = 0; i < LegalSpecialty.length; i++) {
   specialtyPill.innerHTML = LegalSpecialty[i].concat(
     "<i class='fa fa-plus'></i>"
   );
+  specialtyPill.setAttribute("id", "skillPill");
   SpecialtyUL8.appendChild(specialtyPill);
   specialtyContainer.appendChild(SpecialtyUL8);
 }
@@ -1344,6 +1351,7 @@ for (let i = 0; i < SalesMarketingSpecialty.length; i++) {
   specialtyPill.innerHTML = SalesMarketingSpecialty[i].concat(
     "<i class='fa fa-plus'></i>"
   );
+  specialtyPill.setAttribute("id", "skillPill");
   SpecialtyUL9.appendChild(specialtyPill);
   specialtyContainer.appendChild(SpecialtyUL9);
 }
@@ -1361,6 +1369,7 @@ for (let i = 0; i < TranslationSpecialty.length; i++) {
   specialtyPill.innerHTML = TranslationSpecialty[i].concat(
     "<i class='fa fa-plus'></i>"
   );
+  specialtyPill.setAttribute("id", "skillPill");
   SpecialtyUL10.appendChild(specialtyPill);
   specialtyContainer.appendChild(SpecialtyUL10);
 }
@@ -1396,6 +1405,7 @@ for (let i = 0; i < WebMobileSoftwareSpecialty.length; i++) {
   specialtyPill.innerHTML = WebMobileSoftwareSpecialty[i].concat(
     "<i class='fa fa-plus'></i>"
   );
+  specialtyPill.setAttribute("id", "skillPill");
   SpecialtyUL11.appendChild(specialtyPill);
   specialtyContainer.appendChild(SpecialtyUL11);
 }
@@ -1418,6 +1428,7 @@ for (let i = 0; i < WritingSpecialty.length; i++) {
   specialtyPill.innerHTML = WritingSpecialty[i].concat(
     "<i class='fa fa-plus'></i>"
   );
+  specialtyPill.setAttribute("id", "skillPill");
   SpecialtyUL12.appendChild(specialtyPill);
   specialtyContainer.appendChild(SpecialtyUL12);
 }
@@ -1624,3 +1635,52 @@ exitSearch.addEventListener("click", () => {
   navIcon.style.opacity = "1";
   exitSearch.style.display = "none";
 });
+
+const selectedSkillsContainer = document.querySelector(".selectedSkills");
+const selectedSkillsUL = document.createElement("ul");
+
+// One Skill
+const selectedLI0 = document.createElement("li");
+const skillPill0 = document.getElementById("skillPill0");
+
+selectedLI0.innerHTML = skillPill0.innerText.concat("  X");
+selectedSkillsUL.appendChild(selectedLI0);
+selectedSkillsContainer.appendChild(selectedSkillsUL);
+selectedLI0.style.display = "none";
+
+skillPill0.addEventListener("click", () => {
+  skillPill0.style.display = "none";
+  selectedLI0.style.display = "flex";
+});
+selectedLI0.addEventListener("click", () => {
+  selectedLI0.style.display = "none";
+  skillPill0.style.display = "flex";
+});
+// One SKill
+
+const selectedLI1 = document.createElement("li");
+const selectedLI2 = document.createElement("li");
+const selectedLI3 = document.createElement("li");
+const selectedLI4 = document.createElement("li");
+const selectedLI5 = document.createElement("li");
+const selectedLI6 = document.createElement("li");
+const selectedLI7 = document.createElement("li");
+const selectedLI8 = document.createElement("li");
+const selectedLI9 = document.createElement("li");
+const selectedLI10 = document.createElement("li");
+const selectedLI11 = document.createElement("li");
+
+const skillPill1 = document.getElementById("skillPill1");
+const skillPill2 = document.getElementById("skillPill2");
+const skillPill3 = document.getElementById("skillPill3");
+const skillPill4 = document.getElementById("skillPill4");
+const skillPill5 = document.getElementById("skillPill5");
+const skillPill6 = document.getElementById("skillPill6");
+const skillPill7 = document.getElementById("skillPill7");
+const skillPill8 = document.getElementById("skillPill8");
+const skillPill9 = document.getElementById("skillPill9");
+const skillPill10 = document.getElementById("skillPill10");
+const skillPill11 = document.getElementById("skillPill11");
+
+//console.log(skillPill);
+const nextScope = document.getElementById("nextScope");
