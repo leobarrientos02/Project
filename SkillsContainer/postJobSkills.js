@@ -1636,51 +1636,32 @@ exitSearch.addEventListener("click", () => {
   exitSearch.style.display = "none";
 });
 
-const selectedSkillsContainer = document.querySelector(".selectedSkills");
-const selectedSkillsUL = document.createElement("ul");
-
-// One Skill
-const selectedLI0 = document.createElement("li");
-const skillPill0 = document.getElementById("skillPill0");
-
-selectedLI0.innerHTML = skillPill0.innerText.concat("  X");
-selectedSkillsUL.appendChild(selectedLI0);
-selectedSkillsContainer.appendChild(selectedSkillsUL);
-selectedLI0.style.display = "none";
-
-skillPill0.addEventListener("click", () => {
-  skillPill0.style.display = "none";
-  selectedLI0.style.display = "flex";
-});
-selectedLI0.addEventListener("click", () => {
-  selectedLI0.style.display = "none";
-  skillPill0.style.display = "flex";
-});
-// One SKill
-
-const selectedLI1 = document.createElement("li");
-const selectedLI2 = document.createElement("li");
-const selectedLI3 = document.createElement("li");
-const selectedLI4 = document.createElement("li");
-const selectedLI5 = document.createElement("li");
-const selectedLI6 = document.createElement("li");
-const selectedLI7 = document.createElement("li");
-const selectedLI8 = document.createElement("li");
-const selectedLI9 = document.createElement("li");
-const selectedLI10 = document.createElement("li");
-const selectedLI11 = document.createElement("li");
-
-const skillPill1 = document.getElementById("skillPill1");
-const skillPill2 = document.getElementById("skillPill2");
-const skillPill3 = document.getElementById("skillPill3");
-const skillPill4 = document.getElementById("skillPill4");
-const skillPill5 = document.getElementById("skillPill5");
-const skillPill6 = document.getElementById("skillPill6");
-const skillPill7 = document.getElementById("skillPill7");
-const skillPill8 = document.getElementById("skillPill8");
-const skillPill9 = document.getElementById("skillPill9");
-const skillPill10 = document.getElementById("skillPill10");
-const skillPill11 = document.getElementById("skillPill11");
-
+//const selectedSkillsUL = document.getElementById("skillsUL");
+const skillForm = document.getElementById("selectedSkills");
+const enterSkill = document.getElementById("enterSkill");
 //console.log(skillPill);
+var skillPillCounter = 0;
 const nextScope = document.getElementById("nextScope");
+
+const alertMsg = document.getElementById("alertMsg");
+var input = document.getElementById("skills");
+
+enterSkill.addEventListener("click", () => {
+  var skillPill = document.createElement("label");
+  //console.log(input.value);
+  skillPill.innerHTML = input.value;
+  skillForm.appendChild(skillPill);
+  alertMsg.innerText = "(Press on skill to remove)";
+  skillPillCounter++;
+
+  if (!skillPillCounter == 0) {
+    skillPill.addEventListener("click", () => {
+      skillForm.removeChild(skillPill);
+      skillPillCounter = skillPillCounter - 1;
+    });
+    nextScope.style.background = "#054e97";
+    nextScope.style.color = "white";
+    nextScope.style.cursor = "pointer";
+  }
+  console.log(skillPillCounter);
+});

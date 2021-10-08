@@ -208,18 +208,13 @@
             <div class="detail-input-section">
                 <h3>Search Skills or Add your Own</h3>
                 <div class="skillSearch">
-                    <i class="fa fa-search"></i>
-                    <input name="skills" id="skills" list="allskills" autocomplete="off" placeholder="Search Skills or Add Your Own">
-                        <!--DataList-->
-                        <datalist id="allskills">
-                        </datalist>
-                          
+                    <input type="text" name="skills" id="skills" list="allskills"  autocomplete="off" placeholder="Search Skills or Add Your Own">                  
+                    <button id="enterSkill">Enter</button>
                 </div>
-                <span id="SelectedSkillTitle">Selected Skills</span>
-                <div class="selectedSkills">
-                    <textarea name="skills" cols="30" rows="10" ></textarea>
-                </div>
-                <h4>Categories</h4>
+                <p id="SelectedSkillTitle" style="margin-top: 0.5rem;margin-left: 0.5rem;width: 100%;">Selected Skill <span id="alertMsg" style="font-size: 0.9rem;"></span></p>
+                <form id="selectedSkills">
+                </form>
+                <h4>All Categories</h4>
                 <select name="category" id="categoryID">
                     <option selected value="AccountingConsulting">Accounting & Consulting</option>
                     <option value="AdminSupport">Admin Support</option>
@@ -234,7 +229,7 @@
                     <option value="WebMobileSoftwareDev">Web, Mobile & Software Dev</option>
                     <option value="Writing">Writing</option>
                 </select>
-                <h4><span id="selectedCategory">Accounting & Consulting</span> Specialties</h4>
+                <h4>All<span id="selectedCategory">Accounting & Consulting</span> Specialties</h4>
                 
                 <div class="specialtyContainer"></div>
 
@@ -294,7 +289,11 @@
             </p>
         </div>
     </div>
+                <!--DataList-->
+                <datalist id="allskills">
+                </datalist>
 </body>
+<!--Nav bar script-->
 <script>
     var job = document.querySelector('.jobCard');
     var talent = document.querySelector('.talentCard');
@@ -387,7 +386,8 @@
     }
 
 </script>
-
+<!--Script to searches-->
 <script src="../SkillsContainer/postJobSkills.js"></script>
+
 
 </html>
