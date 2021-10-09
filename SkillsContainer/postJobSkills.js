@@ -1501,16 +1501,56 @@ for (let i = 0; i < EngineeringArchitectureSpeciality.length; i++) {
   SpecialtyUL6.appendChild(skillPill);
   specialtyContainer.appendChild(SpecialtyUL6);
 }
-//"IT & Networking"
+// IT NETWORKING SECTIONS
 for (let i = 0; i < ITNetworkingSpecialty.length; i++) {
   var skillPill = document.createElement("li");
-  skillPill.innerHTML = ITNetworkingSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  skillPill.setAttribute("id", "skillPill");
+  skillPill.innerHTML = ITNetworkingSpecialty[i];
+  skillPill.setAttribute("id", "skillPill7");
+
   SpecialtyUL7.appendChild(skillPill);
+  SpecialtyUL7.setAttribute("id", "UL7");
+
   specialtyContainer.appendChild(SpecialtyUL7);
 }
+document.querySelectorAll("#skillPill7").forEach((item) => {
+  item.addEventListener("click", () => {
+    //handle click
+    //console.log(item.innerText);
+    SpecialtyUL7.removeChild(item);
+
+    var skillPill = document.createElement("label");
+    skillPill.innerHTML = item.innerText;
+
+    skillArray.push(item.innerText);
+
+    skillForm.appendChild(skillPill);
+    //console.log(skillArray);
+    alertMsg.innerText = "(Press on skill to remove)";
+
+    if (skillArray.length > 0) {
+      skillPill.addEventListener("click", () => {
+        skillForm.removeChild(skillPill);
+
+        skillArray.pop(skillPill.innerHTML);
+
+        SpecialtyUL7.appendChild(item);
+
+        //console.log(skillArray);
+      });
+      nextScope.style.background = "#054e97";
+      nextScope.style.color = "white";
+      nextScope.style.cursor = "pointer";
+      nextScope.style.pointerEvents = "visible";
+    } else if ((skillArray.length = 0)) {
+      nextScope.style.background = "lightgrey";
+      nextScope.style.color = "grey";
+      nextScope.style.pointerEvents = "none";
+      nextScope.style.cursor = "notallowed";
+    }
+  });
+});
+// IT NETWORKING SECTION ENDS
+
 //"Legal Section
 for (let i = 0; i < LegalSpecialty.length; i++) {
   var skillPill = document.createElement("li");
