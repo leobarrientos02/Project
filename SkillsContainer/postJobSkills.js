@@ -1481,7 +1481,7 @@ for (let i = 0; i < DataScienceAnalyticsSpecialty.length; i++) {
   SpecialtyUL4.appendChild(skillPill);
   specialtyContainer.appendChild(SpecialtyUL4);
 }
-//"Design & Creative",
+// DESIGN AND CREATIVE SECTION
 for (let i = 0; i < DesignCreativeSpecialty.length; i++) {
   var skillPill = document.createElement("li");
   skillPill.innerHTML = DesignCreativeSpecialty[i].concat(
@@ -1491,16 +1491,57 @@ for (let i = 0; i < DesignCreativeSpecialty.length; i++) {
   SpecialtyUL5.appendChild(skillPill);
   specialtyContainer.appendChild(SpecialtyUL5);
 }
-//"Engineering & Architecture
+
+//ENGINEERING ARCHITECTURE
 for (let i = 0; i < EngineeringArchitectureSpeciality.length; i++) {
   var skillPill = document.createElement("li");
-  skillPill.innerHTML = EngineeringArchitectureSpeciality[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  skillPill.setAttribute("id", "skillPill");
+  skillPill.innerHTML = EngineeringArchitectureSpeciality[i];
+  skillPill.setAttribute("id", "skillPill6");
+
   SpecialtyUL6.appendChild(skillPill);
+  SpecialtyUL6.setAttribute("id", "UL6");
+
   specialtyContainer.appendChild(SpecialtyUL6);
 }
+document.querySelectorAll("#skillPill6").forEach((item) => {
+  item.addEventListener("click", () => {
+    //handle click
+    //console.log(item.innerText);
+    SpecialtyUL6.removeChild(item);
+
+    var skillPill = document.createElement("label");
+    skillPill.innerHTML = item.innerText;
+
+    skillArray.push(item.innerText);
+
+    skillForm.appendChild(skillPill);
+    //console.log(skillArray);
+    alertMsg.innerText = "(Press on skill to remove)";
+
+    if (skillArray.length > 0) {
+      skillPill.addEventListener("click", () => {
+        skillForm.removeChild(skillPill);
+
+        skillArray.pop(skillPill.innerHTML);
+
+        SpecialtyUL6.appendChild(item);
+
+        //console.log(skillArray);
+      });
+      nextScope.style.background = "#054e97";
+      nextScope.style.color = "white";
+      nextScope.style.cursor = "pointer";
+      nextScope.style.pointerEvents = "visible";
+    } else if ((skillArray.length = 0)) {
+      nextScope.style.background = "lightgrey";
+      nextScope.style.color = "grey";
+      nextScope.style.pointerEvents = "none";
+      nextScope.style.cursor = "notallowed";
+    }
+  });
+});
+//ENGINEERING ARCHITECTURE ENDS
+
 // IT NETWORKING SECTIONS
 for (let i = 0; i < ITNetworkingSpecialty.length; i++) {
   var skillPill = document.createElement("li");
