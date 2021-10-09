@@ -8459,21 +8459,7 @@ ul {
   border-radius: 15px;
   border: 0.6px solid gray;
   cursor: pointer;
-}
-
-.postJob-detail-skills .detail-skills-container .detail-input-section #selectedSkills li {
   margin: 0.4rem;
-  list-style: none;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 0.8rem;
-  background: #0a345e;
-  color: white;
-  padding: 0.4rem 1rem;
-  border-radius: 15px;
-  border: 0.6px solid gray;
-  cursor: pointer;
 }
 
 .postJob-detail-skills .detail-skills-container .detail-input-section select {

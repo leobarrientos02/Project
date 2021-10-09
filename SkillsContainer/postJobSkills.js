@@ -1511,73 +1511,41 @@ for (let i = 0; i < ITNetworkingSpecialty.length; i++) {
   SpecialtyUL7.appendChild(skillPill);
   specialtyContainer.appendChild(SpecialtyUL7);
 }
-//"Legal"
+//"Legal Section
 for (let i = 0; i < LegalSpecialty.length; i++) {
   var skillPill = document.createElement("li");
-  skillPill.innerHTML = LegalSpecialty[i].concat("<i class='fa fa-plus'></i>");
-  skillPill.setAttribute("id", "skillPill");
+  skillPill.innerHTML = LegalSpecialty[i];
+  skillPill.setAttribute("id", "skillPill8");
+
   SpecialtyUL8.appendChild(skillPill);
+  SpecialtyUL8.setAttribute("id", "UL8");
+
   specialtyContainer.appendChild(SpecialtyUL8);
 }
-//"Sales & Marketing"
-for (let i = 0; i < SalesMarketingSpecialty.length; i++) {
-  var skillPill = document.createElement("li");
-  skillPill.innerHTML = SalesMarketingSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  skillPill.setAttribute("id", "skillPill");
-  SpecialtyUL9.appendChild(skillPill);
-  specialtyContainer.appendChild(SpecialtyUL9);
-}
-//"Translation"
-for (let i = 0; i < TranslationSpecialty.length; i++) {
-  var skillPill = document.createElement("li");
-  skillPill.innerHTML = TranslationSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  skillPill.setAttribute("id", "skillPill");
-  SpecialtyUL10.appendChild(skillPill);
-  specialtyContainer.appendChild(SpecialtyUL10);
-}
-//"Web, Mobile & Software Dev"
-for (let i = 0; i < WebMobileSoftwareSpecialty.length; i++) {
-  var skillPill = document.createElement("li");
-  skillPill.innerHTML = WebMobileSoftwareSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  skillPill.setAttribute("id", "skillPill");
-  SpecialtyUL11.appendChild(skillPill);
-  specialtyContainer.appendChild(SpecialtyUL11);
-}
-//"Writing"
-for (let i = 0; i < WritingSpecialty.length; i++) {
-  var skillPill = document.createElement("li");
-  skillPill.innerHTML = WritingSpecialty[i];
-  skillPill.setAttribute("id", "skillPill12");
-
-  SpecialtyUL12.appendChild(skillPill);
-  SpecialtyUL12.setAttribute("id", "UL12");
-
-  specialtyContainer.appendChild(SpecialtyUL12);
-}
-
-document.querySelectorAll("#skillPill12").forEach((item) => {
+document.querySelectorAll("#skillPill8").forEach((item) => {
   item.addEventListener("click", () => {
     //handle click
     //console.log(item.innerText);
+    SpecialtyUL8.removeChild(item);
 
     var skillPill = document.createElement("label");
     skillPill.innerHTML = item.innerText;
+
     skillArray.push(item.innerText);
+
     skillForm.appendChild(skillPill);
-    console.log(skillArray);
+    //console.log(skillArray);
     alertMsg.innerText = "(Press on skill to remove)";
 
     if (skillArray.length > 0) {
       skillPill.addEventListener("click", () => {
         skillForm.removeChild(skillPill);
+
         skillArray.pop(skillPill.innerHTML);
-        console.log(skillArray);
+
+        SpecialtyUL8.appendChild(item);
+
+        //console.log(skillArray);
       });
       nextScope.style.background = "#054e97";
       nextScope.style.color = "white";
@@ -1591,7 +1559,213 @@ document.querySelectorAll("#skillPill12").forEach((item) => {
     }
   });
 });
+//Legal Section Ends
 
+//"Sales & Marketing Section
+for (let i = 0; i < SalesMarketingSpecialty.length; i++) {
+  var skillPill = document.createElement("li");
+  skillPill.innerHTML = SalesMarketingSpecialty[i];
+  skillPill.setAttribute("id", "skillPill9");
+
+  SpecialtyUL9.appendChild(skillPill);
+  SpecialtyUL9.setAttribute("id", "UL9");
+
+  specialtyContainer.appendChild(SpecialtyUL9);
+}
+document.querySelectorAll("#skillPill9").forEach((item) => {
+  item.addEventListener("click", () => {
+    //handle click
+    //console.log(item.innerText);
+    SpecialtyUL9.removeChild(item);
+
+    var skillPill = document.createElement("label");
+    skillPill.innerHTML = item.innerText;
+
+    skillArray.push(item.innerText);
+
+    skillForm.appendChild(skillPill);
+    //console.log(skillArray);
+    alertMsg.innerText = "(Press on skill to remove)";
+
+    if (skillArray.length > 0) {
+      skillPill.addEventListener("click", () => {
+        skillForm.removeChild(skillPill);
+
+        skillArray.pop(skillPill.innerHTML);
+
+        SpecialtyUL9.appendChild(item);
+
+        //console.log(skillArray);
+      });
+      nextScope.style.background = "#054e97";
+      nextScope.style.color = "white";
+      nextScope.style.cursor = "pointer";
+      nextScope.style.pointerEvents = "visible";
+    } else if ((skillArray.length = 0)) {
+      nextScope.style.background = "lightgrey";
+      nextScope.style.color = "grey";
+      nextScope.style.pointerEvents = "none";
+      nextScope.style.cursor = "notallowed";
+    }
+  });
+});
+// Sales and marketing section ends
+
+//"Translation Section
+for (let i = 0; i < TranslationSpecialty.length; i++) {
+  var skillPill = document.createElement("li");
+  skillPill.innerHTML = TranslationSpecialty[i];
+  skillPill.setAttribute("id", "skillPill10");
+
+  SpecialtyUL10.appendChild(skillPill);
+  SpecialtyUL10.setAttribute("id", "UL10");
+
+  specialtyContainer.appendChild(SpecialtyUL10);
+}
+document.querySelectorAll("#skillPill10").forEach((item) => {
+  item.addEventListener("click", () => {
+    //handle click
+    //console.log(item.innerText);
+    SpecialtyUL10.removeChild(item);
+
+    var skillPill = document.createElement("label");
+    skillPill.innerHTML = item.innerText;
+
+    skillArray.push(item.innerText);
+
+    skillForm.appendChild(skillPill);
+    //console.log(skillArray);
+    alertMsg.innerText = "(Press on skill to remove)";
+
+    if (skillArray.length > 0) {
+      skillPill.addEventListener("click", () => {
+        skillForm.removeChild(skillPill);
+
+        skillArray.pop(skillPill.innerHTML);
+
+        SpecialtyUL10.appendChild(item);
+
+        //console.log(skillArray);
+      });
+      nextScope.style.background = "#054e97";
+      nextScope.style.color = "white";
+      nextScope.style.cursor = "pointer";
+      nextScope.style.pointerEvents = "visible";
+    } else if ((skillArray.length = 0)) {
+      nextScope.style.background = "lightgrey";
+      nextScope.style.color = "grey";
+      nextScope.style.pointerEvents = "none";
+      nextScope.style.cursor = "notallowed";
+    }
+  });
+});
+//"Translation Section ENDS
+
+//"Web, Mobile & Software Dev Section
+for (let i = 0; i < WebMobileSoftwareSpecialty.length; i++) {
+  var skillPill = document.createElement("li");
+  skillPill.innerHTML = WebMobileSoftwareSpecialty[i];
+  skillPill.setAttribute("id", "skillPill11");
+
+  SpecialtyUL11.appendChild(skillPill);
+  SpecialtyUL11.setAttribute("id", "UL11");
+
+  specialtyContainer.appendChild(SpecialtyUL11);
+}
+document.querySelectorAll("#skillPill11").forEach((item) => {
+  item.addEventListener("click", () => {
+    //handle click
+    //console.log(item.innerText);
+    SpecialtyUL11.removeChild(item);
+
+    var skillPill = document.createElement("label");
+
+    skillPill.innerHTML = item.innerText;
+
+    skillArray.push(item.innerText);
+
+    skillForm.appendChild(skillPill);
+
+    //console.log(skillArray);
+
+    alertMsg.innerText = "(Press on skill to remove)";
+
+    if (skillArray.length > 0) {
+      skillPill.addEventListener("click", () => {
+        skillForm.removeChild(skillPill);
+
+        skillArray.pop(skillPill.innerHTML);
+
+        SpecialtyUL11.appendChild(item);
+        //console.log(skillArray);
+      });
+      nextScope.style.background = "#054e97";
+      nextScope.style.color = "white";
+      nextScope.style.cursor = "pointer";
+      nextScope.style.pointerEvents = "visible";
+    } else if ((skillArray.length = 0)) {
+      nextScope.style.background = "lightgrey";
+      nextScope.style.color = "grey";
+      nextScope.style.pointerEvents = "none";
+      nextScope.style.cursor = "notallowed";
+    }
+  });
+});
+//Web, Mobile & Software Dev Section Ends
+
+//"Writing Section
+for (let i = 0; i < WritingSpecialty.length; i++) {
+  var skillPill = document.createElement("li");
+  skillPill.innerHTML = WritingSpecialty[i];
+  skillPill.setAttribute("id", "skillPill12");
+
+  SpecialtyUL12.appendChild(skillPill);
+  SpecialtyUL12.setAttribute("id", "UL12");
+
+  specialtyContainer.appendChild(SpecialtyUL12);
+}
+document.querySelectorAll("#skillPill12").forEach((item) => {
+  item.addEventListener("click", () => {
+    //handle click
+    //console.log(item.innerText);
+    SpecialtyUL12.removeChild(item);
+
+    var skillPill = document.createElement("label");
+    skillPill.innerHTML = item.innerText;
+
+    skillArray.push(item.innerText);
+
+    skillForm.appendChild(skillPill);
+
+    //console.log(skillArray);
+
+    alertMsg.innerText = "(Press on skill to remove)";
+
+    if (skillArray.length > 0) {
+      skillPill.addEventListener("click", () => {
+        skillForm.removeChild(skillPill);
+
+        skillArray.pop(skillPill.innerHTML);
+
+        SpecialtyUL12.appendChild(item);
+
+        //console.log(skillArray);
+      });
+      nextScope.style.background = "#054e97";
+      nextScope.style.color = "white";
+      nextScope.style.cursor = "pointer";
+      nextScope.style.pointerEvents = "visible";
+    } else if ((skillArray.length = 0)) {
+      nextScope.style.background = "lightgrey";
+      nextScope.style.color = "grey";
+      nextScope.style.pointerEvents = "none";
+      nextScope.style.cursor = "notallowed";
+    }
+  });
+});
+//"Writing Section Ends
+
+//Span to update when user click on a dropdown category
 var selectedCategorySpan = document.getElementById("selectedCategory");
 
 SpecialtyUL1.style.display = "flex";
@@ -1762,6 +1936,6 @@ nextScope.addEventListener("click", () => {
     nextScope.style.color = "grey";
     nextScope.style.pointerEvents = "none";
     nextScope.style.cursor = "notallowed";
-    EmptyArrayError.innerText = "Please add skill/s.";
+    EmptyArrayError.innerText = "Please add a skill or skills.";
   }
 });
