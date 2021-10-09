@@ -1886,9 +1886,14 @@ e.addEventListener("input", () => {
 });
 
 const emptyError = document.getElementById("emptyError");
+
 enterSkill.addEventListener("click", () => {
   if (input.value === "") {
     emptyError.innerText = "Please enter a skill.";
+  } else if (skillArray.includes(input.value) === true) {
+    // Ensure duplicates are not entered
+    emptyError.innerText = "Already added!";
+    //console.log("leo");
   } else {
     var skillPill = document.createElement("label");
     //console.log(input.value);

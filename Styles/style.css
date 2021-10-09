@@ -8435,7 +8435,9 @@ ul {
 }
 
 .postJob-detail-skills .detail-skills-container .detail-input-section #selectedSkills {
-  padding: 1rem 0rem;
+  padding: 0.5rem;
+  border-radius: 15px;
+  border: 0.7px solid lightgrey;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
