@@ -1501,10 +1501,11 @@ for (let i = 0; i < AdminSupportSpecialty.length; i++) {
 
   specialtyContainer.appendChild(SpecialtyUL2);
 }
-document.querySelectorAll("#skillPill1").forEach((item) => {
+document.querySelectorAll("#skillPill2").forEach((item) => {
   item.addEventListener("click", () => {
     //handle click
     //console.log(item.innerText);
+
     SpecialtyUL2.removeChild(item);
 
     var skillPill = document.createElement("label");
@@ -1540,35 +1541,156 @@ document.querySelectorAll("#skillPill1").forEach((item) => {
 });
 // ADMIN SUPPORT ENDS
 
+// CUSTOMER SERVICE SPECIALTY
 for (let i = 0; i < CustomerServiceSpecialty.length; i++) {
   var skillPill = document.createElement("li");
-  skillPill.innerHTML = CustomerServiceSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  skillPill.setAttribute("id", "skillPill");
+  skillPill.innerHTML = CustomerServiceSpecialty[i];
+
+  skillPill.setAttribute("id", "skillPill3");
+
   SpecialtyUL3.appendChild(skillPill);
+  SpecialtyUL3.setAttribute("id", "UL3");
+
   specialtyContainer.appendChild(SpecialtyUL3);
 }
-//"Data Science & Analytics"
+document.querySelectorAll("#skillPill3").forEach((item) => {
+  item.addEventListener("click", () => {
+    //handle click
+    //console.log(item.innerText);
+    SpecialtyUL3.removeChild(item);
+
+    var skillPill = document.createElement("label");
+    skillPill.innerHTML = item.innerText;
+
+    skillArray.push(item.innerText);
+
+    skillForm.appendChild(skillPill);
+    //console.log(skillArray);
+    alertMsg.innerText = "(Press on skill to remove)";
+
+    if (skillArray.length > 0) {
+      skillPill.addEventListener("click", () => {
+        skillForm.removeChild(skillPill);
+
+        skillArray.pop(skillPill.innerHTML);
+
+        SpecialtyUL3.appendChild(item);
+
+        //console.log(skillArray);
+      });
+      nextScope.style.background = "#054e97";
+      nextScope.style.color = "white";
+      nextScope.style.cursor = "pointer";
+      nextScope.style.pointerEvents = "visible";
+    } else if ((skillArray.length = 0)) {
+      nextScope.style.background = "lightgrey";
+      nextScope.style.color = "grey";
+      nextScope.style.pointerEvents = "none";
+      nextScope.style.cursor = "notallowed";
+    }
+  });
+});
+// CUSTOMER SERVICE ENDS
+
+// DATA SCIENCE AND ANALYTICS SECTION
 for (let i = 0; i < DataScienceAnalyticsSpecialty.length; i++) {
   var skillPill = document.createElement("li");
-  skillPill.innerHTML = DataScienceAnalyticsSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  skillPill.setAttribute("id", "skillPill");
+  skillPill.innerHTML = DataScienceAnalyticsSpecialty[i];
+  skillPill.setAttribute("id", "skillPill4");
+
   SpecialtyUL4.appendChild(skillPill);
+  SpecialtyUL4.setAttribute("id", "UL4");
+
   specialtyContainer.appendChild(SpecialtyUL4);
 }
+document.querySelectorAll("#skillPill4").forEach((item) => {
+  item.addEventListener("click", () => {
+    //handle click
+    //console.log(item.innerText);
+    SpecialtyUL4.removeChild(item);
+
+    var skillPill = document.createElement("label");
+    skillPill.innerHTML = item.innerText;
+
+    skillArray.push(item.innerText);
+
+    skillForm.appendChild(skillPill);
+    //console.log(skillArray);
+    alertMsg.innerText = "(Press on skill to remove)";
+
+    if (skillArray.length > 0) {
+      skillPill.addEventListener("click", () => {
+        skillForm.removeChild(skillPill);
+
+        skillArray.pop(skillPill.innerHTML);
+
+        SpecialtyUL4.appendChild(item);
+
+        //console.log(skillArray);
+      });
+      nextScope.style.background = "#054e97";
+      nextScope.style.color = "white";
+      nextScope.style.cursor = "pointer";
+      nextScope.style.pointerEvents = "visible";
+    } else if ((skillArray.length = 0)) {
+      nextScope.style.background = "lightgrey";
+      nextScope.style.color = "grey";
+      nextScope.style.pointerEvents = "none";
+      nextScope.style.cursor = "notallowed";
+    }
+  });
+});
+// DATA SCIENCE AND ANALYTICS SECTIONS ENDS
+
 // DESIGN AND CREATIVE SECTION
 for (let i = 0; i < DesignCreativeSpecialty.length; i++) {
   var skillPill = document.createElement("li");
-  skillPill.innerHTML = DesignCreativeSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  skillPill.setAttribute("id", "skillPill");
+  skillPill.innerHTML = DesignCreativeSpecialty[i];
+  skillPill.setAttribute("id", "skillPill5");
+
   SpecialtyUL5.appendChild(skillPill);
+  SpecialtyUL5.setAttribute("id", "UL5");
+
   specialtyContainer.appendChild(SpecialtyUL5);
 }
+document.querySelectorAll("#skillPill5").forEach((item) => {
+  item.addEventListener("click", () => {
+    //handle click
+    //console.log(item.innerText);
+    SpecialtyUL5.removeChild(item);
+
+    var skillPill = document.createElement("label");
+    skillPill.innerHTML = item.innerText;
+
+    skillArray.push(item.innerText);
+
+    skillForm.appendChild(skillPill);
+    //console.log(skillArray);
+    alertMsg.innerText = "(Press on skill to remove)";
+
+    if (skillArray.length > 0) {
+      skillPill.addEventListener("click", () => {
+        skillForm.removeChild(skillPill);
+
+        skillArray.pop(skillPill.innerHTML);
+
+        SpecialtyUL5.appendChild(item);
+
+        //console.log(skillArray);
+      });
+      nextScope.style.background = "#054e97";
+      nextScope.style.color = "white";
+      nextScope.style.cursor = "pointer";
+      nextScope.style.pointerEvents = "visible";
+    } else if ((skillArray.length = 0)) {
+      nextScope.style.background = "lightgrey";
+      nextScope.style.color = "grey";
+      nextScope.style.pointerEvents = "none";
+      nextScope.style.cursor = "notallowed";
+    }
+  });
+});
+// DESIGN AND CREATIVE SECTION ENDS
 
 //ENGINEERING ARCHITECTURE
 for (let i = 0; i < EngineeringArchitectureSpeciality.length; i++) {
