@@ -1,3 +1,20 @@
+//Mobile Functionality
+const mobileSearchCard = document.querySelector(".mobileSearchCard");
+const searchIcon = document.getElementById("mobileSearch");
+searchIcon.addEventListener("click", () => {
+  mobileSearchCard.style.display = "inline-block";
+  searchIcon.style.display = "none";
+  navIcon.style.opacity = "0";
+  exitSearch.style.display = "inline-block";
+});
+const exitSearch = document.querySelector(".fa-times");
+exitSearch.addEventListener("click", () => {
+  mobileSearchCard.style.display = "none";
+  searchIcon.style.display = "inline-block";
+  navIcon.style.opacity = "1";
+  exitSearch.style.display = "none";
+});
+
 //Developement and IT
 const DevelopementITPopular = [
   "JavaScript Developers",
@@ -1086,43 +1103,23 @@ const AllEngineerArchitecture = EngineerArchitecturePopular.concat(
   .concat(EngineerArchitectureCrossFunctional)
   .concat(EngineerArchitectureProjects);
 
-const specialtyContainer = document.querySelector(".specialtyContainer");
+//Specialty Arrays
+//All Categories
+const AllCategories = [
+  "Accounting & Consulting",
+  "Admin Support",
+  "Customer Service",
+  "Data Science & Analytics",
+  "Design & Creative",
+  "Engineering & Architecture",
+  "IT & Networking",
+  "Legal",
+  "Sales & Marketing",
+  "Translation",
+  "Web, Mobile & Software Dev",
+  "Writing",
+];
 
-const SpecialtyUL1 = document.createElement("ul");
-SpecialtyUL1.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL2 = document.createElement("ul");
-SpecialtyUL2.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL3 = document.createElement("ul");
-SpecialtyUL3.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL4 = document.createElement("ul");
-SpecialtyUL4.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL5 = document.createElement("ul");
-SpecialtyUL5.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL6 = document.createElement("ul");
-SpecialtyUL6.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL7 = document.createElement("ul");
-SpecialtyUL7.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL8 = document.createElement("ul");
-SpecialtyUL8.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL9 = document.createElement("ul");
-SpecialtyUL9.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL10 = document.createElement("ul");
-SpecialtyUL10.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL11 = document.createElement("ul");
-SpecialtyUL11.classList.add("SkillsUnderCategory");
-
-const SpecialtyUL12 = document.createElement("ul");
-SpecialtyUL12.classList.add("SkillsUnderCategory");
 //"Accounting & Consulting'
 const AccountingConsultingSpecialty = [
   "Business Analysis",
@@ -1138,16 +1135,7 @@ const AccountingConsultingSpecialty = [
   "Financial Management/CFO",
   "Financial Analysis & Modeling",
 ];
-for (let i = 0; i < AccountingConsultingSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
 
-  specialtyPill.innerHTML = AccountingConsultingSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  specialtyPill.setAttribute("id", `skillPill${[i]}`);
-  SpecialtyUL1.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL1);
-}
 //"Admin Support"
 const AdminSupportSpecialty = [
   "Virtual/Administrative Assistance",
@@ -1157,26 +1145,10 @@ const AdminSupportSpecialty = [
   "Order Processing",
   "Online Research",
 ];
-for (let i = 0; i < AdminSupportSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = AdminSupportSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  specialtyPill.setAttribute("id", "skillPill");
-  SpecialtyUL2.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL2);
-}
+
 //"Customer Service"
 const CustomerServiceSpecialty = ["Customer Service", "Tech Support "];
-for (let i = 0; i < CustomerServiceSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = CustomerServiceSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  specialtyPill.setAttribute("id", "skillPill");
-  SpecialtyUL3.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL3);
-}
+
 //"Data Science & Analytics"
 const DataScienceAnalyticsSpecialty = [
   "Data Mining",
@@ -1191,15 +1163,7 @@ const DataScienceAnalyticsSpecialty = [
   "Experimentation & Testing",
   "A/B Testing",
 ];
-for (let i = 0; i < DataScienceAnalyticsSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = DataScienceAnalyticsSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  specialtyPill.setAttribute("id", "skillPill");
-  SpecialtyUL4.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL4);
-}
+
 //"Design & Creative",
 const DesignCreativeSpecialty = [
   "Brand Identity Design",
@@ -1238,15 +1202,7 @@ const DesignCreativeSpecialty = [
   "Product Photography",
   "Local Photography ",
 ];
-for (let i = 0; i < DesignCreativeSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = DesignCreativeSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  specialtyPill.setAttribute("id", "skillPill");
-  SpecialtyUL5.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL5);
-}
+
 //"Engineering & Architecture
 const EngineeringArchitectureSpeciality = [
   "Structural Engineering",
@@ -1271,15 +1227,7 @@ const EngineeringArchitectureSpeciality = [
   "Logistics & Supply Chain Management",
   "Sourcing & Procurement",
 ];
-for (let i = 0; i < EngineeringArchitectureSpeciality.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = EngineeringArchitectureSpeciality[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  specialtyPill.setAttribute("id", "skillPill");
-  SpecialtyUL6.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL6);
-}
+
 //"IT & Networking"
 const ITNetworkingSpecialty = [
   "Network Security",
@@ -1295,15 +1243,7 @@ const ITNetworkingSpecialty = [
   "Systems Administration",
   "Network Administration",
 ];
-for (let i = 0; i < ITNetworkingSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = ITNetworkingSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  specialtyPill.setAttribute("id", "skillPill");
-  SpecialtyUL7.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL7);
-}
+
 //"Legal"
 const LegalSpecialty = [
   "Business & Corporate Law",
@@ -1317,15 +1257,7 @@ const LegalSpecialty = [
   "Intellectual Property Law",
   "Paralegal",
 ];
-for (let i = 0; i < LegalSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = LegalSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  specialtyPill.setAttribute("id", "skillPill");
-  SpecialtyUL8.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL8);
-}
+
 //"Sales & Marketing"
 const SalesMarketingSpecialty = [
   "Social Media Strategy",
@@ -1346,15 +1278,7 @@ const SalesMarketingSpecialty = [
   "Lead Generation",
   "Sales & Business Development",
 ];
-for (let i = 0; i < SalesMarketingSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = SalesMarketingSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  specialtyPill.setAttribute("id", "skillPill");
-  SpecialtyUL9.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL9);
-}
+
 //"Translation"
 const TranslationSpecialty = [
   "Legal Translation",
@@ -1364,15 +1288,7 @@ const TranslationSpecialty = [
   "Language Localization",
   "Medical Translation",
 ];
-for (let i = 0; i < TranslationSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = TranslationSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  specialtyPill.setAttribute("id", "skillPill");
-  SpecialtyUL10.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL10);
-}
+
 //"Web, Mobile & Software Dev"
 const WebMobileSoftwareSpecialty = [
   "Ecommerce Development",
@@ -1400,15 +1316,7 @@ const WebMobileSoftwareSpecialty = [
   "CMS Development",
   "Game Development",
 ];
-for (let i = 0; i < WebMobileSoftwareSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = WebMobileSoftwareSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  specialtyPill.setAttribute("id", "skillPill");
-  SpecialtyUL11.appendChild(specialtyPill);
-  specialtyContainer.appendChild(SpecialtyUL11);
-}
+
 //"Writing"
 const WritingSpecialty = [
   "Editing & Proofreading",
@@ -1423,17 +1331,249 @@ const WritingSpecialty = [
   "Content Writing",
   "Copywriting",
 ];
-for (let i = 0; i < WritingSpecialty.length; i++) {
-  var specialtyPill = document.createElement("li");
-  specialtyPill.innerHTML = WritingSpecialty[i].concat(
+
+//All Specialty
+const AllSpecialty = WritingSpecialty.concat(WebMobileSoftwareSpecialty)
+  .concat(TranslationSpecialty)
+  .concat(SalesMarketingSpecialty)
+  .concat(LegalSpecialty)
+  .concat(ITNetworkingSpecialty)
+  .concat(EngineeringArchitectureSpeciality)
+  .concat(DesignCreativeSpecialty)
+  .concat(DataScienceAnalyticsSpecialty)
+  .concat(CustomerServiceSpecialty)
+  .concat(AdminSupportSpecialty)
+  .concat(AccountingConsultingSpecialty);
+
+//ALL SKILLS
+const AllSkills = AllDevelopmentIT.concat(AllCreativeDesign)
+  .concat(AllSalesMarketing)
+  .concat(AllWritingTranslation)
+  .concat(AllAdminCustomer)
+  .concat(AllFinanceAccounting)
+  .concat(AllLegal)
+  .concat(AllHRTraining)
+  .concat(AllEngineerArchitecture)
+  .concat(WritingSpecialty)
+  .concat(WebMobileSoftwareSpecialty)
+  .concat(TranslationSpecialty)
+  .concat(SalesMarketingProjects)
+  .concat(LegalSpecialty)
+  .concat(ITNetworkingSpecialty)
+  .concat(EngineeringArchitectureSpeciality)
+  .concat(DesignCreativeSpecialy)
+  .concat(DataScienceAnalyticsSpecialty)
+  .concat(CustomerServiceSpecialty)
+  .concat(AdminSupportSpecialty)
+  .concat(AccountingConsultingSpecialty);
+
+//Removing all duplicates
+let AllSkills2 = [];
+AllSkills.forEach((c) => {
+  if (!AllSkills2.includes(c)) {
+    AllSkills2.push(c);
+  }
+});
+
+const AllSkillsDatalist = document.getElementById("allskills");
+
+for (let i = 0; i < AllSkills2.length; i++) {
+  var option = document.createElement("option");
+
+  option.value = AllSkills2[i];
+
+  AllSkillsDatalist.appendChild(option);
+}
+
+//END OF ARRAYS
+
+const skillForm = document.getElementById("selectedSkills");
+const enterSkill = document.getElementById("enterSkill");
+//console.log(skillPill);
+
+const nextScope = document.getElementById("nextScope");
+
+const alertMsg = document.getElementById("alertMsg");
+
+var input = document.getElementById("skills");
+
+// array to hold all skills
+const skillArray = [];
+
+const specialtyContainer = document.querySelector(
+  ".CategorySpecialtyContainer"
+);
+
+const SpecialtyUL1 = document.createElement("ul");
+SpecialtyUL1.classList.add("SkillsUnderCategory");
+
+const SpecialtyUL2 = document.createElement("ul");
+SpecialtyUL2.classList.add("SkillsUnderCategory");
+
+const SpecialtyUL3 = document.createElement("ul");
+SpecialtyUL3.classList.add("SkillsUnderCategory");
+
+const SpecialtyUL4 = document.createElement("ul");
+SpecialtyUL4.classList.add("SkillsUnderCategory");
+
+const SpecialtyUL5 = document.createElement("ul");
+SpecialtyUL5.classList.add("SkillsUnderCategory");
+
+const SpecialtyUL6 = document.createElement("ul");
+SpecialtyUL6.classList.add("SkillsUnderCategory");
+
+const SpecialtyUL7 = document.createElement("ul");
+SpecialtyUL7.classList.add("SkillsUnderCategory");
+
+const SpecialtyUL8 = document.createElement("ul");
+SpecialtyUL8.classList.add("SkillsUnderCategory");
+
+const SpecialtyUL9 = document.createElement("ul");
+SpecialtyUL9.classList.add("SkillsUnderCategory");
+
+const SpecialtyUL10 = document.createElement("ul");
+SpecialtyUL10.classList.add("SkillsUnderCategory");
+
+const SpecialtyUL11 = document.createElement("ul");
+SpecialtyUL11.classList.add("SkillsUnderCategory");
+
+const SpecialtyUL12 = document.createElement("ul");
+SpecialtyUL12.classList.add("SkillsUnderCategory");
+
+//"Accounting & Consulting'
+for (let i = 0; i < AccountingConsultingSpecialty.length; i++) {
+  var skillPill = document.createElement("li");
+
+  skillPill.innerHTML = AccountingConsultingSpecialty[i].concat(
     "<i class='fa fa-plus'></i>"
   );
-  specialtyPill.setAttribute("id", "skillPill");
-  SpecialtyUL12.appendChild(specialtyPill);
+  skillPill.setAttribute("id", `skillPill${[i]}`);
+  SpecialtyUL1.appendChild(skillPill);
+  specialtyContainer.appendChild(SpecialtyUL1);
+}
+
+for (let i = 0; i < AdminSupportSpecialty.length; i++) {
+  var skillPill = document.createElement("li");
+  skillPill.innerHTML = AdminSupportSpecialty[i].concat(
+    "<i class='fa fa-plus'></i>"
+  );
+  skillPill.setAttribute("id", "skillPill");
+  SpecialtyUL2.appendChild(skillPill);
+  specialtyContainer.appendChild(SpecialtyUL2);
+}
+
+for (let i = 0; i < CustomerServiceSpecialty.length; i++) {
+  var skillPill = document.createElement("li");
+  skillPill.innerHTML = CustomerServiceSpecialty[i].concat(
+    "<i class='fa fa-plus'></i>"
+  );
+  skillPill.setAttribute("id", "skillPill");
+  SpecialtyUL3.appendChild(skillPill);
+  specialtyContainer.appendChild(SpecialtyUL3);
+}
+//"Data Science & Analytics"
+for (let i = 0; i < DataScienceAnalyticsSpecialty.length; i++) {
+  var skillPill = document.createElement("li");
+  skillPill.innerHTML = DataScienceAnalyticsSpecialty[i].concat(
+    "<i class='fa fa-plus'></i>"
+  );
+  skillPill.setAttribute("id", "skillPill");
+  SpecialtyUL4.appendChild(skillPill);
+  specialtyContainer.appendChild(SpecialtyUL4);
+}
+//"Design & Creative",
+for (let i = 0; i < DesignCreativeSpecialty.length; i++) {
+  var skillPill = document.createElement("li");
+  skillPill.innerHTML = DesignCreativeSpecialty[i].concat(
+    "<i class='fa fa-plus'></i>"
+  );
+  skillPill.setAttribute("id", "skillPill");
+  SpecialtyUL5.appendChild(skillPill);
+  specialtyContainer.appendChild(SpecialtyUL5);
+}
+//"Engineering & Architecture
+for (let i = 0; i < EngineeringArchitectureSpeciality.length; i++) {
+  var skillPill = document.createElement("li");
+  skillPill.innerHTML = EngineeringArchitectureSpeciality[i].concat(
+    "<i class='fa fa-plus'></i>"
+  );
+  skillPill.setAttribute("id", "skillPill");
+  SpecialtyUL6.appendChild(skillPill);
+  specialtyContainer.appendChild(SpecialtyUL6);
+}
+//"IT & Networking"
+for (let i = 0; i < ITNetworkingSpecialty.length; i++) {
+  var skillPill = document.createElement("li");
+  skillPill.innerHTML = ITNetworkingSpecialty[i].concat(
+    "<i class='fa fa-plus'></i>"
+  );
+  skillPill.setAttribute("id", "skillPill");
+  SpecialtyUL7.appendChild(skillPill);
+  specialtyContainer.appendChild(SpecialtyUL7);
+}
+//"Legal"
+for (let i = 0; i < LegalSpecialty.length; i++) {
+  var skillPill = document.createElement("li");
+  skillPill.innerHTML = LegalSpecialty[i].concat("<i class='fa fa-plus'></i>");
+  skillPill.setAttribute("id", "skillPill");
+  SpecialtyUL8.appendChild(skillPill);
+  specialtyContainer.appendChild(SpecialtyUL8);
+}
+//"Sales & Marketing"
+for (let i = 0; i < SalesMarketingSpecialty.length; i++) {
+  var skillPill = document.createElement("li");
+  skillPill.innerHTML = SalesMarketingSpecialty[i].concat(
+    "<i class='fa fa-plus'></i>"
+  );
+  skillPill.setAttribute("id", "skillPill");
+  SpecialtyUL9.appendChild(skillPill);
+  specialtyContainer.appendChild(SpecialtyUL9);
+}
+//"Translation"
+for (let i = 0; i < TranslationSpecialty.length; i++) {
+  var skillPill = document.createElement("li");
+  skillPill.innerHTML = TranslationSpecialty[i].concat(
+    "<i class='fa fa-plus'></i>"
+  );
+  skillPill.setAttribute("id", "skillPill");
+  SpecialtyUL10.appendChild(skillPill);
+  specialtyContainer.appendChild(SpecialtyUL10);
+}
+//"Web, Mobile & Software Dev"
+for (let i = 0; i < WebMobileSoftwareSpecialty.length; i++) {
+  var skillPill = document.createElement("li");
+  skillPill.innerHTML = WebMobileSoftwareSpecialty[i].concat(
+    "<i class='fa fa-plus'></i>"
+  );
+  skillPill.setAttribute("id", "skillPill");
+  SpecialtyUL11.appendChild(skillPill);
+  specialtyContainer.appendChild(SpecialtyUL11);
+}
+//"Writing"
+for (let i = 0; i < WritingSpecialty.length; i++) {
+  var skillPill = document.createElement("li");
+  skillPill.innerHTML = WritingSpecialty[i];
+  skillPill.setAttribute("id", "skillPill12");
+
+  SpecialtyUL12.appendChild(skillPill);
+  SpecialtyUL12.setAttribute("id", "UL12");
+
   specialtyContainer.appendChild(SpecialtyUL12);
 }
 
+document.querySelectorAll("#skillPill12").forEach((item) => {
+  item.addEventListener("click", () => {
+    //handle click
+    //console.log(item.innerText);
+    skillForm.appendChild(item);
+    item.classList.add("choosen");
+    skillArray.push(item.innerText);
+    alertMsg.innerText = "(Press on skill to remove)";
+  });
+});
+
 var selectedCategorySpan = document.getElementById("selectedCategory");
+
 SpecialtyUL1.style.display = "flex";
 SpecialtyUL2.style.display = "none";
 SpecialtyUL3.style.display = "none";
@@ -1551,102 +1691,6 @@ e.addEventListener("input", () => {
   }
 });
 
-//All Specialty
-const AllSpecialty = WritingSpecialty.concat(WebMobileSoftwareSpecialty)
-  .concat(TranslationSpecialty)
-  .concat(SalesMarketingSpecialty)
-  .concat(LegalSpecialty)
-  .concat(ITNetworkingSpecialty)
-  .concat(EngineeringArchitectureSpeciality)
-  .concat(DesignCreativeSpecialty)
-  .concat(DataScienceAnalyticsSpecialty)
-  .concat(CustomerServiceSpecialty)
-  .concat(AdminSupportSpecialty)
-  .concat(AccountingConsultingSpecialty);
-
-//All Categories
-const AllCategories = [
-  "Accounting & Consulting",
-  "Admin Support",
-  "Customer Service",
-  "Data Science & Analytics",
-  "Design & Creative",
-  "Engineering & Architecture",
-  "IT & Networking",
-  "Legal",
-  "Sales & Marketing",
-  "Translation",
-  "Web, Mobile & Software Dev",
-  "Writing",
-];
-
-//ALL SKILLS
-const AllSkills = AllDevelopmentIT.concat(AllCreativeDesign)
-  .concat(AllSalesMarketing)
-  .concat(AllWritingTranslation)
-  .concat(AllAdminCustomer)
-  .concat(AllFinanceAccounting)
-  .concat(AllLegal)
-  .concat(AllHRTraining)
-  .concat(AllEngineerArchitecture)
-  .concat(WritingSpecialty)
-  .concat(WebMobileSoftwareSpecialty)
-  .concat(TranslationSpecialty)
-  .concat(SalesMarketingProjects)
-  .concat(LegalSpecialty)
-  .concat(ITNetworkingSpecialty)
-  .concat(EngineeringArchitectureSpeciality)
-  .concat(DesignCreativeSpecialy)
-  .concat(DataScienceAnalyticsSpecialty)
-  .concat(CustomerServiceSpecialty)
-  .concat(AdminSupportSpecialty)
-  .concat(AccountingConsultingSpecialty);
-
-//Removing all duplicates
-let AllSkills2 = [];
-AllSkills.forEach((c) => {
-  if (!AllSkills2.includes(c)) {
-    AllSkills2.push(c);
-  }
-});
-
-const AllSkillsDatalist = document.getElementById("allskills");
-
-for (let i = 0; i < AllSkills2.length; i++) {
-  var option = document.createElement("option");
-
-  option.value = AllSkills2[i];
-
-  AllSkillsDatalist.appendChild(option);
-}
-
-const mobileSearchCard = document.querySelector(".mobileSearchCard");
-const searchIcon = document.getElementById("mobileSearch");
-searchIcon.addEventListener("click", () => {
-  mobileSearchCard.style.display = "inline-block";
-  searchIcon.style.display = "none";
-  navIcon.style.opacity = "0";
-  exitSearch.style.display = "inline-block";
-});
-const exitSearch = document.querySelector(".fa-times");
-exitSearch.addEventListener("click", () => {
-  mobileSearchCard.style.display = "none";
-  searchIcon.style.display = "inline-block";
-  navIcon.style.opacity = "1";
-  exitSearch.style.display = "none";
-});
-
-//const selectedSkillsUL = document.getElementById("skillsUL");
-const skillForm = document.getElementById("selectedSkills");
-const enterSkill = document.getElementById("enterSkill");
-//console.log(skillPill);
-var skillPillCounter = 0;
-const nextScope = document.getElementById("nextScope");
-
-const alertMsg = document.getElementById("alertMsg");
-var input = document.getElementById("skills");
-const skillArray = [];
-
 const emptyError = document.getElementById("emptyError");
 enterSkill.addEventListener("click", () => {
   if (input.value === "") {
@@ -1660,7 +1704,7 @@ enterSkill.addEventListener("click", () => {
     skillForm.appendChild(skillPill);
     alertMsg.innerText = "(Press on skill to remove)";
 
-    console.log(skillArray);
+    //console.log(skillArray);
 
     if (skillArray.length > 0) {
       skillPill.addEventListener("click", () => {
@@ -1682,12 +1726,16 @@ enterSkill.addEventListener("click", () => {
 });
 
 const EmptyArrayError = document.getElementById("EmptyArrayError");
+
 nextScope.addEventListener("click", () => {
   if (skillArray.length > 0) {
     nextScope.style.background = "#054e97";
     nextScope.style.color = "white";
     nextScope.style.cursor = "pointer";
     nextScope.style.pointerEvents = "visible";
+
+    localStorage.setItem("skills", JSON.stringify(skillArray));
+
     window.location.href = "./postScope.html";
   } else {
     nextScope.style.background = "lightgrey";

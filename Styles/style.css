@@ -8437,9 +8437,33 @@ ul {
 .postJob-detail-skills .detail-skills-container .detail-input-section #selectedSkills {
   padding: 1rem 0rem;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .postJob-detail-skills .detail-skills-container .detail-input-section #selectedSkills label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.8rem;
+  background: #0a345e;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 15px;
+  border: 0.6px solid gray;
+  cursor: pointer;
+}
+
+.postJob-detail-skills .detail-skills-container .detail-input-section #selectedSkills li {
+  margin: 0.4rem;
+  list-style: none;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -8469,8 +8493,8 @@ ul {
   color: #054e97;
 }
 
-.postJob-detail-skills .detail-skills-container .detail-input-section .SkillsUnderCategory {
-  list-style: none;
+.postJob-detail-skills .detail-skills-container .detail-input-section .CategorySpecialtyContainer {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8482,27 +8506,35 @@ ul {
       flex-wrap: wrap;
 }
 
-.postJob-detail-skills .detail-skills-container .detail-input-section .SkillsUnderCategory li {
-  margin: 0rem 0.5rem 1rem 0rem;
+.postJob-detail-skills .detail-skills-container .detail-input-section .CategorySpecialtyContainer ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.postJob-detail-skills .detail-skills-container .detail-input-section .CategorySpecialtyContainer ul li {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 0.8rem;
-  background: #86e286;
-  color: black;
-  padding: 0.5rem;
-  border-radius: 10px;
+  background: #86dd86;
+  color: white;
+  margin: 0.4rem;
+  padding: 0.4rem 1rem;
+  border-radius: 15px;
   border: none;
   cursor: pointer;
 }
 
-.postJob-detail-skills .detail-skills-container .detail-input-section .SkillsUnderCategory li i {
-  margin-left: 0.2rem;
-  font-size: 0.5rem;
-}
-
-.postJob-detail-skills .detail-skills-container .detail-input-section .SkillsUnderCategory li:hover {
-  background: #7bcf7b;
+.postJob-detail-skills .detail-skills-container .detail-input-section .CategorySpecialtyContainer ul li:hover {
+  background: #71c571;
 }
 
 @media screen and (max-width: 754px) {

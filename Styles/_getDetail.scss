@@ -457,7 +457,22 @@
       #selectedSkills {
         padding: 1rem 0rem;
         width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         label {
+          width: fit-content;
+          font-size: 0.8rem;
+          background: $color1;
+          color: white;
+          padding: 0.4rem 1rem;
+          border-radius: 15px;
+          border: 0.6px solid gray;
+          cursor: pointer;
+        }
+        li {
+          margin: 0.4rem;
+          list-style: none;
           width: fit-content;
           font-size: 0.8rem;
           background: $color1;
@@ -483,27 +498,30 @@
         margin-left: 0.5rem;
         color: $lightColor;
       }
-      .SkillsUnderCategory {
-        list-style: none;
+      // under input
+      .CategorySpecialtyContainer {
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        li {
-          margin: 0rem 0.5rem 1rem 0rem;
-          width: fit-content;
-          font-size: 0.8rem;
-          background: rgb(134, 226, 134);
-          color: black;
-          padding: 0.5rem;
-          border-radius: 10px;
-          border: none;
-          cursor: pointer;
-          i {
-            margin-left: 0.2rem;
-            font-size: 0.5rem;
-          }
-          &:hover {
-            background: rgb(123, 207, 123);
+        ul {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          li {
+            width: fit-content;
+            font-size: 0.8rem;
+            background: rgb(134, 221, 134);
+            color: white;
+            margin: 0.4rem;
+            padding: 0.4rem 1rem;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+            &:hover {
+              background: rgb(113, 197, 113);
+            }
           }
         }
       }
