@@ -1440,27 +1440,105 @@ SpecialtyUL11.classList.add("SkillsUnderCategory");
 const SpecialtyUL12 = document.createElement("ul");
 SpecialtyUL12.classList.add("SkillsUnderCategory");
 
-//"Accounting & Consulting'
+// ACCOUNTING AND CONSULTING
 for (let i = 0; i < AccountingConsultingSpecialty.length; i++) {
   var skillPill = document.createElement("li");
+  skillPill.innerHTML = AccountingConsultingSpecialty[i];
+  skillPill.setAttribute("id", "skillPill1");
 
-  skillPill.innerHTML = AccountingConsultingSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  skillPill.setAttribute("id", `skillPill${[i]}`);
   SpecialtyUL1.appendChild(skillPill);
+  SpecialtyUL1.setAttribute("id", "UL1");
+
   specialtyContainer.appendChild(SpecialtyUL1);
 }
+document.querySelectorAll("#skillPill1").forEach((item) => {
+  item.addEventListener("click", () => {
+    //handle click
+    //console.log(item.innerText);
+    SpecialtyUL1.removeChild(item);
 
+    var skillPill = document.createElement("label");
+    skillPill.innerHTML = item.innerText;
+
+    skillArray.push(item.innerText);
+
+    skillForm.appendChild(skillPill);
+    //console.log(skillArray);
+    alertMsg.innerText = "(Press on skill to remove)";
+
+    if (skillArray.length > 0) {
+      skillPill.addEventListener("click", () => {
+        skillForm.removeChild(skillPill);
+
+        skillArray.pop(skillPill.innerHTML);
+
+        SpecialtyUL1.appendChild(item);
+
+        //console.log(skillArray);
+      });
+      nextScope.style.background = "#054e97";
+      nextScope.style.color = "white";
+      nextScope.style.cursor = "pointer";
+      nextScope.style.pointerEvents = "visible";
+    } else if ((skillArray.length = 0)) {
+      nextScope.style.background = "lightgrey";
+      nextScope.style.color = "grey";
+      nextScope.style.pointerEvents = "none";
+      nextScope.style.cursor = "notallowed";
+    }
+  });
+});
+// ACCOUNTING AND CONSULTING ENDS
+
+// ADMIN SUPPORT
 for (let i = 0; i < AdminSupportSpecialty.length; i++) {
   var skillPill = document.createElement("li");
-  skillPill.innerHTML = AdminSupportSpecialty[i].concat(
-    "<i class='fa fa-plus'></i>"
-  );
-  skillPill.setAttribute("id", "skillPill");
+  skillPill.innerHTML = AdminSupportSpecialty[i];
+  skillPill.setAttribute("id", "skillPill2");
+
   SpecialtyUL2.appendChild(skillPill);
+  SpecialtyUL2.setAttribute("id", "UL2");
+
   specialtyContainer.appendChild(SpecialtyUL2);
 }
+document.querySelectorAll("#skillPill1").forEach((item) => {
+  item.addEventListener("click", () => {
+    //handle click
+    //console.log(item.innerText);
+    SpecialtyUL2.removeChild(item);
+
+    var skillPill = document.createElement("label");
+    skillPill.innerHTML = item.innerText;
+
+    skillArray.push(item.innerText);
+
+    skillForm.appendChild(skillPill);
+    //console.log(skillArray);
+    alertMsg.innerText = "(Press on skill to remove)";
+
+    if (skillArray.length > 0) {
+      skillPill.addEventListener("click", () => {
+        skillForm.removeChild(skillPill);
+
+        skillArray.pop(skillPill.innerHTML);
+
+        SpecialtyUL2.appendChild(item);
+
+        //console.log(skillArray);
+      });
+      nextScope.style.background = "#054e97";
+      nextScope.style.color = "white";
+      nextScope.style.cursor = "pointer";
+      nextScope.style.pointerEvents = "visible";
+    } else if ((skillArray.length = 0)) {
+      nextScope.style.background = "lightgrey";
+      nextScope.style.color = "grey";
+      nextScope.style.pointerEvents = "none";
+      nextScope.style.cursor = "notallowed";
+    }
+  });
+});
+// ADMIN SUPPORT ENDS
 
 for (let i = 0; i < CustomerServiceSpecialty.length; i++) {
   var skillPill = document.createElement("li");
