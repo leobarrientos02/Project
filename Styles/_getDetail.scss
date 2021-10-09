@@ -1,6 +1,8 @@
 #choosenSkill {
   display: flex;
 }
+
+// CSS for Posting a Title start
 .postJob-detail {
   margin-top: 4.5rem;
   width: 100%;
@@ -255,7 +257,9 @@
     }
   }
 }
+// Css for posting title ends here
 
+// Css for posting skills start here
 .postJob-detail-skills {
   margin-top: 4.5rem;
   width: 100%;
@@ -519,6 +523,7 @@
     }
   }
 }
+// css for posting skills end here
 @media screen and (max-width: 754px) {
   .postJob-detail {
     margin-top: 3rem;
