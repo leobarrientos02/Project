@@ -1565,10 +1565,30 @@ document.querySelectorAll("#skillPill12").forEach((item) => {
   item.addEventListener("click", () => {
     //handle click
     //console.log(item.innerText);
-    skillForm.appendChild(item);
-    item.classList.add("choosen");
+
+    var skillPill = document.createElement("label");
+    skillPill.innerHTML = item.innerText;
     skillArray.push(item.innerText);
+    skillForm.appendChild(skillPill);
+    console.log(skillArray);
     alertMsg.innerText = "(Press on skill to remove)";
+
+    if (skillArray.length > 0) {
+      skillPill.addEventListener("click", () => {
+        skillForm.removeChild(skillPill);
+        skillArray.pop(skillPill.innerHTML);
+        console.log(skillArray);
+      });
+      nextScope.style.background = "#054e97";
+      nextScope.style.color = "white";
+      nextScope.style.cursor = "pointer";
+      nextScope.style.pointerEvents = "visible";
+    } else if ((skillArray.length = 0)) {
+      nextScope.style.background = "lightgrey";
+      nextScope.style.color = "grey";
+      nextScope.style.pointerEvents = "none";
+      nextScope.style.cursor = "notallowed";
+    }
   });
 });
 
