@@ -1645,23 +1645,55 @@ const nextScope = document.getElementById("nextScope");
 
 const alertMsg = document.getElementById("alertMsg");
 var input = document.getElementById("skills");
+const skillArray = [];
 
+const emptyError = document.getElementById("emptyError");
 enterSkill.addEventListener("click", () => {
-  var skillPill = document.createElement("label");
-  //console.log(input.value);
-  skillPill.innerHTML = input.value;
-  skillForm.appendChild(skillPill);
-  alertMsg.innerText = "(Press on skill to remove)";
-  skillPillCounter++;
+  if (input.value === "") {
+    emptyError.innerText = "Please enter a skill.";
+  } else {
+    var skillPill = document.createElement("label");
+    //console.log(input.value);
+    skillPill.innerHTML = input.value;
+    skillArray.push(input.value);
 
-  if (!skillPillCounter == 0) {
-    skillPill.addEventListener("click", () => {
-      skillForm.removeChild(skillPill);
-      skillPillCounter = skillPillCounter - 1;
-    });
+    skillForm.appendChild(skillPill);
+    alertMsg.innerText = "(Press on skill to remove)";
+
+    console.log(skillArray);
+
+    if (skillArray.length > 0) {
+      skillPill.addEventListener("click", () => {
+        skillForm.removeChild(skillPill);
+        skillArray.pop(skillPill.innerHTML);
+        console.log(skillArray);
+      });
+      nextScope.style.background = "#054e97";
+      nextScope.style.color = "white";
+      nextScope.style.cursor = "pointer";
+      nextScope.style.pointerEvents = "visible";
+    } else if ((skillArray.length = 0)) {
+      nextScope.style.background = "lightgrey";
+      nextScope.style.color = "grey";
+      nextScope.style.pointerEvents = "none";
+      nextScope.style.cursor = "notallowed";
+    }
+  } // Ends if statment checking if user input is empty
+});
+
+const EmptyArrayError = document.getElementById("EmptyArrayError");
+nextScope.addEventListener("click", () => {
+  if (skillArray.length > 0) {
     nextScope.style.background = "#054e97";
     nextScope.style.color = "white";
     nextScope.style.cursor = "pointer";
+    nextScope.style.pointerEvents = "visible";
+    window.location.href = "./postScope.html";
+  } else {
+    nextScope.style.background = "lightgrey";
+    nextScope.style.color = "grey";
+    nextScope.style.pointerEvents = "none";
+    nextScope.style.cursor = "notallowed";
+    EmptyArrayError.innerText = "Please add skill/s.";
   }
-  console.log(skillPillCounter);
 });
