@@ -186,7 +186,44 @@
         </div>
     </div>
 
-    <h3>SCope</h3>
+        <!--Post A Job More Details-->
+        <div class="postJob-detail">
+            <div class="detail-container">
+                <div class="detail-progress-section">
+                    <div class="progressBar">
+                        <progress id="jobPostProgress" value="50" max="100"></progress>
+                        <ul>
+                            <li id="current">Title</li>
+                            <li id="current">Skills</li>
+                            <li id="current">Scope</li>
+                            <li>Location</li>
+                            <li>Budget</li>
+                        </ul>
+                    </div>
+                    <div class="title-card-intro">
+                        <h2>Let's start with a strong title.</h2>
+                        <p>A strong, detailed title would stand out to the right freelancers. It's the first thing they would see.</p>
+                    </div>
+                </div>
+                <div class="detail-input-section">
+                    <h3>Write a title for your job post</h3>
+                    <input type="text" name="job_title" id="job_title" required placeholder="Write a title for your job post">
+                    <span id="titleError"></span>
+                    <h4>Example titles</h4>
+                    <ul>
+                        <li>Build a website for my local coffee shop business</li>
+                        <li>Logo Designer needed to design a modern company logo.</li>
+                        <li>Computer Technician needed to build my custom gaming pc.</li>
+                    </ul>
+    
+                    <div class="CancelOrNext">
+                        <button id="cancel" onclick="location.href='./PostAJob.html'">Back</button>
+                        <button id="nextSkills">Next: Skills</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Post A Job End-->
 
     <div class="profileFooter">
         <div class="profile-links">
