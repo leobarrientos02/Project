@@ -791,6 +791,43 @@
           }
         }
       }
+      .project-time-options {
+        display: none;
+        width: 100%;
+        .threeToSixMonths,
+        .oneToThreeMonths,
+        .lessThanOneMonth {
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+          padding: 0.5rem;
+          border-radius: 5px;
+          .time-title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            h3 {
+              font-size: 0.9rem;
+              font-weight: lighter;
+              padding-left: 0.5rem;
+            }
+            i {
+              font-size: 0.7rem;
+              color: transparent;
+              padding: 0.1rem;
+              border-radius: 50%;
+              border: 0.5px solid lightgrey;
+            }
+            #lessThanOneMonth-button {
+              color: $lightColor;
+            }
+          }
+          &:hover {
+            background: rgb(238, 238, 238);
+          }
+        }
+      }
     }
   }
 }

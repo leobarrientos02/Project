@@ -8920,6 +8920,72 @@ ul {
   background: #eeeeee;
 }
 
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options {
+  display: none;
+  width: 100%;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .threeToSixMonths,
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .oneToThreeMonths,
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .lessThanOneMonth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .threeToSixMonths .time-title,
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .oneToThreeMonths .time-title,
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .lessThanOneMonth .time-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .threeToSixMonths .time-title h3,
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .oneToThreeMonths .time-title h3,
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .lessThanOneMonth .time-title h3 {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  padding-left: 0.5rem;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .threeToSixMonths .time-title i,
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .oneToThreeMonths .time-title i,
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .lessThanOneMonth .time-title i {
+  font-size: 0.7rem;
+  color: transparent;
+  padding: 0.1rem;
+  border-radius: 50%;
+  border: 0.5px solid lightgrey;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .threeToSixMonths .time-title #lessThanOneMonth-button,
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .oneToThreeMonths .time-title #lessThanOneMonth-button,
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .lessThanOneMonth .time-title #lessThanOneMonth-button {
+  color: #054e97;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .threeToSixMonths:hover,
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .oneToThreeMonths:hover,
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time-options .lessThanOneMonth:hover {
+  background: #eeeeee;
+}
+
 @media screen and (max-width: 754px) {
   .postJob-detail {
     margin-top: 3rem;

@@ -70,8 +70,66 @@ expertOption.addEventListener("click", () => {
 //Scope Time Start
 const EditProjectTime = document.getElementById("project-time-edit");
 
+const CurrentTimeCard = document.querySelector(".project-time");
+
+const TimeCard = document.querySelector(".project-time-options");
+
 EditProjectTime.addEventListener("click", () => {
-  console.log("leo");
+  TimeCard.style.display = "inline-block";
+  CurrentTimeCard.style.display = "none";
 });
 
-//Scope Time Ends
+const threeToSixMonthsOption = document.querySelector(".threeToSixMonths");
+
+const oneToThreeMonthsOption = document.querySelector(".oneToThreeMonths");
+
+const lessThanOneMonthOption = document.querySelector(".lessThanOneMonth");
+
+const threeToSixMonthsBtn = document.getElementById("threeToSixMonths-button");
+const oneToThreeMonthsBtn = document.getElementById("oneToThreeMonths-button");
+const lessThanOneMonthBtn = document.getElementById("lessThanOneMonth-button");
+
+// Holds the user time choice
+var timeChoice = "";
+const CurrentTimeChoice = document.getElementById("currentTimeChoice");
+
+threeToSixMonthsOption.addEventListener("click", () => {
+  threeToSixMonthsBtn.style.color = "#054e97";
+  oneToThreeMonthsBtn.style.color = "transparent";
+  lessThanOneMonthBtn.style.color = "transparent";
+
+  timeChoice = "3 to 6 months";
+
+  CurrentTimeChoice.innerText = timeChoice;
+
+  TimeCard.style.display = "none";
+  CurrentTimeCard.style.display = "flex";
+});
+
+oneToThreeMonthsOption.addEventListener("click", () => {
+  threeToSixMonthsBtn.style.color = "transparent";
+  oneToThreeMonthsBtn.style.color = "#054e97";
+  lessThanOneMonthBtn.style.color = "transparent";
+
+  timeChoice = "1 to 3 months";
+
+  CurrentTimeChoice.innerText = timeChoice;
+
+  TimeCard.style.display = "none";
+  CurrentTimeCard.style.display = "flex";
+});
+
+lessThanOneMonthOption.addEventListener("click", () => {
+  threeToSixMonthsBtn.style.color = "transparent";
+  oneToThreeMonthsBtn.style.color = "transparent";
+  lessThanOneMonthBtn.style.color = "#054e97";
+
+  timeChoice = "Less than 1 month";
+
+  CurrentTimeChoice.innerText = timeChoice;
+
+  TimeCard.style.display = "none";
+  CurrentTimeCard.style.display = "flex";
+});
+
+// timeChoice, experience
