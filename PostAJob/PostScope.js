@@ -208,4 +208,16 @@ smallSizeOption.addEventListener("click", () => {
 
 // Project size JS ends
 
-// timeChoice, experience, sizeChoice
+// JS fpr next page button
+const nextLocationBtn = document.getElementById("nextLocation");
+nextLocationBtn.addEventListener("click", () => {
+  //console.log(sizeChoice);
+  //console.log(timeChoice);
+  //console.log(experience);
+  localStorage.setItem("projectSize", sizeChoice);
+  localStorage.setItem("TimeScope", timeChoice);
+  localStorage.setItem("Experience", experience);
+
+  // Go to next page
+  window.location.href = "./postLocation.html";
+});

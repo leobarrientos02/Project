@@ -34,7 +34,6 @@ ul {
   }
 
   .settings-container {
-    display: inline-block;
     width: 80%;
 
     .settings-container-title {
@@ -271,7 +270,7 @@ ul {
 
   .settings-billing {
     width: 80%;
-    display: inline-block;
+    display: none;
     .settings-balance-container {
       background: white;
       border-radius: 15px;
