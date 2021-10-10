@@ -26,7 +26,7 @@ const CurrentExperienceChoice = document.getElementById(
 );
 
 // Holds the user choice
-var experience = "";
+var experience = "Entry Level";
 
 entryOption.addEventListener("click", () => {
   entryBtn.style.color = "#054e97";
@@ -90,7 +90,7 @@ const oneToThreeMonthsBtn = document.getElementById("oneToThreeMonths-button");
 const lessThanOneMonthBtn = document.getElementById("lessThanOneMonth-button");
 
 // Holds the user time choice
-var timeChoice = "";
+var timeChoice = "Less than 1 month";
 const CurrentTimeChoice = document.getElementById("currentTimeChoice");
 
 threeToSixMonthsOption.addEventListener("click", () => {
@@ -132,4 +132,80 @@ lessThanOneMonthOption.addEventListener("click", () => {
   CurrentTimeCard.style.display = "flex";
 });
 
-// timeChoice, experience
+// Project Size JS
+const EditProjectSize = document.getElementById("project-size-edit");
+
+const CurrentSizeCard = document.querySelector(".project-size-container");
+
+const SizeCard = document.querySelector(".project-size-options");
+
+EditProjectSize.addEventListener("click", () => {
+  SizeCard.style.display = "inline-block";
+  CurrentSizeCard.style.display = "none";
+});
+
+const largeSizeOption = document.querySelector(".large-option");
+
+const mediumSizeOption = document.querySelector(".medium-option");
+
+const smallSizeOption = document.querySelector(".small-option");
+
+const largeSizeBtn = document.getElementById("largeSize-button");
+const mediumSizeBtn = document.getElementById("mediumSize-button");
+const smallSizeBtn = document.getElementById("smallSize-button");
+
+// Holds the user time choice
+var sizeChoice = "Small";
+const currentSizeChoice = document.getElementById("currentSizeChoice");
+const SizeDescription = document.getElementById("SizeDescription");
+
+largeSizeOption.addEventListener("click", () => {
+  largeSizeBtn.style.color = "#054e97";
+  mediumSizeBtn.style.color = "transparent";
+  smallSizeBtn.style.color = "transparent";
+
+  sizeChoice = "Large";
+
+  currentSizeChoice.innerText = sizeChoice;
+
+  SizeDescription.innerText =
+    "Longer term or complex initiatives (ex. design and build a full website)";
+
+  SizeCard.style.display = "none";
+  CurrentSizeCard.style.display = "flex";
+});
+
+mediumSizeOption.addEventListener("click", () => {
+  largeSizeBtn.style.color = "transparent";
+  mediumSizeBtn.style.color = "#054e97";
+  smallSizeBtn.style.color = "transparent";
+
+  sizeChoice = "Medium";
+
+  currentSizeChoice.innerText = sizeChoice;
+
+  SizeDescription.innerText = "Well-defined projects (ex. a landing page)";
+
+  SizeCard.style.display = "none";
+  CurrentSizeCard.style.display = "flex";
+});
+
+smallSizeOption.addEventListener("click", () => {
+  largeSizeBtn.style.color = "transparent";
+  mediumSizeBtn.style.color = "transparent";
+  smallSizeBtn.style.color = "#054e97";
+
+  sizeChoice = "Small";
+
+  currentSizeChoice.innerText = sizeChoice;
+
+  SizeDescription.innerText =
+    "Quick and straightforward tasks (ex. update text and images on a webpage)";
+
+  SizeCard.style.display = "none";
+  CurrentSizeCard.style.display = "flex";
+});
+
+// Project size JS ends
+
+// timeChoice, experience, sizeChoice
