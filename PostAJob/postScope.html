@@ -208,18 +208,45 @@
                 <div class="detail-input-section">
                     <div class="project-size-container">
                         <div class="project-size-option">
-                            <i class="fa fa-pencil"></i>
-                            <h3>Small</h3>
+                            <div class="project-size-option-title">
+                                <h3>Small</h3>
+                                <i class="fa fa-pencil"></i>
+                            </div>
                             <span>Quick and straightforward tasks (ex. update text and images on a webpage)</span>
                         </div>
                     </div>
                     <div class="project-time">
                         <h3>Less than one month</h3>
-                        <i class="fa fa-pencil"></i>
+                        <i class="fa fa-pencil" id="project-time-edit" title="Edit"></i>
                     </div>
                     <div class="freelance-experience">
-                        <h3>Entry Level</h3>
-                        <i class="fa fa-pencil"></i>
+                        <h3 id="currentExperienceChoice">Entry Level</h3>
+                        <i class="fa fa-pencil" id="freelance-experience-edit" title="Edit"></i>
+                    </div>
+                    <div class="freelance-experience-options">
+                        <h3>What level of experience will you need?</h3>
+                        <span>This helps us match expertise to your needs.</span>
+                        <div class="entry-option">
+                            <div class="entry-option-title">
+                                <i class="fa fa-circle" id="entry-button"></i>
+                                <h3>Entry</h3>
+                            </div>
+                            <span>Looking for somone relatively, new to thsi field.</span>
+                        </div>
+                        <div class="intermediate-option">
+                            <div class="entry-option-title">
+                                <i class="fa fa-circle" id="intermediate-button"></i>
+                                <h3>Intermediate</h3>
+                            </div>
+                            <span>Looking for substantial experience in this field.</span>
+                        </div>
+                        <div class="expert-option">
+                            <div class="entry-option-title">
+                                <i class="fa fa-circle" id="expert-button"></i>
+                                <h3>Expert</h3>
+                            </div>
+                            <span>Looking for comprehensive and deep expertise in this field.</span>
+                        </div>
                     </div>
                     <div class="CancelOrNext">
                         <button id="cancel" onclick="location.href='./postSkills.html'">Back</button>
@@ -375,7 +402,8 @@
 
 </script>
 <!--Script to searches-->
-<script src="../SkillsContainer/postJobSkills.js"></script>
+<script src="../SkillsContainer/searchProfile.js"></script>
 
-
+<!--This script contains this pages js-->
+<script src="./PostScope.js"></script>
 </html>

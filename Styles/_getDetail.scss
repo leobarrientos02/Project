@@ -636,26 +636,31 @@
           width: 100%;
           display: flex;
           flex-direction: column;
-          align-items: flex-end;
-          h3 {
-            width: 100%;
-            text-align: start;
-            font-size: 1.1rem;
-          }
-          i {
-            text-align: end;
-            cursor: pointer;
-            font-size: 0.8rem;
-            color: $darktext;
-            padding: 0.5rem;
-            border-radius: 50%;
-            background: transparent;
-            border: 0.7px solid lightgrey;
-            &:hover {
-              background: rgb(226, 226, 226);
+          .project-size-option-title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            h3 {
+              width: 100%;
+              text-align: start;
+              font-size: 1.1rem;
+            }
+            i {
+              text-align: end;
+              cursor: pointer;
+              font-size: 0.8rem;
+              color: $darktext;
+              padding: 0.5rem;
+              border-radius: 50%;
+              background: transparent;
+              border: 0.7px solid lightgrey;
+              &:hover {
+                background: rgb(226, 226, 226);
+              }
             }
           }
           span {
+            padding-right: 1.5rem;
             color: $darktext;
             font-size: 0.8rem;
           }
@@ -709,7 +714,7 @@
         }
       }
       .CancelOrNext {
-        margin-top: 2rem;
+        margin-top: 4rem;
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -738,6 +743,52 @@
           border: 0.6px solid gray;
           cursor: not-allowed;
           pointer-events: none;
+        }
+      }
+      .freelance-experience-options {
+        display: none;
+        width: 100%;
+        span {
+          font-size: 0.9rem;
+          color: $darktext;
+        }
+        .entry-option,
+        .intermediate-option,
+        .expert-option {
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+          padding: 0.5rem;
+          border-radius: 5px;
+          .entry-option-title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            h3 {
+              font-size: 1rem;
+              font-weight: lighter;
+              padding-left: 0.5rem;
+            }
+            i {
+              font-size: 0.7rem;
+              color: transparent;
+              padding: 0.1rem;
+              border-radius: 50%;
+              border: 0.5px solid lightgrey;
+            }
+            #entry-button {
+              color: $lightColor;
+            }
+          }
+          span {
+            font-size: 0.8rem;
+            color: $darktext;
+            padding-left: 1.5rem;
+          }
+          &:hover {
+            background: rgb(238, 238, 238);
+          }
         }
       }
     }

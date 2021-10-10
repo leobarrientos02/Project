@@ -8682,18 +8682,28 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 
-.postJob-detail-scope .detail-scope-container .detail-input-section .project-size-container .project-size-option h3 {
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-size-container .project-size-option .project-size-option-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-size-container .project-size-option .project-size-option-title h3 {
   width: 100%;
   text-align: start;
   font-size: 1.1rem;
 }
 
-.postJob-detail-scope .detail-scope-container .detail-input-section .project-size-container .project-size-option i {
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-size-container .project-size-option .project-size-option-title i {
   text-align: end;
   cursor: pointer;
   font-size: 0.8rem;
@@ -8704,11 +8714,12 @@ ul {
   border: 0.7px solid lightgrey;
 }
 
-.postJob-detail-scope .detail-scope-container .detail-input-section .project-size-container .project-size-option i:hover {
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-size-container .project-size-option .project-size-option-title i:hover {
   background: #e2e2e2;
 }
 
 .postJob-detail-scope .detail-scope-container .detail-input-section .project-size-container .project-size-option span {
+  padding-right: 1.5rem;
   color: #797979;
   font-size: 0.8rem;
 }
@@ -8786,7 +8797,7 @@ ul {
 }
 
 .postJob-detail-scope .detail-scope-container .detail-input-section .CancelOrNext {
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8828,6 +8839,85 @@ ul {
   border: 0.6px solid gray;
   cursor: not-allowed;
   pointer-events: none;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options {
+  display: none;
+  width: 100%;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options span {
+  font-size: 0.9rem;
+  color: #797979;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .entry-option,
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .intermediate-option,
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .expert-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .entry-option .entry-option-title,
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .intermediate-option .entry-option-title,
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .expert-option .entry-option-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .entry-option .entry-option-title h3,
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .intermediate-option .entry-option-title h3,
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .expert-option .entry-option-title h3 {
+  font-size: 1rem;
+  font-weight: lighter;
+  padding-left: 0.5rem;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .entry-option .entry-option-title i,
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .intermediate-option .entry-option-title i,
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .expert-option .entry-option-title i {
+  font-size: 0.7rem;
+  color: transparent;
+  padding: 0.1rem;
+  border-radius: 50%;
+  border: 0.5px solid lightgrey;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .entry-option .entry-option-title #entry-button,
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .intermediate-option .entry-option-title #entry-button,
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .expert-option .entry-option-title #entry-button {
+  color: #054e97;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .entry-option span,
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .intermediate-option span,
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .expert-option span {
+  font-size: 0.8rem;
+  color: #797979;
+  padding-left: 1.5rem;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .entry-option:hover,
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .intermediate-option:hover,
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience-options .expert-option:hover {
+  background: #eeeeee;
 }
 
 @media screen and (max-width: 754px) {
