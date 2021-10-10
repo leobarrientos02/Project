@@ -187,8 +187,8 @@
     </div>
 
         <!--Post A Job More Details-->
-        <div class="postJob-detail">
-            <div class="detail-container">
+        <div class="postJob-detail-scope">
+            <div class="detail-scope-container">
                 <div class="detail-progress-section">
                     <div class="progressBar">
                         <progress id="jobPostProgress" value="50" max="100"></progress>
@@ -206,19 +206,24 @@
                     </div>
                 </div>
                 <div class="detail-input-section">
-                    <h3>Write a title for your job post</h3>
-                    <input type="text" name="job_title" id="job_title" required placeholder="Write a title for your job post">
-                    <span id="titleError"></span>
-                    <h4>Example titles</h4>
-                    <ul>
-                        <li>Build a website for my local coffee shop business</li>
-                        <li>Logo Designer needed to design a modern company logo.</li>
-                        <li>Computer Technician needed to build my custom gaming pc.</li>
-                    </ul>
-    
+                    <div class="project-size-container">
+                        <div class="project-size-option">
+                            <i class="fa fa-pencil"></i>
+                            <h3>Small</h3>
+                            <span>Quick and straightforward tasks (ex. update text and images on a webpage)</span>
+                        </div>
+                    </div>
+                    <div class="project-time">
+                        <h3>Less than one month</h3>
+                        <i class="fa fa-pencil"></i>
+                    </div>
+                    <div class="freelance-experience">
+                        <h3>Entry Level</h3>
+                        <i class="fa fa-pencil"></i>
+                    </div>
                     <div class="CancelOrNext">
-                        <button id="cancel" onclick="location.href='./PostAJob.html'">Back</button>
-                        <button id="nextSkills">Next: Skills</button>
+                        <button id="cancel" onclick="location.href='./postSkills.html'">Back</button>
+                        <button id="nextLocation">Next: Location</button>
                     </div>
                 </div>
             </div>

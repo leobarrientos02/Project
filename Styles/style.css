@@ -7825,12 +7825,6 @@ ul {
   }
 }
 
-#choosenSkill {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .postJob-detail {
   margin-top: 4.5rem;
   width: 100%;
@@ -8523,6 +8517,317 @@ ul {
 
 .postJob-detail-skills .detail-skills-container .detail-input-section .CategorySpecialtyContainer ul li:hover {
   background: #71c571;
+}
+
+.postJob-detail-scope {
+  margin-top: 4.5rem;
+  width: 100%;
+  background: whitesmoke;
+  padding: 2.5rem 10rem;
+}
+
+.postJob-detail-scope .detail-scope-container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1.25px solid lightgrey;
+  border-radius: 15px;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-progress-section {
+  width: 50%;
+  height: 100%;
+  padding: 1.5rem;
+  background: #0a345e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-progress-section #current {
+  color: lightgreen;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-progress-section .progressBar {
+  width: 100%;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-progress-section .progressBar progress {
+  border-radius: 10px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: #104880;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-progress-section .progressBar progress::-webkit-progress-bar {
+  border-radius: 10px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: #104880;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-progress-section .progressBar progress::-moz-progress-bar {
+  border-radius: 10px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: #104880;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-progress-section .progressBar progress::-webkit-progress-value {
+  background: lightgreen;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
+  border: none;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-progress-section .progressBar progress::-moz-progress-bar {
+  background: lightgreen;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
+  border: none;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-progress-section .progressBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 0.3rem;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-progress-section .progressBar ul li {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-progress-section .title-card-intro h2 {
+  padding: 6rem 0rem 1rem 0rem;
+  color: white;
+  font-size: 2.3rem;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-progress-section .title-card-intro p {
+  color: white;
+  font-size: 0.95rem;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section {
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-size-container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-size-container .project-size-option {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-size-container .project-size-option h3 {
+  width: 100%;
+  text-align: start;
+  font-size: 1.1rem;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-size-container .project-size-option i {
+  text-align: end;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #797979;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: transparent;
+  border: 0.7px solid lightgrey;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-size-container .project-size-option i:hover {
+  background: #e2e2e2;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-size-container .project-size-option span {
+  color: #797979;
+  font-size: 0.8rem;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time {
+  width: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time h3 {
+  font-size: 1.1rem;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time i {
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #797979;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: transparent;
+  border: 0.7px solid lightgrey;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .project-time i:hover {
+  background: #e2e2e2;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience {
+  width: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience h3 {
+  font-size: 1.1rem;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience i {
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #797979;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: transparent;
+  border: 0.7px solid lightgrey;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .freelance-experience i:hover {
+  background: #e2e2e2;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .CancelOrNext {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .CancelOrNext #cancel {
+  color: #0a345e;
+  font-size: 1rem;
+  background: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 15px;
+  border: 0.6px solid #0a345e;
+  cursor: pointer;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .CancelOrNext #cancel:hover {
+  background: #ebebeb;
+}
+
+.postJob-detail-scope .detail-scope-container .detail-input-section .CancelOrNext #nextLocation {
+  margin-left: 1rem;
+  color: #0a345e;
+  font-size: 1rem;
+  background: lightgrey;
+  color: gray;
+  padding: 0.5rem 1.5rem;
+  border-radius: 15px;
+  border: 0.6px solid gray;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 754px) {
