@@ -1067,6 +1067,33 @@
           }
         }
       }
+      .locationsCards {
+        width: 100%;
+        .usOnlyCard,
+        .worldwideCard {
+          width: 100%;
+          padding: 1rem;
+          h4 {
+            font-size: 0.9rem;
+            span {
+              color: $darktext;
+            }
+          }
+          input {
+            border-radius: 7px;
+            border: none;
+            border: 0.7px solid lightgrey;
+            outline: none;
+            width: 100%;
+            padding: 0.4rem;
+            margin: 1rem 0rem;
+          }
+          span {
+            color: $darktext;
+            font-size: 0.8rem;
+          }
+        }
+      }
 
       .CancelOrNext {
         margin-top: 4rem;

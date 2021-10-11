@@ -9353,6 +9353,43 @@ ul {
   background: #f8f6f6;
 }
 
+.postJob-detail-location .detail-location-container .detail-input-section .locationsCards {
+  width: 100%;
+}
+
+.postJob-detail-location .detail-location-container .detail-input-section .locationsCards .usOnlyCard,
+.postJob-detail-location .detail-location-container .detail-input-section .locationsCards .worldwideCard {
+  width: 100%;
+  padding: 1rem;
+}
+
+.postJob-detail-location .detail-location-container .detail-input-section .locationsCards .usOnlyCard h4,
+.postJob-detail-location .detail-location-container .detail-input-section .locationsCards .worldwideCard h4 {
+  font-size: 0.9rem;
+}
+
+.postJob-detail-location .detail-location-container .detail-input-section .locationsCards .usOnlyCard h4 span,
+.postJob-detail-location .detail-location-container .detail-input-section .locationsCards .worldwideCard h4 span {
+  color: #797979;
+}
+
+.postJob-detail-location .detail-location-container .detail-input-section .locationsCards .usOnlyCard input,
+.postJob-detail-location .detail-location-container .detail-input-section .locationsCards .worldwideCard input {
+  border-radius: 7px;
+  border: none;
+  border: 0.7px solid lightgrey;
+  outline: none;
+  width: 100%;
+  padding: 0.4rem;
+  margin: 1rem 0rem;
+}
+
+.postJob-detail-location .detail-location-container .detail-input-section .locationsCards .usOnlyCard span,
+.postJob-detail-location .detail-location-container .detail-input-section .locationsCards .worldwideCard span {
+  color: #797979;
+  font-size: 0.8rem;
+}
+
 .postJob-detail-location .detail-location-container .detail-input-section .CancelOrNext {
   margin-top: 4rem;
   display: -webkit-box;
