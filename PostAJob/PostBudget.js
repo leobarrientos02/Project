@@ -5,6 +5,7 @@ const priceCard = document.getElementById("priceCard");
 const priceCardBtn = document.getElementById("priceCard-button");
 
 const budgetContainer = document.querySelector(".budgetContainer");
+const hourlyContainer = document.querySelector(".hourlyContainer");
 
 //Array
 const budget = [];
@@ -18,6 +19,10 @@ hourlyCard.addEventListener("click", () => {
   priceCard.style.border = " 1.25px solid rgb(121, 121, 121)";
   priceCardBtn.style.border = " 1.25px solid rgb(121, 121, 121)";
   priceCardBtn.style.color = " transparent";
+  //show hourly Card
+  hourlyContainer.style.display = "block";
+  // Hide budget card
+  budgetContainer.style.display = "none";
 });
 
 priceCard.addEventListener("click", () => {
@@ -32,6 +37,8 @@ priceCard.addEventListener("click", () => {
 
   // Show budget card
   budgetContainer.style.display = "block";
+  // Hide hourly card
+  hourlyContainer.style.display = "none";
 });
 
 // Restricts input for the given textbox to the given inputFilter function.

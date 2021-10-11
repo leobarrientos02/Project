@@ -9886,6 +9886,186 @@ ul {
   margin-top: 1rem;
 }
 
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer {
+  width: 100%;
+  padding: 1rem;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .minimum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .minimum p {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .minimum span {
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .minimum .addMinHourly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .minimum .addMinHourly .inputContainer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0rem 0.5rem;
+  border-radius: 8px;
+  border: 1.5px solid lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .minimum .addMinHourly .inputContainer input {
+  padding: 0.3rem 0rem;
+  border: none;
+  outline: none;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .minimum .addMinHourly .inputContainer button {
+  border: none;
+  font-size: 1rem;
+  background: transparent;
+  cursor: pointer;
+  color: #054e97;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .minimum .addMinHourly .inputContainer span {
+  padding-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #797979;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .maximum {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .maximum p {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .maximum span {
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .maximum .addMaxHourly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .maximum .addMaxHourly .inputContainer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0rem 0.5rem;
+  border-radius: 8px;
+  border: 1.5px solid lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .maximum .addMaxHourly .inputContainer input {
+  padding: 0.3rem 0rem;
+  border: none;
+  outline: none;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .maximum .addMaxHourly .inputContainer button {
+  border: none;
+  font-size: 1rem;
+  background: transparent;
+  cursor: pointer;
+  color: #054e97;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .maximum .addMaxHourly .inputContainer span {
+  padding-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #797979;
+}
+
 .postJob-detail-budget .detail-budget-container .detail-input-section .noBudgetPopup {
   display: none;
   -webkit-box-orient: vertical;
