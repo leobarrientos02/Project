@@ -2166,6 +2166,8 @@ e.addEventListener("input", () => {
   }
 });
 
+const SelectedSkillTitle = document.getElementById("SelectedSkillTitle");
+const selectedSkillsForm = document.getElementById("selectedSkills");
 const emptyError = document.getElementById("emptyError");
 
 enterSkill.addEventListener("click", () => {
@@ -2214,6 +2216,10 @@ nextScope.addEventListener("click", () => {
     nextScope.style.cursor = "pointer";
     nextScope.style.pointerEvents = "visible";
 
+    localStorage.setItem(
+      "category",
+      document.getElementById("categoryID").selectedOptions[0].text
+    );
     localStorage.setItem("skills", JSON.stringify(skillArray));
 
     window.location.href = "./postScope.html";

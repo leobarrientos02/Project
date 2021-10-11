@@ -9,9 +9,7 @@ const usOnlyBtn = document.getElementById("usOnly-button");
 const usOnlyLocations = document.querySelector(".usOnlyCard");
 const worldwideLocations = document.querySelector(".worldwideCard");
 
-const selectedWorldwideLocations = [];
-const selectedUsLocations = [];
-
+const allLocations = [];
 worldwideCard.addEventListener("click", () => {
   worldwideCard.style.border = "1.25px solid #054e97";
   worldwideBtn.style.color = "#054e97";
@@ -25,7 +23,7 @@ worldwideCard.addEventListener("click", () => {
   usOnlyLocations.style.display = "none";
 
   //Ensure the us data is clear
-  selectedUsLocations = [];
+  //allLocations.splice(0, allLocations.length);
   selectedLocationsContainer.style.display = "none";
   selectedLocationsCard.style.display = "none";
 });
@@ -42,7 +40,7 @@ usOnlyCard.addEventListener("click", () => {
   worldwideLocations.style.display = "none";
 
   //Ensure the worldwide data is clear
-  selectedWorldwideLocations = [];
+  //allLocations.splice(0, allLocations.length);
   selectedLocationsContainer2.style.display = "none";
   selectedLocationsCard2.style.display = "none";
 });
@@ -72,7 +70,7 @@ const emptyError = document.getElementById("emptyError");
 addBtn1.addEventListener("click", () => {
   if (e.value === "") {
     emptyError.innerText = "No input.";
-  } else if (selectedUsLocations.includes(e.value) === true) {
+  } else if (allLocations.includes(e.value) === true) {
     // Ensure duplicates are not entered
     emptyError.innerText = "Already added!";
     //console.log("leo");
@@ -85,25 +83,25 @@ addBtn1.addEventListener("click", () => {
     var locationPill = document.createElement("label");
     locationPill.innerHTML = e.value;
 
-    selectedUsLocations.push(e.value);
+    allLocations.push(e.value);
 
     selectedLocationsCard.style.display = "inline-block";
     selectedLocationsContainer.style.display = "inline-block";
     selectedLocationsContainer.appendChild(locationPill);
 
-    //console.log(selectedUsLocations);
+    //console.log(allLocations);
 
-    if (selectedUsLocations.length > 0) {
+    if (allLocations.length > 0) {
       locationPill.addEventListener("click", () => {
         selectedLocationsContainer.removeChild(locationPill);
-        selectedUsLocations.pop(locationPill.innerHTML);
-        //console.log(selectedUsLocations);
+        allLocations.pop(locationPill.innerHTML);
+        //console.log(allLocations);
       });
       nextBudget.style.background = "#054e97";
       nextBudget.style.color = "white";
       nextBudget.style.cursor = "pointer";
       nextBudget.style.pointerEvents = "visible";
-    } else if ((selectedUsLocations.length = 0)) {
+    } else if ((allLocations.length = 0)) {
       nextBudget.style.background = "lightgrey";
       nextBudget.style.color = "grey";
       nextBudget.style.pointerEvents = "none";
@@ -115,7 +113,7 @@ addBtn1.addEventListener("click", () => {
 addBtn2.addEventListener("click", () => {
   if (a.value === "") {
     emptyError.innerText = "No input.";
-  } else if (selectedWorldwideLocations.includes(a.value) === true) {
+  } else if (allLocations.includes(a.value) === true) {
     // Ensure duplicates are not entered
     emptyError.innerText = "Already added!";
     //console.log("leo");
@@ -126,25 +124,25 @@ addBtn2.addEventListener("click", () => {
     var locationPill = document.createElement("label");
     locationPill.innerHTML = a.value;
 
-    selectedWorldwideLocations.push(a.value);
+    allLocations.push(a.value);
 
     selectedLocationsCard2.style.display = "inline-block";
     selectedLocationsContainer2.style.display = "inline-block";
 
     selectedLocationsContainer2.appendChild(locationPill);
-    //console.log(selectedWorldwideLocations);
+    //console.log(allLocations);
 
-    if (selectedWorldwideLocations.length > 0) {
+    if (allLocations.length > 0) {
       locationPill.addEventListener("click", () => {
         selectedLocationsContainer2.removeChild(locationPill);
-        selectedWorldwideLocations.pop(locationPill.innerHTML);
-        //console.log(selectedWorldwideLocations);
+        allLocations.pop(locationPill.innerHTML);
+        //console.log(allLocations);
       });
       nextBudget.style.background = "#054e97";
       nextBudget.style.color = "white";
       nextBudget.style.cursor = "pointer";
       nextBudget.style.pointerEvents = "visible";
-    } else if ((selectedWorldwideLocations.length = 0)) {
+    } else if ((allLocations.length = 0)) {
       nextBudget.style.background = "lightgrey";
       nextBudget.style.color = "grey";
       nextBudget.style.pointerEvents = "none";
@@ -156,11 +154,13 @@ addBtn2.addEventListener("click", () => {
 const nextBudget = document.getElementById("nextBudget");
 const EmptyArrayError = document.getElementById("emptyArray");
 nextBudget.addEventListener("click", () => {
-  if (selectedUsLocations.length > 0 || selectedWorldwideLocations > 0) {
+  if (allLocations.length > 0) {
     nextBudget.style.background = "#054e97";
     nextBudget.style.color = "white";
     nextBudget.style.cursor = "pointer";
     nextBudget.style.pointerEvents = "visible";
+
+    localStorage.setItem("locations", JSON.stringify(allLocations));
 
     window.location.href = "./PostBudget.html";
   } else {
