@@ -9432,7 +9432,8 @@ ul {
   font-size: 0.8rem;
 }
 
-.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsCard {
+.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsUSCard,
+.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsWorldwideCard {
   display: none;
   width: 100%;
   padding: 1rem;
@@ -9441,14 +9442,19 @@ ul {
   border-radius: 10px;
 }
 
-.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsCard h5 {
+.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsUSCard h5,
+.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsWorldwideCard h5 {
   width: 100%;
   font-size: 0.9rem;
   text-decoration: underline;
   font-weight: lighter;
 }
 
-.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsCard .selectedLocations {
+.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsUSCard .selectedLocationsUS,
+.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsUSCard .selectedLocationsWorldwide,
+.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsWorldwideCard .selectedLocationsUS,
+.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsWorldwideCard .selectedLocationsWorldwide {
+  margin: 1rem 0rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9461,7 +9467,10 @@ ul {
       flex-wrap: wrap;
 }
 
-.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsCard .selectedLocations label {
+.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsUSCard .selectedLocationsUS label,
+.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsUSCard .selectedLocationsWorldwide label,
+.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsWorldwideCard .selectedLocationsUS label,
+.postJob-detail-location .detail-location-container .detail-input-section .selectedLocationsWorldwideCard .selectedLocationsWorldwide label {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -9472,7 +9481,7 @@ ul {
   border-radius: 15px;
   border: none;
   cursor: pointer;
-  margin: 0.4rem;
+  margin: 0.5rem;
 }
 
 .postJob-detail-location .detail-location-container .detail-input-section .CancelOrNext {
@@ -9511,12 +9520,13 @@ ul {
   margin-left: 1rem;
   color: #0a345e;
   font-size: 1rem;
-  background: #054e97;
-  color: white;
+  background: lightgrey;
+  color: gray;
   padding: 0.5rem 1.5rem;
   border-radius: 15px;
   border: none;
   cursor: pointer;
+  pointer-events: none;
 }
 
 .postJob-detail-location .detail-location-container .detail-input-section .CancelOrNext #nextBudget:hover {

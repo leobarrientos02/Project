@@ -239,20 +239,27 @@
                         </div>
                         <div class="worldwideCard">
                             <h4>Region or country preferences <span>(optional)</span></h4>
-                            <div class="statesPulldown">
-                                <input type="text" autocomplete="off" list="Region&Countries" placeholder="Add Region or States">                  
+                            <div class="worldwidePulldown">
+                                <input type="text" autocomplete="off" id="States&RegionsID" list="Region&Countries" placeholder="Add Region or States">                  
                                 <button id="add2">Add</button>
                             </div>
                             <span>These location preferences will be displayed to all candidates, but anyone can submit proposals.</span>
                         </div>
                     </div>
-                    <div class="selectedLocationsCard">
+                    <span style="color: red;font-size: 0.9rem;margin-left: 1rem;" id="emptyError"></span>
+                    <div class="selectedLocationsUSCard">
                         <h5>Selected Locations</h5>
-                        <span style="font-size: 0.7rem;color: red;">(Press on button to remove)</span>
-                        <div class="selectedLocations">
+                        <span style="font-size: 0.7rem;color: red;padding: 1rem 0rem;">(Press on button to remove)</span>
+                        <div class="selectedLocationsUS">
                         </div>
                     </div>
-
+                    <div class="selectedLocationsWorldwideCard">
+                        <h5>Selected Locations</h5>
+                        <span style="font-size: 0.7rem;color: red;">(Press on button to remove)</span>
+                        <div class="selectedLocationsWorldwide">
+                        </div>
+                    </div>
+                    <span style="color: red;font-size: 0.9rem;margin-left: 1rem;" id="emptyArray"></span>
                     <div class="CancelOrNext">
                         <button id="cancel" onclick="location.href='./postScope.html'">Back</button>
                         <button id="nextBudget">Next: Budget</button>
