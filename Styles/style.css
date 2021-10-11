@@ -9891,6 +9891,11 @@ ul {
   padding: 1rem;
 }
 
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer #OfficialRate {
+  color: #0a345e;
+  margin: 1rem 0rem;
+}
+
 .postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate {
   width: 100%;
   display: -webkit-box;
@@ -9919,6 +9924,17 @@ ul {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .minimum #alertMinHourly {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #cc0404;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .minimum #alertMinHourly i {
+  padding-right: 0.5rem;
+  font-size: 1rem;
 }
 
 .postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .minimum p {
@@ -10000,6 +10016,17 @@ ul {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .maximum #MaxError {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #cc0404;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .maximum #MaxError i {
+  padding-right: 0.5rem;
+  font-size: 1rem;
 }
 
 .postJob-detail-budget .detail-budget-container .detail-input-section .hourlyContainer .setHourlyRate .maximum p {

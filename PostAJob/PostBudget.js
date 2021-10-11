@@ -70,6 +70,12 @@ function setInputFilter(textbox, inputFilter) {
 setInputFilter(document.getElementById("setMaxBudget"), function (value) {
   return /^\d*\.?\d*$/.test(value); // Allow digits and '.' only, using a RegExp
 });
+setInputFilter(document.getElementById("setMaxHourly"), function (value) {
+  return /^\d*\.?\d*$/.test(value); // Allow digits and '.' only, using a RegExp
+});
+setInputFilter(document.getElementById("setMinHourly"), function (value) {
+  return /^\d*\.?\d*$/.test(value); // Allow digits and '.' only, using a RegExp
+});
 
 const setMaxBudget = document.getElementById("setMaxBudget");
 const addMaxBudget = document.getElementById("addMaxBudget");
@@ -97,6 +103,60 @@ addMaxBudget.addEventListener("click", () => {
     OfficalBudget.style.display = "flex";
 
     //show review button
+    reviewJobPost.style.background = "#054e97";
+    reviewJobPost.style.color = "white";
+    reviewJobPost.style.cursor = "pointer";
+    reviewJobPost.style.pointerEvents = "visible";
+  }
+});
+
+// HOURLY CONTAINER js
+const addMinHourlyBtn = document.getElementById("addMinHourly");
+const addMaxHourlyBtn = document.getElementById("addMaxHourly");
+
+const setMinHourly = document.getElementById("setMinHourly");
+const setMaxHourly = document.getElementById("setMaxHourly");
+
+const alertMinHourly = document.getElementById("alertMinHourly");
+const officialMinRate = document.getElementById("officialMinRate");
+
+addMinHourlyBtn.addEventListener("click", () => {
+  if (setMinHourly.value < 3) {
+    alertMinHourly.innerHTML =
+      `<i class="fa fa-exclamation-circle" aria-hidden="true"></i>`.concat(
+        "The minimum hourly rate on EZwork is $3. Please update your range."
+      );
+
+    //block review button
+    reviewJobPost.style.background = "lightgrey";
+    reviewJobPost.style.color = "grey";
+    reviewJobPost.style.cursor = "none";
+    reviewJobPost.style.pointerEvents = "none";
+  } else {
+    alertMinHourly.innerHTML = "";
+    officialMinRate.innerText = setMinHourly.value;
+  }
+});
+
+const officialMaxRate = document.getElementById("officialMaxRate");
+const MaxError = document.getElementById("MaxError");
+
+addMaxHourlyBtn.addEventListener("click", () => {
+  if (setMaxHourly.value <= officialMinRate.innerText) {
+    MaxError.innerHTML =
+      `<i class="fa fa-exclamation-circle" aria-hidden="true"></i>`.concat(
+        "Please enter a higher value than the minimum hourly rate."
+      );
+
+    //block review button
+    reviewJobPost.style.background = "lightgrey";
+    reviewJobPost.style.color = "grey";
+    reviewJobPost.style.cursor = "none";
+    reviewJobPost.style.pointerEvents = "none";
+  } else {
+    MaxError.innerHTML = "";
+    officialMaxRate.innerText = setMaxHourly.value;
+
     reviewJobPost.style.background = "#054e97";
     reviewJobPost.style.color = "white";
     reviewJobPost.style.cursor = "pointer";
