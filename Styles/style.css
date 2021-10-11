@@ -9710,7 +9710,7 @@ ul {
           align-items: flex-start;
 }
 
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationOptions {
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetOptions {
   margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9728,13 +9728,12 @@ ul {
   width: 100%;
 }
 
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationOptions #usOnly {
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetOptions #hourly {
   border: 1.25px solid #054e97;
 }
 
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationOptions .optionCard {
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetOptions .optionCard {
   width: 100%;
-  height: 32vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9746,12 +9745,12 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   margin: 1rem;
-  border: 1.25px solid lightgrey;
+  border: 1.25px solid #797979;
   border-radius: 9px;
   cursor: pointer;
 }
 
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationOptions .optionCard .choosen {
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetOptions .optionCard .choosen {
   padding: 0.5rem 0.5rem 0rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9765,7 +9764,7 @@ ul {
   width: 100%;
 }
 
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationOptions .optionCard .choosen i {
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetOptions .optionCard .choosen i {
   font-size: 0.7rem;
   color: white;
   padding: 0.2rem;
@@ -9774,13 +9773,13 @@ ul {
   border: 0.7px solid lightgrey;
 }
 
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationOptions .optionCard .choosen #usOnly-button {
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetOptions .optionCard .choosen #usOnly-button {
   color: #054e97;
   border: 0.7px solid #054e97;
 }
 
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationOptions .optionCard .usOnly,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationOptions .optionCard .worldwide {
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetOptions .optionCard .hourly,
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetOptions .optionCard .budget {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9795,163 +9794,186 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationOptions .optionCard .usOnly h4,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationOptions .optionCard .worldwide h4 {
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetOptions .optionCard .hourly i,
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetOptions .optionCard .budget i {
+  font-size: 1.5rem;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetOptions .optionCard .hourly h4,
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetOptions .optionCard .budget h4 {
   width: 100%;
   text-align: center;
   font-size: 1rem;
   font-weight: lighter;
-  padding: 1rem 0rem;
+  padding: 0.5rem 0rem;
 }
 
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationOptions .optionCard .usOnly p,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationOptions .optionCard .worldwide p {
-  width: 100%;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #797979;
-}
-
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationOptions .optionCard:hover {
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetOptions .optionCard:hover {
   background: #f8f6f6;
 }
 
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards {
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetContainer {
   width: 100%;
-}
-
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .usOnlyCard,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .worldwideCard {
   display: none;
-  width: 100%;
   padding: 1rem;
 }
 
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .usOnlyCard h4,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .worldwideCard h4 {
-  font-size: 0.9rem;
-}
-
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .usOnlyCard h4 span,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .worldwideCard h4 span {
-  color: #797979;
-}
-
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .usOnlyCard .statesPulldown,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .usOnlyCard .worldwidePulldown,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .worldwideCard .statesPulldown,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .worldwideCard .worldwidePulldown {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 7px;
-  border: none;
-  border: 0.7px solid lightgrey;
-  outline: none;
-  width: 100%;
-  margin: 1rem 0rem;
-}
-
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .usOnlyCard .statesPulldown input,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .usOnlyCard .worldwidePulldown input,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .worldwideCard .statesPulldown input,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .worldwideCard .worldwidePulldown input {
-  outline: none;
-  border: none;
-  width: 100%;
-  margin: 0.3rem 0rem;
-  padding: 0.4rem;
-}
-
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .usOnlyCard .statesPulldown #add1,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .usOnlyCard .statesPulldown #add2,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .usOnlyCard .worldwidePulldown #add1,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .usOnlyCard .worldwidePulldown #add2,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .worldwideCard .statesPulldown #add1,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .worldwideCard .statesPulldown #add2,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .worldwideCard .worldwidePulldown #add1,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .worldwideCard .worldwidePulldown #add2 {
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetContainer h4 {
   font-size: 1rem;
-  border: none;
-  background: transparent;
-  color: #054e97;
-  cursor: pointer;
-  margin-right: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .usOnlyCard span,
-.postJob-detail-budget .detail-budget-container .detail-input-section .locationsCards .worldwideCard span {
-  color: #797979;
-  font-size: 0.8rem;
-}
-
-.postJob-detail-budget .detail-budget-container .detail-input-section .selectedLocationsUSCard,
-.postJob-detail-budget .detail-budget-container .detail-input-section .selectedLocationsWorldwideCard {
-  display: none;
-  width: 100%;
-  padding: 1rem;
-  margin: 1rem;
-  border: lightgrey 0.7px solid;
-  border-radius: 10px;
-}
-
-.postJob-detail-budget .detail-budget-container .detail-input-section .selectedLocationsUSCard h5,
-.postJob-detail-budget .detail-budget-container .detail-input-section .selectedLocationsWorldwideCard h5 {
-  width: 100%;
-  font-size: 0.9rem;
-  text-decoration: underline;
-  font-weight: lighter;
-}
-
-.postJob-detail-budget .detail-budget-container .detail-input-section .selectedLocationsUSCard .selectedLocationsUS,
-.postJob-detail-budget .detail-budget-container .detail-input-section .selectedLocationsUSCard .selectedLocationsWorldwide,
-.postJob-detail-budget .detail-budget-container .detail-input-section .selectedLocationsWorldwideCard .selectedLocationsUS,
-.postJob-detail-budget .detail-budget-container .detail-input-section .selectedLocationsWorldwideCard .selectedLocationsWorldwide {
-  margin: 1rem 0rem;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.postJob-detail-budget .detail-budget-container .detail-input-section .selectedLocationsUSCard .selectedLocationsUS label,
-.postJob-detail-budget .detail-budget-container .detail-input-section .selectedLocationsUSCard .selectedLocationsWorldwide label,
-.postJob-detail-budget .detail-budget-container .detail-input-section .selectedLocationsWorldwideCard .selectedLocationsUS label,
-.postJob-detail-budget .detail-budget-container .detail-input-section .selectedLocationsWorldwideCard .selectedLocationsWorldwide label {
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetContainer .addBudget {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 0.8rem;
-  background: #0a345e;
+  padding: 0rem 0.5rem;
+  border-radius: 8px;
+  border: 1.5px solid lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetContainer .addBudget span {
+  font-size: 1.2rem;
+  color: #797979;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetContainer .addBudget input {
+  padding: 0.5rem 0rem;
+  margin-left: 0.5rem;
+  outline: none;
+  border: none;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetContainer .addBudget button {
+  border: none;
+  color: #0a345e;
+  cursor: pointer;
+  background: transparent;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetContainer .addBudget:hover {
+  border-radius: 8px;
+  border: 1.5px solid #0a345e;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetContainer #alertBudget {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #cc0404;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetContainer #alertBudget i {
+  padding-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .budgetContainer #OfficalBudget {
+  display: none;
+  color: #0a345e;
+  margin-top: 1rem;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .noBudgetPopup {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  background: #054e97;
+  border-radius: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .noBudgetPopup .closePopup {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .noBudgetPopup .closePopup span {
   color: white;
-  padding: 0.4rem 1rem;
-  border-radius: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .noBudgetPopup .closePopup span:hover {
+  color: lightgrey;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .noBudgetPopup p {
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .noBudgetPopup #addBudgetBtn {
+  width: 90%;
+  border: none;
+  padding: 0.3rem 0rem;
+  background: #5fdf5f;
+  font-size: 1rem;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section .noBudgetPopup #noBudgetBtn {
+  width: 90%;
   border: none;
   cursor: pointer;
-  margin: 0.5rem;
+  background: transparent;
+  padding: 0.3rem 0rem;
+  font-size: 1rem;
+  color: #5fdf5f;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section #noBudget {
+  font-size: 1rem;
+  color: #054e97;
+  padding: 0.2rem 1rem;
+  cursor: pointer;
+}
+
+.postJob-detail-budget .detail-budget-container .detail-input-section #noBudget:hover {
+  text-decoration: underline;
 }
 
 .postJob-detail-budget .detail-budget-container .detail-input-section .CancelOrNext {
-  margin-top: 4rem;
+  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
