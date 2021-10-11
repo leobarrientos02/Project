@@ -204,4 +204,7 @@ noBudgetBtn2.addEventListener("click", () => {
   window.location.href = "./reviewJobPost.html";
 });
 
+reviewJobPost.addEventListener("click", () => {
+  window.location.href = "./reviewJobPost.html";
+});
 //window.location.href = "./reviewJobPost.html";
