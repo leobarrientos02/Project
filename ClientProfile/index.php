@@ -34,8 +34,6 @@ if ($result->num_rows > 0) {
   echo "0 results";
 }
 $link->close();
-// Destroy the session.
-session_destroy();
 ?>
 
 <!DOCTYPE html>
