@@ -4,7 +4,7 @@ const showPswrd = document.getElementById("show");
 showPswrd.addEventListener("click", showPassword);
 
 function showPassword() {
-  var x = document.getElementById("password");
+  var x = document.getElementById("Password");
   if (x.value === "") {
   } else if (x.type === "password") {
     x.type = "text";

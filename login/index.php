@@ -30,9 +30,9 @@
         <div class="container">
             <div class="login-container">
                 <h3>Log In To EzWork</h3>
-                <form action="/ClientProfile/index.html">
-                    <input type="email" name="email" id="email" placeholder="Email" required>
-                    <input type="password" name="password" id="password" placeholder="Password" required>
+                <form enctype="multipart/form-data" action="login.php" method="POST">
+                    <input type="email" name="Email" id="Email" placeholder="Email" required>
+                    <input type="password" name="Password" id="Password" placeholder="Password" required>
                     <p id="show">Show Password</p>
                     <input type="submit" value="Log In" id="submit">
                 </form>
@@ -44,7 +44,7 @@
             <div class="register">
                 <div class="register-container">
                     <h3>Don't have an account?</h3>
-                    <button onclick="location.href='../register/index.html'">Sign Up</button>
+                    <button onclick="location.href='../register/index.php'">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -61,6 +61,6 @@
             <a href="/404Page/index.html">Accesibility</a>
         </div>
     </div>
-    <script src="/login/loginPage.js"></script>
 </body>
+<script src="./loginPage.js"></script>
 </html>
