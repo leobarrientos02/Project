@@ -233,7 +233,7 @@
                                 <div class="addMinHourly">
                                     <div class="inputContainer">
                                         <span>$</span>
-                                        <input type="text" id="setMinHourly" required placeholder="0">
+                                        <input type="text"  onfocus="this.value=''" id="setMinHourly" required placeholder="0">
                                         <button id="addMinHourly">Add</button>
 
                                     </div>
@@ -246,7 +246,7 @@
                                 <div class="addMaxHourly">
                                     <div class="inputContainer">
                                         <span>$</span>
-                                        <input type="text" id="setMaxHourly" required placeholder="0">
+                                        <input type="text"  onfocus="this.value=''" id="setMaxHourly" required placeholder="0">
                                         <button id="addMaxHourly">Add</button>
                                     </div>
                                     <span>/ hour</span>
@@ -260,7 +260,7 @@
                         <h4>Maximum project budget (USD)</h4>
                         <div class="addBudget">
                             <span>$</span>
-                            <input type="text" id="setMaxBudget" required placeholder="0">
+                            <input  type="text" id="setMaxBudget" required placeholder="0">
                             <button id="addMaxBudget">Add</button>
                         </div>
                         <span id="alertBudget"></span>

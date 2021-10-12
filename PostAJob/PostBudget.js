@@ -16,8 +16,8 @@ hourlyCard.addEventListener("click", () => {
   hourlyCardBtn.style.border = "1.25px solid #054e97";
 
   //Ensure other card is default
-  priceCard.style.border = " 1.25px solid rgb(121, 121, 121)";
-  priceCardBtn.style.border = " 1.25px solid rgb(121, 121, 121)";
+  priceCard.style.border = "1.25px solid rgb(121, 121, 121)";
+  priceCardBtn.style.border = "1.25px solid rgb(121, 121, 121)";
   priceCardBtn.style.color = " transparent";
   //show hourly Card
   hourlyContainer.style.display = "block";
@@ -102,6 +102,13 @@ addMaxBudget.addEventListener("click", () => {
     userBudget.innerText = setMaxBudget.value;
     OfficalBudget.style.display = "flex";
 
+    if (budget.length == 0) {
+      budget.push(setMaxBudget.value);
+    } else {
+      budget.pop(setMinHourly.value);
+      budget.pop(setMaxHourly.value);
+    }
+
     //show review button
     reviewJobPost.style.background = "#054e97";
     reviewJobPost.style.color = "white";
@@ -133,6 +140,11 @@ addMinHourlyBtn.addEventListener("click", () => {
     reviewJobPost.style.cursor = "none";
     reviewJobPost.style.pointerEvents = "none";
   } else {
+    if (budget.length == 0) {
+      budget.push(setMinHourly.value);
+    } else {
+      budget.pop(setMaxBudget.value);
+    }
     alertMinHourly.innerHTML = "";
     officialMinRate.innerText = setMinHourly.value;
   }
@@ -154,6 +166,11 @@ addMaxHourlyBtn.addEventListener("click", () => {
     reviewJobPost.style.cursor = "none";
     reviewJobPost.style.pointerEvents = "none";
   } else {
+    if (budget.length == 1) {
+      budget.push(setMaxHourly.value);
+    } else {
+      budget.pop(setMaxBudget.value);
+    }
     MaxError.innerHTML = "";
     officialMaxRate.innerText = setMaxHourly.value;
 
@@ -205,6 +222,7 @@ noBudgetBtn2.addEventListener("click", () => {
 });
 
 reviewJobPost.addEventListener("click", () => {
+  localStorage.setItem("budget", JSON.stringify(budget));
   window.location.href = "./reviewJobPost.html";
 });
 //window.location.href = "./reviewJobPost.html";
