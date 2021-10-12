@@ -505,7 +505,7 @@
 </script>
 <script>
 const sortDownBtn = document.getElementById('jobArrow');
-function toggleJobCard(){
+async function toggleJobCard(){
     var mobileJobCard = document.querySelector(".mobileJobCard"); 
     if (mobileJobCard.style.display === "none") {
         sortDownBtn.style.transform = "rotate(180deg)";
