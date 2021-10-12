@@ -30,7 +30,7 @@ if($stmt = mysqli_prepare($link, $sql)){
     // Attempt to execute the prepared statement
     if(mysqli_stmt_execute($stmt)){
         //echo "Records inserted successfully.";
-        header("location: ../ClientProfile/index.php");
+        header("location: ../login/index.html");
     } else{
         //echo "<p>ERROR: Could not execute query: $sql. " . mysqli_error($link) . "</p>";
         header("location: ../404Page/index.html");
