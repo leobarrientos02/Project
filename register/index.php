@@ -137,7 +137,7 @@ if($link === false){
             <div class="login">
                 <div class="login-container">
                     <h3>Already have an account?</h3>
-                    <button onclick="location.href='../login/index.php'">Log In</button>
+                    <button onclick="location.href='../login/index.html'">Log In</button>
                 </div>
             </div>
         </div>
