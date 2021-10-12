@@ -1,3 +1,19 @@
+<?php
+/* Database credentials. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_NAME', 'ezwork');
+ 
+/* Attempt to connect to MySQL database */
+$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+ 
+// Check connection
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -30,24 +46,26 @@
         <div class="container">
             <div class="register-container">
                 <h3>Create your Free Account</h3>
-                <form id="myForm">
+                <form  enctype="multipart/form-data" id="myForm" action="register.php" method="POST">
                     <div class="name">
                         <h4>Full Name</h4>
                         <p>
-                            <input 
+                            <input
+                              
                                 type="text" 
-                                name="firstName" 
-                                id="firstName"
+                                name="FirstName" 
+                                id="FirstName"
                                 placeholder="First Name"
                                 title="Enter your first name."
                                 required
                             >
                         </p>
                         <p>
-                            <input 
+                            <input
+                         
                                 type="text" 
-                                name="lastName" 
-                                id="lastName"
+                                name="LastName" 
+                                id="LastName"
                                 placeholder="Last Name"
                                 title="Enter your last name."
                                 required
@@ -57,10 +75,11 @@
                     <div class="dateofBirth">
                         <h4>Date of Birth</h4>
                         <p>
-                            <input 
+                            <input
+                       
                                 type="date" 
-                                name="birthday" 
-                                id="birthday"
+                                name="BirthDate" 
+                                id="BirthDate"
                                 title="Please enter your date of birth."
                                 required
                             >
@@ -70,10 +89,11 @@
                     <div class="contact">
                         <h4>Contact</h4>
                         <p>
-                            <input 
+                            <input
+                             
                                 type="tel" 
-                                name="phone" 
-                                id="phone"
+                                name="Phone" 
+                                id="Phone"
                                 placeholder="Phone Number"
                                 title="Enter valid phone number."
                                 required
@@ -84,18 +104,18 @@
                     <div class="account">
                         <h4>Account Information</h4>
                         <p>
-                            <input 
+                            <input
                                 type="email" 
-                                name="email" 
-                                id="email"
+                                name="Email" 
+                                id="Email"
                                 placeholder="Email"
                                 required>
                         </p>
                         <p>
-                            <input 
+                            <input
                                 type="password" 
-                                name="password" 
-                                id="password"
+                                name="Password" 
+                                id="Password"
                                 title="Please enter a strong password."
                                 placeholder="Password"
                                 required>
@@ -104,8 +124,8 @@
                         <p>
                             <input 
                                 type="password" 
-                                name="password2" 
-                                id="password2"
+                                name="Password2" 
+                                id="Password2"
                                 title="Match Password"
                                 placeholder="Match Password"
                                 required>

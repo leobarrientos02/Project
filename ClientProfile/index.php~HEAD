@@ -105,7 +105,7 @@ $link->close();
                 <i class="fa fa-cog" aria-hidden="true"></i> Settings
             </p>
         </div>
-        <div class="mobileNavCard mobileNavLogOut" onclick="location.href='../login/index.html'">
+        <div class="mobileNavCard mobileNavLogOut" onclick="location.href='../login/index.php'">
             <p>
                 <i class="fa fa-sign-out-alt"></i> Sign Out
             </p>
@@ -219,10 +219,10 @@ $link->close();
                                 <i class="fa fa-cog" aria-hidden="true"></i> Settings
                             </p>
                         </div>
-                        <div class="card card3" onclick="location.href='../login/index.html'">
-                            <p>
+                        <div class="card card3">
+                            <a  style="color: black;text-decoration: none;" href="../php/logout.php">
                                 <i class="fa fa-sign-out-alt"></i> Sign Out
-                            </p>
+                            </a>
                         </div>
                     </div>
                 </div>
