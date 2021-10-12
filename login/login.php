@@ -12,22 +12,9 @@ $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 // Check connection
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
-}
-// Initialize the session
-session_start();
- 
-// Check if the user is already logged in, if yes then redirect him to home page
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-  header("location: ../ClientProfile/index.html");
-  exit;
-
-}
- 
-
-?>
+}else{
 
 
-<?php
     $Email = $_POST['Email'];
     $Password = $_POST['Password'];
 
@@ -38,18 +25,11 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     if ($result->num_rows == 1) {
       
       // output data of each row
-      if($row = $result->fetch_assoc()) {
-
-        $id =$row["id"];
-     
-        // Store data in session variables
-        $_SESSION["loggedin"] = true;
-        $_SESSION["id"] = $id;
-        $_SESSION["Email"] = $Email;                            
+      if($row = $result->fetch_assoc()) {                     
         
         // Redirect user to home page
-        header("location: ../ClientProfile/index.html");
-        
+        header("location: ../ClientProfile/index.php");
+
       }
     } else {
       header("location: ../404Page/index.html");
@@ -58,5 +38,5 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
           
     }
     $link->close();
-    
+  }
 ?>

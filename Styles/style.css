@@ -956,7 +956,7 @@ header {
   width: 95%;
   height: 95%;
   border-radius: 25px;
-  background-image: url("/Image/clients-container-bgImage.jpg");
+  background-image: url("./Image/clients-container-bgImage.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -4743,11 +4743,6 @@ section .container .login .login-container button:hover {
   padding: 0.5rem 0rem;
   cursor: pointer;
   width: 100%;
-}
-
-.sessionCardContainer .sessionCard .card a {
-  text-decoration: none;
-  color: black;
 }
 
 .sessionCardContainer .sessionCard .card i {

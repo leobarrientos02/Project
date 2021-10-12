@@ -1,3 +1,44 @@
+<?php
+/* Database credentials. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_NAME', 'ezwork');
+ 
+/* Attempt to connect to MySQL database */
+$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+ 
+// Check connection
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}else{
+    session_start();
+
+}
+?>
+<?php 
+$sql = "SELECT FirstName, LastName, Email, Phone FROM client";
+$result = $link->query($sql);
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+      $LastName = $row["LastName"];
+      $FirstName = $row["FirstName"];
+      $Email = $row["Email"];
+      $Phone = $row["Phone"];
+
+      $_SESSION["FirstName"] = $FirstName;
+      $_SESSION["LastName"] = $LastName;
+      $_SESSION["Email"] = $Email;
+      $_SESSION["Phone"] = $Phone;
+  }
+} else {
+  echo "0 results";
+}
+$link->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -82,7 +123,7 @@
                 <div class="line3"></div>
             </div>
             <div class="logo">
-                <a href="../ClientProfile/index.html"><h2>E<span>z</span>Work</h2></a>
+                <a href="../ClientProfile/index.php"><h2>E<span>z</span>Work</h2></a>
             </div>
             <div class="searchBar">
                 <form id="searchContainer">
@@ -210,10 +251,10 @@
                     <img src="../Users/user.svg" alt="">
                 </div>
                 <div class="settings-account-profile-info">
-                    <p>Name: <span>John Doe</span></p>
+                    <p>Name: <span><?php echo $_SESSION["FirstName"] ?> <?php echo $_SESSION["LastName"] ?></span></p>
                     <p>Account Type: <span>Client</span></p>
-                    <p>Phone Number: <span>516-960-8086</span></p>
-                    <p>Email: <span>leobarrientos02@gmail.com</span></p>
+                    <p>Phone Number: <span><?php echo $_SESSION["Phone"] ?></span></p>
+                    <p>Email: <span><?php echo $_SESSION["Email"] ?></span></p>
                 </div>
             </div>
             <div class="settings-account-godMode">
