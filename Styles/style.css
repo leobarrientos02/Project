@@ -4745,11 +4745,6 @@ section .container .login .login-container button:hover {
   width: 100%;
 }
 
-.sessionCardContainer .sessionCard .card a {
-  text-decoration: none;
-  color: black;
-}
-
 .sessionCardContainer .sessionCard .card i {
   margin: 0rem 0.8rem 0rem 1.5rem;
 }
