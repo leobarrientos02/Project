@@ -4,7 +4,7 @@ const showPswrd = document.getElementById("show");
 showPswrd.addEventListener("click", showPassword);
 
 function showPassword() {
-  var x = document.getElementById("Password");
+  var x = document.getElementById("password");
   if (x.value === "") {
   } else if (x.type === "password") {
     x.type = "text";
@@ -18,8 +18,8 @@ function showPassword() {
 
 const error = document.getElementById("error");
 function matchPassword() {
-  var x = document.getElementById("Password");
-  var y = document.getElementById("Password2");
+  var x = document.getElementById("password");
+  var y = document.getElementById("password2");
 
   if (!(x.value === y.value)) {
     error.innerText = "Password does not match.";
@@ -28,5 +28,5 @@ function matchPassword() {
   }
 }
 
-const matchPsw = document.getElementById("Password2");
+const matchPsw = document.getElementById("password2");
 matchPsw.addEventListener("focusout", matchPassword);
