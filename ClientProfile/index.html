@@ -31,9 +31,17 @@
             <span id="user">John Doe</span>
             <i class="fa fa-sort-down"></i>
         </div>
-        <div class="mobileNavCard">
+        <div class="mobileNavCard" id="mobile-job-card" onclick="toggleJobCard()">
             <p>Jobs</p>
-            <i class="fa fa-sort-down"></i>
+            <i class="fa fa-sort-down" id="jobArrow"></i>
+        </div>
+        <div class="mobileJobCard">
+            <ul>
+                <a href="./index.html"><li>My Jobs</li></a>
+                <a href="#/"><li>All Job Posts</li></a>
+                <a href="#/"><li>All Contracts</li></a>
+                <a href="../PostAJob/PostAJob.html"><li>Post A Job</li></a>
+            </ul>
         </div>
         <div class="mobileNavCard">
             <p>Talent</p>
@@ -494,5 +502,18 @@
             searchIcon.style.opacity='1';
         }
     }
+</script>
+<script>
+const sortDownBtn = document.getElementById('jobArrow');
+function toggleJobCard(){
+    var mobileJobCard = document.querySelector(".mobileJobCard"); 
+    if (mobileJobCard.style.display === "none") {
+        sortDownBtn.style.transform = "rotate(180deg)";
+        mobileJobCard.style.display = "inline-block";
+    } else {
+        mobileJobCard.style.display = "none";
+    }
+}
+
 </script>
 </html>
