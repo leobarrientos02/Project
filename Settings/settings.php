@@ -61,7 +61,7 @@ $link->close();
     </head>
 <body>
 
-    <div class="profile-mobile-nav">
+<div class="profile-mobile-nav">
         <div class="profile-nav-search">
             <form id="searchContainer">
                 <input type="text" list="allskills" autocomplete="off" name="searchNAV" placeholder="Search">
@@ -70,12 +70,20 @@ $link->close();
         </div>
         <div class="mobileNavCard" id="navProfile">
             <img src="../Users/user.svg" alt="">
-            <span id="user">John Doe</span>
+            <span id="user"><?php echo $_SESSION["FirstName"] ?> <?php echo $_SESSION["LastName"] ?></span>
             <i class="fa fa-sort-down"></i>
         </div>
-        <div class="mobileNavCard">
+        <div class="mobileNavCard" id="mobile-job-card" onclick="toggleJobCard(this)">
             <p>Jobs</p>
-            <i class="fa fa-sort-down"></i>
+            <i class="fa fa-sort-down" id="jobArrow"></i>
+        </div>
+        <div class="mobileJobCard">
+            <ul>
+                <a href="./index.html"><li>My Jobs</li></a>
+                <a href="#/"><li>All Job Posts</li></a>
+                <a href="#/"><li>All Contracts</li></a>
+                <a href="../PostAJob/PostAJob.html"><li>Post A Job</li></a>
+            </ul>
         </div>
         <div class="mobileNavCard">
             <p>Talent</p>
@@ -96,12 +104,12 @@ $link->close();
             <p>Notifications</p>
             <i class="fa fa-bell" title="Notification"></i>
         </div>
-        <div class="mobileNavCard mobileNavSettings" onclick="location.href='../Settings/settings.html'">
+        <div class="mobileNavCard mobileNavSettings" onclick="location.href='../Settings/settings.php'">
             <p>
                 <i class="fa fa-cog" aria-hidden="true"></i> Settings
             </p>
         </div>
-        <div class="mobileNavCard mobileNavLogOut" onclick="location.href='../login/index.html'">
+        <div class="mobileNavCard mobileNavLogOut" onclick="location.href='../login/index.php'">
             <p>
                 <i class="fa fa-sign-out-alt"></i> Sign Out
             </p>
@@ -123,7 +131,7 @@ $link->close();
                 <div class="line3"></div>
             </div>
             <div class="logo">
-                <a href="../ClientProfile/index.php"><h2>E<span>z</span>Work</h2></a>
+                <a href="../ClientProfile/index.html"><h2>E<span>z</span>Work</h2></a>
             </div>
             <div class="searchBar">
                 <form id="searchContainer">
@@ -206,19 +214,19 @@ $link->close();
                                 <img src="../Users/user.svg" id="profileImage3" alt="">
                             </div>
                             <div class="name">
-                                <span id="name">John Doe</span>
+                                <span id="name"><?php echo $_SESSION["FirstName"] ?> <?php echo $_SESSION["LastName"] ?></span>
                                 <span id="type">Client</span>
                             </div>
                         </div>
-                        <div class="card card2"  onclick="location.href='../Settings/settings.html'">
+                        <div class="card card2"  onclick="location.href='../Settings/settings.php'">
                             <p>
                                 <i class="fa fa-cog" aria-hidden="true"></i> Settings
                             </p>
                         </div>
-                        <div class="card card3" onclick="location.href='../login/index.html'">
-                            <p>
+                        <div class="card card3">
+                            <a  style="color: black;text-decoration: none;" href="../php/logout.php">
                                 <i class="fa fa-sign-out-alt"></i> Sign Out
-                            </p>
+                            </a>
                         </div>
                     </div>
                 </div>
