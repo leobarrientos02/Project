@@ -9607,7 +9607,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: 1.25px solid #998282;
+  border: 1.25px solid #aca1a1;
   border-radius: 15px;
 }
 
@@ -10256,6 +10256,114 @@ ul {
 
 .postJob-detail-budget .detail-budget-container .detail-input-section .CancelOrNext #reviewJobPost:hover {
   background: #0a345e;
+}
+
+.reviewJobPost-container {
+  margin-top: 4.5rem;
+  width: 100%;
+  background: whitesmoke;
+  padding: 2.5rem 10rem;
+}
+
+.reviewJobPost-container .reviewJobPost_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: whitesmoke;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 1.25px solid #b9b3b3;
+  padding: 2rem;
+}
+
+.reviewJobPost-container .reviewJobPost_title h3 {
+  font-size: 2rem;
+  color: #0a345e;
+}
+
+.reviewJobPost-container .reviewJobPost_title #postJobNow {
+  margin-left: 1rem;
+  color: #0a345e;
+  font-size: 1rem;
+  background: lightgrey;
+  color: gray;
+  padding: 0.5rem 1.5rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.reviewJobPost-container .reviewJobPost_title #postJobNow:hover {
+  background: #0a345e;
+}
+
+.reviewJobPost-container .review_jobTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  border-left: 1.25px solid #b9b3b3;
+  border-right: 1.25px solid #b9b3b3;
+}
+
+.reviewJobPost-container .review_jobTitle h4 {
+  font-size: 1.3rem;
+  color: #0a345e;
+}
+
+.reviewJobPost-container .review_jobTitle .confirmTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviewJobPost-container .review_jobTitle .confirmTitle .title {
+  width: 50%;
+  margin: 0.6rem 0rem;
+  padding: 0.7rem;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  border: 1.25px solid #b9b3b3;
+  cursor: pointer;
+}
+
+.reviewJobPost-container .review_jobTitle .confirmTitle .title:hover {
+  border: 1.25px solid #0a345e;
+}
+
+.reviewJobPost-container .review_jobTitle .confirmTitle .title span {
+  width: 100%;
+  outline: none;
+}
+
+.reviewJobPost-container .review_jobTitle .confirmTitle i {
+  color: #0a345e;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 1rem;
 }
 
 @media screen and (max-width: 754px) {

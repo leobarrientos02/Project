@@ -1215,7 +1215,7 @@
     background: $color1;
     display: flex;
     flex-direction: row;
-    border: 1.25px solid rgb(153, 130, 130);
+    border: 1.25px solid rgb(172, 161, 161);
     border-radius: 15px;
     .detail-progress-section {
       width: 50%;
@@ -1654,6 +1654,83 @@
     }
   }
 }
+.reviewJobPost-container {
+  margin-top: 4.5rem;
+  width: 100%;
+  background: whitesmoke;
+  padding: 2.5rem 10rem;
+
+  .reviewJobPost_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: whitesmoke;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1.25px solid rgb(185, 179, 179);
+    padding: 2rem;
+    h3 {
+      font-size: 2rem;
+      color: $color1;
+    }
+    #postJobNow {
+      margin-left: 1rem;
+      color: $color1;
+      font-size: 1rem;
+      background: lightgrey;
+      color: gray;
+      padding: 0.5rem 1.5rem;
+      border-radius: 15px;
+      border: none;
+      cursor: pointer;
+      pointer-events: none;
+      &:hover {
+        background: $color1;
+      }
+    }
+  }
+  .review_jobTitle {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-left: 1.25px solid rgb(185, 179, 179);
+    border-right: 1.25px solid rgb(185, 179, 179);
+    h4 {
+      font-size: 1.3rem;
+      color: $color1;
+    }
+    .confirmTitle {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .title {
+        width: 50%;
+        margin: 0.6rem 0rem;
+        padding: 0.7rem;
+        outline: none;
+        border-radius: 10px;
+        border: none;
+        border: 1.25px solid rgb(185, 179, 179);
+        cursor: pointer;
+        &:hover {
+          border: 1.25px solid $color1;
+        }
+        span {
+          width: 100%;
+          outline: none;
+        }
+      }
+      i {
+        color: $color1;
+        font-size: 1.3rem;
+        cursor: pointer;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 754px) {
   .postJob-detail {
     margin-top: 3rem;

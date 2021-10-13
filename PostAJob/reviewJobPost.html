@@ -189,11 +189,16 @@
     <div class="reviewJobPost-container">
         <div class="reviewJobPost_title">
             <h3>Now just finish and review your job post.</h3>
-            <button>Post Your Job Now</button>
+            <button id="postJobNow">Post Your Job Now</button>
         </div>
         <div class="review_jobTitle">
             <h4>Title</h4>
-            <input type="text">
+            <div class="confirmTitle">
+                <div class="title">
+                    <span id="currentTitleSpan" contenteditable="true"></span>
+                </div>
+                <i class="fa fa-check" id="confirmTitle"></i>
+            </div>
         </div>
         <div class="jobDescription">
             <h4>Job Description</h4>
@@ -383,5 +388,6 @@
 
 </script>
 
+<script src="./reviewJob.js"></script>
 
 </html>
