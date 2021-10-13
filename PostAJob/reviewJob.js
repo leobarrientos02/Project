@@ -29,7 +29,8 @@ const selectedScope = (document.getElementById("selectedScope").innerText =
 
 const currentBudget = localStorage.getItem("budget");
 const selectedBudget = document.getElementById("selectedBudget");
-selectedBudget.innerText = JSON.parse(currentBudget);
+
+selectedBudget.innerText = "$".concat(JSON.parse(currentBudget));
 
 const currentLocation = localStorage.getItem("locations");
 const selectedLocation = document.getElementById("selectedLocation");
