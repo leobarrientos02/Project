@@ -1697,7 +1697,7 @@
     border-left: 1.25px solid rgb(185, 179, 179);
     border-right: 1.25px solid rgb(185, 179, 179);
     h4 {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       color: $color1;
     }
     .confirmTitle {
@@ -1726,6 +1726,129 @@
         font-size: 1.3rem;
         cursor: pointer;
         margin-left: 1rem;
+        &:hover {
+          color: $lightColor;
+        }
+      }
+    }
+  }
+  .jobDescription {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-top: 1.25px solid rgb(185, 179, 179);
+    border-left: 1.25px solid rgb(185, 179, 179);
+    border-right: 1.25px solid rgb(185, 179, 179);
+    h4 {
+      font-size: 1.2rem;
+      color: $color1;
+    }
+    span {
+      font-size: 0.9rem;
+      color: $darktext;
+      margin: 0.5rem 0rem;
+    }
+    textarea {
+      margin: 1rem 0rem;
+      width: 60%;
+      font-size: 0.9rem;
+      color: $darktext;
+      outline: none;
+      border-radius: 5px;
+      border: none;
+      padding: 1rem;
+      border: 1.25px solid rgb(185, 179, 179);
+      &:hover {
+        border: 1.25px solid $color1;
+      }
+    }
+  }
+  .reviewJobDetails {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-top: 1.25px solid rgb(185, 179, 179);
+    border-left: 1.25px solid rgb(185, 179, 179);
+    border-right: 1.25px solid rgb(185, 179, 179);
+    h4 {
+      font-size: 1.2rem;
+      color: $color1;
+    }
+    .reviewCategory,
+    .reviewSkill,
+    .reviewScope,
+    .reviewLocation,
+    .reviewBudget {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      i {
+        cursor: pointer;
+        font-size: 0.9rem;
+        margin-left: 1rem;
+        color: $darktext;
+        padding: 0.6rem;
+        border-radius: 50%;
+        background: transparent;
+        border: 0.7px solid lightgrey;
+        &:hover {
+          background: rgb(226, 226, 226);
+        }
+      }
+    }
+  }
+  .buttonCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border: 1.25px solid rgb(185, 179, 179);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    .back {
+      #back {
+        color: $color1;
+        font-size: 1rem;
+        background: none;
+        padding: 0.5rem 1.5rem;
+        border-radius: 15px;
+        border: 0.6px solid $color1;
+        cursor: pointer;
+        &:hover {
+          background: rgb(235, 235, 235);
+        }
+      }
+    }
+    .continue {
+      #cancel {
+        margin-right: 1rem;
+        color: $color1;
+        font-size: 1rem;
+        background: transparent;
+        color: $lightColor;
+        padding: 0.5rem 1.5rem;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      #postJob {
+        margin-left: 1rem;
+        color: $color1;
+        font-size: 1rem;
+        background: lightgrey;
+        color: gray;
+        padding: 0.5rem 1.5rem;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        pointer-events: none;
+        &:hover {
+          background: $color1;
+        }
       }
     }
   }

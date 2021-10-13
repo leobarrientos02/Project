@@ -204,9 +204,7 @@
             <h4>Job Description</h4>
             <span>This is how freelancers figures out what you need and why you’re great to work with!</span>
             <span>Include your expectations about the task or deliverable, what you’re looking for in a work relationship, and anything unique about your project.</span>
-            <textarea rows="10" cols="10" maxlength="5000" minlength="20" placeholder="Already have a job description? Paste it here!"></textarea>
-            <p><span id="wordCount"></span> characters left</p>
-            <span id="DescriptionError"></span>
+            <textarea required maxlength="5000" id="jobDescription" placeholder="Already have a job description? Paste it here!"></textarea>
             <input type="file" id="file">
             <span>Max file size: 100MB</span>
         </div>
@@ -236,10 +234,14 @@
                 <p id="selectedBudget"></p>
                 <i class="fa fa-pencil"></i>
             </div>
-            <div class="buttonCard">
-                <button>Back</button>
-                <button>Save as Draft</button>
-                <button>Post Job</button>
+        </div>
+        <div class="buttonCard">
+            <div class="back">
+                <button id="back">Back</button>
+            </div>
+            <div class="continue">
+                <button id="cancel">Cancel</button>
+                <button id="postJob">Post Job</button>
             </div>
         </div>
     </div>
