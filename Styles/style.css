@@ -10470,6 +10470,15 @@ ul {
   background: #e2e2e2;
 }
 
+.reviewJobPost-container .reviewJobDetails .reviewCategory p,
+.reviewJobPost-container .reviewJobDetails .reviewSkill p,
+.reviewJobPost-container .reviewJobDetails .reviewScope p,
+.reviewJobPost-container .reviewJobDetails .reviewLocation p,
+.reviewJobPost-container .reviewJobDetails .reviewBudget p {
+  padding: 0.5rem 0rem;
+  color: #797979;
+}
+
 .reviewJobPost-container .buttonCard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12540,6 +12549,248 @@ ul {
     pointer-events: none;
   }
   .postJob-detail-budget .detail-budget-container .detail-input-section .CancelOrNext #reviewJobPost:hover {
+    background: #0a345e;
+  }
+  .reviewJobPost-container {
+    margin-top: 3.5rem;
+    width: 100%;
+    background: whitesmoke;
+    padding: 1rem 0rem;
+  }
+  .reviewJobPost-container .reviewJobPost_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: whitesmoke;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border: 1.25px solid #b9b3b3;
+    border-left: none;
+    border-right: none;
+    padding: 1rem;
+  }
+  .reviewJobPost-container .reviewJobPost_title h3 {
+    font-size: 1.5rem;
+    color: #0a345e;
+  }
+  .reviewJobPost-container .reviewJobPost_title #postJobNow {
+    display: none;
+  }
+  .reviewJobPost-container .review_jobTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+    border-left: none;
+    border-right: none;
+  }
+  .reviewJobPost-container .review_jobTitle h4 {
+    font-size: 1.2rem;
+    color: #0a345e;
+  }
+  .reviewJobPost-container .review_jobTitle .confirmTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reviewJobPost-container .review_jobTitle .confirmTitle .title {
+    width: 90%;
+    margin: 0.6rem 0rem;
+    padding: 0.7rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    border: 1.25px solid #b9b3b3;
+    cursor: pointer;
+  }
+  .reviewJobPost-container .review_jobTitle .confirmTitle .title:hover {
+    border: 1.25px solid #0a345e;
+  }
+  .reviewJobPost-container .review_jobTitle .confirmTitle .title span {
+    width: 100%;
+    outline: none;
+  }
+  .reviewJobPost-container .review_jobTitle .confirmTitle i {
+    color: #0a345e;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  .reviewJobPost-container .review_jobTitle .confirmTitle i:hover {
+    color: #054e97;
+  }
+  .reviewJobPost-container .jobDescription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+    border-top: 1.25px solid #b9b3b3;
+    border-left: none;
+    border-right: none;
+  }
+  .reviewJobPost-container .jobDescription h4 {
+    width: 100%;
+    font-size: 1.2rem;
+    color: #0a345e;
+  }
+  .reviewJobPost-container .jobDescription span {
+    font-size: 0.9rem;
+    color: #797979;
+    margin: 0.5rem 0rem;
+  }
+  .reviewJobPost-container .jobDescription textarea {
+    margin: 1rem 0rem;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #797979;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 0.7rem;
+    border: 1.25px solid #b9b3b3;
+  }
+  .reviewJobPost-container .jobDescription textarea:hover {
+    border: 1.25px solid #0a345e;
+  }
+  .reviewJobPost-container .reviewJobDetails {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+    border-top: 1.25px solid #b9b3b3;
+    border-left: none;
+    border-right: none;
+  }
+  .reviewJobPost-container .reviewJobDetails h4 {
+    font-size: 1.2rem;
+    color: #0a345e;
+  }
+  .reviewJobPost-container .reviewJobDetails .reviewCategory,
+  .reviewJobPost-container .reviewJobDetails .reviewSkill,
+  .reviewJobPost-container .reviewJobDetails .reviewScope,
+  .reviewJobPost-container .reviewJobDetails .reviewLocation,
+  .reviewJobPost-container .reviewJobDetails .reviewBudget {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reviewJobPost-container .reviewJobDetails .reviewCategory i,
+  .reviewJobPost-container .reviewJobDetails .reviewSkill i,
+  .reviewJobPost-container .reviewJobDetails .reviewScope i,
+  .reviewJobPost-container .reviewJobDetails .reviewLocation i,
+  .reviewJobPost-container .reviewJobDetails .reviewBudget i {
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: 0.7rem;
+    color: #797979;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: transparent;
+    border: 0.7px solid lightgrey;
+  }
+  .reviewJobPost-container .reviewJobDetails .reviewCategory i:hover,
+  .reviewJobPost-container .reviewJobDetails .reviewSkill i:hover,
+  .reviewJobPost-container .reviewJobDetails .reviewScope i:hover,
+  .reviewJobPost-container .reviewJobDetails .reviewLocation i:hover,
+  .reviewJobPost-container .reviewJobDetails .reviewBudget i:hover {
+    background: #e2e2e2;
+  }
+  .reviewJobPost-container .buttonCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1rem;
+    border: 1.25px solid #b9b3b3;
+    border-right: none;
+    border-left: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .reviewJobPost-container .buttonCard .back #back {
+    color: #0a345e;
+    font-size: 1rem;
+    background: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    border: 0.6px solid #0a345e;
+    cursor: pointer;
+  }
+  .reviewJobPost-container .buttonCard .back #back:hover {
+    background: #ebebeb;
+  }
+  .reviewJobPost-container .buttonCard .continue #cancel {
+    margin-right: 0.2rem;
+    color: #0a345e;
+    font-size: 1rem;
+    background: transparent;
+    color: #054e97;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  .reviewJobPost-container .buttonCard .continue #cancel:hover {
+    text-decoration: underline;
+  }
+  .reviewJobPost-container .buttonCard .continue #postJob {
+    margin-left: 0.5rem;
+    color: #0a345e;
+    font-size: 1rem;
+    background: lightgrey;
+    color: gray;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    pointer-events: none;
+  }
+  .reviewJobPost-container .buttonCard .continue #postJob:hover {
     background: #0a345e;
   }
 }
