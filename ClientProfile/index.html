@@ -217,7 +217,14 @@
                 <div class="postedJob">
                     <div class="jobTitle">
                         <h4 id="jobTitle"></h4>
-                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-v" id="jobGodMode" aria-hidden="true"></i>
+                        <div class="jobEdit">
+                            <div class="exit">
+                                <i class="fa fa-times" id="exitJobEdit"></i>
+                            </div>
+                            <button onclick="location.href='../PostAJob/reviewJobPost.html'">Edit</button>
+                            <button style="color: red;" id="deleteJob">Delete</button>
+                        </div>
                     </div>
                     <p>Status: <span id="status">Open</span></p>
                     <p>Job Posted on <span id="date"></span> by <span id="postedBy"></span></p>
