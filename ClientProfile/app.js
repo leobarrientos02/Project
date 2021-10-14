@@ -36,3 +36,36 @@ user.innerText = firstName.concat(" ").concat(lastName);
 
 const name = document.getElementById("name");
 name.innerText = firstName.concat(" ").concat(lastName);
+
+const quickLinkJob = document.getElementById("quick-link-job");
+const quickLinkJob2 = document.getElementById("quick-link-job2");
+quickLinkJob.addEventListener("click", () => {
+  localStorage.setItem("JobCount", 1);
+});
+quickLinkJob2.addEventListener("click", () => {
+  localStorage.setItem("JobCount", 1);
+});
+
+const result = document.querySelector(".result");
+
+const jobTitle = document.getElementById("jobTitle");
+jobTitle.innerText = localStorage.getItem("Job_Title");
+
+const dateSpan = document.getElementById("date");
+var x = new Date();
+dateSpan.innerText = x.toLocaleDateString();
+
+const postedBy = document.getElementById("postedBy");
+postedBy.innerText = localStorage
+  .getItem("FirstName")
+  .concat(" ")
+  .concat(localStorage.getItem("LastName"));
+
+const postedJob = document.querySelector(".postedJob");
+
+if (localStorage.getItem("JobCount") == 0) {
+  result.style.display = "flex";
+} else {
+  result.style.display = "none";
+  postedJob.style.display = "inline-block";
+}
