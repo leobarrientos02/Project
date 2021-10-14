@@ -6308,7 +6308,7 @@ section .container .login .login-container button:hover {
     display: none;
     position: fixed;
     top: 50%;
-    left: 58%;
+    left: 50%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -6320,7 +6320,7 @@ section .container .login .login-container button:hover {
         -ms-flex-pack: center;
             justify-content: center;
     background: white;
-    width: 50%;
+    width: 40%;
     padding: 0.5rem;
     border: #797979 solid 1px;
     border-radius: 8px;
