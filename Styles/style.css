@@ -6269,6 +6269,100 @@ section .container .login .login-container button:hover {
   .profile .user-postings .result span {
     margin-top: 1rem;
   }
+  .profile .user-postings .postedJob {
+    display: none;
+    padding: 1rem;
+    width: 100%;
+  }
+  .profile .user-postings .postedJob .jobTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .profile .user-postings .postedJob .jobTitle h4 {
+    font-size: 1.2rem;
+    color: #0a345e;
+  }
+  .profile .user-postings .postedJob .jobTitle i {
+    font-size: 0.8rem;
+    color: #797979;
+    border-radius: 50%;
+    border: 0.8px solid #797979;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+  }
+  .profile .user-postings .postedJob .jobTitle i:hover {
+    background: lightgray;
+  }
+  .profile .user-postings .postedJob .jobTitle .jobEdit {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 58%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: white;
+    width: 50%;
+    padding: 0.5rem;
+    border: #797979 solid 1px;
+    border-radius: 8px;
+  }
+  .profile .user-postings .postedJob .jobTitle .jobEdit button {
+    width: 40%;
+    cursor: pointer;
+    background: none;
+    color: #797979;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem;
+  }
+  .profile .user-postings .postedJob .jobTitle .jobEdit .exit {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .profile .user-postings .postedJob .jobTitle .jobEdit .exit i {
+    font-size: 1.1rem;
+    color: black;
+    border: none;
+    padding: 0;
+    background: none;
+  }
+  .profile .user-postings .postedJob p {
+    color: #797979;
+    font-size: 1rem;
+  }
+  .profile .user-postings .postedJob #status,
+  .profile .user-postings .postedJob #date,
+  .profile .user-postings .postedJob #postedBy {
+    color: #054e97;
+  }
   .profile .profile-skills-container .profile-skills {
     width: 100%;
     height: -webkit-fit-content;
