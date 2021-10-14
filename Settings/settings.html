@@ -29,12 +29,20 @@
         </div>
         <div class="mobileNavCard" id="navProfile">
             <img src="../Users/user.svg" alt="">
-            <span id="user">John Doe</span>
+            <span id="user"></span>
             <i class="fa fa-sort-down"></i>
         </div>
-        <div class="mobileNavCard">
+        <div class="mobileNavCard" id="mobile-job-card" onclick="toggleJobCard(this)">
             <p>Jobs</p>
-            <i class="fa fa-sort-down"></i>
+            <i class="fa fa-sort-down" id="jobArrow"></i>
+        </div>
+        <div class="mobileJobCard">
+            <ul>
+                <a href="./index.html"><li>My Jobs</li></a>
+                <a href="#/"><li>All Job Posts</li></a>
+                <a href="#/"><li>All Contracts</li></a>
+                <a href="../PostAJob/PostAJob.html"><li>Post A Job</li></a>
+            </ul>
         </div>
         <div class="mobileNavCard">
             <p>Talent</p>
@@ -165,7 +173,7 @@
                                 <img src="../Users/user.svg" id="profileImage3" alt="">
                             </div>
                             <div class="name">
-                                <span id="name">John Doe</span>
+                                <span id="name"></span>
                                 <span id="type">Client</span>
                             </div>
                         </div>
@@ -186,6 +194,7 @@
             <i class="fa fa-times" id="ExitmobileSearch"></i>
         </div>
     </div>
+
 
     <div class="settings">
         <div class="settings-nav">
@@ -210,10 +219,10 @@
                     <img src="../Users/user.svg" alt="">
                 </div>
                 <div class="settings-account-profile-info">
-                    <p>Name: <span>John Doe</span></p>
+                    <p>Name: <span id="settingsName"></span></p>
                     <p>Account Type: <span>Client</span></p>
-                    <p>Phone Number: <span>516-960-8086</span></p>
-                    <p>Email: <span>leobarrientos02@gmail.com</span></p>
+                    <p>Phone Number: <span id="settingsPhone">516-960-8086</span></p>
+                    <p>Email: <span id="settingsEmail"></span></p>
                 </div>
             </div>
             <div class="settings-account-godMode">

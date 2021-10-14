@@ -30,9 +30,11 @@
         <div class="container">
             <div class="login-container">
                 <h3>Log In To EzWork</h3>
-                <form action="/ClientProfile/index.html">
+                <form onsubmit="return false">
                     <input type="email" name="email" id="email" placeholder="Email" required>
+                    <span style="color: red;font-size: 0.9rem;" id="emailError"></span>
                     <input type="password" name="password" id="password" placeholder="Password" required>
+                    <span style="color: red;font-size: 0.9rem;" id="passwordError"></span>
                     <p id="show">Show Password</p>
                     <input type="submit" value="Log In" id="submit">
                 </form>
